@@ -1,0 +1,7 @@
+variable,coefficient,odds_ratio,p_value,ci_low,ci_high,significant
+const,-0.3645,0.6946,0.2357,-0.967,0.238,No
+minute_reached_plus2,0.022,1.0222,0.0,0.0135,0.0304,Yes
+leader_implied_prob,4.2,66.6864,0.0,3.1579,5.2421,Yes
+leader_is_home,0.0389,1.0397,0.8443,-0.3493,0.4271,No
+leader_red_cards,-0.8599,0.4232,0.0244,-1.6084,-0.1113,Yes
+opponent_red_cards,1.241,3.459,0.0161,0.2304,2.2516,Yes

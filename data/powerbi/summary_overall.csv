@@ -1,0 +1,7 @@
+metric,value,ci_low,ci_high,n
+Total +2 Events,1907.0,,,1907
+Win Rate,0.9334,0.9213,0.9437,1907
+Draw Rate,0.0456,0.0371,0.0559,1907
+Loss Rate,0.021,0.0154,0.0284,1907
+Total Points Dropped,294.0,,,1907
+Mean Points Dropped,0.154,,,1907

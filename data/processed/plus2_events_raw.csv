@@ -1,0 +1,1908 @@
+match_id,season,date,home_team,away_team,leader,leader_team,opponent_team,minute_reached_plus2,score_at_event_leader,score_at_event_opponent,final_home_goals,final_away_goals,final_leader_goals,final_opponent_goals,result_for_leader,leader_is_home
+84,2015,2015-08-08,Leicester,Sunderland,home,Leicester,Sunderland,17,2,0,4,2,4,2,W,True
+85,2015,2015-08-08,Norwich,Crystal Palace,away,Crystal Palace,Norwich,48,2,0,1,3,3,1,W,False
+88,2015,2015-08-09,Arsenal,West Ham,away,West Ham,Arsenal,56,2,0,0,2,2,0,W,False
+90,2015,2015-08-10,West Bromwich Albion,Manchester City,away,Manchester City,West Bromwich Albion,23,2,0,0,3,3,0,W,False
+92,2015,2015-08-15,Southampton,Everton,away,Everton,Southampton,44,2,0,0,3,3,0,W,False
+93,2015,2015-08-15,Sunderland,Norwich,away,Norwich,Sunderland,36,2,0,1,3,3,1,W,False
+94,2015,2015-08-15,Swansea,Newcastle United,home,Swansea,Newcastle United,51,2,0,2,0,2,0,W,True
+95,2015,2015-08-15,Tottenham,Stoke,home,Tottenham,Stoke,46,2,0,2,2,2,2,D,True
+97,2015,2015-08-15,West Ham,Leicester,away,Leicester,West Ham,37,2,0,1,2,2,1,W,False
+99,2015,2015-08-16,Manchester City,Chelsea,home,Manchester City,Chelsea,78,2,0,3,0,3,0,W,True
+106,2015,2015-08-22,West Ham,Bournemouth,away,Bournemouth,West Ham,27,2,0,3,4,4,3,W,False
+107,2015,2015-08-23,West Bromwich Albion,Chelsea,away,Chelsea,West Bromwich Albion,29,2,0,2,3,3,2,W,False
+108,2015,2015-08-23,Everton,Manchester City,away,Manchester City,Everton,87,2,0,0,2,2,0,W,False
+116,2015,2015-08-29,Liverpool,West Ham,away,West Ham,Liverpool,28,2,0,0,3,3,0,W,False
+117,2015,2015-08-29,Manchester City,Watford,home,Manchester City,Watford,55,2,0,2,0,2,0,W,True
+119,2015,2015-08-30,Southampton,Norwich,home,Southampton,Norwich,63,2,0,3,0,3,0,W,True
+121,2015,2015-09-12,Everton,Chelsea,home,Everton,Chelsea,21,2,0,3,1,3,1,W,True
+122,2015,2015-09-12,Arsenal,Stoke,home,Arsenal,Stoke,84,2,0,2,0,2,0,W,True
+126,2015,2015-09-12,Norwich,Bournemouth,home,Norwich,Bournemouth,51,2,0,3,1,3,1,W,True
+127,2015,2015-09-12,Manchester United,Liverpool,home,Manchester United,Liverpool,69,2,0,3,1,3,1,W,True
+129,2015,2015-09-13,Leicester,Aston Villa,away,Aston Villa,Leicester,62,2,0,3,2,2,3,L,False
+130,2015,2015-09-14,West Ham,Newcastle United,home,West Ham,Newcastle United,47,2,0,2,0,2,0,W,True
+131,2015,2015-09-19,Chelsea,Arsenal,home,Chelsea,Arsenal,90,2,0,2,0,2,0,W,True
+132,2015,2015-09-19,Newcastle United,Watford,away,Watford,Newcastle United,27,2,0,1,2,2,1,W,False
+134,2015,2015-09-19,Bournemouth,Sunderland,home,Bournemouth,Sunderland,8,2,0,2,0,2,0,W,True
+135,2015,2015-09-19,Stoke,Leicester,home,Stoke,Leicester,19,2,0,2,2,2,2,D,True
+137,2015,2015-09-19,Manchester City,West Ham,away,West Ham,Manchester City,30,2,0,1,2,2,1,W,False
+139,2015,2015-09-20,Southampton,Manchester United,away,Manchester United,Southampton,67,3,1,2,3,3,2,W,False
+141,2015,2015-09-26,Tottenham,Manchester City,home,Tottenham,Manchester City,60,3,1,4,1,4,1,W,True
+142,2015,2015-09-26,Southampton,Swansea,home,Southampton,Swansea,53,2,0,3,1,3,1,W,True
+144,2015,2015-09-26,Leicester,Arsenal,away,Arsenal,Leicester,56,3,1,2,5,5,2,W,False
+145,2015,2015-09-26,Liverpool,Aston Villa,home,Liverpool,Aston Villa,58,2,0,3,2,3,2,W,True
+146,2015,2015-09-26,Manchester United,Sunderland,home,Manchester United,Sunderland,48,2,0,3,0,3,0,W,True
+148,2015,2015-09-26,Newcastle United,Chelsea,home,Newcastle United,Chelsea,59,2,0,2,2,2,2,D,True
+150,2015,2015-09-28,West Bromwich Albion,Everton,home,West Bromwich Albion,Everton,53,2,0,2,3,2,3,L,True
+151,2015,2015-10-03,Crystal Palace,West Bromwich Albion,home,Crystal Palace,West Bromwich Albion,88,2,0,2,0,2,0,W,True
+154,2015,2015-10-03,Manchester City,Newcastle United,home,Manchester City,Newcastle United,49,3,1,6,1,6,1,W,True
+155,2015,2015-10-03,Norwich,Leicester,away,Leicester,Norwich,46,2,0,1,2,2,1,W,False
+156,2015,2015-10-03,Sunderland,West Ham,home,Sunderland,West Ham,21,2,0,2,2,2,2,D,True
+157,2015,2015-10-03,Chelsea,Southampton,away,Southampton,Chelsea,71,3,1,1,3,3,1,W,False
+160,2015,2015-10-04,Arsenal,Manchester United,home,Arsenal,Manchester United,6,2,0,3,0,3,0,W,True
+162,2015,2015-10-17,Southampton,Leicester,home,Southampton,Leicester,36,2,0,2,2,2,2,D,True
+164,2015,2015-10-17,Chelsea,Aston Villa,home,Chelsea,Aston Villa,53,2,0,2,0,2,0,W,True
+165,2015,2015-10-17,Crystal Palace,West Ham,away,West Ham,Crystal Palace,93,3,1,1,3,3,1,W,False
+166,2015,2015-10-17,Everton,Manchester United,away,Manchester United,Everton,21,2,0,0,3,3,0,W,False
+167,2015,2015-10-17,Manchester City,Bournemouth,home,Manchester City,Bournemouth,10,2,0,5,1,5,1,W,True
+168,2015,2015-10-17,Watford,Arsenal,away,Arsenal,Watford,67,2,0,0,3,3,0,W,False
+169,2015,2015-10-18,Newcastle United,Norwich,home,Newcastle United,Norwich,32,3,1,6,2,6,2,W,True
+175,2015,2015-10-24,Stoke,Watford,away,Watford,Stoke,68,2,0,0,2,2,0,W,False
+176,2015,2015-10-24,Arsenal,Everton,home,Arsenal,Everton,37,2,0,2,1,2,1,W,True
+177,2015,2015-10-25,Sunderland,Newcastle United,home,Sunderland,Newcastle United,64,2,0,3,0,3,0,W,True
+178,2015,2015-10-25,Bournemouth,Tottenham,away,Tottenham,Bournemouth,29,3,1,1,5,5,1,W,False
+181,2015,2015-10-31,Chelsea,Liverpool,away,Liverpool,Chelsea,82,3,1,1,3,3,1,W,False
+185,2015,2015-10-31,Swansea,Arsenal,away,Arsenal,Swansea,67,2,0,0,3,3,0,W,False
+186,2015,2015-10-31,Watford,West Ham,home,Watford,West Ham,47,2,0,2,0,2,0,W,True
+187,2015,2015-10-31,West Bromwich Albion,Leicester,away,Leicester,West Bromwich Albion,76,3,1,2,3,3,2,W,False
+188,2015,2015-11-01,Everton,Sunderland,home,Everton,Sunderland,30,2,0,6,2,6,2,W,True
+189,2015,2015-11-01,Southampton,Bournemouth,home,Southampton,Bournemouth,35,2,0,2,0,2,0,W,True
+190,2015,2015-11-03,Tottenham,Aston Villa,home,Tottenham,Aston Villa,45,2,0,3,1,3,1,W,True
+192,2015,2015-11-07,Leicester,Watford,home,Leicester,Watford,64,2,0,2,1,2,1,W,True
+193,2015,2015-11-07,Manchester United,West Bromwich Albion,home,Manchester United,West Bromwich Albion,90,2,0,2,0,2,0,W,True
+202,2015,2015-11-21,Swansea,Bournemouth,away,Bournemouth,Swansea,25,2,0,2,2,2,2,D,False
+205,2015,2015-11-21,Newcastle United,Leicester,away,Leicester,Newcastle United,61,2,0,0,3,3,0,W,False
+206,2015,2015-11-21,Everton,Aston Villa,home,Everton,Aston Villa,27,2,0,4,0,4,0,W,True
+208,2015,2015-11-21,Manchester City,Liverpool,away,Liverpool,Manchester City,22,2,0,1,4,4,1,W,False
+209,2015,2015-11-22,Tottenham,West Ham,home,Tottenham,West Ham,32,2,0,4,1,4,1,W,True
+211,2015,2015-11-28,Sunderland,Stoke,home,Sunderland,Stoke,83,2,0,2,0,2,0,W,True
+212,2015,2015-11-28,Aston Villa,Watford,away,Watford,Aston Villa,84,3,1,2,3,3,2,W,False
+213,2015,2015-11-28,Bournemouth,Everton,away,Everton,Bournemouth,35,2,0,3,3,3,3,D,False
+214,2015,2015-11-28,Crystal Palace,Newcastle United,home,Crystal Palace,Newcastle United,40,3,1,5,1,5,1,W,True
+215,2015,2015-11-28,Manchester City,Southampton,home,Manchester City,Southampton,19,2,0,3,1,3,1,W,True
+221,2015,2015-12-05,Stoke,Manchester City,home,Stoke,Manchester City,14,2,0,2,0,2,0,W,True
+222,2015,2015-12-05,Swansea,Leicester,away,Leicester,Swansea,21,2,0,0,3,3,0,W,False
+223,2015,2015-12-05,Watford,Norwich,home,Watford,Norwich,90,2,0,2,0,2,0,W,True
+225,2015,2015-12-05,Arsenal,Sunderland,home,Arsenal,Sunderland,92,3,1,3,1,3,1,W,True
+229,2015,2015-12-06,Newcastle United,Liverpool,home,Newcastle United,Liverpool,92,2,0,2,0,2,0,W,True
+237,2015,2015-12-13,Aston Villa,Arsenal,away,Arsenal,Aston Villa,37,2,0,0,2,2,0,W,False
+240,2015,2015-12-15,Leicester,Chelsea,home,Leicester,Chelsea,47,2,0,2,1,2,1,W,True
+242,2015,2015-12-19,Southampton,Tottenham,away,Tottenham,Southampton,42,2,0,0,2,2,0,W,False
+244,2015,2015-12-19,Chelsea,Sunderland,home,Chelsea,Sunderland,12,2,0,3,1,3,1,W,True
+245,2015,2015-12-19,Everton,Leicester,away,Leicester,Everton,68,3,1,2,3,3,2,W,False
+246,2015,2015-12-19,Manchester United,Norwich,away,Norwich,Manchester United,53,2,0,1,2,2,1,W,False
+248,2015,2015-12-20,Watford,Liverpool,home,Watford,Liverpool,14,2,0,3,0,3,0,W,True
+250,2015,2015-12-22,Arsenal,Manchester City,home,Arsenal,Manchester City,45,2,0,2,1,2,1,W,True
+251,2015,2015-12-26,Stoke,Manchester United,home,Stoke,Manchester United,25,2,0,2,0,2,0,W,True
+253,2015,2015-12-26,Tottenham,Norwich,home,Tottenham,Norwich,41,2,0,3,0,3,0,W,True
+258,2015,2015-12-26,Manchester City,Sunderland,home,Manchester City,Sunderland,16,2,0,4,1,4,1,W,True
+260,2015,2015-12-26,Southampton,Arsenal,home,Southampton,Arsenal,54,2,0,4,0,4,0,W,True
+263,2015,2015-12-28,Norwich,Aston Villa,home,Norwich,Aston Villa,86,2,0,2,0,2,0,W,True
+266,2015,2015-12-28,Arsenal,Bournemouth,home,Arsenal,Bournemouth,62,2,0,2,0,2,0,W,True
+271,2015,2016-01-02,West Ham,Liverpool,home,West Ham,Liverpool,54,2,0,2,0,2,0,W,True
+277,2015,2016-01-02,Sunderland,Aston Villa,home,Sunderland,Aston Villa,91,3,1,3,1,3,1,W,True
+279,2015,2016-01-03,Crystal Palace,Chelsea,away,Chelsea,Crystal Palace,59,2,0,0,3,3,0,W,False
+281,2015,2016-01-12,Newcastle United,Manchester United,away,Manchester United,Newcastle United,37,2,0,3,3,3,3,D,False
+283,2015,2016-01-12,Bournemouth,West Ham,away,West Ham,Bournemouth,83,3,1,1,3,3,1,W,False
+284,2015,2016-01-13,Southampton,Watford,home,Southampton,Watford,72,2,0,2,0,2,0,W,True
+285,2015,2016-01-13,Stoke,Norwich,home,Stoke,Norwich,77,3,1,3,1,3,1,W,True
+286,2015,2016-01-13,Swansea,Sunderland,away,Sunderland,Swansea,84,4,2,2,4,4,2,W,False
+291,2015,2016-01-16,Tottenham,Sunderland,home,Tottenham,Sunderland,66,3,1,4,1,4,1,W,True
+292,2015,2016-01-16,Manchester City,Crystal Palace,home,Manchester City,Crystal Palace,40,2,0,4,0,4,0,W,True
+293,2015,2016-01-16,Newcastle United,West Ham,home,Newcastle United,West Ham,14,2,0,2,1,2,1,W,True
+294,2015,2016-01-16,Southampton,West Bromwich Albion,home,Southampton,West Bromwich Albion,34,2,0,3,0,3,0,W,True
+295,2015,2016-01-16,Chelsea,Everton,away,Everton,Chelsea,55,2,0,3,3,3,3,D,False
+296,2015,2016-01-16,Bournemouth,Norwich,home,Bournemouth,Norwich,53,2,0,3,0,3,0,W,True
+301,2015,2016-01-23,Norwich,Liverpool,home,Norwich,Liverpool,53,3,1,4,5,4,5,L,True
+302,2015,2016-01-23,Crystal Palace,Tottenham,away,Tottenham,Crystal Palace,94,3,1,1,3,3,1,W,False
+304,2015,2016-01-23,Leicester,Stoke,home,Leicester,Stoke,65,2,0,3,0,3,0,W,True
+307,2015,2016-01-23,Watford,Newcastle United,home,Watford,Newcastle United,57,2,0,2,1,2,1,W,True
+312,2015,2016-02-02,Leicester,Liverpool,home,Leicester,Liverpool,70,2,0,2,0,2,0,W,True
+313,2015,2016-02-02,Norwich,Tottenham,away,Tottenham,Norwich,29,2,0,0,3,3,0,W,False
+315,2015,2016-02-02,West Ham,Aston Villa,home,West Ham,Aston Villa,84,2,0,2,0,2,0,W,True
+317,2015,2016-02-03,Manchester United,Stoke,home,Manchester United,Stoke,22,2,0,3,0,3,0,W,True
+319,2015,2016-02-03,Everton,Newcastle United,home,Everton,Newcastle United,87,2,0,3,0,3,0,W,True
+321,2015,2016-02-06,Manchester City,Leicester,away,Leicester,Manchester City,47,2,0,1,3,3,1,W,False
+323,2015,2016-02-06,Stoke,Everton,away,Everton,Stoke,27,2,0,0,3,3,0,W,False
+326,2015,2016-02-06,Aston Villa,Norwich,home,Aston Villa,Norwich,50,2,0,2,0,2,0,W,True
+327,2015,2016-02-06,Liverpool,Sunderland,home,Liverpool,Sunderland,69,2,0,2,2,2,2,D,True
+329,2015,2016-02-07,Bournemouth,Arsenal,away,Arsenal,Bournemouth,23,2,0,0,2,2,0,W,False
+333,2015,2016-02-13,Norwich,West Ham,home,Norwich,West Ham,64,2,0,2,2,2,2,D,True
+336,2015,2016-02-13,Bournemouth,Stoke,away,Stoke,Bournemouth,51,2,0,1,3,3,1,W,False
+337,2015,2016-02-13,Chelsea,Newcastle United,home,Chelsea,Newcastle United,8,2,0,5,1,5,1,W,True
+339,2015,2016-02-14,Aston Villa,Liverpool,away,Liverpool,Aston Villa,24,2,0,0,6,6,0,W,False
+345,2015,2016-02-27,Stoke,Aston Villa,home,Stoke,Aston Villa,55,2,0,2,1,2,1,W,True
+346,2015,2016-02-27,West Bromwich Albion,Crystal Palace,home,West Bromwich Albion,Crystal Palace,19,2,0,3,2,3,2,W,True
+348,2015,2016-02-28,Manchester United,Arsenal,home,Manchester United,Arsenal,31,2,0,3,2,3,2,W,True
+349,2015,2016-03-01,Aston Villa,Everton,away,Everton,Aston Villa,29,2,0,1,3,3,1,W,False
+350,2015,2016-03-01,Bournemouth,Southampton,home,Bournemouth,Southampton,78,2,0,2,0,2,0,W,True
+353,2015,2016-03-01,Norwich,Chelsea,away,Chelsea,Norwich,45,2,0,1,2,2,1,W,False
+357,2015,2016-03-03,Liverpool,Manchester City,home,Liverpool,Manchester City,40,2,0,3,0,3,0,W,True
+363,2015,2016-03-05,Everton,West Ham,home,Everton,West Ham,55,2,0,2,3,2,3,L,True
+364,2015,2016-03-05,Manchester City,Aston Villa,home,Manchester City,Aston Villa,49,2,0,4,0,4,0,W,True
+365,2015,2016-03-05,Newcastle United,Bournemouth,away,Bournemouth,Newcastle United,69,2,0,1,3,3,1,W,False
+370,2015,2016-03-12,Stoke,Southampton,away,Southampton,Stoke,29,2,0,1,2,2,1,W,False
+372,2015,2016-03-13,Aston Villa,Tottenham,away,Tottenham,Aston Villa,47,2,0,0,2,2,0,W,False
+374,2015,2016-03-19,Everton,Arsenal,away,Arsenal,Everton,41,2,0,0,2,2,0,W,False
+377,2015,2016-03-19,Watford,Stoke,away,Stoke,Watford,50,2,0,1,2,2,1,W,False
+380,2015,2016-03-20,Southampton,Liverpool,away,Liverpool,Southampton,21,2,0,3,2,2,3,L,False
+383,2015,2016-03-20,Tottenham,Bournemouth,home,Tottenham,Bournemouth,15,2,0,3,0,3,0,W,True
+384,2015,2016-04-02,Aston Villa,Chelsea,away,Chelsea,Aston Villa,45,2,0,0,4,4,0,W,False
+385,2015,2016-04-02,Arsenal,Watford,home,Arsenal,Watford,37,2,0,4,0,4,0,W,True
+386,2015,2016-04-02,Bournemouth,Manchester City,away,Manchester City,Bournemouth,11,2,0,0,4,4,0,W,False
+388,2015,2016-04-02,Stoke,Swansea,home,Stoke,Swansea,52,2,0,2,2,2,2,D,True
+394,2015,2016-04-09,West Ham,Arsenal,away,Arsenal,West Ham,34,2,0,3,3,3,3,D,False
+396,2015,2016-04-09,Southampton,Newcastle United,home,Southampton,Newcastle United,37,2,0,3,1,3,1,W,True
+398,2015,2016-04-09,Aston Villa,Bournemouth,away,Bournemouth,Aston Villa,73,2,0,1,2,2,1,W,False
+401,2015,2016-04-10,Sunderland,Leicester,away,Leicester,Sunderland,94,2,0,0,2,2,0,W,False
+402,2015,2016-04-10,Tottenham,Manchester United,home,Tottenham,Manchester United,73,2,0,3,0,3,0,W,True
+403,2015,2016-04-10,Liverpool,Stoke,home,Liverpool,Stoke,49,3,1,4,1,4,1,W,True
+405,2015,2016-04-16,Norwich,Sunderland,away,Sunderland,Norwich,52,2,0,0,3,3,0,W,False
+408,2015,2016-04-16,Newcastle United,Swansea,home,Newcastle United,Swansea,81,2,0,3,0,3,0,W,True
+410,2015,2016-04-16,Chelsea,Manchester City,away,Manchester City,Chelsea,53,2,0,0,3,3,0,W,False
+412,2015,2016-04-17,Bournemouth,Liverpool,away,Liverpool,Bournemouth,46,2,0,1,2,2,1,W,False
+414,2015,2016-04-18,Stoke,Tottenham,away,Tottenham,Stoke,66,2,0,0,4,4,0,W,False
+416,2015,2016-04-20,West Ham,Watford,home,West Ham,Watford,44,2,0,3,1,3,1,W,True
+417,2015,2016-04-20,Manchester United,Crystal Palace,home,Manchester United,Crystal Palace,54,2,0,2,0,2,0,W,True
+418,2015,2016-04-20,Liverpool,Everton,home,Liverpool,Everton,46,2,0,4,0,4,0,W,True
+419,2015,2016-04-21,Arsenal,West Bromwich Albion,home,Arsenal,West Bromwich Albion,37,2,0,2,0,2,0,W,True
+420,2015,2016-04-23,Manchester City,Stoke,home,Manchester City,Stoke,42,2,0,4,0,4,0,W,True
+421,2015,2016-04-23,Aston Villa,Southampton,away,Southampton,Aston Villa,38,2,0,2,4,4,2,W,False
+422,2015,2016-04-23,Bournemouth,Chelsea,away,Chelsea,Bournemouth,33,2,0,1,4,4,1,W,False
+423,2015,2016-04-23,Liverpool,Newcastle United,home,Liverpool,Newcastle United,29,2,0,2,2,2,2,D,True
+425,2015,2016-04-24,Leicester,Swansea,home,Leicester,Swansea,29,2,0,4,0,4,0,W,True
+431,2015,2016-04-30,West Bromwich Albion,West Ham,away,West Ham,West Bromwich Albion,46,2,0,0,3,3,0,W,False
+433,2015,2016-05-01,Swansea,Liverpool,home,Swansea,Liverpool,32,2,0,3,1,3,1,W,True
+435,2015,2016-05-01,Southampton,Manchester City,home,Southampton,Manchester City,27,2,0,4,2,4,2,W,True
+436,2015,2016-05-02,Chelsea,Tottenham,away,Tottenham,Chelsea,43,2,0,2,2,2,2,D,False
+439,2015,2016-05-07,West Ham,Swansea,away,Swansea,West Ham,30,2,0,1,4,4,1,W,False
+443,2015,2016-05-07,Leicester,Everton,home,Leicester,Everton,32,2,0,3,1,3,1,W,True
+445,2015,2016-05-08,Liverpool,Watford,home,Liverpool,Watford,75,2,0,2,0,2,0,W,True
+448,2015,2016-05-11,Norwich,Watford,home,Norwich,Watford,36,3,1,4,2,4,2,W,True
+449,2015,2016-05-11,Sunderland,Everton,home,Sunderland,Everton,41,2,0,3,0,3,0,W,True
+451,2015,2016-05-15,Arsenal,Aston Villa,home,Arsenal,Aston Villa,77,2,0,4,0,4,0,W,True
+453,2015,2016-05-15,Everton,Norwich,home,Everton,Norwich,43,2,0,3,0,3,0,W,True
+454,2015,2016-05-15,Newcastle United,Tottenham,home,Newcastle United,Tottenham,38,2,0,5,1,5,1,W,True
+455,2015,2016-05-15,Southampton,Crystal Palace,home,Southampton,Crystal Palace,60,2,0,4,1,4,1,W,True
+460,2015,2016-05-17,Manchester United,Bournemouth,home,Manchester United,Bournemouth,73,2,0,3,1,3,1,W,True
+468,2016,2016-08-14,Bournemouth,Manchester United,away,Manchester United,Bournemouth,58,2,0,1,3,3,1,W,False
+469,2016,2016-08-14,Arsenal,Liverpool,away,Liverpool,Arsenal,55,3,1,3,4,4,3,W,False
+471,2016,2016-08-19,Manchester United,Southampton,home,Manchester United,Southampton,51,2,0,2,0,2,0,W,True
+472,2016,2016-08-20,Stoke,Manchester City,away,Manchester City,Stoke,35,2,0,1,4,4,1,W,False
+473,2016,2016-08-20,Burnley,Liverpool,home,Burnley,Liverpool,36,2,0,2,0,2,0,W,True
+474,2016,2016-08-20,Swansea,Hull,away,Hull,Swansea,91,2,0,0,2,2,0,W,False
+479,2016,2016-08-21,Sunderland,Middlesbrough,away,Middlesbrough,Sunderland,44,2,0,1,2,2,1,W,False
+482,2016,2016-08-27,Watford,Arsenal,away,Arsenal,Watford,39,2,0,1,3,3,1,W,False
+483,2016,2016-08-27,Leicester,Swansea,home,Leicester,Swansea,51,2,0,2,1,2,1,W,True
+485,2016,2016-08-27,Chelsea,Burnley,home,Chelsea,Burnley,40,2,0,3,0,3,0,W,True
+490,2016,2016-08-28,Manchester City,West Ham,home,Manchester City,West Ham,17,2,0,3,1,3,1,W,True
+491,2016,2016-09-10,Manchester United,Manchester City,away,Manchester City,Manchester United,35,2,0,1,2,2,1,W,False
+493,2016,2016-09-10,Stoke,Tottenham,away,Tottenham,Stoke,55,2,0,0,4,4,0,W,False
+497,2016,2016-09-10,West Ham,Watford,home,West Ham,Watford,32,2,0,2,4,2,4,L,True
+497,2016,2016-09-10,West Ham,Watford,away,Watford,West Ham,62,4,2,2,4,4,2,W,False
+498,2016,2016-09-10,Liverpool,Leicester,home,Liverpool,Leicester,30,2,0,4,1,4,1,W,True
+500,2016,2016-09-12,Sunderland,Everton,away,Everton,Sunderland,67,2,0,0,3,3,0,W,False
+501,2016,2016-09-16,Chelsea,Liverpool,away,Liverpool,Chelsea,35,2,0,1,2,2,1,W,False
+502,2016,2016-09-17,Hull,Arsenal,away,Arsenal,Hull,54,2,0,1,4,4,1,W,False
+503,2016,2016-09-17,Leicester,Burnley,home,Leicester,Burnley,47,2,0,3,0,3,0,W,True
+504,2016,2016-09-17,Manchester City,Bournemouth,home,Manchester City,Bournemouth,24,2,0,4,0,4,0,W,True
+505,2016,2016-09-17,West Bromwich Albion,West Ham,home,West Bromwich Albion,West Ham,36,2,0,4,2,4,2,W,True
+506,2016,2016-09-17,Everton,Middlesbrough,home,Everton,Middlesbrough,45,3,1,3,1,3,1,W,True
+507,2016,2016-09-18,Watford,Manchester United,home,Watford,Manchester United,94,3,1,3,1,3,1,W,True
+508,2016,2016-09-18,Crystal Palace,Stoke,home,Crystal Palace,Stoke,11,2,0,4,1,4,1,W,True
+511,2016,2016-09-24,Manchester United,Leicester,home,Manchester United,Leicester,36,2,0,4,1,4,1,W,True
+512,2016,2016-09-24,Middlesbrough,Tottenham,away,Tottenham,Middlesbrough,22,2,0,1,2,2,1,W,False
+514,2016,2016-09-24,Sunderland,Crystal Palace,home,Sunderland,Crystal Palace,59,2,0,2,3,2,3,L,True
+515,2016,2016-09-24,Swansea,Manchester City,away,Manchester City,Swansea,76,3,1,1,3,3,1,W,False
+516,2016,2016-09-24,Liverpool,Hull,home,Liverpool,Hull,29,2,0,5,1,5,1,W,True
+518,2016,2016-09-24,Arsenal,Chelsea,home,Arsenal,Chelsea,13,2,0,3,0,3,0,W,True
+519,2016,2016-09-25,West Ham,Southampton,away,Southampton,West Ham,61,2,0,0,3,3,0,W,False
+520,2016,2016-09-26,Burnley,Watford,home,Burnley,Watford,49,2,0,2,0,2,0,W,True
+524,2016,2016-10-01,Hull,Chelsea,away,Chelsea,Hull,66,2,0,0,2,2,0,W,False
+529,2016,2016-10-02,Tottenham,Manchester City,home,Tottenham,Manchester City,36,2,0,2,0,2,0,W,True
+531,2016,2016-10-15,Chelsea,Leicester,home,Chelsea,Leicester,32,2,0,3,0,3,0,W,True
+532,2016,2016-10-15,Arsenal,Swansea,home,Arsenal,Swansea,32,2,0,3,2,3,2,W,True
+533,2016,2016-10-15,Bournemouth,Hull,home,Bournemouth,Hull,44,3,1,6,1,6,1,W,True
+535,2016,2016-10-15,Stoke,Sunderland,home,Stoke,Sunderland,45,2,0,2,0,2,0,W,True
+539,2016,2016-10-16,Southampton,Burnley,home,Southampton,Burnley,59,2,0,3,1,3,1,W,True
+544,2016,2016-10-22,Leicester,Crystal Palace,home,Leicester,Crystal Palace,62,2,0,3,1,3,1,W,True
+545,2016,2016-10-22,Hull,Stoke,away,Stoke,Hull,49,2,0,0,2,2,0,W,False
+548,2016,2016-10-22,Liverpool,West Bromwich Albion,home,Liverpool,West Bromwich Albion,34,2,0,2,1,2,1,W,True
+550,2016,2016-10-23,Chelsea,Manchester United,home,Chelsea,Manchester United,20,2,0,4,0,4,0,W,True
+2677,2016,2016-10-29,Sunderland,Arsenal,away,Arsenal,Sunderland,75,3,1,1,4,4,1,W,False
+2680,2016,2016-10-29,West Bromwich Albion,Manchester City,away,Manchester City,West Bromwich Albion,27,2,0,0,4,4,0,W,False
+2681,2016,2016-10-29,Middlesbrough,Bournemouth,home,Middlesbrough,Bournemouth,55,2,0,2,0,2,0,W,True
+2683,2016,2016-10-29,Crystal Palace,Liverpool,away,Liverpool,Crystal Palace,70,4,2,2,4,4,2,W,False
+2684,2016,2016-10-30,Everton,West Ham,home,Everton,West Ham,75,2,0,2,0,2,0,W,True
+2685,2016,2016-10-30,Southampton,Chelsea,away,Chelsea,Southampton,54,2,0,0,2,2,0,W,False
+2686,2016,2016-11-01,Stoke,Swansea,home,Stoke,Swansea,72,3,1,3,1,3,1,W,True
+2688,2016,2016-11-05,Burnley,Crystal Palace,home,Burnley,Crystal Palace,13,2,0,3,2,3,2,W,True
+2691,2016,2016-11-05,Chelsea,Everton,home,Chelsea,Everton,19,2,0,5,0,5,0,W,True
+2693,2016,2016-11-06,Liverpool,Watford,home,Liverpool,Watford,29,2,0,6,1,6,1,W,True
+2695,2016,2016-11-06,Swansea,Manchester United,away,Manchester United,Swansea,20,2,0,1,3,3,1,W,False
+2700,2016,2016-11-19,Sunderland,Hull,home,Sunderland,Hull,61,2,0,3,0,3,0,W,True
+2701,2016,2016-11-19,Watford,Leicester,home,Watford,Leicester,11,2,0,2,1,2,1,W,True
+2706,2016,2016-11-22,West Bromwich Albion,Burnley,home,West Bromwich Albion,Burnley,15,2,0,4,0,4,0,W,True
+2709,2016,2016-11-26,Swansea,Crystal Palace,home,Swansea,Crystal Palace,67,3,1,5,4,5,4,W,True
+2710,2016,2016-11-26,Liverpool,Sunderland,home,Liverpool,Sunderland,90,2,0,2,0,2,0,W,True
+2714,2016,2016-11-27,Arsenal,Bournemouth,home,Arsenal,Bournemouth,90,3,1,3,1,3,1,W,True
+3105,2016,2016-12-03,Manchester City,Chelsea,away,Chelsea,Manchester City,89,3,1,1,3,3,1,W,False
+3106,2016,2016-12-03,Crystal Palace,Southampton,home,Crystal Palace,Southampton,35,2,0,3,0,3,0,W,True
+3107,2016,2016-12-03,Stoke,Burnley,home,Stoke,Burnley,34,2,0,2,0,2,0,W,True
+3108,2016,2016-12-03,Sunderland,Leicester,home,Sunderland,Leicester,76,2,0,2,1,2,1,W,True
+3109,2016,2016-12-03,Tottenham,Swansea,home,Tottenham,Swansea,45,2,0,5,0,5,0,W,True
+3110,2016,2016-12-03,West Bromwich Albion,Watford,home,West Bromwich Albion,Watford,33,2,0,3,1,3,1,W,True
+3111,2016,2016-12-03,West Ham,Arsenal,away,Arsenal,West Ham,71,2,0,1,5,5,1,W,False
+3112,2016,2016-12-04,Bournemouth,Liverpool,away,Liverpool,Bournemouth,21,2,0,4,3,3,4,L,False
+3115,2016,2016-12-10,Watford,Everton,home,Watford,Everton,63,3,1,3,2,3,2,W,True
+3117,2016,2016-12-10,Swansea,Sunderland,home,Swansea,Sunderland,53,2,0,3,0,3,0,W,True
+3118,2016,2016-12-10,Arsenal,Stoke,home,Arsenal,Stoke,74,3,1,3,1,3,1,W,True
+3119,2016,2016-12-10,Burnley,Bournemouth,home,Burnley,Bournemouth,15,2,0,3,2,3,2,W,True
+3120,2016,2016-12-10,Leicester,Manchester City,home,Leicester,Manchester City,4,2,0,4,2,4,2,W,True
+3127,2016,2016-12-14,Middlesbrough,Liverpool,away,Liverpool,Middlesbrough,59,2,0,0,3,3,0,W,False
+3131,2016,2016-12-15,West Bromwich Albion,Swansea,home,West Bromwich Albion,Swansea,60,2,0,3,1,3,1,W,True
+3132,2016,2016-12-15,Manchester City,Watford,home,Manchester City,Watford,85,2,0,2,0,2,0,W,True
+3134,2016,2016-12-15,Tottenham,Hull,home,Tottenham,Hull,62,2,0,3,0,3,0,W,True
+3136,2016,2016-12-17,Middlesbrough,Swansea,home,Middlesbrough,Swansea,28,2,0,3,0,3,0,W,True
+3138,2016,2016-12-17,Stoke,Leicester,home,Stoke,Leicester,47,2,0,2,2,2,2,D,True
+3140,2016,2016-12-17,West Bromwich Albion,Manchester United,away,Manchester United,West Bromwich Albion,55,2,0,0,2,2,0,W,False
+3141,2016,2016-12-18,Bournemouth,Southampton,away,Southampton,Bournemouth,84,3,1,1,3,3,1,W,False
+3146,2016,2016-12-26,Swansea,West Ham,away,West Ham,Swansea,49,2,0,1,4,4,1,W,False
+3147,2016,2016-12-26,Manchester United,Sunderland,home,Manchester United,Sunderland,81,2,0,3,1,3,1,W,True
+3148,2016,2016-12-26,Leicester,Everton,away,Everton,Leicester,90,2,0,0,2,2,0,W,False
+3151,2016,2016-12-26,Chelsea,Bournemouth,home,Chelsea,Bournemouth,48,2,0,3,0,3,0,W,True
+3152,2016,2016-12-26,Hull,Manchester City,away,Manchester City,Hull,77,2,0,0,3,3,0,W,False
+3153,2016,2016-12-27,Liverpool,Stoke,home,Liverpool,Stoke,59,3,1,4,1,4,1,W,True
+3154,2016,2016-12-28,Southampton,Tottenham,away,Tottenham,Southampton,84,3,1,1,4,4,1,W,False
+3157,2016,2016-12-31,Burnley,Sunderland,home,Burnley,Sunderland,50,2,0,4,1,4,1,W,True
+3158,2016,2016-12-31,Chelsea,Stoke,home,Chelsea,Stoke,84,4,2,4,2,4,2,W,True
+3161,2016,2016-12-31,Swansea,Bournemouth,away,Bournemouth,Swansea,45,2,0,0,3,3,0,W,False
+3328,2016,2017-01-01,Watford,Tottenham,away,Tottenham,Watford,32,2,0,1,4,4,1,W,False
+3329,2016,2017-01-01,Arsenal,Crystal Palace,home,Arsenal,Crystal Palace,55,2,0,2,0,2,0,W,True
+3331,2016,2017-01-02,Everton,Southampton,home,Everton,Southampton,80,2,0,3,0,3,0,W,True
+3332,2016,2017-01-02,Manchester City,Burnley,home,Manchester City,Burnley,61,2,0,2,1,2,1,W,True
+3333,2016,2017-01-02,West Bromwich Albion,Hull,home,West Bromwich Albion,Hull,72,3,1,3,1,3,1,W,True
+3335,2016,2017-01-02,West Ham,Manchester United,away,Manchester United,West Ham,77,2,0,0,2,2,0,W,False
+3336,2016,2017-01-03,Bournemouth,Arsenal,home,Bournemouth,Arsenal,20,2,0,3,3,3,3,D,True
+3338,2016,2017-01-04,Stoke,Watford,home,Stoke,Watford,48,2,0,2,0,2,0,W,True
+3339,2016,2017-01-05,Tottenham,Chelsea,home,Tottenham,Chelsea,53,2,0,2,0,2,0,W,True
+3340,2016,2017-01-14,Tottenham,West Bromwich Albion,home,Tottenham,West Bromwich Albion,25,2,0,4,0,4,0,W,True
+3342,2016,2017-01-14,Sunderland,Stoke,away,Stoke,Sunderland,21,2,0,1,3,3,1,W,False
+3343,2016,2017-01-14,Swansea,Arsenal,away,Arsenal,Swansea,53,2,0,0,4,4,0,W,False
+3344,2016,2017-01-14,Hull,Bournemouth,home,Hull,Bournemouth,61,3,1,3,1,3,1,W,True
+3346,2016,2017-01-14,West Ham,Crystal Palace,home,West Ham,Crystal Palace,78,2,0,3,0,3,0,W,True
+3347,2016,2017-01-14,Leicester,Chelsea,away,Chelsea,Leicester,50,2,0,0,3,3,0,W,False
+3348,2016,2017-01-15,Everton,Manchester City,home,Everton,Manchester City,46,2,0,4,0,4,0,W,True
+3350,2016,2017-01-21,Liverpool,Swansea,away,Swansea,Liverpool,51,2,0,2,3,3,2,W,False
+3351,2016,2017-01-21,Middlesbrough,West Ham,away,West Ham,Middlesbrough,93,3,1,1,3,3,1,W,False
+3355,2016,2017-01-21,West Bromwich Albion,Sunderland,home,West Bromwich Albion,Sunderland,35,2,0,2,0,2,0,W,True
+3356,2016,2017-01-21,Manchester City,Tottenham,home,Manchester City,Tottenham,53,2,0,2,2,2,2,D,True
+3357,2016,2017-01-22,Southampton,Leicester,home,Southampton,Leicester,38,2,0,3,0,3,0,W,True
+3359,2016,2017-01-22,Chelsea,Hull,home,Chelsea,Hull,80,2,0,2,0,2,0,W,True
+3360,2016,2017-01-31,Arsenal,Watford,away,Watford,Arsenal,12,2,0,1,2,2,1,W,False
+3361,2016,2017-01-31,Bournemouth,Crystal Palace,away,Crystal Palace,Bournemouth,91,2,0,0,2,2,0,W,False
+3367,2016,2017-02-01,West Ham,Manchester City,away,Manchester City,West Ham,20,2,0,0,4,4,0,W,False
+3370,2016,2017-02-04,Chelsea,Arsenal,home,Chelsea,Arsenal,52,2,0,3,1,3,1,W,True
+3371,2016,2017-02-04,Crystal Palace,Sunderland,away,Sunderland,Crystal Palace,42,2,0,0,4,4,0,W,False
+3372,2016,2017-02-04,Everton,Bournemouth,home,Everton,Bournemouth,23,2,0,6,3,6,3,W,True
+3373,2016,2017-02-04,Hull,Liverpool,home,Hull,Liverpool,83,2,0,2,0,2,0,W,True
+3374,2016,2017-02-04,Watford,Burnley,home,Watford,Burnley,46,2,0,2,1,2,1,W,True
+3376,2016,2017-02-04,Southampton,West Ham,away,West Ham,Southampton,51,3,1,1,3,3,1,W,False
+3379,2016,2017-02-05,Leicester,Manchester United,away,Manchester United,Leicester,43,2,0,0,3,3,0,W,False
+3380,2016,2017-02-11,Arsenal,Hull,home,Arsenal,Hull,92,2,0,2,0,2,0,W,True
+3381,2016,2017-02-11,Manchester United,Watford,home,Manchester United,Watford,59,2,0,2,0,2,0,W,True
+3384,2016,2017-02-11,Sunderland,Southampton,away,Southampton,Sunderland,44,2,0,0,4,4,0,W,False
+3386,2016,2017-02-11,Liverpool,Tottenham,home,Liverpool,Tottenham,17,2,0,2,0,2,0,W,True
+3388,2016,2017-02-12,Swansea,Leicester,home,Swansea,Leicester,46,2,0,2,0,2,0,W,True
+3389,2016,2017-02-13,Bournemouth,Manchester City,away,Manchester City,Bournemouth,68,2,0,0,2,2,0,W,False
+3390,2016,2017-05-10,Southampton,Arsenal,away,Arsenal,Southampton,82,2,0,0,2,2,0,W,False
+3391,2016,2017-02-25,Chelsea,Swansea,home,Chelsea,Swansea,83,3,1,3,1,3,1,W,True
+3393,2016,2017-02-25,Everton,Sunderland,home,Everton,Sunderland,79,2,0,2,0,2,0,W,True
+3397,2016,2017-02-26,Tottenham,Stoke,home,Tottenham,Stoke,31,2,0,4,0,4,0,W,True
+3399,2016,2017-02-27,Leicester,Liverpool,home,Leicester,Liverpool,38,2,0,3,1,3,1,W,True
+3400,2016,2017-03-04,Leicester,Hull,home,Leicester,Hull,89,3,1,3,1,3,1,W,True
+3401,2016,2017-03-04,Liverpool,Arsenal,home,Liverpool,Arsenal,39,2,0,3,1,3,1,W,True
+3403,2016,2017-03-04,Stoke,Middlesbrough,home,Stoke,Middlesbrough,41,2,0,2,0,2,0,W,True
+3404,2016,2017-03-05,Sunderland,Manchester City,away,Manchester City,Sunderland,58,2,0,0,2,2,0,W,False
+3406,2016,2017-03-05,Tottenham,Everton,home,Tottenham,Everton,55,2,0,3,2,3,2,W,True
+3407,2016,2017-03-04,Watford,Southampton,away,Southampton,Watford,85,4,2,3,4,4,3,W,False
+3408,2016,2017-03-04,West Bromwich Albion,Crystal Palace,away,Crystal Palace,West Bromwich Albion,83,2,0,0,2,2,0,W,False
+3409,2016,2017-03-06,West Ham,Chelsea,away,Chelsea,West Ham,49,2,0,1,2,2,1,W,False
+3414,2016,2017-05-15,Chelsea,Watford,home,Chelsea,Watford,48,3,1,4,3,4,3,W,True
+3416,2016,2017-03-11,Everton,West Bromwich Albion,home,Everton,West Bromwich Albion,45,2,0,3,0,3,0,W,True
+3417,2016,2017-03-11,Hull,Swansea,home,Hull,Swansea,77,2,0,2,1,2,1,W,True
+3420,2016,2017-03-18,West Bromwich Albion,Arsenal,home,West Bromwich Albion,Arsenal,74,3,1,3,1,3,1,W,True
+3421,2016,2017-03-18,West Ham,Leicester,away,Leicester,West Ham,6,2,0,2,3,3,2,W,False
+3422,2016,2017-03-19,Tottenham,Southampton,home,Tottenham,Southampton,32,2,0,2,1,2,1,W,True
+3425,2016,2017-03-19,Middlesbrough,Manchester United,away,Manchester United,Middlesbrough,61,2,0,1,3,3,1,W,False
+3427,2016,2017-03-18,Everton,Hull,home,Everton,Hull,77,2,0,4,0,4,0,W,True
+3429,2016,2017-03-18,Bournemouth,Swansea,home,Bournemouth,Swansea,71,2,0,2,0,2,0,W,True
+3431,2016,2017-04-01,Burnley,Tottenham,away,Tottenham,Burnley,76,2,0,0,2,2,0,W,False
+3434,2016,2017-04-01,Leicester,Stoke,home,Leicester,Stoke,46,2,0,2,0,2,0,W,True
+3435,2016,2017-04-01,Liverpool,Everton,home,Liverpool,Everton,59,3,1,3,1,3,1,W,True
+3440,2016,2017-04-05,Arsenal,West Ham,home,Arsenal,West Ham,67,2,0,3,0,3,0,W,True
+3442,2016,2017-04-05,Hull,Middlesbrough,home,Hull,Middlesbrough,32,3,1,4,2,4,2,W,True
+3443,2016,2017-04-04,Watford,West Bromwich Albion,home,Watford,West Bromwich Albion,48,2,0,2,0,2,0,W,True
+3444,2016,2017-04-05,Swansea,Tottenham,away,Tottenham,Swansea,93,3,1,1,3,3,1,W,False
+3445,2016,2017-04-04,Leicester,Sunderland,home,Leicester,Sunderland,77,2,0,2,0,2,0,W,True
+3447,2016,2017-04-05,Southampton,Crystal Palace,home,Southampton,Crystal Palace,84,3,1,3,1,3,1,W,True
+3450,2016,2017-04-08,Bournemouth,Chelsea,away,Chelsea,Bournemouth,19,2,0,1,3,3,1,W,False
+3452,2016,2017-04-09,Sunderland,Manchester United,away,Manchester United,Sunderland,45,2,0,0,3,3,0,W,False
+3453,2016,2017-04-08,Tottenham,Watford,home,Tottenham,Watford,38,2,0,4,0,4,0,W,True
+3457,2016,2017-04-08,Manchester City,Hull,home,Manchester City,Hull,47,2,0,3,1,3,1,W,True
+3458,2016,2017-04-09,Everton,Leicester,home,Everton,Leicester,56,4,2,4,2,4,2,W,True
+3459,2016,2017-04-10,Crystal Palace,Arsenal,home,Crystal Palace,Arsenal,62,2,0,3,0,3,0,W,True
+3460,2016,2017-04-16,Manchester United,Chelsea,home,Manchester United,Chelsea,48,2,0,2,0,2,0,W,True
+3462,2016,2017-04-15,Southampton,Manchester City,away,Manchester City,Southampton,76,2,0,0,3,3,0,W,False
+3463,2016,2017-04-15,Stoke,Hull,home,Stoke,Hull,79,3,1,3,1,3,1,W,True
+3465,2016,2017-04-15,Tottenham,Bournemouth,home,Tottenham,Bournemouth,18,2,0,4,0,4,0,W,True
+3467,2016,2017-04-15,Everton,Burnley,home,Everton,Burnley,73,3,1,3,1,3,1,W,True
+3468,2016,2017-04-15,Crystal Palace,Leicester,away,Leicester,Crystal Palace,51,2,0,2,2,2,2,D,False
+3470,2016,2017-05-16,Arsenal,Sunderland,home,Arsenal,Sunderland,80,2,0,2,0,2,0,W,True
+3471,2016,2017-04-22,Bournemouth,Middlesbrough,home,Bournemouth,Middlesbrough,15,2,0,4,0,4,0,W,True
+3472,2016,2017-04-23,Burnley,Manchester United,away,Manchester United,Burnley,38,2,0,0,2,2,0,W,False
+3473,2016,2017-04-25,Chelsea,Southampton,home,Chelsea,Southampton,53,3,1,4,2,4,2,W,True
+3474,2016,2017-04-22,Hull,Watford,home,Hull,Watford,70,2,0,2,0,2,0,W,True
+3475,2016,2017-05-18,Leicester,Tottenham,away,Tottenham,Leicester,35,2,0,1,6,6,1,W,False
+3477,2016,2017-05-16,Manchester City,West Bromwich Albion,home,Manchester City,West Bromwich Albion,28,2,0,3,1,3,1,W,True
+3478,2016,2017-04-22,Swansea,Stoke,home,Swansea,Stoke,69,2,0,2,0,2,0,W,True
+3480,2016,2017-04-29,Crystal Palace,Burnley,away,Burnley,Crystal Palace,84,2,0,0,2,2,0,W,False
+3481,2016,2017-04-30,Everton,Chelsea,away,Chelsea,Everton,78,2,0,0,3,3,0,W,False
+3487,2016,2017-04-30,Tottenham,Arsenal,home,Tottenham,Arsenal,57,2,0,2,0,2,0,W,True
+3490,2016,2017-05-07,Arsenal,Manchester United,home,Arsenal,Manchester United,56,2,0,2,0,2,0,W,True
+3493,2016,2017-05-08,Chelsea,Middlesbrough,home,Chelsea,Middlesbrough,33,2,0,3,0,3,0,W,True
+3494,2016,2017-05-06,Hull,Sunderland,away,Sunderland,Hull,91,2,0,0,2,2,0,W,False
+3495,2016,2017-05-06,Leicester,Watford,home,Leicester,Watford,57,2,0,3,0,3,0,W,True
+3497,2016,2017-05-06,Manchester City,Crystal Palace,home,Manchester City,Crystal Palace,48,2,0,5,0,5,0,W,True
+3501,2016,2017-05-14,Crystal Palace,Hull,home,Crystal Palace,Hull,33,2,0,4,0,4,0,W,True
+3503,2016,2017-05-13,Manchester City,Leicester,home,Manchester City,Leicester,35,2,0,2,1,2,1,W,True
+3504,2016,2017-05-13,Middlesbrough,Southampton,away,Southampton,Middlesbrough,56,2,0,1,2,2,1,W,False
+3505,2016,2017-05-13,Stoke,Arsenal,away,Arsenal,Stoke,54,2,0,1,4,4,1,W,False
+3506,2016,2017-05-13,Sunderland,Swansea,away,Swansea,Sunderland,46,2,0,0,2,2,0,W,False
+3507,2016,2017-05-14,Tottenham,Manchester United,home,Tottenham,Manchester United,47,2,0,2,1,2,1,W,True
+3509,2016,2017-05-14,West Ham,Liverpool,away,Liverpool,West Ham,56,2,0,0,4,4,0,W,False
+3510,2016,2017-05-21,Arsenal,Everton,home,Arsenal,Everton,26,2,0,3,1,3,1,W,True
+3512,2016,2017-05-21,Chelsea,Sunderland,home,Chelsea,Sunderland,76,3,1,5,1,5,1,W,True
+3513,2016,2017-05-21,Hull,Tottenham,away,Tottenham,Hull,12,2,0,1,7,7,1,W,False
+3515,2016,2017-05-21,Liverpool,Middlesbrough,home,Liverpool,Middlesbrough,50,2,0,3,0,3,0,W,True
+3516,2016,2017-05-21,Manchester United,Crystal Palace,home,Manchester United,Crystal Palace,18,2,0,2,0,2,0,W,True
+3519,2016,2017-05-21,Watford,Manchester City,away,Manchester City,Watford,22,2,0,0,5,5,0,W,False
+4399,2014,2015-05-02,Leicester,Newcastle United,home,Leicester,Newcastle United,16,2,0,3,0,3,0,W,True
+4401,2014,2015-05-02,Aston Villa,Everton,home,Aston Villa,Everton,44,2,0,3,2,3,2,W,True
+4403,2014,2015-05-02,Swansea,Stoke,home,Swansea,Stoke,91,2,0,2,0,2,0,W,True
+4408,2014,2015-05-04,Hull,Arsenal,away,Arsenal,Hull,32,2,0,1,3,3,1,W,False
+4409,2014,2015-05-09,Everton,Sunderland,away,Sunderland,Everton,84,2,0,0,2,2,0,W,False
+4412,2014,2015-05-09,Leicester,Southampton,home,Leicester,Southampton,18,2,0,2,0,2,0,W,True
+4414,2014,2015-05-09,Stoke,Tottenham,home,Stoke,Tottenham,31,2,0,3,0,3,0,W,True
+4416,2014,2015-05-10,Manchester City,Queens Park Rangers,home,Manchester City,Queens Park Rangers,31,2,0,6,0,6,0,W,True
+4419,2014,2015-05-16,Southampton,Aston Villa,home,Southampton,Aston Villa,13,2,0,6,1,6,1,W,True
+4422,2014,2015-05-16,Tottenham,Hull,home,Tottenham,Hull,60,2,0,2,0,2,0,W,True
+4425,2014,2015-05-16,Liverpool,Crystal Palace,away,Crystal Palace,Liverpool,90,3,1,1,3,3,1,W,False
+4426,2014,2015-05-17,Swansea,Manchester City,away,Manchester City,Swansea,35,2,0,2,4,4,2,W,False
+4428,2014,2015-05-18,West Bromwich Albion,Chelsea,home,West Bromwich Albion,Chelsea,46,2,0,3,0,3,0,W,True
+4431,2014,2015-05-24,Chelsea,Sunderland,home,Chelsea,Sunderland,87,3,1,3,1,3,1,W,True
+4433,2014,2015-05-24,Arsenal,West Bromwich Albion,home,Arsenal,West Bromwich Albion,13,2,0,4,1,4,1,W,True
+4436,2014,2015-05-24,Leicester,Queens Park Rangers,home,Leicester,Queens Park Rangers,42,2,0,5,1,5,1,W,True
+4437,2014,2015-05-24,Manchester City,Southampton,home,Manchester City,Southampton,87,2,0,2,0,2,0,W,True
+4438,2014,2015-05-24,Newcastle United,West Ham,home,Newcastle United,West Ham,84,2,0,2,0,2,0,W,True
+4439,2014,2015-05-24,Stoke,Liverpool,home,Stoke,Liverpool,25,2,0,6,1,6,1,W,True
+4440,2014,2015-04-04,Arsenal,Liverpool,home,Arsenal,Liverpool,39,2,0,4,1,4,1,W,True
+4443,2014,2015-04-04,Manchester United,Aston Villa,home,Manchester United,Aston Villa,78,2,0,3,1,3,1,W,True
+4444,2014,2015-04-04,Swansea,Hull,home,Swansea,Hull,36,2,0,3,1,3,1,W,True
+4445,2014,2015-04-04,West Bromwich Albion,Queens Park Rangers,away,Queens Park Rangers,West Bromwich Albion,36,2,0,1,4,4,1,W,False
+4449,2014,2015-04-06,Crystal Palace,Manchester City,home,Crystal Palace,Manchester City,47,2,0,2,1,2,1,W,True
+4452,2014,2015-04-11,Sunderland,Crystal Palace,away,Crystal Palace,Sunderland,50,2,0,1,4,4,1,W,False
+4453,2014,2015-04-11,Southampton,Hull,home,Southampton,Hull,80,2,0,2,0,2,0,W,True
+4459,2014,2015-04-12,Manchester United,Manchester City,home,Manchester United,Manchester City,66,3,1,4,2,4,2,W,True
+4460,2014,2015-04-13,Liverpool,Newcastle United,home,Liverpool,Newcastle United,69,2,0,2,0,2,0,W,True
+4462,2014,2015-04-18,Crystal Palace,West Bromwich Albion,away,West Bromwich Albion,Crystal Palace,52,2,0,0,2,2,0,W,False
+4463,2014,2015-04-18,Leicester,Swansea,home,Leicester,Swansea,88,2,0,2,0,2,0,W,True
+4466,2014,2015-04-19,Manchester City,West Ham,home,Manchester City,West Ham,35,2,0,2,0,2,0,W,True
+4467,2014,2015-04-19,Newcastle United,Tottenham,away,Tottenham,Newcastle United,90,3,1,1,3,3,1,W,False
+4470,2014,2015-04-25,Newcastle United,Swansea,away,Swansea,Newcastle United,70,3,1,2,3,3,2,W,False
+4474,2014,2015-04-25,Crystal Palace,Hull,away,Hull,Crystal Palace,91,2,0,0,2,2,0,W,False
+4475,2014,2015-04-25,Manchester City,Aston Villa,home,Manchester City,Aston Villa,65,2,0,3,2,3,2,W,True
+4476,2014,2015-04-26,Everton,Manchester United,home,Everton,Manchester United,34,2,0,3,0,3,0,W,True
+4479,2014,2015-04-29,Leicester,Chelsea,away,Chelsea,Leicester,82,3,1,1,3,3,1,W,False
+4481,2014,2015-03-01,Arsenal,Everton,home,Arsenal,Everton,88,2,0,2,0,2,0,W,True
+4486,2014,2015-03-04,Manchester City,Leicester,home,Manchester City,Leicester,87,2,0,2,0,2,0,W,True
+4488,2014,2015-03-04,Stoke,Everton,home,Stoke,Everton,83,2,0,2,0,2,0,W,True
+4489,2014,2015-03-04,Tottenham,Swansea,home,Tottenham,Swansea,59,3,1,3,2,3,2,W,True
+4490,2014,2015-03-04,Queens Park Rangers,Arsenal,away,Arsenal,Queens Park Rangers,68,2,0,1,2,2,1,W,False
+4491,2014,2015-03-04,Liverpool,Burnley,home,Liverpool,Burnley,50,2,0,2,0,2,0,W,True
+4492,2014,2015-03-07,Queens Park Rangers,Tottenham,away,Tottenham,Queens Park Rangers,67,2,0,1,2,2,1,W,False
+4493,2014,2015-03-14,Crystal Palace,Queens Park Rangers,home,Crystal Palace,Queens Park Rangers,39,2,0,3,1,3,1,W,True
+4494,2014,2015-03-14,Arsenal,West Ham,home,Arsenal,West Ham,80,2,0,3,0,3,0,W,True
+4497,2014,2015-03-14,Sunderland,Aston Villa,away,Aston Villa,Sunderland,17,2,0,0,4,4,0,W,False
+4500,2014,2015-03-15,Everton,Newcastle United,home,Everton,Newcastle United,55,2,0,3,0,3,0,W,True
+4501,2014,2015-03-15,Manchester United,Tottenham,home,Manchester United,Tottenham,18,2,0,3,0,3,0,W,True
+4503,2014,2015-03-21,Manchester City,West Bromwich Albion,home,Manchester City,West Bromwich Albion,39,2,0,3,0,3,0,W,True
+4505,2014,2015-03-21,Tottenham,Leicester,home,Tottenham,Leicester,12,2,0,4,3,4,3,W,True
+4506,2014,2015-03-21,Southampton,Burnley,home,Southampton,Burnley,57,2,0,2,0,2,0,W,True
+4508,2014,2015-03-21,Newcastle United,Arsenal,away,Arsenal,Newcastle United,27,2,0,1,2,2,1,W,False
+4510,2014,2015-03-22,Liverpool,Manchester United,away,Manchester United,Liverpool,58,2,0,1,2,2,1,W,False
+4511,2014,2015-03-22,Hull,Chelsea,away,Chelsea,Hull,8,2,0,2,3,3,2,W,False
+4513,2014,2015-02-01,Arsenal,Aston Villa,home,Arsenal,Aston Villa,55,2,0,5,0,5,0,W,True
+4522,2014,2015-02-08,Burnley,West Bromwich Albion,home,Burnley,West Bromwich Albion,31,2,0,2,2,2,2,D,True
+4525,2014,2015-02-10,Arsenal,Leicester,home,Arsenal,Leicester,40,2,0,2,1,2,1,W,True
+4526,2014,2015-02-10,Sunderland,Queens Park Rangers,away,Queens Park Rangers,Sunderland,45,2,0,0,2,2,0,W,False
+4527,2014,2015-02-10,Hull,Aston Villa,home,Hull,Aston Villa,73,2,0,2,0,2,0,W,True
+4530,2014,2015-02-11,Stoke,Manchester City,away,Manchester City,Stoke,69,3,1,1,4,4,1,W,False
+4531,2014,2015-02-11,Manchester United,Burnley,home,Manchester United,Burnley,81,3,1,3,1,3,1,W,True
+4534,2014,2015-02-11,West Bromwich Albion,Swansea,home,West Bromwich Albion,Swansea,73,2,0,2,0,2,0,W,True
+4537,2014,2015-02-21,Crystal Palace,Arsenal,away,Arsenal,Crystal Palace,45,2,0,1,2,2,1,W,False
+4541,2014,2015-02-21,Manchester City,Newcastle United,home,Manchester City,Newcastle United,11,2,0,5,0,5,0,W,True
+4542,2014,2015-02-22,Tottenham,West Ham,away,West Ham,Tottenham,61,2,0,2,2,2,2,D,False
+4544,2014,2015-02-22,Southampton,Liverpool,away,Liverpool,Southampton,72,2,0,0,2,2,0,W,False
+4545,2014,2015-02-28,West Ham,Crystal Palace,away,Crystal Palace,West Ham,50,2,0,1,3,3,1,W,False
+4550,2014,2015-02-28,Manchester United,Sunderland,home,Manchester United,Sunderland,83,2,0,2,0,2,0,W,True
+4552,2014,2015-01-01,Manchester City,Sunderland,home,Manchester City,Sunderland,65,2,0,3,2,3,2,W,True
+4555,2014,2015-01-01,Southampton,Arsenal,home,Southampton,Arsenal,55,2,0,2,0,2,0,W,True
+4558,2014,2015-01-01,Hull,Everton,home,Hull,Everton,42,2,0,2,0,2,0,W,True
+4559,2014,2015-01-01,Liverpool,Leicester,home,Liverpool,Leicester,39,2,0,2,2,2,2,D,True
+4560,2014,2015-01-01,Tottenham,Chelsea,home,Tottenham,Chelsea,48,3,1,5,3,5,3,W,True
+4565,2014,2015-01-10,Chelsea,Newcastle United,home,Chelsea,Newcastle United,58,2,0,2,0,2,0,W,True
+4569,2014,2015-01-11,Arsenal,Stoke,home,Arsenal,Stoke,32,2,0,3,0,3,0,W,True
+4571,2014,2015-01-17,Aston Villa,Liverpool,away,Liverpool,Aston Villa,78,2,0,0,2,2,0,W,False
+4572,2014,2015-01-17,Burnley,Crystal Palace,home,Burnley,Crystal Palace,15,2,0,2,3,2,3,L,True
+4574,2014,2015-01-17,Queens Park Rangers,Manchester United,away,Manchester United,Queens Park Rangers,93,2,0,0,2,2,0,W,False
+4575,2014,2015-01-17,Swansea,Chelsea,away,Chelsea,Swansea,19,2,0,0,5,5,0,W,False
+4578,2014,2015-01-18,West Ham,Hull,home,West Ham,Hull,68,2,0,3,0,3,0,W,True
+4579,2014,2015-01-18,Manchester City,Arsenal,away,Arsenal,Manchester City,66,2,0,0,2,2,0,W,False
+4581,2014,2015-01-31,Hull,Newcastle United,away,Newcastle United,Hull,49,2,0,0,3,3,0,W,False
+4582,2014,2015-01-31,Liverpool,West Ham,home,Liverpool,West Ham,79,2,0,2,0,2,0,W,True
+4583,2014,2015-01-31,Manchester United,Leicester,home,Manchester United,Leicester,31,2,0,3,1,3,1,W,True
+4584,2014,2015-01-31,Stoke,Queens Park Rangers,home,Stoke,Queens Park Rangers,33,2,0,3,1,3,1,W,True
+4585,2014,2015-01-31,Sunderland,Burnley,home,Sunderland,Burnley,33,2,0,2,0,2,0,W,True
+4586,2014,2015-01-31,West Bromwich Albion,Tottenham,away,Tottenham,West Bromwich Albion,14,2,0,0,3,3,0,W,False
+4590,2014,2014-12-02,Leicester,Liverpool,away,Liverpool,Leicester,82,3,1,1,3,3,1,W,False
+4592,2014,2014-12-02,Swansea,Queens Park Rangers,home,Swansea,Queens Park Rangers,82,2,0,2,0,2,0,W,True
+4595,2014,2014-12-03,Chelsea,Tottenham,home,Chelsea,Tottenham,21,2,0,3,0,3,0,W,True
+4597,2014,2014-12-03,Sunderland,Manchester City,away,Manchester City,Sunderland,54,3,1,1,4,4,1,W,False
+4599,2014,2014-12-06,Newcastle United,Chelsea,home,Newcastle United,Chelsea,77,2,0,2,1,2,1,W,True
+4600,2014,2014-12-06,Queens Park Rangers,Burnley,home,Queens Park Rangers,Burnley,73,2,0,2,0,2,0,W,True
+4601,2014,2014-12-06,Stoke,Arsenal,home,Stoke,Arsenal,34,2,0,3,2,3,2,W,True
+4606,2014,2014-12-07,West Ham,Swansea,home,West Ham,Swansea,86,3,1,3,1,3,1,W,True
+4610,2014,2014-12-13,Chelsea,Hull,home,Chelsea,Hull,67,2,0,2,0,2,0,W,True
+4615,2014,2014-12-13,Arsenal,Newcastle United,home,Arsenal,Newcastle United,53,2,0,4,1,4,1,W,True
+4616,2014,2014-12-14,Manchester United,Liverpool,home,Manchester United,Liverpool,39,2,0,3,0,3,0,W,True
+4618,2014,2014-12-15,Everton,Queens Park Rangers,home,Everton,Queens Park Rangers,42,2,0,3,1,3,1,W,True
+4619,2014,2014-12-20,Manchester City,Crystal Palace,home,Manchester City,Crystal Palace,60,2,0,3,0,3,0,W,True
+4620,2014,2014-12-20,West Ham,Leicester,home,West Ham,Leicester,55,2,0,2,0,2,0,W,True
+4622,2014,2014-12-20,Queens Park Rangers,West Bromwich Albion,away,West Bromwich Albion,Queens Park Rangers,19,2,0,3,2,2,3,L,False
+4623,2014,2014-12-20,Southampton,Everton,home,Southampton,Everton,64,2,0,3,0,3,0,W,True
+4628,2014,2014-12-22,Stoke,Chelsea,away,Chelsea,Stoke,77,2,0,0,2,2,0,W,False
+4629,2014,2014-12-26,Chelsea,West Ham,home,Chelsea,West Ham,61,2,0,2,0,2,0,W,True
+4632,2014,2014-12-26,Sunderland,Hull,away,Hull,Sunderland,95,3,1,1,3,3,1,W,False
+4633,2014,2014-12-26,West Bromwich Albion,Manchester City,away,Manchester City,West Bromwich Albion,12,2,0,1,3,3,1,W,False
+4635,2014,2014-12-26,Crystal Palace,Southampton,away,Southampton,Crystal Palace,47,2,0,1,3,3,1,W,False
+4636,2014,2014-12-26,Manchester United,Newcastle United,home,Manchester United,Newcastle United,35,2,0,3,1,3,1,W,True
+4638,2014,2014-12-26,Arsenal,Queens Park Rangers,home,Arsenal,Queens Park Rangers,64,2,0,2,1,2,1,W,True
+4643,2014,2014-12-28,Manchester City,Burnley,home,Manchester City,Burnley,33,2,0,2,2,2,2,D,True
+4645,2014,2014-12-28,West Ham,Arsenal,away,Arsenal,West Ham,43,2,0,1,2,2,1,W,False
+4646,2014,2014-12-28,Stoke,West Bromwich Albion,home,Stoke,West Bromwich Albion,65,2,0,2,0,2,0,W,True
+4647,2014,2014-12-28,Newcastle United,Everton,home,Newcastle United,Everton,67,3,1,3,2,3,2,W,True
+4648,2014,2014-12-29,Liverpool,Swansea,home,Liverpool,Swansea,50,2,0,4,1,4,1,W,True
+4650,2014,2014-11-01,Stoke,West Ham,home,Stoke,West Ham,55,2,0,2,2,2,2,D,True
+4652,2014,2014-11-01,Arsenal,Burnley,home,Arsenal,Burnley,71,2,0,3,0,3,0,W,True
+4658,2014,2014-11-03,Crystal Palace,Sunderland,away,Sunderland,Crystal Palace,94,3,1,1,3,3,1,W,False
+4663,2014,2014-11-08,Southampton,Leicester,home,Southampton,Leicester,79,2,0,2,0,2,0,W,True
+4666,2014,2014-11-09,Tottenham,Stoke,away,Stoke,Tottenham,32,2,0,1,2,2,1,W,False
+4667,2014,2014-11-09,West Bromwich Albion,Newcastle United,away,Newcastle United,West Bromwich Albion,61,2,0,0,2,2,0,W,False
+4669,2014,2014-11-22,Stoke,Burnley,away,Burnley,Stoke,12,2,0,1,2,2,1,W,False
+4674,2014,2014-11-22,Chelsea,West Bromwich Albion,home,Chelsea,West Bromwich Albion,24,2,0,2,0,2,0,W,True
+4675,2014,2014-11-22,Arsenal,Manchester United,away,Manchester United,Arsenal,84,2,0,1,2,2,1,W,False
+4676,2014,2014-11-23,Crystal Palace,Liverpool,home,Crystal Palace,Liverpool,80,3,1,3,1,3,1,W,True
+4683,2014,2014-11-29,Manchester United,Hull,home,Manchester United,Hull,41,2,0,3,0,3,0,W,True
+4687,2014,2014-11-30,Southampton,Manchester City,away,Manchester City,Southampton,79,2,0,0,3,3,0,W,False
+4689,2014,2014-10-04,Hull,Crystal Palace,home,Hull,Crystal Palace,88,2,0,2,0,2,0,W,True
+4692,2014,2014-10-04,Sunderland,Stoke,home,Sunderland,Stoke,78,3,1,3,1,3,1,W,True
+4694,2014,2014-10-04,Aston Villa,Manchester City,away,Manchester City,Aston Villa,87,2,0,0,2,2,0,W,False
+4697,2014,2014-10-05,Chelsea,Arsenal,home,Chelsea,Arsenal,77,2,0,2,0,2,0,W,True
+4698,2014,2014-10-05,West Ham,Queens Park Rangers,home,West Ham,Queens Park Rangers,58,2,0,2,0,2,0,W,True
+4699,2014,2014-10-18,Manchester City,Tottenham,home,Manchester City,Tottenham,67,3,1,4,1,4,1,W,True
+4700,2014,2014-10-18,Everton,Aston Villa,home,Everton,Aston Villa,47,2,0,3,0,3,0,W,True
+4701,2014,2014-10-18,Burnley,West Ham,away,West Ham,Burnley,53,2,0,1,3,3,1,W,False
+4702,2014,2014-10-18,Crystal Palace,Chelsea,away,Chelsea,Crystal Palace,50,2,0,1,2,2,1,W,False
+4703,2014,2014-10-18,Southampton,Sunderland,home,Southampton,Sunderland,17,2,0,8,0,8,0,W,True
+4709,2014,2014-10-25,West Ham,Manchester City,home,West Ham,Manchester City,74,2,0,2,1,2,1,W,True
+4711,2014,2014-10-25,Sunderland,Arsenal,away,Arsenal,Sunderland,91,2,0,0,2,2,0,W,False
+4712,2014,2014-10-25,West Bromwich Albion,Crystal Palace,away,Crystal Palace,West Bromwich Albion,45,2,0,2,2,2,2,D,False
+4714,2014,2014-10-25,Swansea,Leicester,home,Swansea,Leicester,56,2,0,2,0,2,0,W,True
+4716,2014,2014-10-26,Burnley,Everton,away,Everton,Burnley,85,3,1,1,3,3,1,W,False
+4718,2014,2014-10-27,Queens Park Rangers,Aston Villa,home,Queens Park Rangers,Aston Villa,68,2,0,2,0,2,0,W,True
+4720,2014,2014-09-13,Chelsea,Swansea,home,Chelsea,Swansea,66,3,1,4,2,4,2,W,True
+4722,2014,2014-09-13,Southampton,Newcastle United,home,Southampton,Newcastle United,18,2,0,4,0,4,0,W,True
+4725,2014,2014-09-13,West Bromwich Albion,Everton,away,Everton,West Bromwich Albion,65,2,0,0,2,2,0,W,False
+4727,2014,2014-09-14,Manchester United,Queens Park Rangers,home,Manchester United,Queens Park Rangers,35,2,0,4,0,4,0,W,True
+4731,2014,2014-09-20,Aston Villa,Arsenal,away,Arsenal,Aston Villa,33,2,0,0,3,3,0,W,False
+4733,2014,2014-09-20,Newcastle United,Hull,away,Hull,Newcastle United,67,2,0,2,2,2,2,D,False
+4734,2014,2014-09-20,West Ham,Liverpool,home,West Ham,Liverpool,6,2,0,3,1,3,1,W,True
+4736,2014,2014-09-21,Leicester,Manchester United,away,Manchester United,Leicester,15,2,0,5,3,3,5,L,False
+4736,2014,2014-09-21,Leicester,Manchester United,home,Leicester,Manchester United,82,5,3,5,3,5,3,W,True
+4738,2014,2014-09-21,Everton,Crystal Palace,away,Crystal Palace,Everton,68,3,1,2,3,3,2,W,False
+4740,2014,2014-09-27,Manchester United,West Ham,home,Manchester United,West Ham,21,2,0,2,1,2,1,W,True
+4742,2014,2014-09-27,Chelsea,Aston Villa,home,Chelsea,Aston Villa,58,2,0,3,0,3,0,W,True
+4743,2014,2014-09-27,Crystal Palace,Leicester,home,Crystal Palace,Leicester,53,2,0,2,0,2,0,W,True
+4744,2014,2014-09-27,Hull,Manchester City,away,Manchester City,Hull,10,2,0,2,4,4,2,W,False
+4747,2014,2014-09-28,West Bromwich Albion,Burnley,home,West Bromwich Albion,Burnley,45,2,0,4,0,4,0,W,True
+4757,2014,2014-08-17,Newcastle United,Manchester City,away,Manchester City,Newcastle United,91,2,0,0,2,2,0,W,False
+4758,2014,2014-08-18,Burnley,Chelsea,away,Chelsea,Burnley,33,3,1,1,3,3,1,W,False
+4760,2014,2014-08-23,Chelsea,Leicester,home,Chelsea,Leicester,76,2,0,2,0,2,0,W,True
+4761,2014,2014-08-23,Crystal Palace,West Ham,away,West Ham,Crystal Palace,36,2,0,1,3,3,1,W,False
+4764,2014,2014-08-23,Everton,Arsenal,home,Everton,Arsenal,44,2,0,2,2,2,2,D,True
+4766,2014,2014-08-24,Tottenham,Queens Park Rangers,home,Tottenham,Queens Park Rangers,29,2,0,4,0,4,0,W,True
+4768,2014,2014-08-25,Manchester City,Liverpool,home,Manchester City,Liverpool,54,2,0,3,1,3,1,W,True
+4773,2014,2014-08-30,Swansea,West Bromwich Albion,home,Swansea,West Bromwich Albion,23,2,0,3,0,3,0,W,True
+4774,2014,2014-08-30,West Ham,Southampton,away,Southampton,West Ham,82,3,1,1,3,3,1,W,False
+4775,2014,2014-08-30,Everton,Chelsea,away,Chelsea,Everton,2,2,0,3,6,6,3,W,False
+4776,2014,2014-08-31,Aston Villa,Hull,home,Aston Villa,Hull,35,2,0,2,1,2,1,W,True
+4777,2014,2014-08-31,Tottenham,Liverpool,away,Liverpool,Tottenham,48,2,0,0,3,3,0,W,False
+7123,2017,2017-08-12,Chelsea,Burnley,away,Burnley,Chelsea,38,2,0,2,3,3,2,W,False
+7124,2017,2017-08-12,Crystal Palace,Huddersfield,away,Huddersfield,Crystal Palace,25,2,0,0,3,3,0,W,False
+7126,2017,2017-08-12,Brighton,Manchester City,away,Manchester City,Brighton,74,2,0,0,2,2,0,W,False
+7127,2017,2017-08-13,Newcastle United,Tottenham,away,Tottenham,Newcastle United,69,2,0,0,2,2,0,W,False
+7128,2017,2017-08-13,Manchester United,West Ham,home,Manchester United,West Ham,52,2,0,4,0,4,0,W,True
+7129,2017,2017-08-19,Swansea,Manchester United,away,Manchester United,Swansea,79,2,0,0,4,4,0,W,False
+7130,2017,2017-08-19,Southampton,West Ham,home,Southampton,West Ham,37,2,0,3,2,3,2,W,True
+7131,2017,2017-08-19,Bournemouth,Watford,away,Watford,Bournemouth,85,2,0,0,2,2,0,W,False
+7133,2017,2017-08-19,Leicester,Brighton,home,Leicester,Brighton,53,2,0,2,0,2,0,W,True
+7140,2017,2017-08-27,Chelsea,Everton,home,Chelsea,Everton,39,2,0,2,0,2,0,W,True
+7141,2017,2017-08-26,Crystal Palace,Swansea,away,Swansea,Crystal Palace,47,2,0,0,2,2,0,W,False
+7142,2017,2017-08-26,Newcastle United,West Ham,home,Newcastle United,West Ham,71,2,0,3,0,3,0,W,True
+7145,2017,2017-08-26,Manchester United,Leicester,home,Manchester United,Leicester,81,2,0,2,0,2,0,W,True
+7148,2017,2017-08-27,Liverpool,Arsenal,home,Liverpool,Arsenal,39,2,0,4,0,4,0,W,True
+7149,2017,2017-09-09,Manchester City,Liverpool,home,Manchester City,Liverpool,50,2,0,5,0,5,0,W,True
+7150,2017,2017-09-09,Southampton,Watford,away,Watford,Southampton,65,2,0,0,2,2,0,W,False
+7151,2017,2017-09-09,Leicester,Chelsea,away,Chelsea,Leicester,49,2,0,1,2,2,1,W,False
+7152,2017,2017-09-09,Arsenal,Bournemouth,home,Arsenal,Bournemouth,26,2,0,3,0,3,0,W,True
+7153,2017,2017-09-09,Brighton,West Bromwich Albion,home,Brighton,West Bromwich Albion,47,2,0,3,1,3,1,W,True
+7154,2017,2017-09-09,Everton,Tottenham,away,Tottenham,Everton,41,2,0,0,3,3,0,W,False
+7158,2017,2017-09-11,West Ham,Huddersfield,home,West Ham,Huddersfield,76,2,0,2,0,2,0,W,True
+7164,2017,2017-09-16,Watford,Manchester City,away,Manchester City,Watford,30,2,0,0,6,6,0,W,False
+7168,2017,2017-09-17,Manchester United,Everton,home,Manchester United,Everton,82,2,0,4,0,4,0,W,True
+7169,2017,2017-09-23,West Ham,Tottenham,away,Tottenham,West Ham,37,2,0,2,3,3,2,W,False
+7170,2017,2017-09-23,Stoke,Chelsea,away,Chelsea,Stoke,29,2,0,0,4,4,0,W,False
+7173,2017,2017-09-23,Manchester City,Crystal Palace,home,Manchester City,Crystal Palace,50,2,0,5,0,5,0,W,True
+7176,2017,2017-09-23,Leicester,Liverpool,away,Liverpool,Leicester,22,2,0,2,3,3,2,W,False
+7178,2017,2017-09-25,Arsenal,West Bromwich Albion,home,Arsenal,West Bromwich Albion,66,2,0,2,0,2,0,W,True
+7179,2017,2017-09-30,Huddersfield,Tottenham,away,Tottenham,Huddersfield,15,2,0,0,4,4,0,W,False
+7180,2017,2017-09-30,Manchester United,Crystal Palace,home,Manchester United,Crystal Palace,34,2,0,4,0,4,0,W,True
+7182,2017,2017-09-30,West Bromwich Albion,Watford,home,West Bromwich Albion,Watford,20,2,0,2,2,2,2,D,True
+7186,2017,2017-10-01,Arsenal,Brighton,home,Arsenal,Brighton,55,2,0,2,0,2,0,W,True
+7194,2017,2017-10-14,Manchester City,Stoke,home,Manchester City,Stoke,18,2,0,7,2,7,2,W,True
+7196,2017,2017-10-14,Swansea,Huddersfield,home,Swansea,Huddersfield,47,2,0,2,0,2,0,W,True
+7199,2017,2017-10-21,Chelsea,Watford,home,Chelsea,Watford,94,4,2,4,2,4,2,W,True
+7200,2017,2017-10-22,Everton,Arsenal,away,Arsenal,Everton,73,3,1,2,5,5,2,W,False
+7201,2017,2017-10-21,Huddersfield,Manchester United,home,Huddersfield,Manchester United,32,2,0,2,1,2,1,W,True
+7202,2017,2017-10-21,Manchester City,Burnley,home,Manchester City,Burnley,72,2,0,3,0,3,0,W,True
+7205,2017,2017-10-21,Stoke,Bournemouth,away,Bournemouth,Stoke,17,2,0,1,2,2,1,W,False
+7206,2017,2017-10-21,Swansea,Leicester,away,Leicester,Swansea,48,2,0,1,2,2,1,W,False
+7207,2017,2017-10-22,Tottenham,Liverpool,home,Tottenham,Liverpool,11,2,0,4,1,4,1,W,True
+7208,2017,2017-10-20,West Ham,Brighton,away,Brighton,West Ham,46,2,0,0,3,3,0,W,False
+7213,2017,2017-10-28,Crystal Palace,West Ham,away,West Ham,Crystal Palace,42,2,0,2,2,2,2,D,False
+7214,2017,2017-10-29,Leicester,Everton,home,Leicester,Everton,28,2,0,2,0,2,0,W,True
+7215,2017,2017-10-28,West Bromwich Albion,Manchester City,away,Manchester City,West Bromwich Albion,63,3,1,2,3,3,2,W,False
+7217,2017,2017-10-28,Liverpool,Huddersfield,home,Liverpool,Huddersfield,57,2,0,3,0,3,0,W,True
+7220,2017,2017-11-05,Everton,Watford,away,Watford,Everton,63,2,0,3,2,2,3,L,False
+7227,2017,2017-11-04,West Ham,Liverpool,away,Liverpool,West Ham,23,2,0,1,4,4,1,W,False
+7228,2017,2017-11-05,Manchester City,Arsenal,home,Manchester City,Arsenal,49,2,0,3,1,3,1,W,True
+7229,2017,2017-11-18,West Bromwich Albion,Chelsea,away,Chelsea,West Bromwich Albion,22,2,0,0,4,4,0,W,False
+7230,2017,2017-11-19,Watford,West Ham,home,Watford,West Ham,63,2,0,2,0,2,0,W,True
+7231,2017,2017-11-18,Liverpool,Southampton,home,Liverpool,Southampton,40,2,0,3,0,3,0,W,True
+7232,2017,2017-11-18,Manchester United,Newcastle United,home,Manchester United,Newcastle United,53,3,1,4,1,4,1,W,True
+7233,2017,2017-11-18,Burnley,Swansea,home,Burnley,Swansea,39,2,0,2,0,2,0,W,True
+7235,2017,2017-11-18,Leicester,Manchester City,away,Manchester City,Leicester,48,2,0,0,2,2,0,W,False
+7236,2017,2017-11-18,Arsenal,Tottenham,home,Arsenal,Tottenham,40,2,0,2,0,2,0,W,True
+7237,2017,2017-11-18,Bournemouth,Huddersfield,home,Bournemouth,Huddersfield,30,2,0,4,0,4,0,W,True
+7241,2017,2017-11-26,Southampton,Everton,home,Southampton,Everton,57,3,1,4,1,4,1,W,True
+7242,2017,2017-11-25,Newcastle United,Watford,away,Watford,Newcastle United,45,2,0,0,3,3,0,W,False
+7249,2017,2017-11-28,Leicester,Tottenham,home,Leicester,Tottenham,45,2,0,2,1,2,1,W,True
+7251,2017,2017-11-28,Watford,Manchester United,away,Manchester United,Watford,24,2,0,2,4,4,2,W,False
+7252,2017,2017-11-28,West Bromwich Albion,Newcastle United,home,West Bromwich Albion,Newcastle United,55,2,0,2,2,2,2,D,True
+7253,2017,2017-11-29,Bournemouth,Burnley,away,Burnley,Bournemouth,64,2,0,1,2,2,1,W,False
+7254,2017,2017-11-29,Arsenal,Huddersfield,home,Arsenal,Huddersfield,67,2,0,5,0,5,0,W,True
+7256,2017,2017-11-29,Everton,West Ham,home,Everton,West Ham,27,2,0,4,0,4,0,W,True
+7258,2017,2017-11-29,Stoke,Liverpool,away,Liverpool,Stoke,76,2,0,0,3,3,0,W,False
+7259,2017,2017-12-02,Chelsea,Newcastle United,home,Chelsea,Newcastle United,73,3,1,3,1,3,1,W,True
+7260,2017,2017-12-02,Everton,Huddersfield,home,Everton,Huddersfield,72,2,0,2,0,2,0,W,True
+7266,2017,2017-12-02,Arsenal,Manchester United,away,Manchester United,Arsenal,10,2,0,1,3,3,1,W,False
+7268,2017,2017-12-02,Brighton,Liverpool,away,Liverpool,Brighton,30,2,0,1,5,5,1,W,False
+7270,2017,2017-12-09,Tottenham,Stoke,home,Tottenham,Stoke,52,2,0,5,1,5,1,W,True
+7274,2017,2017-12-09,Huddersfield,Brighton,home,Huddersfield,Brighton,42,2,0,2,0,2,0,W,True
+7280,2017,2017-12-12,Huddersfield,Chelsea,away,Chelsea,Huddersfield,42,2,0,1,3,3,1,W,False
+7281,2017,2017-12-13,Swansea,Manchester City,away,Manchester City,Swansea,33,2,0,0,4,4,0,W,False
+7285,2017,2017-12-13,Southampton,Leicester,away,Leicester,Southampton,31,2,0,1,4,4,1,W,False
+7288,2017,2017-12-13,Tottenham,Brighton,home,Tottenham,Brighton,86,2,0,2,0,2,0,W,True
+7290,2017,2017-12-17,Bournemouth,Liverpool,away,Liverpool,Bournemouth,25,2,0,0,4,4,0,W,False
+7293,2017,2017-12-18,Everton,Swansea,home,Everton,Swansea,72,3,1,3,1,3,1,W,True
+7294,2017,2017-12-16,Leicester,Crystal Palace,away,Crystal Palace,Leicester,39,2,0,0,3,3,0,W,False
+7295,2017,2017-12-17,West Bromwich Albion,Manchester United,away,Manchester United,West Bromwich Albion,34,2,0,1,2,2,1,W,False
+7296,2017,2017-12-16,Watford,Huddersfield,away,Huddersfield,Watford,22,2,0,1,4,4,1,W,False
+7297,2017,2017-12-16,Stoke,West Ham,away,West Ham,Stoke,74,2,0,0,3,3,0,W,False
+7298,2017,2017-12-16,Manchester City,Tottenham,home,Manchester City,Tottenham,69,2,0,4,1,4,1,W,True
+7300,2017,2017-12-23,West Ham,Newcastle United,away,Newcastle United,West Ham,60,3,1,2,3,3,2,W,False
+7301,2017,2017-12-22,Arsenal,Liverpool,away,Liverpool,Arsenal,51,2,0,3,3,3,3,D,False
+7304,2017,2017-12-23,Burnley,Tottenham,away,Tottenham,Burnley,68,2,0,0,3,3,0,W,False
+7306,2017,2017-12-23,Stoke,West Bromwich Albion,home,Stoke,West Bromwich Albion,46,2,0,3,1,3,1,W,True
+7308,2017,2017-12-23,Manchester City,Bournemouth,home,Manchester City,Bournemouth,52,2,0,4,0,4,0,W,True
+7310,2017,2017-12-26,Chelsea,Brighton,home,Chelsea,Brighton,59,2,0,2,0,2,0,W,True
+7311,2017,2017-12-28,Crystal Palace,Arsenal,away,Arsenal,Crystal Palace,65,3,1,2,3,3,2,W,False
+7313,2017,2017-12-26,Liverpool,Swansea,home,Liverpool,Swansea,51,2,0,5,0,5,0,W,True
+7314,2017,2017-12-26,Manchester United,Burnley,away,Burnley,Manchester United,35,2,0,2,2,2,2,D,False
+7316,2017,2017-12-26,Tottenham,Southampton,home,Tottenham,Southampton,38,2,0,5,2,5,2,W,True
+7320,2017,2017-12-30,Chelsea,Stoke,home,Chelsea,Stoke,8,2,0,5,0,5,0,W,True
+7333,2017,2018-01-01,Everton,Manchester United,away,Manchester United,Everton,80,2,0,0,2,2,0,W,False
+7334,2017,2018-01-01,Leicester,Huddersfield,home,Leicester,Huddersfield,59,2,0,3,0,3,0,W,True
+7335,2017,2018-01-02,Manchester City,Watford,home,Manchester City,Watford,12,2,0,3,1,3,1,W,True
+7338,2017,2018-01-02,Swansea,Tottenham,away,Tottenham,Swansea,88,2,0,0,2,2,0,W,False
+7342,2017,2018-01-13,Huddersfield,West Ham,away,West Ham,Huddersfield,55,3,1,1,4,4,1,W,False
+7343,2017,2018-01-14,Liverpool,Manchester City,home,Liverpool,Manchester City,61,3,1,4,3,4,3,W,True
+7344,2017,2018-01-15,Manchester United,Stoke,home,Manchester United,Stoke,37,2,0,3,0,3,0,W,True
+7346,2017,2018-01-13,Tottenham,Everton,home,Tottenham,Everton,46,2,0,4,0,4,0,W,True
+7347,2017,2018-01-13,Watford,Southampton,away,Southampton,Watford,43,2,0,2,2,2,2,D,False
+7348,2017,2018-01-13,West Bromwich Albion,Brighton,home,West Bromwich Albion,Brighton,54,2,0,2,0,2,0,W,True
+7349,2017,2018-01-20,Arsenal,Crystal Palace,home,Arsenal,Crystal Palace,9,2,0,4,1,4,1,W,True
+7350,2017,2018-01-20,Brighton,Chelsea,away,Chelsea,Brighton,5,2,0,0,4,4,0,W,False
+7353,2017,2018-01-20,Leicester,Watford,home,Leicester,Watford,90,2,0,2,0,2,0,W,True
+7354,2017,2018-01-20,Manchester City,Newcastle United,home,Manchester City,Newcastle United,62,2,0,3,1,3,1,W,True
+7356,2017,2018-01-20,Stoke,Huddersfield,home,Stoke,Huddersfield,68,2,0,2,0,2,0,W,True
+7359,2017,2018-01-30,Huddersfield,Liverpool,away,Liverpool,Huddersfield,45,2,0,0,3,3,0,W,False
+7361,2017,2018-01-30,Swansea,Arsenal,home,Swansea,Arsenal,85,3,1,3,1,3,1,W,True
+7362,2017,2018-01-31,Chelsea,Bournemouth,away,Bournemouth,Chelsea,63,2,0,0,3,3,0,W,False
+7365,2017,2018-01-31,Everton,Leicester,home,Everton,Leicester,38,2,0,2,1,2,1,W,True
+7366,2017,2018-01-31,Manchester City,West Bromwich Albion,home,Manchester City,West Bromwich Albion,67,2,0,3,0,3,0,W,True
+7367,2017,2018-01-31,Tottenham,Manchester United,home,Tottenham,Manchester United,27,2,0,2,0,2,0,W,True
+7369,2017,2018-02-03,Arsenal,Everton,home,Arsenal,Everton,13,2,0,5,1,5,1,W,True
+7371,2017,2018-02-03,Brighton,West Ham,home,Brighton,West Ham,74,3,1,3,1,3,1,W,True
+7376,2017,2018-02-03,Manchester United,Huddersfield,home,Manchester United,Huddersfield,67,2,0,2,0,2,0,W,True
+7377,2017,2018-02-05,Watford,Chelsea,home,Watford,Chelsea,87,3,1,4,1,4,1,W,True
+7378,2017,2018-02-03,West Bromwich Albion,Southampton,away,Southampton,West Bromwich Albion,54,3,1,2,3,3,2,W,False
+7379,2017,2018-02-12,Chelsea,West Bromwich Albion,home,Chelsea,West Bromwich Albion,62,2,0,3,0,3,0,W,True
+7380,2017,2018-02-10,Everton,Crystal Palace,home,Everton,Crystal Palace,50,2,0,3,1,3,1,W,True
+7381,2017,2018-02-11,Huddersfield,Bournemouth,home,Huddersfield,Bournemouth,65,3,1,4,1,4,1,W,True
+7382,2017,2018-02-10,Manchester City,Leicester,home,Manchester City,Leicester,52,3,1,5,1,5,1,W,True
+7384,2017,2018-02-11,Southampton,Liverpool,away,Liverpool,Southampton,41,2,0,0,2,2,0,W,False
+7388,2017,2018-02-10,West Ham,Watford,home,West Ham,Watford,77,2,0,2,0,2,0,W,True
+7389,2017,2018-03-01,Arsenal,Manchester City,away,Manchester City,Arsenal,27,2,0,0,3,3,0,W,False
+7390,2017,2018-02-24,Bournemouth,Newcastle United,away,Newcastle United,Bournemouth,45,2,0,2,2,2,2,D,False
+7391,2017,2018-02-24,Brighton,Swansea,home,Brighton,Swansea,68,2,0,4,1,4,1,W,True
+7394,2017,2018-02-24,West Bromwich Albion,Huddersfield,away,Huddersfield,West Bromwich Albion,55,2,0,1,2,2,1,W,False
+7395,2017,2018-02-24,Liverpool,West Ham,home,Liverpool,West Ham,50,2,0,4,1,4,1,W,True
+7399,2017,2018-03-04,Brighton,Arsenal,home,Brighton,Arsenal,25,2,0,2,1,2,1,W,True
+7401,2017,2018-03-05,Crystal Palace,Manchester United,home,Crystal Palace,Manchester United,47,2,0,2,3,2,3,L,True
+7403,2017,2018-03-03,Liverpool,Newcastle United,home,Liverpool,Newcastle United,54,2,0,2,0,2,0,W,True
+7406,2017,2018-03-03,Swansea,West Ham,home,Swansea,West Ham,31,2,0,4,1,4,1,W,True
+7407,2017,2018-03-03,Tottenham,Huddersfield,home,Tottenham,Huddersfield,53,2,0,2,0,2,0,W,True
+7409,2017,2018-03-11,Arsenal,Watford,home,Arsenal,Watford,58,2,0,3,0,3,0,W,True
+7410,2017,2018-03-11,Bournemouth,Tottenham,away,Tottenham,Bournemouth,86,3,1,1,4,4,1,W,False
+7411,2017,2018-03-10,Chelsea,Crystal Palace,home,Chelsea,Crystal Palace,31,2,0,2,1,2,1,W,True
+7412,2017,2018-03-10,Everton,Brighton,home,Everton,Brighton,75,2,0,2,0,2,0,W,True
+7414,2017,2018-03-10,Manchester United,Liverpool,home,Manchester United,Liverpool,23,2,0,2,1,2,1,W,True
+7415,2017,2018-03-10,Newcastle United,Southampton,home,Newcastle United,Southampton,28,2,0,3,0,3,0,W,True
+7416,2017,2018-03-12,Stoke,Manchester City,away,Manchester City,Stoke,49,2,0,0,2,2,0,W,False
+7417,2017,2018-03-10,West Bromwich Albion,Leicester,away,Leicester,West Bromwich Albion,75,3,1,1,4,4,1,W,False
+7418,2017,2018-03-10,West Ham,Burnley,away,Burnley,West Ham,69,2,0,0,3,3,0,W,False
+7421,2017,2018-03-17,Huddersfield,Crystal Palace,away,Crystal Palace,Huddersfield,67,2,0,0,2,2,0,W,False
+7422,2017,2018-05-09,Leicester,Arsenal,home,Leicester,Arsenal,89,3,1,3,1,3,1,W,True
+7423,2017,2018-03-17,Liverpool,Watford,home,Liverpool,Watford,42,2,0,5,0,5,0,W,True
+7424,2017,2018-05-09,Manchester City,Brighton,home,Manchester City,Brighton,71,3,1,3,1,3,1,W,True
+7429,2017,2018-04-01,Arsenal,Stoke,home,Arsenal,Stoke,85,2,0,3,0,3,0,W,True
+7430,2017,2018-03-31,Brighton,Leicester,away,Leicester,Brighton,95,2,0,0,2,2,0,W,False
+7431,2017,2018-04-01,Chelsea,Tottenham,away,Tottenham,Chelsea,65,3,1,1,3,3,1,W,False
+7433,2017,2018-03-31,Everton,Manchester City,away,Manchester City,Everton,11,2,0,1,3,3,1,W,False
+7434,2017,2018-03-31,West Ham,Southampton,home,West Ham,Southampton,16,2,0,3,0,3,0,W,True
+7435,2017,2018-03-31,Manchester United,Swansea,home,Manchester United,Swansea,19,2,0,2,0,2,0,W,True
+7438,2017,2018-03-31,West Bromwich Albion,Burnley,away,Burnley,West Bromwich Albion,72,2,0,1,2,2,1,W,False
+7444,2017,2018-04-07,Leicester,Newcastle United,away,Newcastle United,Leicester,74,2,0,1,2,2,1,W,False
+7445,2017,2018-04-07,Manchester City,Manchester United,home,Manchester City,Manchester United,30,2,0,2,3,2,3,L,True
+7449,2017,2018-04-14,Burnley,Leicester,home,Burnley,Leicester,8,2,0,2,1,2,1,W,True
+7450,2017,2018-04-14,Crystal Palace,Brighton,home,Crystal Palace,Brighton,13,2,0,3,2,3,2,W,True
+7452,2017,2018-04-14,Liverpool,Bournemouth,home,Liverpool,Bournemouth,68,2,0,3,0,3,0,W,True
+7455,2017,2018-04-14,Southampton,Chelsea,home,Southampton,Chelsea,59,2,0,2,3,2,3,L,True
+7457,2017,2018-04-14,Tottenham,Manchester City,away,Manchester City,Tottenham,24,2,0,1,3,3,1,W,False
+7459,2017,2018-04-22,Arsenal,West Ham,home,Arsenal,West Ham,84,3,1,4,1,4,1,W,True
+7463,2017,2018-04-18,Bournemouth,Manchester United,away,Manchester United,Bournemouth,69,2,0,0,2,2,0,W,False
+7465,2017,2018-04-22,Manchester City,Swansea,home,Manchester City,Swansea,15,2,0,5,0,5,0,W,True
+7468,2017,2018-04-21,West Bromwich Albion,Liverpool,away,Liverpool,West Bromwich Albion,71,2,0,2,2,2,2,D,False
+7470,2017,2018-04-28,Crystal Palace,Leicester,home,Crystal Palace,Leicester,37,2,0,5,0,5,0,W,True
+7471,2017,2018-04-28,Huddersfield,Everton,away,Everton,Huddersfield,76,2,0,0,2,2,0,W,False
+7477,2017,2018-04-30,Tottenham,Watford,home,Tottenham,Watford,47,2,0,2,0,2,0,W,True
+7478,2017,2018-04-29,West Ham,Manchester City,away,Manchester City,West Ham,26,2,0,1,4,4,1,W,False
+7479,2017,2018-05-05,Leicester,West Ham,away,West Ham,Leicester,63,2,0,0,2,2,0,W,False
+7482,2017,2018-05-05,Watford,Newcastle United,home,Watford,Newcastle United,27,2,0,2,1,2,1,W,True
+7487,2017,2018-05-06,Arsenal,Burnley,home,Arsenal,Burnley,47,2,0,5,0,5,0,W,True
+7489,2017,2018-05-13,West Ham,Everton,home,West Ham,Everton,62,2,0,3,1,3,1,W,True
+7490,2017,2018-05-13,Tottenham,Leicester,away,Leicester,Tottenham,46,3,1,5,4,4,5,L,False
+7493,2017,2018-05-13,Crystal Palace,West Bromwich Albion,home,Crystal Palace,West Bromwich Albion,77,2,0,2,0,2,0,W,True
+7495,2017,2018-05-13,Liverpool,Brighton,home,Liverpool,Brighton,39,2,0,4,0,4,0,W,True
+7497,2017,2018-05-13,Newcastle United,Chelsea,home,Newcastle United,Chelsea,58,2,0,3,0,3,0,W,True
+9197,2018,2018-08-10,Manchester United,Leicester,home,Manchester United,Leicester,82,2,0,2,1,2,1,W,True
+9199,2018,2018-08-11,Watford,Brighton,home,Watford,Brighton,53,2,0,2,0,2,0,W,True
+9200,2018,2018-08-11,Huddersfield,Chelsea,away,Chelsea,Huddersfield,44,2,0,0,3,3,0,W,False
+9201,2018,2018-08-11,Fulham,Crystal Palace,away,Crystal Palace,Fulham,79,2,0,0,2,2,0,W,False
+9202,2018,2018-08-11,Bournemouth,Cardiff,home,Bournemouth,Cardiff,90,2,0,2,0,2,0,W,True
+9205,2018,2018-08-12,Liverpool,West Ham,home,Liverpool,West Ham,46,2,0,4,0,4,0,W,True
+9206,2018,2018-08-12,Arsenal,Manchester City,away,Manchester City,Arsenal,63,2,0,0,2,2,0,W,False
+9209,2018,2018-08-18,Tottenham,Fulham,home,Tottenham,Fulham,76,3,1,3,1,3,1,W,True
+9210,2018,2018-08-18,Leicester,Wolverhampton Wanderers,home,Leicester,Wolverhampton Wanderers,44,2,0,2,0,2,0,W,True
+9211,2018,2018-08-18,Everton,Southampton,home,Everton,Southampton,30,2,0,2,1,2,1,W,True
+9212,2018,2018-08-18,Chelsea,Arsenal,home,Chelsea,Arsenal,19,2,0,3,2,3,2,W,True
+9213,2018,2018-08-19,Manchester City,Huddersfield,home,Manchester City,Huddersfield,30,2,0,6,1,6,1,W,True
+9214,2018,2018-08-19,Burnley,Watford,away,Watford,Burnley,50,3,1,1,3,3,1,W,False
+9215,2018,2018-08-19,Brighton,Manchester United,home,Brighton,Manchester United,26,2,0,3,2,3,2,W,True
+9216,2018,2018-08-20,Crystal Palace,Liverpool,away,Liverpool,Crystal Palace,92,2,0,0,2,2,0,W,False
+9220,2018,2018-08-26,Fulham,Burnley,home,Fulham,Burnley,37,3,1,4,2,4,2,W,True
+9221,2018,2018-08-25,Bournemouth,Everton,away,Everton,Bournemouth,65,2,0,2,2,2,2,D,False
+9222,2018,2018-08-25,Arsenal,West Ham,home,Arsenal,West Ham,91,3,1,3,1,3,1,W,True
+9224,2018,2018-08-26,Watford,Crystal Palace,home,Watford,Crystal Palace,70,2,0,2,1,2,1,W,True
+9226,2018,2018-08-27,Manchester United,Tottenham,away,Tottenham,Manchester United,51,2,0,0,3,3,0,W,False
+9227,2018,2018-09-01,Leicester,Liverpool,away,Liverpool,Leicester,44,2,0,1,2,2,1,W,False
+9230,2018,2018-09-01,Crystal Palace,Southampton,away,Southampton,Crystal Palace,91,2,0,0,2,2,0,W,False
+9231,2018,2018-09-01,Chelsea,Bournemouth,home,Chelsea,Bournemouth,84,2,0,2,0,2,0,W,True
+9232,2018,2018-09-02,Burnley,Manchester United,away,Manchester United,Burnley,43,2,0,0,2,2,0,W,False
+9233,2018,2018-09-01,Brighton,Fulham,away,Fulham,Brighton,61,2,0,2,2,2,2,D,False
+9237,2018,2018-09-15,Tottenham,Liverpool,away,Liverpool,Tottenham,53,2,0,1,2,2,1,W,False
+9238,2018,2018-09-15,Newcastle United,Arsenal,away,Arsenal,Newcastle United,57,2,0,1,2,2,1,W,False
+9239,2018,2018-09-15,Manchester City,Fulham,home,Manchester City,Fulham,20,2,0,3,0,3,0,W,True
+9241,2018,2018-09-15,Chelsea,Cardiff,home,Chelsea,Cardiff,79,3,1,4,1,4,1,W,True
+9242,2018,2018-09-15,Bournemouth,Leicester,home,Bournemouth,Leicester,36,2,0,4,2,4,2,W,True
+9243,2018,2018-09-15,Watford,Manchester United,away,Manchester United,Watford,37,2,0,1,2,2,1,W,False
+9245,2018,2018-09-16,Everton,West Ham,away,West Ham,Everton,30,2,0,1,3,3,1,W,False
+9246,2018,2018-09-17,Southampton,Brighton,home,Southampton,Brighton,64,2,0,2,2,2,2,D,True
+9249,2018,2018-09-22,Liverpool,Southampton,home,Liverpool,Southampton,20,2,0,3,0,3,0,W,True
+9250,2018,2018-09-22,Leicester,Huddersfield,home,Leicester,Huddersfield,74,3,1,3,1,3,1,W,True
+9252,2018,2018-09-22,Cardiff,Manchester City,away,Manchester City,Cardiff,34,2,0,0,5,5,0,W,False
+9253,2018,2018-09-22,Burnley,Bournemouth,home,Burnley,Bournemouth,40,2,0,4,0,4,0,W,True
+9254,2018,2018-09-22,Brighton,Tottenham,away,Tottenham,Brighton,75,2,0,1,2,2,1,W,False
+9256,2018,2018-09-23,Arsenal,Everton,home,Arsenal,Everton,58,2,0,2,0,2,0,W,True
+9257,2018,2018-09-29,West Ham,Manchester United,home,West Ham,Manchester United,42,2,0,3,1,3,1,W,True
+9258,2018,2018-09-29,Wolverhampton Wanderers,Southampton,home,Wolverhampton Wanderers,Southampton,86,2,0,2,0,2,0,W,True
+9259,2018,2018-09-29,Newcastle United,Leicester,away,Leicester,Newcastle United,72,2,0,0,2,2,0,W,False
+9260,2018,2018-09-29,Manchester City,Brighton,home,Manchester City,Brighton,64,2,0,2,0,2,0,W,True
+9261,2018,2018-09-29,Huddersfield,Tottenham,away,Tottenham,Huddersfield,33,2,0,0,2,2,0,W,False
+9262,2018,2018-09-29,Everton,Fulham,home,Everton,Fulham,65,2,0,3,0,3,0,W,True
+9263,2018,2018-09-29,Arsenal,Watford,home,Arsenal,Watford,82,2,0,2,0,2,0,W,True
+9268,2018,2018-10-06,Watford,Bournemouth,away,Bournemouth,Watford,32,2,0,0,4,4,0,W,False
+9273,2018,2018-10-06,Manchester United,Newcastle United,away,Newcastle United,Manchester United,9,2,0,3,2,2,3,L,False
+9274,2018,2018-10-07,Fulham,Arsenal,away,Arsenal,Fulham,66,3,1,1,5,5,1,W,False
+9275,2018,2018-10-07,Southampton,Chelsea,away,Chelsea,Southampton,56,2,0,0,3,3,0,W,False
+9278,2018,2018-10-20,Wolverhampton Wanderers,Watford,away,Watford,Wolverhampton Wanderers,20,2,0,0,2,2,0,W,False
+9281,2018,2018-10-20,Manchester City,Burnley,home,Manchester City,Burnley,53,2,0,5,0,5,0,W,True
+9282,2018,2018-10-20,Cardiff,Fulham,home,Cardiff,Fulham,86,4,2,4,2,4,2,W,True
+9285,2018,2018-10-21,Everton,Crystal Palace,home,Everton,Crystal Palace,88,2,0,2,0,2,0,W,True
+9286,2018,2018-10-22,Arsenal,Leicester,home,Arsenal,Leicester,65,3,1,3,1,3,1,W,True
+9287,2018,2018-10-28,Manchester United,Everton,home,Manchester United,Everton,48,2,0,2,1,2,1,W,True
+9288,2018,2018-10-27,Liverpool,Cardiff,home,Liverpool,Cardiff,65,2,0,4,1,4,1,W,True
+9289,2018,2018-10-27,Fulham,Bournemouth,away,Bournemouth,Fulham,71,2,0,0,3,3,0,W,False
+9291,2018,2018-10-27,Watford,Huddersfield,home,Watford,Huddersfield,18,2,0,3,0,3,0,W,True
+9295,2018,2018-10-28,Burnley,Chelsea,away,Chelsea,Burnley,56,2,0,0,4,4,0,W,False
+9298,2018,2018-11-03,West Ham,Burnley,home,West Ham,Burnley,91,4,2,4,2,4,2,W,True
+9300,2018,2018-11-04,Manchester City,Southampton,home,Manchester City,Southampton,11,2,0,6,1,6,1,W,True
+9301,2018,2018-11-03,Everton,Brighton,home,Everton,Brighton,76,3,1,3,1,3,1,W,True
+9304,2018,2018-11-03,Wolverhampton Wanderers,Tottenham,away,Tottenham,Wolverhampton Wanderers,29,2,0,2,3,3,2,W,False
+9305,2018,2018-11-04,Chelsea,Crystal Palace,home,Chelsea,Crystal Palace,69,3,1,3,1,3,1,W,True
+9309,2018,2018-11-10,Newcastle United,Bournemouth,home,Newcastle United,Bournemouth,39,2,0,2,1,2,1,W,True
+9313,2018,2018-11-11,Liverpool,Fulham,home,Liverpool,Fulham,52,2,0,2,0,2,0,W,True
+9315,2018,2018-11-11,Manchester City,Manchester United,home,Manchester City,Manchester United,47,2,0,3,1,3,1,W,True
+9317,2018,2018-11-24,West Ham,Manchester City,away,Manchester City,West Ham,18,2,0,0,4,4,0,W,False
+9318,2018,2018-11-24,Watford,Liverpool,away,Liverpool,Watford,75,2,0,0,3,3,0,W,False
+9323,2018,2018-11-24,Tottenham,Chelsea,home,Tottenham,Chelsea,15,2,0,3,1,3,1,W,True
+9325,2018,2018-11-25,Wolverhampton Wanderers,Huddersfield,away,Huddersfield,Wolverhampton Wanderers,73,2,0,0,2,2,0,W,False
+9326,2018,2018-11-26,Burnley,Newcastle United,away,Newcastle United,Burnley,22,2,0,1,2,2,1,W,False
+9327,2018,2018-12-01,Southampton,Manchester United,home,Southampton,Manchester United,19,2,0,2,2,2,2,D,True
+9328,2018,2018-12-01,Newcastle United,West Ham,away,West Ham,Newcastle United,63,2,0,0,3,3,0,W,False
+9329,2018,2018-12-01,Manchester City,Bournemouth,home,Manchester City,Bournemouth,78,3,1,3,1,3,1,W,True
+9331,2018,2018-12-01,Leicester,Watford,home,Leicester,Watford,22,2,0,2,0,2,0,W,True
+9333,2018,2018-12-01,Crystal Palace,Burnley,home,Crystal Palace,Burnley,76,2,0,2,0,2,0,W,True
+9334,2018,2018-12-02,Chelsea,Fulham,home,Chelsea,Fulham,81,2,0,2,0,2,0,W,True
+9336,2018,2018-12-02,Arsenal,Tottenham,home,Arsenal,Tottenham,76,4,2,4,2,4,2,W,True
+9337,2018,2018-12-04,Brighton,Crystal Palace,home,Brighton,Crystal Palace,30,2,0,3,1,3,1,W,True
+9338,2018,2018-12-04,Bournemouth,Huddersfield,home,Bournemouth,Huddersfield,21,2,0,2,1,2,1,W,True
+9340,2018,2018-12-04,West Ham,Cardiff,home,West Ham,Cardiff,53,2,0,3,1,3,1,W,True
+9341,2018,2018-12-04,Watford,Manchester City,away,Manchester City,Watford,50,2,0,1,2,2,1,W,False
+9343,2018,2018-12-05,Burnley,Liverpool,away,Liverpool,Burnley,90,3,1,1,3,3,1,W,False
+9346,2018,2018-12-05,Tottenham,Southampton,home,Tottenham,Southampton,50,2,0,3,1,3,1,W,True
+9347,2018,2018-12-08,West Ham,Crystal Palace,home,West Ham,Crystal Palace,64,3,1,3,2,3,2,W,True
+9349,2018,2018-12-08,Manchester United,Fulham,home,Manchester United,Fulham,27,2,0,4,1,4,1,W,True
+9350,2018,2018-12-08,Leicester,Tottenham,away,Tottenham,Leicester,57,2,0,0,2,2,0,W,False
+9352,2018,2018-12-08,Chelsea,Manchester City,home,Chelsea,Manchester City,77,2,0,2,0,2,0,W,True
+9355,2018,2018-12-08,Bournemouth,Liverpool,away,Liverpool,Bournemouth,47,2,0,0,4,4,0,W,False
+9357,2018,2018-12-15,Wolverhampton Wanderers,Bournemouth,home,Wolverhampton Wanderers,Bournemouth,93,2,0,2,0,2,0,W,True
+9358,2018,2018-12-15,Watford,Cardiff,home,Watford,Cardiff,51,2,0,3,2,3,2,W,True
+9361,2018,2018-12-15,Manchester City,Everton,home,Manchester City,Everton,49,2,0,3,1,3,1,W,True
+9362,2018,2018-12-16,Liverpool,Manchester United,home,Liverpool,Manchester United,79,3,1,3,1,3,1,W,True
+9364,2018,2018-12-15,Fulham,West Ham,away,West Ham,Fulham,28,2,0,0,2,2,0,W,False
+9366,2018,2018-12-16,Brighton,Chelsea,away,Chelsea,Brighton,32,2,0,1,2,2,1,W,False
+9367,2018,2018-12-21,Wolverhampton Wanderers,Liverpool,away,Liverpool,Wolverhampton Wanderers,67,2,0,0,2,2,0,W,False
+9368,2018,2018-12-22,West Ham,Watford,away,Watford,West Ham,86,2,0,0,2,2,0,W,False
+9370,2018,2018-12-22,Manchester City,Crystal Palace,away,Crystal Palace,Manchester City,51,3,1,2,3,3,2,W,False
+9371,2018,2018-12-22,Huddersfield,Southampton,away,Southampton,Huddersfield,41,2,0,1,3,3,1,W,False
+9372,2018,2018-12-23,Everton,Tottenham,away,Tottenham,Everton,41,3,1,2,6,6,2,W,False
+9374,2018,2018-12-22,Cardiff,Manchester United,away,Manchester United,Cardiff,28,2,0,1,5,5,1,W,False
+9375,2018,2018-12-22,Bournemouth,Brighton,home,Bournemouth,Brighton,76,2,0,2,0,2,0,W,True
+9376,2018,2018-12-22,Arsenal,Burnley,home,Arsenal,Burnley,47,2,0,3,1,3,1,W,True
+9378,2018,2018-12-26,Tottenham,Bournemouth,home,Tottenham,Bournemouth,22,2,0,5,0,5,0,W,True
+9380,2018,2018-12-26,Manchester United,Huddersfield,home,Manchester United,Huddersfield,63,2,0,3,1,3,1,W,True
+9381,2018,2018-12-26,Liverpool,Newcastle United,home,Liverpool,Newcastle United,47,2,0,4,0,4,0,W,True
+9385,2018,2018-12-26,Burnley,Everton,away,Everton,Burnley,12,2,0,1,5,5,1,W,False
+9388,2018,2018-12-29,Tottenham,Wolverhampton Wanderers,away,Wolverhampton Wanderers,Tottenham,86,3,1,1,3,3,1,W,False
+9389,2018,2018-12-30,Southampton,Manchester City,away,Manchester City,Southampton,47,3,1,1,3,3,1,W,False
+9390,2018,2018-12-30,Manchester United,Bournemouth,home,Manchester United,Bournemouth,32,2,0,4,1,4,1,W,True
+9391,2018,2018-12-29,Liverpool,Arsenal,home,Liverpool,Arsenal,31,3,1,5,1,5,1,W,True
+9395,2018,2018-12-30,Burnley,West Ham,home,Burnley,West Ham,33,2,0,2,0,2,0,W,True
+9397,2018,2019-01-02,Wolverhampton Wanderers,Crystal Palace,away,Crystal Palace,Wolverhampton Wanderers,94,2,0,0,2,2,0,W,False
+9398,2018,2019-01-02,West Ham,Brighton,away,Brighton,West Ham,57,2,0,2,2,2,2,D,False
+9399,2018,2019-01-02,Newcastle United,Manchester United,away,Manchester United,Newcastle United,79,2,0,0,2,2,0,W,False
+9404,2018,2019-01-01,Cardiff,Tottenham,away,Tottenham,Cardiff,11,2,0,0,3,3,0,W,False
+9405,2018,2019-01-02,Bournemouth,Watford,away,Watford,Bournemouth,26,2,0,3,3,3,3,D,False
+9406,2018,2019-01-01,Arsenal,Fulham,home,Arsenal,Fulham,54,2,0,4,1,4,1,W,True
+9409,2018,2019-01-14,Manchester City,Wolverhampton Wanderers,home,Manchester City,Wolverhampton Wanderers,38,2,0,3,0,3,0,W,True
+9410,2018,2019-01-12,Leicester,Southampton,away,Southampton,Leicester,46,2,0,1,2,2,1,W,False
+9411,2018,2019-01-13,Everton,Bournemouth,home,Everton,Bournemouth,94,2,0,2,0,2,0,W,True
+9417,2018,2019-01-19,Wolverhampton Wanderers,Leicester,home,Wolverhampton Wanderers,Leicester,11,2,0,4,3,4,3,W,True
+9419,2018,2019-01-19,Southampton,Everton,home,Southampton,Everton,63,2,0,2,1,2,1,W,True
+9420,2018,2019-01-19,Newcastle United,Cardiff,home,Newcastle United,Cardiff,62,2,0,3,0,3,0,W,True
+9421,2018,2019-01-19,Manchester United,Brighton,home,Manchester United,Brighton,41,2,0,2,1,2,1,W,True
+9422,2018,2019-01-19,Liverpool,Crystal Palace,home,Liverpool,Crystal Palace,92,4,2,4,3,4,3,W,True
+9423,2018,2019-01-20,Huddersfield,Manchester City,away,Manchester City,Huddersfield,53,2,0,0,3,3,0,W,False
+9425,2018,2019-01-19,Bournemouth,West Ham,home,Bournemouth,West Ham,90,2,0,2,0,2,0,W,True
+9426,2018,2019-01-19,Arsenal,Chelsea,home,Arsenal,Chelsea,38,2,0,2,0,2,0,W,True
+9427,2018,2019-01-29,Wolverhampton Wanderers,West Ham,home,Wolverhampton Wanderers,West Ham,79,2,0,3,0,3,0,W,True
+9429,2018,2019-01-29,Fulham,Brighton,away,Brighton,Fulham,16,2,0,4,2,2,4,L,False
+9429,2018,2019-01-29,Fulham,Brighton,home,Fulham,Brighton,78,4,2,4,2,4,2,W,True
+9430,2018,2019-01-30,Bournemouth,Chelsea,home,Bournemouth,Chelsea,62,2,0,4,0,4,0,W,True
+9431,2018,2019-01-29,Arsenal,Cardiff,home,Arsenal,Cardiff,82,2,0,2,1,2,1,W,True
+9432,2018,2019-01-29,Manchester United,Burnley,away,Burnley,Manchester United,80,2,0,2,2,2,2,D,False
+9439,2018,2019-02-03,Manchester City,Arsenal,home,Manchester City,Arsenal,60,3,1,3,1,3,1,W,True
+9441,2018,2019-02-02,Everton,Wolverhampton Wanderers,away,Wolverhampton Wanderers,Everton,65,3,1,1,3,3,1,W,False
+9442,2018,2019-02-02,Crystal Palace,Fulham,home,Crystal Palace,Fulham,86,2,0,2,0,2,0,W,True
+9443,2018,2019-02-02,Chelsea,Huddersfield,home,Chelsea,Huddersfield,45,2,0,5,0,5,0,W,True
+9444,2018,2019-02-02,Cardiff,Bournemouth,home,Cardiff,Bournemouth,45,2,0,2,0,2,0,W,True
+9447,2018,2019-02-09,Fulham,Manchester United,away,Manchester United,Fulham,22,2,0,0,3,3,0,W,False
+9449,2018,2019-02-09,Brighton,Burnley,away,Burnley,Brighton,60,2,0,1,3,3,1,W,False
+9452,2018,2019-02-10,Tottenham,Leicester,home,Tottenham,Leicester,62,2,0,3,1,3,1,W,True
+9454,2018,2019-02-10,Manchester City,Chelsea,home,Manchester City,Chelsea,12,2,0,6,0,6,0,W,True
+9455,2018,2019-02-09,Liverpool,Bournemouth,home,Liverpool,Bournemouth,33,2,0,3,0,3,0,W,True
+9456,2018,2019-02-09,Huddersfield,Arsenal,away,Arsenal,Huddersfield,43,2,0,1,2,2,1,W,False
+9457,2018,2019-02-22,West Ham,Fulham,home,West Ham,Fulham,90,3,1,3,1,3,1,W,True
+9458,2018,2019-02-23,Newcastle United,Huddersfield,home,Newcastle United,Huddersfield,51,2,0,2,0,2,0,W,True
+9460,2018,2019-02-23,Leicester,Crystal Palace,away,Crystal Palace,Leicester,80,3,1,1,4,4,1,W,False
+9461,2018,2019-02-06,Everton,Manchester City,away,Manchester City,Everton,96,2,0,0,2,2,0,W,False
+9462,2018,2019-04-03,Chelsea,Brighton,home,Chelsea,Brighton,59,2,0,3,0,3,0,W,True
+9463,2018,2019-02-22,Cardiff,Watford,away,Watford,Cardiff,60,2,0,1,5,5,1,W,False
+9466,2018,2019-02-24,Arsenal,Southampton,home,Arsenal,Southampton,16,2,0,2,0,2,0,W,True
+9467,2018,2019-02-26,Leicester,Brighton,home,Leicester,Brighton,62,2,0,2,1,2,1,W,True
+9469,2018,2019-02-26,Cardiff,Everton,away,Everton,Cardiff,65,2,0,0,3,3,0,W,False
+9470,2018,2019-02-27,Arsenal,Bournemouth,home,Arsenal,Bournemouth,26,2,0,5,1,5,1,W,True
+9471,2018,2019-02-27,Crystal Palace,Manchester United,away,Manchester United,Crystal Palace,51,2,0,1,3,3,1,W,False
+9472,2018,2019-02-27,Southampton,Fulham,home,Southampton,Fulham,40,2,0,2,0,2,0,W,True
+9473,2018,2019-02-26,Newcastle United,Burnley,home,Newcastle United,Burnley,37,2,0,2,0,2,0,W,True
+9474,2018,2019-02-27,Chelsea,Tottenham,home,Chelsea,Tottenham,83,2,0,2,0,2,0,W,True
+9476,2018,2019-02-27,Liverpool,Watford,home,Liverpool,Watford,19,2,0,5,0,5,0,W,True
+9477,2018,2019-03-02,Wolverhampton Wanderers,Cardiff,home,Wolverhampton Wanderers,Cardiff,17,2,0,2,0,2,0,W,True
+9478,2018,2019-03-02,West Ham,Newcastle United,home,West Ham,Newcastle United,41,2,0,2,0,2,0,W,True
+9484,2018,2019-03-02,Burnley,Crystal Palace,away,Crystal Palace,Burnley,47,2,0,1,3,3,1,W,False
+9488,2018,2019-03-09,Newcastle United,Everton,away,Everton,Newcastle United,31,2,0,3,2,2,3,L,False
+9489,2018,2019-03-09,Manchester City,Watford,home,Manchester City,Watford,49,2,0,3,1,3,1,W,True
+9490,2018,2019-03-10,Liverpool,Burnley,home,Liverpool,Burnley,66,3,1,4,2,4,2,W,True
+9491,2018,2019-03-09,Leicester,Fulham,home,Leicester,Fulham,85,3,1,3,1,3,1,W,True
+9492,2018,2019-03-09,Huddersfield,Bournemouth,away,Bournemouth,Huddersfield,66,2,0,0,2,2,0,W,False
+9495,2018,2019-03-09,Cardiff,West Ham,home,Cardiff,West Ham,51,2,0,2,0,2,0,W,True
+9496,2018,2019-03-10,Arsenal,Manchester United,home,Arsenal,Manchester United,68,2,0,2,0,2,0,W,True
+9497,2018,2019-04-24,Wolverhampton Wanderers,Arsenal,home,Wolverhampton Wanderers,Arsenal,36,2,0,3,1,3,1,W,True
+9498,2018,2019-03-16,West Ham,Huddersfield,away,Huddersfield,West Ham,64,3,1,4,3,3,4,L,False
+9500,2018,2019-04-03,Tottenham,Crystal Palace,home,Tottenham,Crystal Palace,79,2,0,2,0,2,0,W,True
+9501,2018,2019-04-24,Manchester United,Manchester City,away,Manchester City,Manchester United,65,2,0,0,2,2,0,W,False
+9503,2018,2019-03-17,Everton,Chelsea,home,Everton,Chelsea,71,2,0,2,0,2,0,W,True
+9505,2018,2019-04-16,Brighton,Cardiff,away,Cardiff,Brighton,49,2,0,0,2,2,0,W,False
+9507,2018,2019-04-01,Arsenal,Newcastle United,home,Arsenal,Newcastle United,82,2,0,2,0,2,0,W,True
+9508,2018,2019-03-30,West Ham,Everton,away,Everton,West Ham,32,2,0,0,2,2,0,W,False
+9509,2018,2019-03-30,Manchester United,Watford,home,Manchester United,Watford,71,2,0,2,1,2,1,W,True
+9511,2018,2019-03-30,Leicester,Bournemouth,home,Leicester,Bournemouth,81,2,0,2,0,2,0,W,True
+9512,2018,2019-03-30,Fulham,Manchester City,away,Manchester City,Fulham,26,2,0,0,2,2,0,W,False
+9513,2018,2019-03-30,Crystal Palace,Huddersfield,home,Crystal Palace,Huddersfield,87,2,0,2,0,2,0,W,True
+9515,2018,2019-03-30,Burnley,Wolverhampton Wanderers,home,Burnley,Wolverhampton Wanderers,76,2,0,2,0,2,0,W,True
+9518,2018,2019-04-02,Watford,Fulham,home,Watford,Fulham,68,3,1,4,1,4,1,W,True
+9520,2018,2019-04-05,Southampton,Liverpool,away,Liverpool,Southampton,85,3,1,1,3,3,1,W,False
+9522,2018,2019-04-03,Manchester City,Cardiff,home,Manchester City,Cardiff,43,2,0,2,0,2,0,W,True
+9523,2018,2019-04-06,Huddersfield,Leicester,away,Leicester,Huddersfield,47,2,0,1,4,4,1,W,False
+9525,2018,2019-04-08,Chelsea,West Ham,home,Chelsea,West Ham,89,2,0,2,0,2,0,W,True
+9526,2018,2019-04-06,Bournemouth,Burnley,away,Burnley,Bournemouth,56,3,1,1,3,3,1,W,False
+9528,2018,2019-04-13,Tottenham,Huddersfield,home,Tottenham,Huddersfield,26,2,0,4,0,4,0,W,True
+9529,2018,2019-04-13,Southampton,Wolverhampton Wanderers,home,Southampton,Wolverhampton Wanderers,70,3,1,3,1,3,1,W,True
+9531,2018,2019-04-14,Liverpool,Chelsea,home,Liverpool,Chelsea,52,2,0,2,0,2,0,W,True
+9533,2018,2019-04-13,Fulham,Everton,home,Fulham,Everton,68,2,0,2,0,2,0,W,True
+9534,2018,2019-04-14,Crystal Palace,Manchester City,away,Manchester City,Crystal Palace,62,2,0,1,3,3,1,W,False
+9535,2018,2019-04-13,Burnley,Cardiff,home,Burnley,Cardiff,91,2,0,2,0,2,0,W,True
+9536,2018,2019-04-13,Brighton,Bournemouth,away,Bournemouth,Brighton,54,2,0,0,5,5,0,W,False
+9539,2018,2019-04-20,Newcastle United,Southampton,home,Newcastle United,Southampton,30,2,0,3,1,3,1,W,True
+9541,2018,2019-04-20,Huddersfield,Watford,away,Watford,Huddersfield,79,2,0,1,2,2,1,W,False
+9542,2018,2019-04-21,Everton,Manchester United,home,Everton,Manchester United,27,2,0,4,0,4,0,W,True
+9544,2018,2019-04-21,Cardiff,Liverpool,away,Liverpool,Cardiff,80,2,0,0,2,2,0,W,False
+9546,2018,2019-04-21,Arsenal,Crystal Palace,away,Crystal Palace,Arsenal,68,3,1,2,3,3,2,W,False
+9551,2018,2019-04-26,Liverpool,Huddersfield,home,Liverpool,Huddersfield,22,2,0,5,0,5,0,W,True
+9552,2018,2019-04-28,Leicester,Arsenal,home,Leicester,Arsenal,85,2,0,3,0,3,0,W,True
+9558,2018,2019-05-04,West Ham,Southampton,home,West Ham,Southampton,68,2,0,3,0,3,0,W,True
+9562,2018,2019-05-03,Everton,Burnley,home,Everton,Burnley,19,2,0,2,0,2,0,W,True
+9563,2018,2019-05-05,Chelsea,Watford,home,Chelsea,Watford,50,2,0,3,0,3,0,W,True
+9564,2018,2019-05-04,Cardiff,Crystal Palace,away,Crystal Palace,Cardiff,69,3,1,2,3,3,2,W,False
+9567,2018,2019-05-12,Watford,West Ham,away,West Ham,Watford,38,2,0,1,4,4,1,W,False
+9570,2018,2019-05-12,Manchester United,Cardiff,away,Cardiff,Manchester United,53,2,0,0,2,2,0,W,False
+9571,2018,2019-05-12,Liverpool,Wolverhampton Wanderers,home,Liverpool,Wolverhampton Wanderers,80,2,0,2,0,2,0,W,True
+9573,2018,2019-05-12,Fulham,Newcastle United,away,Newcastle United,Fulham,10,2,0,0,4,4,0,W,False
+9574,2018,2019-05-12,Crystal Palace,Bournemouth,home,Crystal Palace,Bournemouth,31,2,0,5,3,5,3,W,True
+9575,2018,2019-05-12,Burnley,Arsenal,away,Arsenal,Burnley,62,2,0,1,3,3,1,W,False
+9576,2018,2019-05-12,Brighton,Manchester City,away,Manchester City,Brighton,62,3,1,1,4,4,1,W,False
+11643,2019,2019-08-09,Liverpool,Norwich,home,Liverpool,Norwich,18,2,0,4,1,4,1,W,True
+11644,2019,2019-08-10,West Ham,Manchester City,away,Manchester City,West Ham,50,2,0,0,5,5,0,W,False
+11646,2019,2019-08-10,Burnley,Southampton,home,Burnley,Southampton,69,2,0,3,0,3,0,W,True
+11648,2019,2019-08-10,Watford,Brighton,away,Brighton,Watford,64,2,0,0,3,3,0,W,False
+11649,2019,2019-08-10,Tottenham,Aston Villa,home,Tottenham,Aston Villa,89,3,1,3,1,3,1,W,True
+11652,2019,2019-08-11,Manchester United,Chelsea,home,Manchester United,Chelsea,64,2,0,4,0,4,0,W,True
+11654,2019,2019-08-17,Aston Villa,Bournemouth,away,Bournemouth,Aston Villa,11,2,0,1,2,2,1,W,False
+11657,2019,2019-08-17,Norwich,Newcastle United,home,Norwich,Newcastle United,62,2,0,3,1,3,1,W,True
+11658,2019,2019-08-17,Southampton,Liverpool,away,Liverpool,Southampton,70,2,0,1,2,2,1,W,False
+11663,2019,2019-08-23,Aston Villa,Everton,home,Aston Villa,Everton,94,2,0,2,0,2,0,W,True
+11666,2019,2019-08-24,Brighton,Southampton,away,Southampton,Brighton,90,2,0,0,2,2,0,W,False
+11667,2019,2019-08-24,Watford,West Ham,away,West Ham,Watford,72,3,1,1,3,3,1,W,False
+11670,2019,2019-08-24,Liverpool,Arsenal,home,Liverpool,Arsenal,48,2,0,3,1,3,1,W,True
+11671,2019,2019-08-25,Bournemouth,Manchester City,away,Manchester City,Bournemouth,42,2,0,1,3,3,1,W,False
+11674,2019,2019-08-31,West Ham,Norwich,home,West Ham,Norwich,55,2,0,2,0,2,0,W,True
+11675,2019,2019-08-31,Chelsea,Sheffield United,home,Chelsea,Sheffield United,42,2,0,2,2,2,2,D,True
+11677,2019,2019-08-31,Leicester,Bournemouth,home,Leicester,Bournemouth,72,3,1,3,1,3,1,W,True
+11678,2019,2019-08-31,Manchester City,Brighton,home,Manchester City,Brighton,41,2,0,4,0,4,0,W,True
+11680,2019,2019-08-31,Burnley,Liverpool,away,Liverpool,Burnley,36,2,0,0,3,3,0,W,False
+11682,2019,2019-09-01,Arsenal,Tottenham,away,Tottenham,Arsenal,39,2,0,2,2,2,2,D,False
+11683,2019,2019-09-14,Liverpool,Newcastle United,home,Liverpool,Newcastle United,71,3,1,3,1,3,1,W,True
+11687,2019,2019-09-14,Tottenham,Crystal Palace,home,Tottenham,Crystal Palace,20,2,0,4,0,4,0,W,True
+11688,2019,2019-09-14,Wolverhampton Wanderers,Chelsea,away,Chelsea,Wolverhampton Wanderers,33,2,0,2,5,5,2,W,False
+11689,2019,2019-09-14,Norwich,Manchester City,home,Norwich,Manchester City,27,2,0,3,2,3,2,W,True
+11690,2019,2019-09-15,Bournemouth,Everton,home,Bournemouth,Everton,71,3,1,3,1,3,1,W,True
+11691,2019,2019-09-15,Watford,Arsenal,away,Arsenal,Watford,31,2,0,2,2,2,2,D,False
+11693,2019,2019-09-20,Southampton,Bournemouth,away,Bournemouth,Southampton,34,2,0,1,3,3,1,W,False
+11695,2019,2019-09-21,Manchester City,Watford,home,Manchester City,Watford,6,2,0,8,0,8,0,W,True
+11696,2019,2019-09-21,Burnley,Norwich,home,Burnley,Norwich,13,2,0,2,0,2,0,W,True
+11698,2019,2019-09-21,Everton,Sheffield United,away,Sheffield United,Everton,78,2,0,0,2,2,0,W,False
+11700,2019,2019-09-22,West Ham,Manchester United,home,West Ham,Manchester United,83,2,0,2,0,2,0,W,True
+11701,2019,2019-09-22,Chelsea,Liverpool,away,Liverpool,Chelsea,29,2,0,1,2,2,1,W,False
+11705,2019,2019-09-28,Wolverhampton Wanderers,Watford,home,Wolverhampton Wanderers,Watford,60,2,0,2,0,2,0,W,True
+11708,2019,2019-09-28,Chelsea,Brighton,home,Chelsea,Brighton,75,2,0,2,0,2,0,W,True
+11709,2019,2019-09-28,Crystal Palace,Norwich,home,Crystal Palace,Norwich,91,2,0,2,0,2,0,W,True
+11710,2019,2019-09-29,Leicester,Newcastle United,home,Leicester,Newcastle United,53,2,0,5,0,5,0,W,True
+11711,2019,2019-09-28,Everton,Manchester City,away,Manchester City,Everton,83,3,1,1,3,3,1,W,False
+11713,2019,2019-10-05,Brighton,Tottenham,home,Brighton,Tottenham,31,2,0,3,0,3,0,W,True
+11716,2019,2019-10-06,Manchester City,Wolverhampton Wanderers,away,Wolverhampton Wanderers,Manchester City,93,2,0,0,2,2,0,W,False
+11717,2019,2019-10-05,Norwich,Aston Villa,away,Aston Villa,Norwich,29,2,0,1,5,5,1,W,False
+11718,2019,2019-10-06,Southampton,Chelsea,away,Chelsea,Southampton,23,2,0,1,4,4,1,W,False
+11726,2019,2019-10-19,Crystal Palace,Manchester City,away,Manchester City,Crystal Palace,40,2,0,0,2,2,0,W,False
+11727,2019,2019-10-19,Everton,West Ham,home,Everton,West Ham,91,2,0,2,0,2,0,W,True
+11733,2019,2019-10-27,Arsenal,Crystal Palace,home,Arsenal,Crystal Palace,8,2,0,2,2,2,2,D,True
+11735,2019,2019-10-26,Burnley,Chelsea,away,Chelsea,Burnley,44,2,0,2,4,4,2,W,False
+11737,2019,2019-10-26,Manchester City,Aston Villa,home,Manchester City,Aston Villa,64,2,0,3,0,3,0,W,True
+11739,2019,2019-10-27,Norwich,Manchester United,away,Manchester United,Norwich,29,2,0,1,3,3,1,W,False
+11740,2019,2019-10-25,Southampton,Leicester,away,Leicester,Southampton,16,2,0,0,9,9,0,W,False
+11746,2019,2019-11-02,Brighton,Norwich,home,Brighton,Norwich,83,2,0,2,0,2,0,W,True
+11747,2019,2019-11-03,Crystal Palace,Leicester,away,Leicester,Crystal Palace,87,2,0,0,2,2,0,W,False
+11750,2019,2019-11-02,Sheffield United,Burnley,home,Sheffield United,Burnley,42,2,0,3,0,3,0,W,True
+11751,2019,2019-11-02,Watford,Chelsea,away,Chelsea,Watford,54,2,0,1,2,2,1,W,False
+11752,2019,2019-11-02,West Ham,Newcastle United,away,Newcastle United,West Ham,21,2,0,2,3,3,2,W,False
+11753,2019,2019-11-09,Burnley,West Ham,home,Burnley,West Ham,43,2,0,3,0,3,0,W,True
+11754,2019,2019-11-09,Chelsea,Crystal Palace,home,Chelsea,Crystal Palace,78,2,0,2,0,2,0,W,True
+11755,2019,2019-11-10,Liverpool,Manchester City,home,Liverpool,Manchester City,12,2,0,3,1,3,1,W,True
+11757,2019,2019-11-08,Norwich,Watford,away,Watford,Norwich,51,2,0,0,2,2,0,W,False
+11760,2019,2019-11-10,Wolverhampton Wanderers,Aston Villa,home,Wolverhampton Wanderers,Aston Villa,83,2,0,2,1,2,1,W,True
+11761,2019,2019-11-10,Manchester United,Brighton,home,Manchester United,Brighton,18,2,0,3,1,3,1,W,True
+11762,2019,2019-11-09,Leicester,Arsenal,home,Leicester,Arsenal,74,2,0,2,0,2,0,W,True
+11764,2019,2019-11-25,Aston Villa,Newcastle United,home,Aston Villa,Newcastle United,35,2,0,2,0,2,0,W,True
+11765,2019,2019-11-23,Bournemouth,Wolverhampton Wanderers,away,Wolverhampton Wanderers,Bournemouth,30,2,0,1,2,2,1,W,False
+11766,2019,2019-11-23,Brighton,Leicester,away,Leicester,Brighton,81,2,0,0,2,2,0,W,False
+11768,2019,2019-11-23,Everton,Norwich,away,Norwich,Everton,91,2,0,0,2,2,0,W,False
+11770,2019,2019-11-24,Sheffield United,Manchester United,home,Sheffield United,Manchester United,51,2,0,3,3,3,3,D,True
+11771,2019,2019-11-23,Watford,Burnley,away,Burnley,Watford,81,2,0,0,3,3,0,W,False
+11772,2019,2019-11-23,West Ham,Tottenham,away,Tottenham,West Ham,42,2,0,2,3,3,2,W,False
+11773,2019,2019-11-30,Burnley,Crystal Palace,away,Crystal Palace,Burnley,77,2,0,0,2,2,0,W,False
+11776,2019,2019-11-30,Liverpool,Brighton,home,Liverpool,Brighton,23,2,0,2,1,2,1,W,True
+11779,2019,2019-11-30,Tottenham,Bournemouth,home,Tottenham,Bournemouth,49,2,0,3,2,3,2,W,True
+11784,2019,2019-12-03,Burnley,Manchester City,away,Manchester City,Burnley,49,2,0,1,4,4,1,W,False
+11785,2019,2019-12-04,Leicester,Watford,home,Leicester,Watford,94,2,0,2,0,2,0,W,True
+11786,2019,2019-12-05,Sheffield United,Newcastle United,away,Newcastle United,Sheffield United,69,2,0,0,2,2,0,W,False
+11787,2019,2019-12-04,Wolverhampton Wanderers,West Ham,home,Wolverhampton Wanderers,West Ham,85,2,0,2,0,2,0,W,True
+11790,2019,2019-12-04,Southampton,Norwich,home,Southampton,Norwich,42,2,0,2,1,2,1,W,True
+11792,2019,2019-12-04,Liverpool,Everton,home,Liverpool,Everton,16,2,0,5,2,5,2,W,True
+11793,2019,2019-12-08,Aston Villa,Leicester,away,Leicester,Aston Villa,40,2,0,1,4,4,1,W,False
+11794,2019,2019-12-07,Bournemouth,Liverpool,away,Liverpool,Bournemouth,43,2,0,0,3,3,0,W,False
+11796,2019,2019-12-07,Everton,Chelsea,home,Everton,Chelsea,48,2,0,3,1,3,1,W,True
+11797,2019,2019-12-07,Manchester City,Manchester United,away,Manchester United,Manchester City,28,2,0,1,2,2,1,W,False
+11800,2019,2019-12-07,Tottenham,Burnley,home,Tottenham,Burnley,8,2,0,5,0,5,0,W,True
+11802,2019,2019-12-09,West Ham,Arsenal,away,Arsenal,West Ham,68,3,1,1,3,3,1,W,False
+11803,2019,2019-12-15,Arsenal,Manchester City,away,Manchester City,Arsenal,14,2,0,0,3,3,0,W,False
+11808,2019,2019-12-14,Liverpool,Watford,home,Liverpool,Watford,89,2,0,2,0,2,0,W,True
+11810,2019,2019-12-14,Sheffield United,Aston Villa,home,Sheffield United,Aston Villa,72,2,0,2,0,2,0,W,True
+11813,2019,2019-12-21,Aston Villa,Southampton,away,Southampton,Aston Villa,30,2,0,1,3,3,1,W,False
+11817,2019,2019-12-21,Manchester City,Leicester,home,Manchester City,Leicester,68,3,1,3,1,3,1,W,True
+11820,2019,2019-12-22,Tottenham,Chelsea,away,Chelsea,Tottenham,48,2,0,0,2,2,0,W,False
+11821,2019,2019-12-22,Watford,Manchester United,home,Watford,Manchester United,53,2,0,2,0,2,0,W,True
+11822,2019,2020-01-29,West Ham,Liverpool,away,Liverpool,West Ham,51,2,0,0,2,2,0,W,False
+11825,2019,2019-12-26,Chelsea,Southampton,away,Southampton,Chelsea,72,2,0,0,2,2,0,W,False
+11828,2019,2019-12-26,Leicester,Liverpool,away,Liverpool,Leicester,70,2,0,0,4,4,0,W,False
+11829,2019,2019-12-26,Manchester United,Newcastle United,home,Manchester United,Newcastle United,40,3,1,4,1,4,1,W,True
+11832,2019,2019-12-27,Wolverhampton Wanderers,Manchester City,away,Manchester City,Wolverhampton Wanderers,49,2,0,3,2,2,3,L,False
+11834,2019,2019-12-28,Brighton,Bournemouth,home,Brighton,Bournemouth,78,2,0,2,0,2,0,W,True
+11835,2019,2019-12-28,Burnley,Manchester United,away,Manchester United,Burnley,94,2,0,0,2,2,0,W,False
+11837,2019,2019-12-29,Manchester City,Sheffield United,home,Manchester City,Sheffield United,81,2,0,2,0,2,0,W,True
+11841,2019,2019-12-28,Watford,Aston Villa,home,Watford,Aston Villa,66,2,0,3,0,3,0,W,True
+11843,2019,2020-01-01,West Ham,Bournemouth,home,West Ham,Bournemouth,25,2,0,4,0,4,0,W,True
+11844,2019,2020-01-01,Arsenal,Manchester United,home,Arsenal,Manchester United,41,2,0,2,0,2,0,W,True
+11846,2019,2020-01-01,Burnley,Aston Villa,away,Aston Villa,Burnley,40,2,0,1,2,2,1,W,False
+11847,2019,2020-01-02,Liverpool,Sheffield United,home,Liverpool,Sheffield United,63,2,0,2,0,2,0,W,True
+11848,2019,2020-01-01,Manchester City,Everton,home,Manchester City,Everton,57,2,0,2,1,2,1,W,True
+11849,2019,2020-01-01,Newcastle United,Leicester,away,Leicester,Newcastle United,38,2,0,0,3,3,0,W,False
+11852,2019,2020-01-01,Watford,Wolverhampton Wanderers,home,Watford,Wolverhampton Wanderers,48,2,0,2,1,2,1,W,True
+11856,2019,2020-01-12,Aston Villa,Manchester City,away,Manchester City,Aston Villa,23,2,0,1,6,6,1,W,False
+11857,2019,2020-01-12,Bournemouth,Watford,away,Watford,Bournemouth,64,2,0,0,3,3,0,W,False
+11858,2019,2020-01-11,Chelsea,Burnley,home,Chelsea,Burnley,37,2,0,3,0,3,0,W,True
+11862,2019,2020-01-11,Manchester United,Norwich,home,Manchester United,Norwich,51,2,0,4,0,4,0,W,True
+11865,2019,2020-01-19,Liverpool,Manchester United,home,Liverpool,Manchester United,92,2,0,2,0,2,0,W,True
+11870,2019,2020-01-18,Southampton,Wolverhampton Wanderers,home,Southampton,Wolverhampton Wanderers,34,2,0,2,3,2,3,L,True
+11876,2019,2020-01-22,Leicester,West Ham,home,Leicester,West Ham,49,2,0,4,1,4,1,W,True
+11877,2019,2020-01-21,Everton,Newcastle United,home,Everton,Newcastle United,53,2,0,2,2,2,2,D,True
+11878,2019,2020-01-21,Bournemouth,Brighton,home,Bournemouth,Brighton,40,2,0,3,1,3,1,W,True
+11879,2019,2020-01-22,Manchester United,Burnley,away,Burnley,Manchester United,55,2,0,0,2,2,0,W,False
+11882,2019,2020-01-21,Crystal Palace,Southampton,away,Southampton,Crystal Palace,47,2,0,0,2,2,0,W,False
+11883,2019,2020-02-01,Bournemouth,Aston Villa,home,Bournemouth,Aston Villa,43,2,0,2,1,2,1,W,True
+11887,2019,2020-02-01,Liverpool,Southampton,home,Liverpool,Southampton,59,2,0,4,0,4,0,W,True
+11890,2019,2020-02-02,Tottenham,Manchester City,home,Tottenham,Manchester City,70,2,0,2,0,2,0,W,True
+11891,2019,2020-02-01,Watford,Everton,home,Watford,Everton,41,2,0,2,3,2,3,L,True
+11892,2019,2020-02-01,West Ham,Brighton,home,West Ham,Brighton,44,2,0,3,3,3,3,D,True
+11893,2019,2020-02-16,Arsenal,Newcastle United,home,Arsenal,Newcastle United,56,2,0,4,0,4,0,W,True
+11896,2019,2020-02-17,Chelsea,Manchester United,away,Manchester United,Chelsea,65,2,0,0,2,2,0,W,False
+11897,2019,2020-02-08,Everton,Crystal Palace,home,Everton,Crystal Palace,87,3,1,3,1,3,1,W,True
+11898,2019,2020-02-19,Manchester City,West Ham,home,Manchester City,West Ham,61,2,0,2,0,2,0,W,True
+11903,2019,2020-02-23,Arsenal,Everton,home,Arsenal,Everton,45,3,1,3,2,3,2,W,True
+11906,2019,2020-02-22,Chelsea,Tottenham,home,Chelsea,Tottenham,47,2,0,2,1,2,1,W,True
+11907,2019,2020-02-22,Burnley,Bournemouth,home,Burnley,Bournemouth,60,2,0,3,0,3,0,W,True
+11908,2019,2020-02-22,Southampton,Aston Villa,home,Southampton,Aston Villa,94,2,0,2,0,2,0,W,True
+11910,2019,2020-02-23,Manchester United,Watford,home,Manchester United,Watford,57,2,0,3,0,3,0,W,True
+11912,2019,2020-02-23,Wolverhampton Wanderers,Norwich,home,Wolverhampton Wanderers,Norwich,29,2,0,3,0,3,0,W,True
+11917,2019,2020-06-17,Manchester City,Arsenal,home,Manchester City,Arsenal,50,2,0,3,0,3,0,W,True
+11921,2019,2020-02-29,Watford,Liverpool,home,Watford,Liverpool,59,2,0,3,0,3,0,W,True
+11922,2019,2020-02-29,West Ham,Southampton,home,West Ham,Southampton,53,3,1,3,1,3,1,W,True
+11925,2019,2020-03-08,Chelsea,Everton,home,Chelsea,Everton,20,2,0,4,0,4,0,W,True
+11927,2019,2020-03-09,Leicester,Aston Villa,home,Leicester,Aston Villa,62,2,0,4,0,4,0,W,True
+11932,2019,2020-03-08,Manchester United,Manchester City,home,Manchester United,Manchester City,95,2,0,2,0,2,0,W,True
+11934,2019,2020-06-20,West Ham,Wolverhampton Wanderers,away,Wolverhampton Wanderers,West Ham,83,2,0,0,2,2,0,W,False
+11937,2019,2020-06-19,Norwich,Southampton,away,Southampton,Norwich,53,2,0,0,3,3,0,W,False
+11938,2019,2020-06-21,Newcastle United,Sheffield United,home,Newcastle United,Sheffield United,68,2,0,3,0,3,0,W,True
+11939,2019,2020-06-22,Manchester City,Burnley,home,Manchester City,Burnley,42,2,0,5,0,5,0,W,True
+11942,2019,2020-06-20,Bournemouth,Crystal Palace,away,Crystal Palace,Bournemouth,22,2,0,0,2,2,0,W,False
+11944,2019,2020-06-23,Tottenham,West Ham,home,Tottenham,West Ham,81,2,0,2,0,2,0,W,True
+11950,2019,2020-06-24,Manchester United,Sheffield United,home,Manchester United,Sheffield United,43,2,0,3,0,3,0,W,True
+11951,2019,2020-06-24,Liverpool,Crystal Palace,home,Liverpool,Crystal Palace,43,2,0,4,0,4,0,W,True
+11952,2019,2020-06-25,Southampton,Arsenal,away,Arsenal,Southampton,86,2,0,0,2,2,0,W,False
+11953,2019,2020-07-01,Arsenal,Norwich,home,Arsenal,Norwich,36,2,0,4,0,4,0,W,True
+11955,2019,2020-07-01,Bournemouth,Newcastle United,away,Newcastle United,Bournemouth,29,2,0,1,4,4,1,W,False
+11956,2019,2020-06-30,Brighton,Manchester United,away,Manchester United,Brighton,28,2,0,0,3,3,0,W,False
+11958,2019,2020-07-01,Everton,Leicester,home,Everton,Leicester,15,2,0,2,1,2,1,W,True
+11959,2019,2020-07-02,Manchester City,Liverpool,home,Manchester City,Liverpool,34,2,0,4,0,4,0,W,True
+11960,2019,2020-07-02,Sheffield United,Tottenham,home,Sheffield United,Tottenham,68,2,0,3,1,3,1,W,True
+11961,2019,2020-06-28,Watford,Southampton,away,Southampton,Watford,69,2,0,1,3,3,1,W,False
+11964,2019,2020-07-04,Chelsea,Watford,home,Chelsea,Watford,42,2,0,3,0,3,0,W,True
+11965,2019,2020-07-04,Leicester,Crystal Palace,home,Leicester,Crystal Palace,76,2,0,3,0,3,0,W,True
+11966,2019,2020-07-05,Liverpool,Aston Villa,home,Liverpool,Aston Villa,88,2,0,2,0,2,0,W,True
+11967,2019,2020-07-04,Manchester United,Bournemouth,home,Manchester United,Bournemouth,46,3,1,5,2,5,2,W,True
+11972,2019,2020-07-04,Wolverhampton Wanderers,Arsenal,away,Arsenal,Wolverhampton Wanderers,85,2,0,0,2,2,0,W,False
+11974,2019,2020-07-09,Aston Villa,Manchester United,away,Manchester United,Aston Villa,49,2,0,0,3,3,0,W,False
+11976,2019,2020-07-08,Brighton,Liverpool,away,Liverpool,Brighton,7,2,0,1,3,3,1,W,False
+11977,2019,2020-07-07,Crystal Palace,Chelsea,away,Chelsea,Crystal Palace,26,2,0,2,3,3,2,W,False
+11979,2019,2020-07-08,Manchester City,Newcastle United,home,Manchester City,Newcastle United,20,2,0,5,0,5,0,W,True
+11983,2019,2020-07-12,Aston Villa,Crystal Palace,home,Aston Villa,Crystal Palace,58,2,0,2,0,2,0,W,True
+11984,2019,2020-07-12,Bournemouth,Leicester,home,Bournemouth,Leicester,82,3,1,4,1,4,1,W,True
+11985,2019,2020-07-11,Brighton,Manchester City,away,Manchester City,Brighton,43,2,0,0,5,5,0,W,False
+11988,2019,2020-07-11,Norwich,West Ham,away,West Ham,Norwich,45,2,0,0,4,4,0,W,False
+11989,2019,2020-07-11,Sheffield United,Chelsea,home,Sheffield United,Chelsea,32,2,0,3,0,3,0,W,True
+11992,2019,2020-07-12,Wolverhampton Wanderers,Everton,home,Wolverhampton Wanderers,Everton,46,2,0,3,0,3,0,W,True
+11996,2019,2020-07-16,Crystal Palace,Manchester United,away,Manchester United,Crystal Palace,77,2,0,0,2,2,0,W,False
+11998,2019,2020-07-16,Leicester,Sheffield United,home,Leicester,Sheffield United,78,2,0,2,0,2,0,W,True
+11999,2019,2020-07-15,Manchester City,Bournemouth,home,Manchester City,Bournemouth,38,2,0,2,1,2,1,W,True
+12000,2019,2020-07-15,Newcastle United,Tottenham,away,Tottenham,Newcastle United,89,3,1,1,3,3,1,W,False
+12001,2019,2020-07-17,West Ham,Watford,home,West Ham,Watford,9,2,0,3,1,3,1,W,True
+12004,2019,2020-07-19,Bournemouth,Southampton,away,Southampton,Bournemouth,97,2,0,0,2,2,0,W,False
+12006,2019,2020-07-22,Liverpool,Chelsea,home,Liverpool,Chelsea,37,2,0,5,3,5,3,W,True
+12008,2019,2020-07-18,Norwich,Burnley,away,Burnley,Norwich,79,2,0,0,2,2,0,W,False
+12010,2019,2020-07-19,Tottenham,Leicester,home,Tottenham,Leicester,36,2,0,3,0,3,0,W,True
+12011,2019,2020-07-21,Watford,Manchester City,away,Manchester City,Watford,39,2,0,0,4,4,0,W,False
+12012,2019,2020-07-20,Wolverhampton Wanderers,Crystal Palace,home,Wolverhampton Wanderers,Crystal Palace,67,2,0,2,0,2,0,W,True
+12014,2019,2020-07-26,Arsenal,Watford,home,Arsenal,Watford,23,2,0,3,2,3,2,W,True
+12015,2019,2020-07-26,Southampton,Sheffield United,home,Southampton,Sheffield United,83,3,1,3,1,3,1,W,True
+12016,2019,2020-07-26,Newcastle United,Liverpool,away,Liverpool,Newcastle United,88,3,1,1,3,3,1,W,False
+12017,2019,2020-07-26,Manchester City,Norwich,home,Manchester City,Norwich,45,2,0,5,0,5,0,W,True
+12018,2019,2020-07-26,Leicester,Manchester United,away,Manchester United,Leicester,97,2,0,0,2,2,0,W,False
+12019,2019,2020-07-26,Everton,Bournemouth,away,Bournemouth,Everton,79,3,1,1,3,3,1,W,False
+12021,2019,2020-07-26,Chelsea,Wolverhampton Wanderers,home,Chelsea,Wolverhampton Wanderers,48,2,0,2,0,2,0,W,True
+14086,2020,2020-09-12,Fulham,Arsenal,away,Arsenal,Fulham,48,2,0,0,3,3,0,W,False
+14089,2020,2021-01-20,Manchester City,Aston Villa,home,Manchester City,Aston Villa,89,2,0,2,0,2,0,W,True
+14091,2020,2020-09-12,West Ham,Newcastle United,away,Newcastle United,West Ham,86,2,0,0,2,2,0,W,False
+14092,2020,2020-09-13,West Bromwich Albion,Leicester,away,Leicester,West Bromwich Albion,73,2,0,0,3,3,0,W,False
+14094,2020,2020-09-14,Sheffield United,Wolverhampton Wanderers,away,Wolverhampton Wanderers,Sheffield United,5,2,0,0,2,2,0,W,False
+14095,2020,2020-09-14,Brighton,Chelsea,away,Chelsea,Brighton,65,3,1,1,3,3,1,W,False
+14096,2020,2020-09-19,Everton,West Bromwich Albion,home,Everton,West Bromwich Albion,61,4,2,5,2,5,2,W,True
+14097,2020,2020-09-19,Leeds,Fulham,home,Leeds,Fulham,49,3,1,4,3,4,3,W,True
+14098,2020,2020-09-19,Manchester United,Crystal Palace,away,Crystal Palace,Manchester United,73,2,0,1,3,3,1,W,False
+14100,2020,2020-09-20,Southampton,Tottenham,away,Tottenham,Southampton,63,3,1,2,5,5,2,W,False
+14101,2020,2020-09-20,Newcastle United,Brighton,away,Brighton,Newcastle United,6,2,0,0,3,3,0,W,False
+14102,2020,2020-09-20,Chelsea,Liverpool,away,Liverpool,Chelsea,53,2,0,0,2,2,0,W,False
+14103,2020,2020-09-20,Leicester,Burnley,home,Leicester,Burnley,60,3,1,4,2,4,2,W,True
+14105,2020,2020-09-21,Wolverhampton Wanderers,Manchester City,away,Manchester City,Wolverhampton Wanderers,31,2,0,1,3,3,1,W,False
+14108,2020,2020-09-26,West Bromwich Albion,Chelsea,home,West Bromwich Albion,Chelsea,24,2,0,3,3,3,3,D,True
+14112,2020,2020-09-27,Manchester City,Leicester,away,Leicester,Manchester City,57,3,1,2,5,5,2,W,False
+14113,2020,2020-09-27,West Ham,Wolverhampton Wanderers,home,West Ham,Wolverhampton Wanderers,56,2,0,4,0,4,0,W,True
+14114,2020,2020-09-28,Fulham,Aston Villa,away,Aston Villa,Fulham,14,2,0,0,3,3,0,W,False
+14115,2020,2020-09-28,Liverpool,Arsenal,home,Liverpool,Arsenal,87,3,1,3,1,3,1,W,True
+14465,2020,2020-10-04,Arsenal,Sheffield United,home,Arsenal,Sheffield United,63,2,0,2,1,2,1,W,True
+14466,2020,2020-10-04,Aston Villa,Liverpool,home,Aston Villa,Liverpool,21,2,0,7,2,7,2,W,True
+14467,2020,2020-10-03,Chelsea,Crystal Palace,home,Chelsea,Crystal Palace,65,2,0,4,0,4,0,W,True
+14468,2020,2020-10-03,Everton,Brighton,home,Everton,Brighton,51,3,1,4,2,4,2,W,True
+14470,2020,2020-10-04,Leicester,West Ham,away,West Ham,Leicester,33,2,0,0,3,3,0,W,False
+14471,2020,2020-10-04,Manchester United,Tottenham,away,Tottenham,Manchester United,30,3,1,1,6,6,1,W,False
+14472,2020,2020-10-03,Newcastle United,Burnley,home,Newcastle United,Burnley,76,3,1,3,1,3,1,W,True
+14473,2020,2020-10-04,Southampton,West Bromwich Albion,home,Southampton,West Bromwich Albion,68,2,0,2,0,2,0,W,True
+14475,2020,2020-10-17,Chelsea,Southampton,home,Chelsea,Southampton,28,2,0,3,3,3,3,D,True
+14481,2020,2020-10-17,Newcastle United,Manchester United,away,Manchester United,Newcastle United,89,3,1,1,4,4,1,W,False
+14483,2020,2020-10-18,Tottenham,West Ham,home,Tottenham,West Ham,7,2,0,3,3,3,3,D,True
+14486,2020,2020-10-23,Aston Villa,Leeds,away,Leeds,Aston Villa,66,2,0,0,3,3,0,W,False
+14489,2020,2020-10-24,Fulham,Crystal Palace,away,Crystal Palace,Fulham,63,2,0,1,2,2,1,W,False
+14492,2020,2020-10-25,Southampton,Everton,home,Southampton,Everton,34,2,0,2,0,2,0,W,True
+14495,2020,2020-11-01,Aston Villa,Southampton,away,Southampton,Aston Villa,32,2,0,3,4,4,3,W,False
+14496,2020,2020-10-31,Burnley,Chelsea,away,Chelsea,Burnley,62,2,0,0,3,3,0,W,False
+14497,2020,2020-11-02,Fulham,West Bromwich Albion,home,Fulham,West Bromwich Albion,29,2,0,2,0,2,0,W,True
+14498,2020,2020-11-02,Leeds,Leicester,away,Leicester,Leeds,20,2,0,1,4,4,1,W,False
+14501,2020,2020-11-01,Newcastle United,Everton,home,Newcastle United,Everton,83,2,0,2,1,2,1,W,True
+14504,2020,2020-10-30,Wolverhampton Wanderers,Crystal Palace,home,Wolverhampton Wanderers,Crystal Palace,26,2,0,2,0,2,0,W,True
+14505,2020,2020-11-08,Arsenal,Aston Villa,away,Aston Villa,Arsenal,71,2,0,0,3,3,0,W,False
+14507,2020,2020-11-07,Chelsea,Sheffield United,home,Chelsea,Sheffield United,76,3,1,4,1,4,1,W,True
+14508,2020,2020-11-07,Crystal Palace,Leeds,home,Crystal Palace,Leeds,21,2,0,4,1,4,1,W,True
+14509,2020,2020-11-07,Everton,Manchester United,away,Manchester United,Everton,94,3,1,1,3,3,1,W,False
+14512,2020,2020-11-06,Southampton,Newcastle United,home,Southampton,Newcastle United,81,2,0,2,0,2,0,W,True
+14517,2020,2020-11-22,Fulham,Everton,away,Everton,Fulham,34,3,1,2,3,3,2,W,False
+14519,2020,2020-11-22,Liverpool,Leicester,home,Liverpool,Leicester,40,2,0,3,0,3,0,W,True
+14521,2020,2020-11-21,Newcastle United,Chelsea,away,Chelsea,Newcastle United,64,2,0,0,2,2,0,W,False
+14523,2020,2020-11-21,Tottenham,Manchester City,home,Tottenham,Manchester City,64,2,0,2,0,2,0,W,True
+14530,2020,2020-11-27,Crystal Palace,Newcastle United,away,Newcastle United,Crystal Palace,89,2,0,0,2,2,0,W,False
+14532,2020,2020-11-30,Leicester,Fulham,away,Fulham,Leicester,37,2,0,1,2,2,1,W,False
+14533,2020,2020-11-28,Manchester City,Burnley,home,Manchester City,Burnley,21,2,0,5,0,5,0,W,True
+14534,2020,2020-11-29,Southampton,Manchester United,home,Southampton,Manchester United,32,2,0,2,3,2,3,L,True
+14535,2020,2021-01-23,Aston Villa,Newcastle United,home,Aston Villa,Newcastle United,41,2,0,2,0,2,0,W,True
+14538,2020,2020-12-05,Chelsea,Leeds,home,Chelsea,Leeds,92,3,1,3,1,3,1,W,True
+14539,2020,2020-12-06,Liverpool,Wolverhampton Wanderers,home,Liverpool,Wolverhampton Wanderers,57,2,0,4,0,4,0,W,True
+14540,2020,2020-12-05,Manchester City,Fulham,home,Manchester City,Fulham,25,2,0,2,0,2,0,W,True
+14542,2020,2020-12-06,Tottenham,Arsenal,home,Tottenham,Arsenal,45,2,0,2,0,2,0,W,True
+14543,2020,2020-12-06,West Bromwich Albion,Crystal Palace,away,Crystal Palace,West Bromwich Albion,58,3,1,1,5,5,1,W,False
+14544,2020,2020-12-05,West Ham,Manchester United,away,Manchester United,West Ham,77,3,1,1,3,3,1,W,False
+14551,2020,2020-12-13,Southampton,Sheffield United,home,Southampton,Sheffield United,61,2,0,3,0,3,0,W,True
+14553,2020,2020-12-13,Leicester,Brighton,home,Leicester,Brighton,40,2,0,3,0,3,0,W,True
+14558,2020,2020-12-16,Leeds,Newcastle United,home,Leeds,Newcastle United,84,4,2,5,2,5,2,W,True
+14559,2020,2020-12-16,Leicester,Everton,away,Everton,Leicester,71,2,0,0,2,2,0,W,False
+14560,2020,2020-12-17,Sheffield United,Manchester United,away,Manchester United,Sheffield United,50,3,1,2,3,3,2,W,False
+14566,2020,2020-12-21,Burnley,Wolverhampton Wanderers,home,Burnley,Wolverhampton Wanderers,50,2,0,2,1,2,1,W,True
+14567,2020,2020-12-21,Chelsea,West Ham,home,Chelsea,West Ham,77,2,0,3,0,3,0,W,True
+14568,2020,2020-12-19,Crystal Palace,Liverpool,away,Liverpool,Crystal Palace,34,2,0,0,7,7,0,W,False
+14570,2020,2020-12-20,Manchester United,Leeds,home,Manchester United,Leeds,2,2,0,6,2,6,2,W,True
+14573,2020,2020-12-20,Tottenham,Leicester,away,Leicester,Tottenham,58,2,0,0,2,2,0,W,False
+14574,2020,2020-12-20,West Bromwich Albion,Aston Villa,away,Aston Villa,West Bromwich Albion,83,2,0,0,3,3,0,W,False
+14575,2020,2020-12-26,Arsenal,Chelsea,home,Arsenal,Chelsea,43,2,0,3,1,3,1,W,True
+14576,2020,2020-12-26,Aston Villa,Crystal Palace,home,Aston Villa,Crystal Palace,65,2,0,3,0,3,0,W,True
+14581,2020,2020-12-26,Manchester City,Newcastle United,home,Manchester City,Newcastle United,54,2,0,2,0,2,0,W,True
+14590,2020,2020-12-29,West Bromwich Albion,Leeds,away,Leeds,West Bromwich Albion,30,2,0,0,5,5,0,W,False
+14593,2020,2021-02-17,Everton,Manchester City,away,Manchester City,Everton,76,3,1,1,3,3,1,W,False
+14597,2020,2021-01-03,Newcastle United,Leicester,away,Leicester,Newcastle United,71,2,0,1,2,2,1,W,False
+14599,2020,2021-01-02,Tottenham,Leeds,home,Tottenham,Leeds,42,2,0,3,0,3,0,W,True
+14600,2020,2021-01-02,West Bromwich Albion,Arsenal,away,Arsenal,West Bromwich Albion,27,2,0,0,4,4,0,W,False
+14601,2020,2021-01-02,Brighton,Wolverhampton Wanderers,away,Wolverhampton Wanderers,Brighton,43,3,1,3,3,3,3,D,False
+14603,2020,2021-01-03,Chelsea,Manchester City,away,Manchester City,Chelsea,20,2,0,1,3,3,1,W,False
+14604,2020,2021-01-02,Crystal Palace,Sheffield United,home,Crystal Palace,Sheffield United,50,2,0,2,0,2,0,W,True
+14606,2020,2021-03-21,Aston Villa,Tottenham,away,Tottenham,Aston Villa,67,2,0,0,2,2,0,W,False
+14608,2020,2021-02-23,Leeds,Southampton,home,Leeds,Southampton,77,2,0,3,0,3,0,W,True
+14609,2020,2021-01-19,Leicester,Chelsea,home,Leicester,Chelsea,40,2,0,2,0,2,0,W,True
+14615,2020,2021-01-18,Arsenal,Newcastle United,home,Arsenal,Newcastle United,59,2,0,3,0,3,0,W,True
+14619,2020,2021-01-16,Leicester,Southampton,home,Leicester,Southampton,94,2,0,2,0,2,0,W,True
+14621,2020,2021-01-17,Manchester City,Crystal Palace,home,Manchester City,Crystal Palace,55,2,0,4,0,4,0,W,True
+14622,2020,2021-01-17,Sheffield United,Tottenham,away,Tottenham,Sheffield United,39,2,0,1,3,3,1,W,False
+14629,2020,2021-01-26,West Bromwich Albion,Manchester City,away,Manchester City,West Bromwich Albion,19,2,0,0,5,5,0,W,False
+14632,2020,2021-01-26,Southampton,Arsenal,away,Arsenal,Southampton,71,3,1,1,3,3,1,W,False
+14633,2020,2021-01-28,Tottenham,Liverpool,away,Liverpool,Tottenham,48,2,0,1,3,3,1,W,False
+14634,2020,2021-01-26,Crystal Palace,West Ham,away,West Ham,Crystal Palace,64,3,1,2,3,3,2,W,False
+14637,2020,2021-01-31,Chelsea,Burnley,home,Chelsea,Burnley,83,2,0,2,0,2,0,W,True
+14639,2020,2021-01-31,West Ham,Liverpool,away,Liverpool,West Ham,67,2,0,1,3,3,1,W,False
+14643,2020,2021-01-31,Leicester,Leeds,away,Leeds,Leicester,83,3,1,1,3,3,1,W,False
+14644,2020,2021-01-30,Everton,Newcastle United,away,Newcastle United,Everton,92,2,0,0,2,2,0,W,False
+14645,2020,2021-02-03,Aston Villa,West Ham,away,West Ham,Aston Villa,55,2,0,1,3,3,1,W,False
+14646,2020,2021-02-03,Burnley,Manchester City,away,Manchester City,Burnley,37,2,0,0,2,2,0,W,False
+14647,2020,2021-02-03,Fulham,Leicester,away,Leicester,Fulham,43,2,0,0,2,2,0,W,False
+14648,2020,2021-02-03,Leeds,Everton,away,Everton,Leeds,40,2,0,1,2,2,1,W,False
+14651,2020,2021-02-02,Manchester United,Southampton,home,Manchester United,Southampton,24,2,0,9,0,9,0,W,True
+14658,2020,2021-02-08,Leeds,Crystal Palace,home,Leeds,Crystal Palace,51,2,0,2,0,2,0,W,True
+14659,2020,2021-02-07,Liverpool,Manchester City,away,Manchester City,Liverpool,75,3,1,1,4,4,1,W,False
+14660,2020,2021-02-06,Manchester United,Everton,home,Manchester United,Everton,44,2,0,3,3,3,3,D,True
+14661,2020,2021-02-06,Newcastle United,Southampton,home,Newcastle United,Southampton,25,2,0,3,2,3,2,W,True
+14663,2020,2021-02-07,Tottenham,West Bromwich Albion,home,Tottenham,West Bromwich Albion,57,2,0,2,0,2,0,W,True
+14665,2020,2021-02-14,Arsenal,Leeds,home,Arsenal,Leeds,40,2,0,4,2,4,2,W,True
+14667,2020,2021-02-15,Chelsea,Newcastle United,home,Chelsea,Newcastle United,38,2,0,2,0,2,0,W,True
+14668,2020,2021-02-13,Crystal Palace,Burnley,away,Burnley,Crystal Palace,9,2,0,0,3,3,0,W,False
+14669,2020,2021-02-14,Everton,Fulham,away,Fulham,Everton,64,2,0,0,2,2,0,W,False
+14670,2020,2021-02-13,Leicester,Liverpool,home,Leicester,Liverpool,84,3,1,3,1,3,1,W,True
+14671,2020,2021-02-13,Manchester City,Tottenham,home,Manchester City,Tottenham,49,2,0,3,0,3,0,W,True
+14674,2020,2021-02-15,West Ham,Sheffield United,home,West Ham,Sheffield United,57,2,0,3,0,3,0,W,True
+14676,2020,2021-02-21,Aston Villa,Leicester,away,Leicester,Aston Villa,22,2,0,1,2,2,1,W,False
+14680,2020,2021-02-20,Liverpool,Everton,away,Everton,Liverpool,82,2,0,0,2,2,0,W,False
+14681,2020,2021-02-21,Manchester United,Newcastle United,home,Manchester United,Newcastle United,74,3,1,3,1,3,1,W,True
+14683,2020,2021-02-21,West Ham,Tottenham,home,West Ham,Tottenham,46,2,0,2,1,2,1,W,True
+14690,2020,2021-02-28,Leicester,Arsenal,away,Arsenal,Leicester,51,3,1,1,3,3,1,W,False
+14693,2020,2021-02-28,Tottenham,Burnley,home,Tottenham,Burnley,14,2,0,4,0,4,0,W,True
+14694,2020,2021-02-28,Sheffield United,Liverpool,away,Liverpool,Sheffield United,63,2,0,0,2,2,0,W,False
+14698,2020,2021-03-08,Chelsea,Everton,home,Chelsea,Everton,64,2,0,2,0,2,0,W,True
+14700,2020,2021-03-07,Manchester City,Manchester United,away,Manchester United,Manchester City,49,2,0,0,2,2,0,W,False
+14701,2020,2021-03-06,Sheffield United,Southampton,away,Southampton,Sheffield United,48,2,0,0,2,2,0,W,False
+14702,2020,2021-03-07,Tottenham,Crystal Palace,home,Tottenham,Crystal Palace,51,3,1,4,1,4,1,W,True
+14704,2020,2021-03-08,West Ham,Leeds,home,West Ham,Leeds,27,2,0,2,0,2,0,W,True
+14707,2020,2021-03-13,Everton,Burnley,away,Burnley,Everton,24,2,0,1,2,2,1,W,False
+14708,2020,2021-03-13,Fulham,Manchester City,away,Manchester City,Fulham,55,2,0,0,3,3,0,W,False
+14710,2020,2021-03-14,Leicester,Sheffield United,home,Leicester,Sheffield United,63,2,0,5,0,5,0,W,True
+14715,2020,2021-03-20,Brighton,Newcastle United,home,Brighton,Newcastle United,50,2,0,3,0,3,0,W,True
+14720,2020,2021-03-02,Manchester City,Wolverhampton Wanderers,home,Manchester City,Wolverhampton Wanderers,89,3,1,4,1,4,1,W,True
+14724,2020,2021-03-21,West Ham,Arsenal,home,West Ham,Arsenal,16,2,0,3,3,3,3,D,True
+14725,2020,2021-04-03,Arsenal,Liverpool,away,Liverpool,Arsenal,67,2,0,0,3,3,0,W,False
+14726,2020,2021-04-04,Aston Villa,Fulham,home,Aston Villa,Fulham,86,3,1,3,1,3,1,W,True
+14727,2020,2021-04-03,Chelsea,West Bromwich Albion,away,West Bromwich Albion,Chelsea,62,3,1,2,5,5,2,W,False
+14730,2020,2021-04-03,Leicester,Manchester City,away,Manchester City,Leicester,73,2,0,0,2,2,0,W,False
+14733,2020,2021-04-04,Southampton,Burnley,away,Burnley,Southampton,27,2,0,3,2,2,3,L,False
+14734,2020,2021-04-05,Wolverhampton Wanderers,West Ham,away,West Ham,Wolverhampton Wanderers,13,2,0,2,3,3,2,W,False
+14737,2020,2021-04-10,Crystal Palace,Chelsea,away,Chelsea,Crystal Palace,9,2,0,1,4,4,1,W,False
+14741,2020,2021-04-11,Sheffield United,Arsenal,away,Arsenal,Sheffield United,70,2,0,0,3,3,0,W,False
+14742,2020,2021-04-11,Tottenham,Manchester United,away,Manchester United,Tottenham,95,3,1,1,3,3,1,W,False
+14743,2020,2021-04-12,West Bromwich Albion,Southampton,home,West Bromwich Albion,Southampton,34,2,0,3,0,3,0,W,True
+14744,2020,2021-04-11,West Ham,Leicester,home,West Ham,Leicester,43,2,0,3,2,3,2,W,True
+14750,2020,2021-04-22,Leicester,West Bromwich Albion,home,Leicester,West Bromwich Albion,25,2,0,3,0,3,0,W,True
+14751,2020,2021-04-18,Manchester United,Burnley,home,Manchester United,Burnley,92,3,1,3,1,3,1,W,True
+14752,2020,2021-04-17,Newcastle United,West Ham,home,Newcastle United,West Ham,40,2,0,3,2,3,2,W,True
+14753,2020,2021-05-11,Southampton,Crystal Palace,home,Southampton,Crystal Palace,74,3,1,3,1,3,1,W,True
+14761,2020,2021-03-10,Manchester City,Southampton,home,Manchester City,Southampton,47,3,1,5,2,5,2,W,True
+14764,2020,2021-04-25,Wolverhampton Wanderers,Burnley,away,Burnley,Wolverhampton Wanderers,20,2,0,0,4,4,0,W,False
+14765,2020,2021-05-01,Brighton,Leeds,home,Brighton,Leeds,78,2,0,2,0,2,0,W,True
+14767,2020,2021-05-01,Chelsea,Fulham,home,Chelsea,Fulham,48,2,0,2,0,2,0,W,True
+14768,2020,2021-05-01,Crystal Palace,Manchester City,away,Manchester City,Crystal Palace,58,2,0,0,2,2,0,W,False
+14770,2020,2021-05-13,Manchester United,Liverpool,away,Liverpool,Manchester United,47,3,1,2,4,4,2,W,False
+14771,2020,2021-05-02,Newcastle United,Arsenal,away,Arsenal,Newcastle United,65,2,0,0,2,2,0,W,False
+14773,2020,2021-05-02,Tottenham,Sheffield United,home,Tottenham,Sheffield United,60,2,0,4,0,4,0,W,True
+14775,2020,2021-05-09,Arsenal,West Bromwich Albion,home,Arsenal,West Bromwich Albion,34,2,0,3,1,3,1,W,True
+14776,2020,2021-05-09,Aston Villa,Manchester United,away,Manchester United,Aston Villa,86,3,1,1,3,3,1,W,False
+14777,2020,2021-05-10,Fulham,Burnley,away,Burnley,Fulham,43,2,0,0,2,2,0,W,False
+14778,2020,2021-05-08,Leeds,Tottenham,home,Leeds,Tottenham,83,3,1,3,1,3,1,W,True
+14779,2020,2021-05-07,Leicester,Newcastle United,away,Newcastle United,Leicester,33,2,0,2,4,4,2,W,False
+14780,2020,2021-05-08,Liverpool,Southampton,home,Liverpool,Southampton,89,2,0,2,0,2,0,W,True
+14782,2020,2021-05-08,Sheffield United,Crystal Palace,away,Crystal Palace,Sheffield United,87,2,0,0,2,2,0,W,False
+14786,2020,2021-05-15,Burnley,Leeds,away,Leeds,Burnley,59,2,0,0,4,4,0,W,False
+14792,2020,2021-05-15,Southampton,Fulham,home,Southampton,Fulham,59,2,0,3,1,3,1,W,True
+14793,2020,2021-05-16,Tottenham,Wolverhampton Wanderers,home,Tottenham,Wolverhampton Wanderers,61,2,0,2,0,2,0,W,True
+14795,2020,2021-05-18,Brighton,Manchester City,away,Manchester City,Brighton,47,2,0,3,2,2,3,L,False
+14796,2020,2021-05-19,Burnley,Liverpool,away,Liverpool,Burnley,51,2,0,0,3,3,0,W,False
+14797,2020,2021-05-18,Chelsea,Leicester,home,Chelsea,Leicester,65,2,0,2,1,2,1,W,True
+14798,2020,2021-05-19,Crystal Palace,Arsenal,away,Arsenal,Crystal Palace,94,3,1,1,3,3,1,W,False
+14802,2020,2021-05-18,Southampton,Leeds,away,Leeds,Southampton,94,2,0,0,2,2,0,W,False
+14804,2020,2021-05-19,West Bromwich Albion,West Ham,away,West Ham,West Bromwich Albion,87,3,1,1,3,3,1,W,False
+14805,2020,2021-05-23,Arsenal,Brighton,home,Arsenal,Brighton,59,2,0,2,0,2,0,W,True
+14806,2020,2021-05-23,Aston Villa,Chelsea,home,Aston Villa,Chelsea,51,2,0,2,1,2,1,W,True
+14807,2020,2021-05-23,Fulham,Newcastle United,away,Newcastle United,Fulham,87,2,0,0,2,2,0,W,False
+14808,2020,2021-05-23,Leeds,West Bromwich Albion,home,Leeds,West Bromwich Albion,41,2,0,3,1,3,1,W,True
+14809,2020,2021-05-23,Leicester,Tottenham,away,Tottenham,Leicester,95,4,2,2,4,4,2,W,False
+14810,2020,2021-05-23,Liverpool,Crystal Palace,home,Liverpool,Crystal Palace,73,2,0,2,0,2,0,W,True
+14811,2020,2021-05-23,Manchester City,Everton,home,Manchester City,Everton,13,2,0,5,0,5,0,W,True
+14813,2020,2021-05-23,West Ham,Southampton,home,West Ham,Southampton,32,2,0,3,0,3,0,W,True
+16376,2021,2021-08-13,Brentford,Arsenal,home,Brentford,Arsenal,72,2,0,2,0,2,0,W,True
+16377,2021,2021-08-14,Manchester United,Leeds,home,Manchester United,Leeds,53,3,1,5,1,5,1,W,True
+16379,2021,2021-08-14,Chelsea,Crystal Palace,home,Chelsea,Crystal Palace,39,2,0,3,0,3,0,W,True
+16380,2021,2021-08-14,Everton,Southampton,home,Everton,Southampton,80,3,1,3,1,3,1,W,True
+16382,2021,2021-08-14,Watford,Aston Villa,home,Watford,Aston Villa,41,2,0,3,2,3,2,W,True
+16383,2021,2021-08-14,Norwich,Liverpool,away,Liverpool,Norwich,64,2,0,0,3,3,0,W,False
+16384,2021,2021-08-15,Newcastle United,West Ham,away,West Ham,Newcastle United,65,4,2,2,4,4,2,W,False
+16386,2021,2021-08-21,Liverpool,Burnley,home,Liverpool,Burnley,68,2,0,2,0,2,0,W,True
+16387,2021,2021-08-21,Manchester City,Norwich,home,Manchester City,Norwich,21,2,0,5,0,5,0,W,True
+16388,2021,2021-08-21,Aston Villa,Newcastle United,home,Aston Villa,Newcastle United,61,2,0,2,0,2,0,W,True
+16391,2021,2021-08-21,Brighton,Watford,home,Brighton,Watford,40,2,0,2,0,2,0,W,True
+16394,2021,2021-08-22,Arsenal,Chelsea,away,Chelsea,Arsenal,34,2,0,0,2,2,0,W,False
+16395,2021,2021-08-23,West Ham,Leicester,home,West Ham,Leicester,55,2,0,4,1,4,1,W,True
+16396,2021,2021-08-28,Manchester City,Arsenal,home,Manchester City,Arsenal,11,2,0,5,0,5,0,W,True
+16400,2021,2021-08-28,Brighton,Everton,away,Everton,Brighton,57,2,0,0,2,2,0,W,False
+16406,2021,2021-09-11,Crystal Palace,Tottenham,home,Crystal Palace,Tottenham,83,2,0,3,0,3,0,W,True
+16410,2021,2021-09-11,Manchester United,Newcastle United,home,Manchester United,Newcastle United,79,3,1,4,1,4,1,W,True
+16412,2021,2021-09-11,Watford,Wolverhampton Wanderers,away,Wolverhampton Wanderers,Watford,82,2,0,0,2,2,0,W,False
+16413,2021,2021-09-11,Chelsea,Aston Villa,home,Chelsea,Aston Villa,48,2,0,3,0,3,0,W,True
+16414,2021,2021-09-12,Leeds,Liverpool,away,Liverpool,Leeds,49,2,0,0,3,3,0,W,False
+16415,2021,2021-09-13,Everton,Burnley,home,Everton,Burnley,65,3,1,3,1,3,1,W,True
+16417,2021,2021-09-18,Wolverhampton Wanderers,Brentford,away,Brentford,Wolverhampton Wanderers,33,2,0,0,2,2,0,W,False
+16418,2021,2021-09-18,Norwich,Watford,away,Watford,Norwich,79,3,1,1,3,3,1,W,False
+16420,2021,2021-09-18,Liverpool,Crystal Palace,home,Liverpool,Crystal Palace,77,2,0,3,0,3,0,W,True
+16422,2021,2021-09-18,Aston Villa,Everton,home,Aston Villa,Everton,68,2,0,3,0,3,0,W,True
+16423,2021,2021-09-19,Brighton,Leicester,home,Brighton,Leicester,49,2,0,2,1,2,1,W,True
+16425,2021,2021-09-19,Tottenham,Chelsea,away,Chelsea,Tottenham,56,2,0,0,3,3,0,W,False
+16428,2021,2021-09-25,Everton,Norwich,home,Everton,Norwich,76,2,0,2,0,2,0,W,True
+16434,2021,2021-09-26,Arsenal,Tottenham,home,Arsenal,Tottenham,26,2,0,3,1,3,1,W,True
+16438,2021,2021-10-02,Chelsea,Southampton,home,Chelsea,Southampton,88,3,1,3,1,3,1,W,True
+16439,2021,2021-10-03,Crystal Palace,Leicester,away,Leicester,Crystal Palace,36,2,0,2,2,2,2,D,False
+16447,2021,2021-10-16,Aston Villa,Wolverhampton Wanderers,home,Aston Villa,Wolverhampton Wanderers,67,2,0,2,3,2,3,L,True
+16450,2021,2021-10-16,Leicester,Manchester United,home,Leicester,Manchester United,90,4,2,4,2,4,2,W,True
+16451,2021,2021-10-16,Manchester City,Burnley,home,Manchester City,Burnley,69,2,0,2,0,2,0,W,True
+16452,2021,2021-10-17,Newcastle United,Tottenham,away,Tottenham,Newcastle United,48,3,1,2,3,3,2,W,False
+16455,2021,2021-10-16,Watford,Liverpool,away,Liverpool,Watford,36,2,0,0,5,5,0,W,False
+16456,2021,2021-10-22,Arsenal,Aston Villa,home,Arsenal,Aston Villa,50,2,0,3,1,3,1,W,True
+16458,2021,2021-10-23,Brighton,Manchester City,away,Manchester City,Brighton,27,2,0,1,4,4,1,W,False
+16459,2021,2021-10-23,Chelsea,Norwich,home,Chelsea,Norwich,17,2,0,7,0,7,0,W,True
+16461,2021,2021-10-23,Everton,Watford,away,Watford,Everton,85,4,2,2,5,5,2,W,False
+16463,2021,2021-10-24,Manchester United,Liverpool,away,Liverpool,Manchester United,12,2,0,0,5,5,0,W,False
+16466,2021,2021-10-31,Aston Villa,West Ham,away,West Ham,Aston Villa,79,3,1,1,4,4,1,W,False
+16467,2021,2021-10-30,Burnley,Brentford,home,Burnley,Brentford,31,2,0,3,1,3,1,W,True
+16468,2021,2021-10-30,Leicester,Arsenal,away,Arsenal,Leicester,17,2,0,0,2,2,0,W,False
+16469,2021,2021-10-30,Liverpool,Brighton,home,Liverpool,Brighton,23,2,0,2,2,2,2,D,True
+16470,2021,2021-10-30,Manchester City,Crystal Palace,away,Crystal Palace,Manchester City,87,2,0,0,2,2,0,W,False
+16471,2021,2021-10-30,Newcastle United,Chelsea,away,Chelsea,Newcastle United,76,2,0,0,3,3,0,W,False
+16473,2021,2021-10-30,Tottenham,Manchester United,away,Manchester United,Tottenham,63,2,0,0,3,3,0,W,False
+16475,2021,2021-11-01,Wolverhampton Wanderers,Everton,home,Wolverhampton Wanderers,Everton,31,2,0,2,1,2,1,W,True
+16477,2021,2021-11-06,Brentford,Norwich,away,Norwich,Brentford,28,2,0,1,2,2,1,W,False
+16480,2021,2021-11-06,Crystal Palace,Wolverhampton Wanderers,home,Crystal Palace,Wolverhampton Wanderers,77,2,0,2,0,2,0,W,True
+16483,2021,2021-11-06,Manchester United,Manchester City,away,Manchester City,Manchester United,44,2,0,0,2,2,0,W,False
+16485,2021,2021-11-07,West Ham,Liverpool,home,West Ham,Liverpool,73,3,1,3,2,3,2,W,True
+16486,2021,2021-11-20,Aston Villa,Brighton,home,Aston Villa,Brighton,88,2,0,2,0,2,0,W,True
+16488,2021,2021-11-20,Leicester,Chelsea,away,Chelsea,Leicester,27,2,0,0,3,3,0,W,False
+16489,2021,2021-11-20,Liverpool,Arsenal,home,Liverpool,Arsenal,51,2,0,4,0,4,0,W,True
+16490,2021,2021-11-21,Manchester City,Everton,home,Manchester City,Everton,54,2,0,3,0,3,0,W,True
+16494,2021,2021-11-20,Watford,Manchester United,home,Watford,Manchester United,43,2,0,4,1,4,1,W,True
+16496,2021,2021-11-27,Arsenal,Newcastle United,home,Arsenal,Newcastle United,65,2,0,2,0,2,0,W,True
+16501,2021,2021-11-27,Crystal Palace,Aston Villa,away,Aston Villa,Crystal Palace,85,2,0,1,2,2,1,W,False
+16502,2021,2021-11-28,Leicester,Watford,home,Leicester,Watford,41,3,1,4,2,4,2,W,True
+16503,2021,2021-11-27,Liverpool,Southampton,home,Liverpool,Southampton,31,2,0,4,0,4,0,W,True
+16504,2021,2021-11-28,Manchester City,West Ham,home,Manchester City,West Ham,89,2,0,2,1,2,1,W,True
+16506,2021,2021-12-01,Aston Villa,Manchester City,away,Manchester City,Aston Villa,42,2,0,1,2,2,1,W,False
+16507,2021,2021-12-01,Everton,Liverpool,away,Liverpool,Everton,18,2,0,1,4,4,1,W,False
+16515,2021,2021-12-02,Tottenham,Brentford,home,Tottenham,Brentford,64,2,0,2,0,2,0,W,True
+16522,2021,2021-12-05,Tottenham,Norwich,home,Tottenham,Norwich,66,2,0,3,0,3,0,W,True
+16523,2021,2021-12-04,Watford,Manchester City,away,Manchester City,Watford,30,2,0,1,3,3,1,W,False
+16526,2021,2021-12-11,Arsenal,Southampton,home,Arsenal,Southampton,26,2,0,3,0,3,0,W,True
+16528,2021,2022-03-16,Brighton,Tottenham,away,Tottenham,Brighton,56,2,0,0,2,2,0,W,False
+16531,2021,2021-12-12,Crystal Palace,Everton,home,Crystal Palace,Everton,61,2,0,3,1,3,1,W,True
+16532,2021,2021-12-12,Leicester,Newcastle United,home,Leicester,Newcastle United,56,2,0,4,0,4,0,W,True
+16536,2021,2021-12-15,Arsenal,West Ham,home,Arsenal,West Ham,86,2,0,2,0,2,0,W,True
+16537,2021,2022-01-19,Brentford,Manchester United,away,Manchester United,Brentford,61,2,0,1,3,3,1,W,False
+16541,2021,2021-12-14,Norwich,Aston Villa,away,Aston Villa,Norwich,86,2,0,0,2,2,0,W,False
+16544,2021,2021-12-16,Liverpool,Newcastle United,home,Liverpool,Newcastle United,86,3,1,3,1,3,1,W,True
+16545,2021,2021-12-14,Manchester City,Leeds,home,Manchester City,Leeds,12,2,0,7,0,7,0,W,True
+16548,2021,2021-12-18,Leeds,Arsenal,away,Arsenal,Leeds,27,2,0,1,4,4,1,W,False
+16549,2021,2022-02-15,Manchester United,Brighton,home,Manchester United,Brighton,96,2,0,2,0,2,0,W,True
+16550,2021,2021-12-19,Newcastle United,Manchester City,away,Manchester City,Newcastle United,26,2,0,0,4,4,0,W,False
+16551,2021,2022-01-11,Southampton,Brentford,home,Southampton,Brentford,48,3,1,4,1,4,1,W,True
+16553,2021,2022-02-23,Watford,Crystal Palace,away,Crystal Palace,Watford,84,3,1,1,4,4,1,W,False
+16554,2021,2022-01-12,West Ham,Norwich,home,West Ham,Norwich,82,2,0,2,0,2,0,W,True
+16556,2021,2021-12-26,Aston Villa,Chelsea,away,Chelsea,Aston Villa,92,3,1,1,3,3,1,W,False
+16557,2021,2021-12-26,Brighton,Brentford,home,Brighton,Brentford,41,2,0,2,0,2,0,W,True
+16559,2021,2022-02-23,Liverpool,Leeds,home,Liverpool,Leeds,29,2,0,6,0,6,0,W,True
+16560,2021,2021-12-26,Manchester City,Leicester,home,Manchester City,Leicester,13,2,0,6,3,6,3,W,True
+16562,2021,2021-12-26,Norwich,Arsenal,away,Arsenal,Norwich,43,2,0,0,5,5,0,W,False
+16563,2021,2021-12-26,Tottenham,Crystal Palace,home,Tottenham,Crystal Palace,33,2,0,3,0,3,0,W,True
+16565,2021,2022-03-10,Wolverhampton Wanderers,Watford,home,Wolverhampton Wanderers,Watford,17,2,0,4,0,4,0,W,True
+16569,2021,2021-12-28,Watford,West Ham,away,West Ham,Watford,57,3,1,1,4,4,1,W,False
+16570,2021,2021-12-28,Crystal Palace,Norwich,home,Crystal Palace,Norwich,37,2,0,3,0,3,0,W,True
+16572,2021,2022-03-10,Leeds,Aston Villa,away,Aston Villa,Leeds,64,2,0,0,3,3,0,W,False
+16574,2021,2021-12-30,Manchester United,Burnley,home,Manchester United,Burnley,26,2,0,3,1,3,1,W,True
+16578,2021,2022-01-02,Chelsea,Liverpool,away,Liverpool,Chelsea,25,2,0,2,2,2,2,D,False
+16579,2021,2022-01-01,Crystal Palace,West Ham,away,West Ham,Crystal Palace,24,2,0,2,3,3,2,W,False
+16580,2021,2022-01-02,Everton,Brighton,away,Brighton,Everton,20,2,0,2,3,3,2,W,False
+16581,2021,2022-01-02,Leeds,Burnley,home,Leeds,Burnley,91,3,1,3,1,3,1,W,True
+16582,2021,2022-05-11,Leicester,Norwich,home,Leicester,Norwich,61,2,0,3,0,3,0,W,True
+16586,2021,2022-01-15,Aston Villa,Manchester United,away,Manchester United,Aston Villa,66,2,0,2,2,2,2,D,False
+16588,2021,2022-03-01,Burnley,Leicester,away,Leicester,Burnley,89,2,0,0,2,2,0,W,False
+16589,2021,2022-01-16,Liverpool,Brentford,home,Liverpool,Brentford,68,2,0,3,0,3,0,W,True
+16592,2021,2022-01-15,Norwich,Everton,home,Norwich,Everton,17,2,0,2,1,2,1,W,True
+16593,2021,2022-05-12,Tottenham,Arsenal,home,Tottenham,Arsenal,36,2,0,3,0,3,0,W,True
+16595,2021,2022-01-15,Wolverhampton Wanderers,Southampton,home,Wolverhampton Wanderers,Southampton,58,2,0,3,1,3,1,W,True
+16598,2021,2022-01-23,Chelsea,Tottenham,home,Chelsea,Tottenham,54,2,0,2,0,2,0,W,True
+16599,2021,2022-01-23,Crystal Palace,Liverpool,away,Liverpool,Crystal Palace,31,2,0,1,3,3,1,W,False
+16605,2021,2022-01-21,Watford,Norwich,away,Norwich,Watford,73,2,0,0,3,3,0,W,False
+16606,2021,2022-02-09,Aston Villa,Leeds,home,Aston Villa,Leeds,42,3,1,3,3,3,3,D,True
+16612,2021,2022-02-08,Newcastle United,Everton,home,Newcastle United,Everton,79,3,1,3,1,3,1,W,True
+16614,2021,2022-02-10,Liverpool,Leicester,home,Liverpool,Leicester,86,2,0,2,0,2,0,W,True
+16615,2021,2022-02-09,Manchester City,Brentford,home,Manchester City,Brentford,68,2,0,2,0,2,0,W,True
+16618,2021,2022-04-20,Chelsea,Arsenal,away,Arsenal,Chelsea,91,4,2,2,4,4,2,W,False
+16619,2021,2022-02-12,Everton,Leeds,home,Everton,Leeds,22,2,0,3,0,3,0,W,True
+16623,2021,2022-02-12,Norwich,Manchester City,away,Manchester City,Norwich,47,2,0,0,4,4,0,W,False
+16624,2021,2022-02-13,Tottenham,Wolverhampton Wanderers,away,Wolverhampton Wanderers,Tottenham,17,2,0,0,2,2,0,W,False
+16625,2021,2022-02-12,Watford,Brighton,away,Brighton,Watford,82,2,0,0,2,2,0,W,False
+16626,2021,2022-02-19,Arsenal,Brentford,home,Arsenal,Brentford,78,2,0,2,1,2,1,W,True
+16628,2021,2022-02-19,Brighton,Burnley,away,Burnley,Brighton,39,2,0,0,3,3,0,W,False
+16630,2021,2022-02-20,Leeds,Manchester United,away,Manchester United,Leeds,49,2,0,2,4,4,2,W,False
+16631,2021,2022-02-19,Liverpool,Norwich,home,Liverpool,Norwich,80,3,1,3,1,3,1,W,True
+16633,2021,2022-02-19,Southampton,Everton,home,Southampton,Everton,83,2,0,2,0,2,0,W,True
+16636,2021,2022-03-16,Arsenal,Liverpool,away,Liverpool,Arsenal,61,2,0,0,2,2,0,W,False
+16637,2021,2022-02-26,Brentford,Newcastle United,away,Newcastle United,Brentford,43,2,0,0,2,2,0,W,False
+16638,2021,2022-02-26,Brighton,Aston Villa,away,Aston Villa,Brighton,67,2,0,0,2,2,0,W,False
+16642,2021,2022-02-26,Leeds,Tottenham,away,Tottenham,Leeds,14,2,0,0,4,4,0,W,False
+16644,2021,2022-02-25,Southampton,Norwich,home,Southampton,Norwich,87,2,0,2,0,2,0,W,True
+16646,2021,2022-03-05,Aston Villa,Southampton,home,Aston Villa,Southampton,43,2,0,4,0,4,0,W,True
+16647,2021,2022-03-05,Burnley,Chelsea,away,Chelsea,Burnley,52,2,0,0,4,4,0,W,False
+16650,2021,2022-03-06,Manchester City,Manchester United,home,Manchester City,Manchester United,67,3,1,4,1,4,1,W,True
+16651,2021,2022-03-05,Newcastle United,Brighton,home,Newcastle United,Brighton,13,2,0,2,1,2,1,W,True
+16652,2021,2022-03-05,Norwich,Brentford,away,Brentford,Norwich,51,2,0,1,3,3,1,W,False
+16653,2021,2022-03-07,Tottenham,Everton,home,Tottenham,Everton,16,2,0,5,0,5,0,W,True
+16654,2021,2022-03-06,Watford,Arsenal,away,Arsenal,Watford,51,3,1,2,3,3,2,W,False
+16655,2021,2022-03-05,Wolverhampton Wanderers,Crystal Palace,away,Crystal Palace,Wolverhampton Wanderers,33,2,0,0,2,2,0,W,False
+16656,2021,2022-03-13,Arsenal,Leicester,home,Arsenal,Leicester,58,2,0,2,0,2,0,W,True
+16657,2021,2022-03-12,Brentford,Burnley,home,Brentford,Burnley,93,2,0,2,0,2,0,W,True
+16658,2021,2022-03-12,Brighton,Liverpool,away,Liverpool,Brighton,60,2,0,0,2,2,0,W,False
+16664,2021,2022-03-13,Southampton,Watford,away,Watford,Southampton,33,2,0,1,2,2,1,W,False
+16665,2021,2022-03-13,West Ham,Aston Villa,home,West Ham,Aston Villa,81,2,0,2,1,2,1,W,True
+16667,2021,2022-04-21,Burnley,Southampton,home,Burnley,Southampton,43,2,0,2,0,2,0,W,True
+16668,2021,2022-03-20,Leicester,Brentford,home,Leicester,Brentford,32,2,0,2,1,2,1,W,True
+16669,2021,2022-04-19,Liverpool,Manchester United,home,Liverpool,Manchester United,21,2,0,4,0,4,0,W,True
+16670,2021,2022-04-20,Manchester City,Brighton,home,Manchester City,Brighton,64,2,0,3,0,3,0,W,True
+16672,2021,2022-03-10,Norwich,Chelsea,away,Chelsea,Norwich,13,2,0,1,3,3,1,W,False
+16673,2021,2022-03-20,Tottenham,West Ham,home,Tottenham,West Ham,23,2,0,3,1,3,1,W,True
+16675,2021,2022-03-18,Wolverhampton Wanderers,Leeds,home,Wolverhampton Wanderers,Leeds,55,2,0,2,3,2,3,L,True
+16676,2021,2022-04-02,Wolverhampton Wanderers,Aston Villa,home,Wolverhampton Wanderers,Aston Villa,35,2,0,2,1,2,1,W,True
+16678,2021,2022-04-03,Tottenham,Newcastle United,home,Tottenham,Newcastle United,53,3,1,5,1,5,1,W,True
+16680,2021,2022-04-02,Liverpool,Watford,home,Liverpool,Watford,88,2,0,2,0,2,0,W,True
+16682,2021,2022-04-04,Crystal Palace,Arsenal,home,Crystal Palace,Arsenal,23,2,0,3,0,3,0,W,True
+16683,2021,2022-04-02,Chelsea,Brentford,away,Brentford,Chelsea,59,3,1,1,4,4,1,W,False
+16684,2021,2022-04-02,Burnley,Manchester City,away,Manchester City,Burnley,24,2,0,0,2,2,0,W,False
+16686,2021,2022-04-09,Watford,Leeds,away,Leeds,Watford,72,2,0,0,3,3,0,W,False
+16687,2021,2022-04-09,Southampton,Chelsea,away,Chelsea,Southampton,15,2,0,0,6,6,0,W,False
+16688,2021,2022-04-10,Norwich,Burnley,home,Norwich,Burnley,85,2,0,2,0,2,0,W,True
+16691,2021,2022-04-10,Leicester,Crystal Palace,home,Leicester,Crystal Palace,44,2,0,2,1,2,1,W,True
+16693,2021,2022-04-10,Brentford,West Ham,home,Brentford,West Ham,63,2,0,2,0,2,0,W,True
+16694,2021,2022-04-09,Aston Villa,Tottenham,away,Tottenham,Aston Villa,49,2,0,0,4,4,0,W,False
+16695,2021,2022-04-09,Arsenal,Brighton,away,Brighton,Arsenal,65,2,0,1,2,2,1,W,False
+16696,2021,2022-05-11,Wolverhampton Wanderers,Manchester City,away,Manchester City,Wolverhampton Wanderers,23,3,1,1,5,5,1,W,False
+16702,2021,2022-04-16,Manchester United,Norwich,home,Manchester United,Norwich,31,2,0,3,2,3,2,W,True
+16703,2021,2022-05-11,Leeds,Chelsea,away,Chelsea,Leeds,54,2,0,0,3,3,0,W,False
+16704,2021,2022-05-19,Everton,Crystal Palace,away,Crystal Palace,Everton,35,2,0,3,2,2,3,L,False
+16706,2021,2022-04-23,Norwich,Newcastle United,away,Newcastle United,Norwich,40,2,0,0,3,3,0,W,False
+16707,2021,2022-04-23,Manchester City,Watford,home,Manchester City,Watford,22,2,0,5,1,5,1,W,True
+16708,2021,2022-04-24,Liverpool,Everton,home,Liverpool,Everton,84,2,0,2,0,2,0,W,True
+16713,2021,2022-04-24,Brighton,Southampton,home,Brighton,Southampton,43,2,0,2,2,2,2,D,True
+16715,2021,2022-04-23,Arsenal,Manchester United,home,Arsenal,Manchester United,31,2,0,3,1,3,1,W,True
+16716,2021,2022-04-30,Wolverhampton Wanderers,Brighton,away,Brighton,Wolverhampton Wanderers,69,2,0,0,3,3,0,W,False
+16719,2021,2022-05-01,Tottenham,Leicester,home,Tottenham,Leicester,59,2,0,3,1,3,1,W,True
+16722,2021,2022-05-02,Manchester United,Brentford,home,Manchester United,Brentford,60,2,0,3,0,3,0,W,True
+16723,2021,2022-04-30,Leeds,Manchester City,away,Manchester City,Leeds,53,2,0,0,4,4,0,W,False
+16725,2021,2022-04-30,Aston Villa,Norwich,home,Aston Villa,Norwich,92,2,0,2,0,2,0,W,True
+16726,2021,2022-05-08,Norwich,West Ham,away,West Ham,Norwich,29,2,0,0,4,4,0,W,False
+16727,2021,2022-05-08,Manchester City,Newcastle United,home,Manchester City,Newcastle United,37,2,0,5,0,5,0,W,True
+16731,2021,2022-05-07,Chelsea,Wolverhampton Wanderers,home,Chelsea,Wolverhampton Wanderers,57,2,0,2,2,2,2,D,True
+16732,2021,2022-05-07,Burnley,Aston Villa,away,Aston Villa,Burnley,30,2,0,1,3,3,1,W,False
+16733,2021,2022-05-07,Brighton,Manchester United,home,Brighton,Manchester United,48,2,0,4,0,4,0,W,True
+16734,2021,2022-05-07,Brentford,Southampton,home,Brentford,Southampton,13,2,0,3,0,3,0,W,True
+16735,2021,2022-05-08,Arsenal,Leeds,home,Arsenal,Leeds,9,2,0,2,1,2,1,W,True
+16737,2021,2022-05-15,West Ham,Manchester City,home,West Ham,Manchester City,44,2,0,2,2,2,2,D,True
+16738,2021,2022-05-15,Watford,Leicester,away,Leicester,Watford,45,3,1,1,5,5,1,W,False
+16741,2021,2022-05-16,Newcastle United,Arsenal,home,Newcastle United,Arsenal,84,2,0,2,0,2,0,W,True
+16746,2021,2022-05-22,Arsenal,Everton,home,Arsenal,Everton,30,2,0,5,1,5,1,W,True
+16748,2021,2022-05-22,Brighton,West Ham,home,Brighton,West Ham,91,3,1,3,1,3,1,W,True
+16749,2021,2022-05-22,Burnley,Newcastle United,away,Newcastle United,Burnley,59,2,0,1,2,2,1,W,False
+16752,2021,2022-05-22,Leicester,Southampton,home,Leicester,Southampton,73,2,0,4,1,4,1,W,True
+16753,2021,2022-05-22,Liverpool,Wolverhampton Wanderers,home,Liverpool,Wolverhampton Wanderers,88,3,1,3,1,3,1,W,True
+16754,2021,2022-05-22,Manchester City,Aston Villa,away,Aston Villa,Manchester City,68,2,0,3,2,2,3,L,False
+16755,2021,2022-05-22,Norwich,Tottenham,away,Tottenham,Norwich,31,2,0,0,5,5,0,W,False
+18202,2022,2022-08-05,Crystal Palace,Arsenal,away,Arsenal,Crystal Palace,84,2,0,0,2,2,0,W,False
+18204,2022,2022-08-06,Bournemouth,Aston Villa,home,Bournemouth,Aston Villa,79,2,0,2,0,2,0,W,True
+18206,2022,2022-08-06,Newcastle United,Nottingham Forest,home,Newcastle United,Nottingham Forest,77,2,0,2,0,2,0,W,True
+18207,2022,2022-08-06,Tottenham,Southampton,home,Tottenham,Southampton,60,3,1,4,1,4,1,W,True
+18209,2022,2022-08-07,Manchester United,Brighton,away,Brighton,Manchester United,38,2,0,1,2,2,1,W,False
+18210,2022,2022-08-07,Leicester,Brentford,home,Leicester,Brentford,45,2,0,2,2,2,2,D,True
+18211,2022,2022-08-07,West Ham,Manchester City,away,Manchester City,West Ham,64,2,0,0,2,2,0,W,False
+18212,2022,2022-08-13,Aston Villa,Everton,home,Aston Villa,Everton,85,2,0,2,1,2,1,W,True
+18214,2022,2022-08-13,Manchester City,Bournemouth,home,Manchester City,Bournemouth,30,2,0,4,0,4,0,W,True
+18215,2022,2022-08-13,Southampton,Leeds,away,Leeds,Southampton,59,2,0,2,2,2,2,D,False
+18217,2022,2022-08-13,Arsenal,Leicester,home,Arsenal,Leicester,34,2,0,4,2,4,2,W,True
+18218,2022,2022-08-13,Brentford,Manchester United,home,Brentford,Manchester United,17,2,0,4,0,4,0,W,True
+18223,2022,2022-08-20,Crystal Palace,Aston Villa,home,Crystal Palace,Aston Villa,70,3,1,3,1,3,1,W,True
+18225,2022,2022-08-20,Fulham,Brentford,home,Fulham,Brentford,19,2,0,3,2,3,2,W,True
+18227,2022,2022-08-20,Bournemouth,Arsenal,away,Arsenal,Bournemouth,10,2,0,0,3,3,0,W,False
+18228,2022,2022-08-21,Leeds,Chelsea,home,Leeds,Chelsea,36,2,0,3,0,3,0,W,True
+18229,2022,2022-08-21,West Ham,Brighton,away,Brighton,West Ham,65,2,0,0,2,2,0,W,False
+18230,2022,2022-08-21,Newcastle United,Manchester City,home,Newcastle United,Manchester City,53,3,1,3,3,3,3,D,True
+18231,2022,2022-08-22,Manchester United,Liverpool,home,Manchester United,Liverpool,52,2,0,2,1,2,1,W,True
+18235,2022,2022-08-27,Chelsea,Leicester,home,Chelsea,Leicester,62,2,0,2,1,2,1,W,True
+18236,2022,2022-08-27,Liverpool,Bournemouth,home,Liverpool,Bournemouth,5,2,0,9,0,9,0,W,True
+18237,2022,2022-08-27,Manchester City,Crystal Palace,away,Crystal Palace,Manchester City,20,2,0,4,2,2,4,L,False
+18237,2022,2022-08-27,Manchester City,Crystal Palace,home,Manchester City,Crystal Palace,80,4,2,4,2,4,2,W,True
+18241,2022,2022-08-28,Nottingham Forest,Tottenham,away,Tottenham,Nottingham Forest,80,2,0,0,2,2,0,W,False
+18242,2022,2022-08-30,Fulham,Brighton,home,Fulham,Brighton,54,2,0,2,1,2,1,W,True
+18246,2022,2022-08-31,Manchester City,Nottingham Forest,home,Manchester City,Nottingham Forest,22,2,0,6,0,6,0,W,True
+18254,2022,2022-09-03,Nottingham Forest,Bournemouth,home,Nottingham Forest,Bournemouth,46,2,0,2,3,2,3,L,True
+18255,2022,2022-09-03,Tottenham,Fulham,home,Tottenham,Fulham,74,2,0,2,1,2,1,W,True
+18257,2022,2022-09-03,Brentford,Leeds,home,Brentford,Leeds,42,2,0,5,2,5,2,W,True
+18259,2022,2022-09-04,Brighton,Leicester,home,Brighton,Leicester,70,4,2,5,2,5,2,W,True
+18261,2022,2022-09-04,Manchester United,Arsenal,home,Manchester United,Arsenal,74,3,1,3,1,3,1,W,True
+18264,2022,2023-03-01,Liverpool,Wolverhampton Wanderers,home,Liverpool,Wolverhampton Wanderers,76,2,0,2,0,2,0,W,True
+18265,2022,2023-03-15,Southampton,Brentford,away,Brentford,Southampton,96,2,0,0,2,2,0,W,False
+18266,2022,2023-04-04,Bournemouth,Brighton,away,Brighton,Bournemouth,90,2,0,0,2,2,0,W,False
+18267,2022,2023-01-19,Manchester City,Tottenham,away,Tottenham,Manchester City,46,2,0,4,2,2,4,L,False
+18267,2022,2023-01-19,Manchester City,Tottenham,home,Manchester City,Tottenham,89,4,2,4,2,4,2,W,True
+18268,2022,2023-04-05,West Ham,Newcastle United,away,Newcastle United,West Ham,12,2,0,1,5,5,1,W,False
+18269,2022,2023-03-01,Arsenal,Everton,home,Arsenal,Everton,45,2,0,4,0,4,0,W,True
+18273,2022,2022-09-16,Nottingham Forest,Fulham,away,Fulham,Nottingham Forest,59,3,1,2,3,3,2,W,False
+18274,2022,2022-09-17,Wolverhampton Wanderers,Manchester City,away,Manchester City,Wolverhampton Wanderers,15,2,0,0,3,3,0,W,False
+18278,2022,2022-09-17,Tottenham,Leicester,home,Tottenham,Leicester,72,4,2,6,2,6,2,W,True
+18279,2022,2023-02-08,Manchester United,Leeds,away,Leeds,Manchester United,47,2,0,2,2,2,2,D,False
+18280,2022,2022-09-18,Brentford,Arsenal,away,Arsenal,Brentford,27,2,0,0,3,3,0,W,False
+18282,2022,2022-10-01,Arsenal,Tottenham,home,Arsenal,Tottenham,66,3,1,3,1,3,1,W,True
+18285,2022,2022-10-01,Fulham,Newcastle United,away,Newcastle United,Fulham,32,2,0,1,4,4,1,W,False
+18287,2022,2022-10-03,Leicester,Nottingham Forest,home,Leicester,Nottingham Forest,26,2,0,4,0,4,0,W,True
+18288,2022,2022-10-01,Liverpool,Brighton,away,Brighton,Liverpool,16,2,0,3,3,3,3,D,False
+18289,2022,2022-10-02,Manchester City,Manchester United,home,Manchester City,Manchester United,33,2,0,6,3,6,3,W,True
+18291,2022,2022-10-01,West Ham,Wolverhampton Wanderers,home,West Ham,Wolverhampton Wanderers,53,2,0,2,0,2,0,W,True
+18295,2022,2022-10-08,Chelsea,Wolverhampton Wanderers,home,Chelsea,Wolverhampton Wanderers,53,2,0,3,0,3,0,W,True
+18298,2022,2022-10-08,Manchester City,Southampton,home,Manchester City,Southampton,31,2,0,4,0,4,0,W,True
+18299,2022,2022-10-08,Newcastle United,Brentford,home,Newcastle United,Brentford,27,2,0,5,1,5,1,W,True
+18301,2022,2022-10-09,West Ham,Fulham,home,West Ham,Fulham,90,3,1,3,1,3,1,W,True
+18302,2022,2022-10-16,Aston Villa,Chelsea,away,Chelsea,Aston Villa,64,2,0,0,2,2,0,W,False
+18303,2022,2022-10-14,Brentford,Brighton,home,Brentford,Brighton,63,2,0,2,0,2,0,W,True
+18310,2022,2022-10-15,Tottenham,Everton,home,Tottenham,Everton,85,2,0,2,0,2,0,W,True
+18312,2022,2023-02-15,Arsenal,Manchester City,away,Manchester City,Arsenal,81,3,1,1,3,3,1,W,False
+18316,2022,2022-10-20,Fulham,Aston Villa,home,Fulham,Aston Villa,67,2,0,3,0,3,0,W,True
+18317,2022,2022-10-20,Leicester,Leeds,home,Leicester,Leeds,34,2,0,2,0,2,0,W,True
+18321,2022,2022-10-19,Manchester United,Tottenham,home,Manchester United,Tottenham,68,2,0,2,0,2,0,W,True
+18322,2022,2022-10-23,Aston Villa,Brentford,home,Aston Villa,Brentford,6,2,0,4,0,4,0,W,True
+18324,2022,2022-10-22,Everton,Crystal Palace,home,Everton,Crystal Palace,62,2,0,3,0,3,0,W,True
+18325,2022,2022-10-23,Leeds,Fulham,away,Fulham,Leeds,83,3,1,2,3,3,2,W,False
+18326,2022,2022-10-22,Manchester City,Brighton,home,Manchester City,Brighton,42,2,0,3,1,3,1,W,True
+18329,2022,2022-10-23,Tottenham,Newcastle United,away,Newcastle United,Tottenham,39,2,0,1,2,2,1,W,False
+18330,2022,2022-10-24,West Ham,Bournemouth,home,West Ham,Bournemouth,91,2,0,2,0,2,0,W,True
+18331,2022,2022-10-23,Wolverhampton Wanderers,Leicester,away,Leicester,Wolverhampton Wanderers,18,2,0,0,4,4,0,W,False
+18332,2022,2022-10-30,Arsenal,Nottingham Forest,home,Arsenal,Nottingham Forest,48,2,0,5,0,5,0,W,True
+18333,2022,2022-10-29,Bournemouth,Tottenham,home,Bournemouth,Tottenham,49,2,0,2,3,2,3,L,True
+18335,2022,2022-10-29,Brighton,Chelsea,home,Brighton,Chelsea,13,2,0,4,1,4,1,W,True
+18341,2022,2022-10-29,Newcastle United,Aston Villa,home,Newcastle United,Aston Villa,55,2,0,4,0,4,0,W,True
+18342,2022,2022-11-06,Aston Villa,Manchester United,home,Aston Villa,Manchester United,10,2,0,3,1,3,1,W,True
+18344,2022,2022-11-05,Everton,Leicester,away,Leicester,Everton,85,2,0,0,2,2,0,W,False
+18345,2022,2022-11-05,Leeds,Bournemouth,away,Bournemouth,Leeds,47,3,1,4,3,3,4,L,False
+18348,2022,2022-11-06,Southampton,Newcastle United,away,Newcastle United,Southampton,57,2,0,1,4,4,1,W,False
+18349,2022,2022-11-06,Tottenham,Liverpool,away,Liverpool,Tottenham,39,2,0,1,2,2,1,W,False
+18352,2022,2022-11-12,Bournemouth,Everton,home,Bournemouth,Everton,24,2,0,3,0,3,0,W,True
+18355,2022,2022-11-12,Liverpool,Southampton,home,Liverpool,Southampton,41,3,1,3,1,3,1,W,True
+18360,2022,2022-11-12,West Ham,Leicester,away,Leicester,West Ham,77,2,0,0,2,2,0,W,False
+18361,2022,2022-11-12,Wolverhampton Wanderers,Arsenal,away,Arsenal,Wolverhampton Wanderers,74,2,0,0,2,2,0,W,False
+18362,2022,2022-12-26,Arsenal,West Ham,home,Arsenal,West Ham,68,3,1,3,1,3,1,W,True
+18363,2022,2022-12-26,Aston Villa,Liverpool,away,Liverpool,Aston Villa,36,2,0,1,3,3,1,W,False
+18364,2022,2022-12-26,Brentford,Tottenham,home,Brentford,Tottenham,53,2,0,2,2,2,2,D,True
+18365,2022,2022-12-27,Chelsea,Bournemouth,home,Chelsea,Bournemouth,23,2,0,2,0,2,0,W,True
+18366,2022,2022-12-26,Crystal Palace,Fulham,away,Fulham,Crystal Palace,70,2,0,0,3,3,0,W,False
+18368,2022,2022-12-28,Leeds,Manchester City,away,Manchester City,Leeds,50,2,0,1,3,3,1,W,False
+18369,2022,2022-12-26,Leicester,Newcastle United,away,Newcastle United,Leicester,6,2,0,0,3,3,0,W,False
+18370,2022,2022-12-27,Manchester United,Nottingham Forest,home,Manchester United,Nottingham Forest,22,2,0,3,0,3,0,W,True
+18371,2022,2022-12-26,Southampton,Brighton,away,Brighton,Southampton,34,2,0,1,3,3,1,W,False
+18372,2022,2022-12-31,Bournemouth,Crystal Palace,away,Crystal Palace,Bournemouth,35,2,0,0,2,2,0,W,False
+18373,2022,2022-12-31,Brighton,Arsenal,away,Arsenal,Brighton,38,2,0,2,4,4,2,W,False
+18379,2022,2023-01-01,Tottenham,Aston Villa,away,Aston Villa,Tottenham,72,2,0,0,2,2,0,W,False
+18380,2022,2022-12-30,West Ham,Brentford,away,Brentford,West Ham,42,2,0,0,2,2,0,W,False
+18384,2022,2023-01-02,Brentford,Liverpool,home,Brentford,Liverpool,41,2,0,3,1,3,1,W,True
+18386,2022,2023-01-04,Crystal Palace,Tottenham,away,Tottenham,Crystal Palace,52,2,0,0,4,4,0,W,False
+18387,2022,2023-01-03,Everton,Brighton,away,Brighton,Everton,50,2,0,1,4,4,1,W,False
+18390,2022,2023-01-03,Manchester United,Bournemouth,home,Manchester United,Bournemouth,48,2,0,3,0,3,0,W,True
+18392,2022,2023-01-13,Aston Villa,Leeds,home,Aston Villa,Leeds,63,2,0,2,1,2,1,W,True
+18393,2022,2023-01-14,Brentford,Bournemouth,home,Brentford,Bournemouth,74,2,0,2,0,2,0,W,True
+18394,2022,2023-01-14,Brighton,Liverpool,home,Brighton,Liverpool,52,2,0,3,0,3,0,W,True
+18399,2022,2023-01-14,Nottingham Forest,Leicester,home,Nottingham Forest,Leicester,84,2,0,2,0,2,0,W,True
+18400,2022,2023-01-15,Tottenham,Arsenal,away,Arsenal,Tottenham,35,2,0,0,2,2,0,W,False
+18409,2022,2023-01-22,Manchester City,Wolverhampton Wanderers,home,Manchester City,Wolverhampton Wanderers,49,2,0,3,0,3,0,W,True
+18411,2022,2023-01-21,West Ham,Everton,home,West Ham,Everton,40,2,0,2,0,2,0,W,True
+18412,2022,2023-02-04,Aston Villa,Leicester,away,Leicester,Aston Villa,78,4,2,2,4,4,2,W,False
+18413,2022,2023-02-04,Brentford,Southampton,home,Brentford,Southampton,43,2,0,3,0,3,0,W,True
+18417,2022,2023-02-04,Manchester United,Crystal Palace,home,Manchester United,Crystal Palace,61,2,0,2,1,2,1,W,True
+18421,2022,2023-02-04,Wolverhampton Wanderers,Liverpool,home,Wolverhampton Wanderers,Liverpool,11,2,0,3,0,3,0,W,True
+18425,2022,2023-02-11,Fulham,Nottingham Forest,home,Fulham,Nottingham Forest,87,2,0,2,0,2,0,W,True
+18426,2022,2023-02-12,Leeds,Manchester United,away,Manchester United,Leeds,84,2,0,0,2,2,0,W,False
+18427,2022,2023-02-11,Leicester,Tottenham,home,Leicester,Tottenham,48,3,1,4,1,4,1,W,True
+18428,2022,2023-02-13,Liverpool,Everton,home,Liverpool,Everton,48,2,0,2,0,2,0,W,True
+18429,2022,2023-02-12,Manchester City,Aston Villa,home,Manchester City,Aston Villa,38,2,0,3,1,3,1,W,True
+18432,2022,2023-02-18,Aston Villa,Arsenal,away,Arsenal,Aston Villa,97,4,2,2,4,4,2,W,False
+18437,2022,2023-02-19,Manchester United,Leicester,home,Manchester United,Leicester,55,2,0,3,0,3,0,W,True
+18438,2022,2023-02-18,Newcastle United,Liverpool,away,Liverpool,Newcastle United,16,2,0,0,2,2,0,W,False
+18440,2022,2023-02-19,Tottenham,West Ham,home,Tottenham,West Ham,71,2,0,2,0,2,0,W,True
+18442,2022,2023-02-25,Bournemouth,Manchester City,away,Manchester City,Bournemouth,28,2,0,1,4,4,1,W,False
+18444,2022,2023-02-25,Everton,Aston Villa,away,Aston Villa,Everton,80,2,0,0,2,2,0,W,False
+18449,2022,2023-05-18,Newcastle United,Brighton,home,Newcastle United,Brighton,48,2,0,4,1,4,1,W,True
+18450,2022,2023-02-26,Tottenham,Chelsea,home,Tottenham,Chelsea,81,2,0,2,0,2,0,W,True
+18451,2022,2023-02-25,West Ham,Nottingham Forest,home,West Ham,Nottingham Forest,72,2,0,4,0,4,0,W,True
+18452,2022,2023-03-04,Arsenal,Bournemouth,away,Bournemouth,Arsenal,56,2,0,3,2,2,3,L,False
+18454,2022,2023-03-06,Brentford,Fulham,home,Brentford,Fulham,84,3,1,3,2,3,2,W,True
+18455,2022,2023-03-04,Brighton,West Ham,home,Brighton,West Ham,50,2,0,4,0,4,0,W,True
+18457,2022,2023-03-05,Liverpool,Manchester United,home,Liverpool,Manchester United,46,2,0,7,0,7,0,W,True
+18458,2022,2023-03-04,Manchester City,Newcastle United,home,Manchester City,Newcastle United,66,2,0,2,0,2,0,W,True
+18465,2022,2023-03-12,Fulham,Arsenal,away,Arsenal,Fulham,25,2,0,0,3,3,0,W,False
+18467,2022,2023-03-11,Leicester,Chelsea,away,Chelsea,Leicester,77,3,1,1,3,3,1,W,False
+18470,2022,2023-03-11,Tottenham,Nottingham Forest,home,Tottenham,Nottingham Forest,34,2,0,3,1,3,1,W,True
+18472,2022,2023-03-19,Arsenal,Crystal Palace,home,Arsenal,Crystal Palace,42,2,0,4,1,4,1,W,True
+18473,2022,2023-03-18,Aston Villa,Bournemouth,home,Aston Villa,Bournemouth,79,2,0,3,0,3,0,W,True
+18478,2022,2023-05-03,Manchester City,West Ham,home,Manchester City,West Ham,69,2,0,3,0,3,0,W,True
+18480,2022,2023-03-18,Southampton,Tottenham,away,Tottenham,Southampton,73,3,1,3,3,3,3,D,False
+18481,2022,2023-03-18,Wolverhampton Wanderers,Leeds,away,Leeds,Wolverhampton Wanderers,48,2,0,2,4,4,2,W,False
+18482,2022,2023-04-01,Arsenal,Leeds,home,Arsenal,Leeds,46,2,0,4,1,4,1,W,True
+18485,2022,2023-04-01,Chelsea,Aston Villa,away,Aston Villa,Chelsea,55,2,0,0,2,2,0,W,False
+18488,2022,2023-04-01,Manchester City,Liverpool,home,Manchester City,Liverpool,52,3,1,4,1,4,1,W,True
+18489,2022,2023-04-02,Newcastle United,Manchester United,home,Newcastle United,Manchester United,87,2,0,2,0,2,0,W,True
+18492,2022,2023-04-08,Aston Villa,Nottingham Forest,home,Aston Villa,Nottingham Forest,94,2,0,2,0,2,0,W,True
+18495,2022,2023-04-09,Leeds,Crystal Palace,away,Crystal Palace,Leeds,54,3,1,1,5,5,1,W,False
+18497,2022,2023-04-09,Liverpool,Arsenal,away,Arsenal,Liverpool,27,2,0,2,2,2,2,D,False
+18498,2022,2023-04-08,Manchester United,Everton,home,Manchester United,Everton,70,2,0,2,0,2,0,W,True
+18499,2022,2023-04-08,Southampton,Manchester City,away,Manchester City,Southampton,57,2,0,1,4,4,1,W,False
+18502,2022,2023-04-15,Aston Villa,Newcastle United,home,Aston Villa,Newcastle United,63,2,0,3,0,3,0,W,True
+18504,2022,2023-04-15,Everton,Fulham,away,Fulham,Everton,67,3,1,1,3,3,1,W,False
+18505,2022,2023-04-17,Leeds,Liverpool,away,Liverpool,Leeds,38,2,0,1,6,6,1,W,False
+18506,2022,2023-04-15,Manchester City,Leicester,home,Manchester City,Leicester,12,2,0,3,1,3,1,W,True
+18507,2022,2023-04-16,Nottingham Forest,Manchester United,away,Manchester United,Nottingham Forest,75,2,0,0,2,2,0,W,False
+18508,2022,2023-04-15,Southampton,Crystal Palace,away,Crystal Palace,Southampton,67,2,0,0,2,2,0,W,False
+18510,2022,2023-04-16,West Ham,Arsenal,away,Arsenal,West Ham,9,2,0,2,2,2,2,D,False
+18511,2022,2023-04-15,Wolverhampton Wanderers,Brentford,home,Wolverhampton Wanderers,Brentford,68,2,0,2,0,2,0,W,True
+18512,2022,2023-04-21,Arsenal,Southampton,away,Southampton,Arsenal,13,2,0,3,3,3,3,D,False
+18513,2022,2023-04-23,Bournemouth,West Ham,away,West Ham,Bournemouth,11,2,0,0,4,4,0,W,False
+18517,2022,2023-04-22,Fulham,Leeds,home,Fulham,Leeds,71,2,0,2,1,2,1,W,True
+18520,2022,2023-05-25,Manchester United,Chelsea,home,Manchester United,Chelsea,50,2,0,4,1,4,1,W,True
+18521,2022,2023-04-23,Newcastle United,Tottenham,home,Newcastle United,Tottenham,5,2,0,6,1,6,1,W,True
+18522,2022,2023-04-27,Everton,Newcastle United,away,Newcastle United,Everton,71,2,0,1,4,4,1,W,False
+18524,2022,2023-04-26,Nottingham Forest,Brighton,home,Nottingham Forest,Brighton,90,3,1,3,1,3,1,W,True
+18525,2022,2023-04-27,Tottenham,Manchester United,away,Manchester United,Tottenham,43,2,0,2,2,2,2,D,False
+18527,2022,2023-04-25,Wolverhampton Wanderers,Crystal Palace,home,Wolverhampton Wanderers,Crystal Palace,93,2,0,2,0,2,0,W,True
+18529,2022,2023-04-26,Chelsea,Brentford,away,Brentford,Chelsea,77,2,0,0,2,2,0,W,False
+18531,2022,2023-04-26,Manchester City,Arsenal,home,Manchester City,Arsenal,45,2,0,4,1,4,1,W,True
+18532,2022,2023-05-02,Arsenal,Chelsea,home,Arsenal,Chelsea,30,2,0,3,1,3,1,W,True
+18533,2022,2023-04-30,Bournemouth,Leeds,home,Bournemouth,Leeds,23,2,0,4,1,4,1,W,True
+18535,2022,2023-04-29,Brighton,Wolverhampton Wanderers,home,Brighton,Wolverhampton Wanderers,12,2,0,6,0,6,0,W,True
+18536,2022,2023-04-29,Crystal Palace,West Ham,home,Crystal Palace,West Ham,29,3,1,4,3,4,3,W,True
+18539,2022,2023-04-30,Liverpool,Tottenham,home,Liverpool,Tottenham,4,2,0,4,3,4,3,W,True
+18541,2022,2023-04-30,Newcastle United,Southampton,home,Newcastle United,Southampton,80,3,1,3,1,3,1,W,True
+18542,2022,2023-05-06,Bournemouth,Chelsea,away,Chelsea,Bournemouth,85,3,1,1,3,3,1,W,False
+18543,2022,2023-05-08,Brighton,Everton,away,Everton,Brighton,28,2,0,1,5,5,1,W,False
+18544,2022,2023-05-08,Fulham,Leicester,home,Fulham,Leicester,17,2,0,5,3,5,3,W,True
+18546,2022,2023-05-06,Manchester City,Leeds,home,Manchester City,Leeds,26,2,0,2,1,2,1,W,True
+18547,2022,2023-05-07,Newcastle United,Arsenal,away,Arsenal,Newcastle United,70,2,0,0,2,2,0,W,False
+18548,2022,2023-05-08,Nottingham Forest,Southampton,home,Nottingham Forest,Southampton,20,2,0,4,3,4,3,W,True
+18552,2022,2023-05-14,Arsenal,Brighton,away,Brighton,Arsenal,85,2,0,0,3,3,0,W,False
+18553,2022,2023-05-13,Aston Villa,Tottenham,home,Aston Villa,Tottenham,71,2,0,2,1,2,1,W,True
+18554,2022,2023-05-14,Brentford,West Ham,home,Brentford,West Ham,42,2,0,2,0,2,0,W,True
+18556,2022,2023-05-13,Crystal Palace,Bournemouth,home,Crystal Palace,Bournemouth,57,2,0,2,0,2,0,W,True
+18557,2022,2023-05-14,Everton,Manchester City,away,Manchester City,Everton,38,2,0,0,3,3,0,W,False
+18559,2022,2023-05-15,Leicester,Liverpool,away,Liverpool,Leicester,35,2,0,0,3,3,0,W,False
+18560,2022,2023-05-13,Manchester United,Wolverhampton Wanderers,home,Manchester United,Wolverhampton Wanderers,93,2,0,2,0,2,0,W,True
+18561,2022,2023-05-13,Southampton,Fulham,away,Fulham,Southampton,71,2,0,0,2,2,0,W,False
+18563,2022,2023-05-21,Brighton,Southampton,home,Brighton,Southampton,39,2,0,3,1,3,1,W,True
+18569,2022,2023-05-20,Tottenham,Brentford,away,Brentford,Tottenham,87,3,1,1,3,3,1,W,False
+18570,2022,2023-05-21,West Ham,Leeds,home,West Ham,Leeds,93,3,1,3,1,3,1,W,True
+18572,2022,2023-05-28,Arsenal,Wolverhampton Wanderers,home,Arsenal,Wolverhampton Wanderers,13,2,0,5,0,5,0,W,True
+18573,2022,2023-05-28,Aston Villa,Brighton,home,Aston Villa,Brighton,25,2,0,2,1,2,1,W,True
+18578,2022,2023-05-28,Leeds,Tottenham,away,Tottenham,Leeds,46,2,0,1,4,4,1,W,False
+18579,2022,2023-05-28,Leicester,West Ham,home,Leicester,West Ham,61,2,0,2,1,2,1,W,True
+18581,2022,2023-05-28,Southampton,Liverpool,away,Liverpool,Southampton,13,2,0,4,4,4,4,D,False
+18581,2022,2023-05-28,Southampton,Liverpool,home,Southampton,Liverpool,63,4,2,4,4,4,4,D,True
+21925,2023,2023-09-01,Luton,West Ham,away,West Ham,Luton,84,2,0,1,2,2,1,W,False
+21927,2023,2023-09-02,Manchester City,Fulham,home,Manchester City,Fulham,57,3,1,5,1,5,1,W,True
+21929,2023,2023-09-02,Burnley,Tottenham,away,Tottenham,Burnley,53,3,1,2,5,5,2,W,False
+21931,2023,2023-09-02,Brighton,Newcastle United,home,Brighton,Newcastle United,64,2,0,3,1,3,1,W,True
+21932,2023,2023-09-03,Crystal Palace,Wolverhampton Wanderers,home,Crystal Palace,Wolverhampton Wanderers,83,3,1,3,2,3,2,W,True
+21933,2023,2023-09-03,Liverpool,Aston Villa,home,Liverpool,Aston Villa,21,2,0,3,0,3,0,W,True
+21934,2023,2023-09-03,Arsenal,Manchester United,home,Arsenal,Manchester United,100,3,1,3,1,3,1,W,True
+21935,2023,2023-09-16,Wolverhampton Wanderers,Liverpool,away,Liverpool,Wolverhampton Wanderers,90,3,1,1,3,3,1,W,False
+21937,2023,2023-09-16,West Ham,Manchester City,away,Manchester City,West Ham,85,3,1,1,3,3,1,W,False
+21938,2023,2023-09-16,Aston Villa,Crystal Palace,home,Aston Villa,Crystal Palace,100,3,1,3,1,3,1,W,True
+21940,2023,2023-09-16,Manchester United,Brighton,away,Brighton,Manchester United,52,2,0,1,3,3,1,W,False
+21946,2023,2023-09-23,Manchester City,Nottingham Forest,home,Manchester City,Nottingham Forest,13,2,0,2,0,2,0,W,True
+21949,2023,2023-09-23,Brentford,Everton,away,Everton,Brentford,70,3,1,1,3,3,1,W,False
+21951,2023,2023-09-24,Brighton,Bournemouth,home,Brighton,Bournemouth,76,3,1,3,1,3,1,W,True
+21953,2023,2023-09-24,Liverpool,West Ham,home,Liverpool,West Ham,84,3,1,3,1,3,1,W,True
+21954,2023,2023-09-24,Sheffield United,Newcastle United,away,Newcastle United,Sheffield United,30,2,0,0,8,8,0,W,False
+21955,2023,2023-09-30,Aston Villa,Brighton,home,Aston Villa,Brighton,20,2,0,6,1,6,1,W,True
+21956,2023,2023-09-30,Everton,Luton,away,Luton,Everton,30,2,0,1,2,2,1,W,False
+21958,2023,2023-09-30,Newcastle United,Burnley,home,Newcastle United,Burnley,75,2,0,2,0,2,0,W,True
+21959,2023,2023-09-30,Bournemouth,Arsenal,away,Arsenal,Bournemouth,43,2,0,0,4,4,0,W,False
+21960,2023,2023-09-30,West Ham,Sheffield United,home,West Ham,Sheffield United,36,2,0,2,0,2,0,W,True
+21964,2023,2023-10-02,Fulham,Chelsea,away,Chelsea,Fulham,18,2,0,0,2,2,0,W,False
+21967,2023,2023-10-07,Burnley,Chelsea,away,Chelsea,Burnley,64,3,1,1,4,4,1,W,False
+21969,2023,2023-10-07,Everton,Bournemouth,home,Everton,Bournemouth,36,2,0,3,0,3,0,W,True
+21970,2023,2023-10-07,Fulham,Sheffield United,home,Fulham,Sheffield United,91,3,1,3,1,3,1,W,True
+21976,2023,2023-10-22,Aston Villa,West Ham,home,Aston Villa,West Ham,50,2,0,4,1,4,1,W,True
+21977,2023,2023-10-21,Brentford,Burnley,home,Brentford,Burnley,61,2,0,3,0,3,0,W,True
+21978,2023,2023-10-21,Chelsea,Arsenal,home,Chelsea,Arsenal,47,2,0,2,2,2,2,D,True
+21979,2023,2023-10-21,Liverpool,Everton,home,Liverpool,Everton,96,2,0,2,0,2,0,W,True
+21980,2023,2023-10-21,Manchester City,Brighton,home,Manchester City,Brighton,18,2,0,2,1,2,1,W,True
+21981,2023,2023-10-21,Newcastle United,Crystal Palace,home,Newcastle United,Crystal Palace,43,2,0,4,0,4,0,W,True
+21982,2023,2023-10-21,Nottingham Forest,Luton,home,Nottingham Forest,Luton,75,2,0,2,2,2,2,D,True
+21984,2023,2023-10-23,Tottenham,Fulham,home,Tottenham,Fulham,53,2,0,2,0,2,0,W,True
+21986,2023,2023-10-28,Arsenal,Sheffield United,home,Arsenal,Sheffield United,49,2,0,5,0,5,0,W,True
+21987,2023,2023-10-29,Aston Villa,Luton,home,Aston Villa,Luton,48,2,0,3,1,3,1,W,True
+21989,2023,2023-10-28,Chelsea,Brentford,away,Brentford,Chelsea,95,2,0,0,2,2,0,W,False
+21990,2023,2023-10-27,Crystal Palace,Tottenham,away,Tottenham,Crystal Palace,65,2,0,1,2,2,1,W,False
+21991,2023,2023-10-29,Liverpool,Nottingham Forest,home,Liverpool,Nottingham Forest,34,2,0,3,0,3,0,W,True
+21992,2023,2023-10-29,Manchester United,Manchester City,away,Manchester City,Manchester United,48,2,0,0,3,3,0,W,False
+21996,2023,2023-11-04,Burnley,Crystal Palace,away,Crystal Palace,Burnley,93,2,0,0,2,2,0,W,False
+22000,2023,2023-11-04,Manchester City,Bournemouth,home,Manchester City,Bournemouth,32,2,0,6,1,6,1,W,True
+22002,2023,2023-11-05,Nottingham Forest,Aston Villa,home,Nottingham Forest,Aston Villa,46,2,0,2,0,2,0,W,True
+22004,2023,2023-11-06,Tottenham,Chelsea,away,Chelsea,Tottenham,93,3,1,1,4,4,1,W,False
+22005,2023,2023-11-11,Bournemouth,Newcastle United,home,Bournemouth,Newcastle United,72,2,0,2,0,2,0,W,True
+22006,2023,2023-11-11,Arsenal,Burnley,home,Arsenal,Burnley,73,3,1,3,1,3,1,W,True
+22007,2023,2023-11-12,Aston Villa,Fulham,home,Aston Villa,Fulham,41,2,0,3,1,3,1,W,True
+22011,2023,2023-11-12,Liverpool,Brentford,home,Liverpool,Brentford,61,2,0,3,0,3,0,W,True
+22017,2023,2023-11-26,Everton,Manchester United,away,Manchester United,Everton,55,2,0,0,3,3,0,W,False
+22021,2023,2023-11-25,Newcastle United,Chelsea,home,Newcastle United,Chelsea,60,3,1,4,1,4,1,W,True
+22022,2023,2023-11-25,Nottingham Forest,Brighton,away,Brighton,Nottingham Forest,57,3,1,2,3,3,2,W,False
+22023,2023,2023-11-25,Sheffield United,Bournemouth,away,Bournemouth,Sheffield United,47,2,0,1,3,3,1,W,False
+22026,2023,2023-12-02,Arsenal,Wolverhampton Wanderers,home,Arsenal,Wolverhampton Wanderers,12,2,0,2,1,2,1,W,True
+22027,2023,2023-12-02,Brentford,Luton,home,Brentford,Luton,55,2,0,3,1,3,1,W,True
+22028,2023,2023-12-02,Burnley,Sheffield United,home,Burnley,Sheffield United,28,2,0,5,0,5,0,W,True
+22029,2023,2023-12-03,Chelsea,Brighton,home,Chelsea,Brighton,20,2,0,3,2,3,2,W,True
+22037,2023,2023-12-07,Everton,Newcastle United,home,Everton,Newcastle United,85,2,0,3,0,3,0,W,True
+22038,2023,2023-12-06,Fulham,Nottingham Forest,home,Fulham,Nottingham Forest,33,2,0,5,0,5,0,W,True
+22040,2023,2023-12-06,Sheffield United,Liverpool,away,Liverpool,Sheffield United,93,2,0,0,2,2,0,W,False
+22043,2023,2023-12-06,Crystal Palace,Bournemouth,away,Bournemouth,Crystal Palace,90,2,0,0,2,2,0,W,False
+22048,2023,2023-12-10,Everton,Chelsea,home,Everton,Chelsea,91,2,0,2,0,2,0,W,True
+22049,2023,2023-12-10,Fulham,West Ham,home,Fulham,West Ham,30,2,0,5,0,5,0,W,True
+22051,2023,2023-12-09,Manchester United,Bournemouth,away,Bournemouth,Manchester United,67,2,0,0,3,3,0,W,False
+22053,2023,2023-12-10,Tottenham,Newcastle United,home,Tottenham,Newcastle United,37,2,0,4,1,4,1,W,True
+22056,2023,2023-12-17,Arsenal,Brighton,home,Arsenal,Brighton,86,2,0,2,0,2,0,W,True
+22058,2023,2023-12-16,Burnley,Everton,away,Everton,Burnley,24,2,0,0,2,2,0,W,False
+22059,2023,2023-12-16,Chelsea,Sheffield United,home,Chelsea,Sheffield United,60,2,0,2,0,2,0,W,True
+22061,2023,2023-12-16,Manchester City,Crystal Palace,home,Manchester City,Crystal Palace,53,2,0,2,2,2,2,D,True
+22062,2023,2023-12-16,Newcastle United,Fulham,home,Newcastle United,Fulham,63,2,0,3,0,3,0,W,True
+22063,2023,2023-12-15,Nottingham Forest,Tottenham,away,Tottenham,Nottingham Forest,64,2,0,0,2,2,0,W,False
+22064,2023,2023-12-17,West Ham,Wolverhampton Wanderers,home,West Ham,Wolverhampton Wanderers,31,2,0,3,0,3,0,W,True
+22067,2023,2023-12-23,Fulham,Burnley,away,Burnley,Fulham,65,2,0,0,2,2,0,W,False
+22071,2023,2023-12-23,Tottenham,Everton,home,Tottenham,Everton,17,2,0,2,1,2,1,W,True
+22072,2023,2023-12-23,West Ham,Manchester United,home,West Ham,Manchester United,77,2,0,2,0,2,0,W,True
+22073,2023,2023-12-24,Wolverhampton Wanderers,Chelsea,home,Wolverhampton Wanderers,Chelsea,92,2,0,2,1,2,1,W,True
+22075,2023,2023-12-26,Bournemouth,Fulham,home,Bournemouth,Fulham,61,2,0,3,0,3,0,W,True
+22076,2023,2023-12-28,Arsenal,West Ham,away,West Ham,Arsenal,54,2,0,0,2,2,0,W,False
+22077,2023,2023-12-27,Brentford,Wolverhampton Wanderers,away,Wolverhampton Wanderers,Brentford,13,2,0,1,4,4,1,W,False
+22078,2023,2023-12-28,Brighton,Tottenham,home,Brighton,Tottenham,23,2,0,4,2,4,2,W,True
+22079,2023,2023-12-26,Burnley,Liverpool,away,Liverpool,Burnley,89,2,0,0,2,2,0,W,False
+22081,2023,2023-12-27,Everton,Manchester City,away,Manchester City,Everton,85,3,1,1,3,3,1,W,False
+22082,2023,2023-12-26,Manchester United,Aston Villa,away,Aston Villa,Manchester United,25,2,0,3,2,2,3,L,False
+22083,2023,2023-12-26,Newcastle United,Nottingham Forest,away,Nottingham Forest,Newcastle United,59,3,1,1,3,3,1,W,False
+22086,2023,2023-12-30,Crystal Palace,Brentford,home,Crystal Palace,Brentford,57,3,1,3,1,3,1,W,True
+22088,2023,2024-01-01,Liverpool,Newcastle United,home,Liverpool,Newcastle United,77,3,1,4,2,4,2,W,True
+22089,2023,2023-12-30,Luton,Chelsea,away,Chelsea,Luton,36,2,0,2,3,3,2,W,False
+22090,2023,2023-12-30,Manchester City,Sheffield United,home,Manchester City,Sheffield United,60,2,0,2,0,2,0,W,True
+22092,2023,2023-12-31,Tottenham,Bournemouth,home,Tottenham,Bournemouth,70,2,0,3,1,3,1,W,True
+22094,2023,2023-12-30,Wolverhampton Wanderers,Everton,home,Wolverhampton Wanderers,Everton,52,2,0,3,0,3,0,W,True
+22102,2023,2024-01-21,Bournemouth,Liverpool,away,Liverpool,Bournemouth,69,2,0,0,4,4,0,W,False
+22103,2023,2024-01-20,Arsenal,Crystal Palace,home,Arsenal,Crystal Palace,36,2,0,5,0,5,0,W,True
+22105,2023,2024-01-30,Aston Villa,Newcastle United,away,Newcastle United,Aston Villa,35,2,0,1,3,3,1,W,False
+22107,2023,2024-01-30,Luton,Brighton,home,Luton,Brighton,2,2,0,4,0,4,0,W,True
+22108,2023,2024-01-30,Nottingham Forest,Arsenal,away,Arsenal,Nottingham Forest,71,2,0,1,2,2,1,W,False
+22109,2023,2024-01-31,Tottenham,Brentford,home,Tottenham,Brentford,55,3,1,3,2,3,2,W,True
+22111,2023,2024-02-01,Wolverhampton Wanderers,Manchester United,away,Manchester United,Wolverhampton Wanderers,21,2,0,3,4,4,3,W,False
+22113,2023,2024-01-31,Liverpool,Chelsea,home,Liverpool,Chelsea,38,2,0,4,1,4,1,W,True
+22114,2023,2024-01-31,Manchester City,Burnley,home,Manchester City,Burnley,21,2,0,3,1,3,1,W,True
+22116,2023,2024-02-04,Arsenal,Liverpool,home,Arsenal,Liverpool,91,3,1,3,1,3,1,W,True
+22117,2023,2024-02-05,Brentford,Manchester City,away,Manchester City,Brentford,69,3,1,1,3,3,1,W,False
+22118,2023,2024-02-03,Brighton,Crystal Palace,home,Brighton,Crystal Palace,32,2,0,4,1,4,1,W,True
+22119,2023,2024-02-03,Burnley,Fulham,away,Fulham,Burnley,20,2,0,2,2,2,2,D,False
+22120,2023,2024-02-04,Chelsea,Wolverhampton Wanderers,away,Wolverhampton Wanderers,Chelsea,62,3,1,2,4,4,2,W,False
+22122,2023,2024-02-04,Manchester United,West Ham,home,Manchester United,West Ham,48,2,0,3,0,3,0,W,True
+22123,2023,2024-02-03,Newcastle United,Luton,away,Luton,Newcastle United,61,4,2,4,4,4,4,D,False
+22124,2023,2024-02-03,Sheffield United,Aston Villa,away,Aston Villa,Sheffield United,15,2,0,0,5,5,0,W,False
+22126,2023,2024-02-12,Crystal Palace,Chelsea,away,Chelsea,Crystal Palace,93,3,1,1,3,3,1,W,False
+22127,2023,2024-02-10,Fulham,Bournemouth,home,Fulham,Bournemouth,35,2,0,3,1,3,1,W,True
+22128,2023,2024-02-10,Liverpool,Burnley,home,Liverpool,Burnley,78,3,1,3,1,3,1,W,True
+22129,2023,2024-02-10,Luton,Sheffield United,away,Sheffield United,Luton,35,2,0,1,3,3,1,W,False
+22130,2023,2024-02-10,Manchester City,Everton,home,Manchester City,Everton,84,2,0,2,0,2,0,W,True
+22133,2023,2024-02-11,West Ham,Arsenal,away,Arsenal,West Ham,40,2,0,0,6,6,0,W,False
+22134,2023,2024-02-10,Wolverhampton Wanderers,Brentford,away,Brentford,Wolverhampton Wanderers,76,2,0,0,2,2,0,W,False
+22135,2023,2024-02-17,Brentford,Liverpool,away,Liverpool,Brentford,54,2,0,1,4,4,1,W,False
+22136,2023,2024-02-17,Burnley,Arsenal,away,Arsenal,Burnley,40,2,0,0,5,5,0,W,False
+22138,2023,2024-02-17,Fulham,Aston Villa,away,Aston Villa,Fulham,55,2,0,1,2,2,1,W,False
+22139,2023,2024-02-18,Luton,Manchester United,away,Manchester United,Luton,6,2,0,1,2,2,1,W,False
+22142,2023,2024-02-17,Nottingham Forest,West Ham,home,Nottingham Forest,West Ham,94,2,0,2,0,2,0,W,True
+22143,2023,2024-02-18,Sheffield United,Brighton,away,Brighton,Sheffield United,23,2,0,0,5,5,0,W,False
+22146,2023,2024-02-24,Arsenal,Newcastle United,home,Arsenal,Newcastle United,23,2,0,4,1,4,1,W,True
+22147,2023,2024-02-24,Aston Villa,Nottingham Forest,home,Aston Villa,Nottingham Forest,28,2,0,4,2,4,2,W,True
+22149,2023,2024-05-02,Chelsea,Tottenham,home,Chelsea,Tottenham,71,2,0,2,0,2,0,W,True
+22150,2023,2024-02-24,Crystal Palace,Burnley,home,Crystal Palace,Burnley,71,2,0,3,0,3,0,W,True
+22151,2023,2024-02-21,Liverpool,Luton,home,Liverpool,Luton,70,3,1,4,1,4,1,W,True
+22153,2023,2024-02-26,West Ham,Brentford,home,West Ham,Brentford,6,2,0,4,2,4,2,W,True
+22156,2023,2024-03-03,Burnley,Bournemouth,away,Bournemouth,Burnley,87,2,0,0,2,2,0,W,False
+22157,2023,2024-03-02,Everton,West Ham,away,West Ham,Everton,94,3,1,1,3,3,1,W,False
+22158,2023,2024-03-02,Fulham,Brighton,home,Fulham,Brighton,31,2,0,3,0,3,0,W,True
+22159,2023,2024-03-02,Luton,Aston Villa,away,Aston Villa,Luton,37,2,0,2,3,3,2,W,False
+22160,2023,2024-03-03,Manchester City,Manchester United,home,Manchester City,Manchester United,90,3,1,3,1,3,1,W,True
+22161,2023,2024-03-02,Newcastle United,Wolverhampton Wanderers,home,Newcastle United,Wolverhampton Wanderers,32,2,0,3,0,3,0,W,True
+22163,2023,2024-03-04,Sheffield United,Arsenal,away,Arsenal,Sheffield United,12,2,0,0,6,6,0,W,False
+22164,2023,2024-03-02,Tottenham,Crystal Palace,home,Tottenham,Crystal Palace,87,3,1,3,1,3,1,W,True
+22165,2023,2024-03-09,Bournemouth,Sheffield United,away,Sheffield United,Bournemouth,63,2,0,2,2,2,2,D,False
+22167,2023,2024-03-10,Aston Villa,Tottenham,away,Tottenham,Aston Villa,52,2,0,0,4,4,0,W,False
+22169,2023,2024-03-11,Chelsea,Newcastle United,home,Chelsea,Newcastle United,75,3,1,3,2,3,2,W,True
+22172,2023,2024-03-09,Manchester United,Everton,home,Manchester United,Everton,35,2,0,2,0,2,0,W,True
+22173,2023,2024-03-10,West Ham,Burnley,away,Burnley,West Ham,45,2,0,2,2,2,2,D,False
+22174,2023,2024-03-09,Wolverhampton Wanderers,Fulham,home,Wolverhampton Wanderers,Fulham,66,2,0,2,1,2,1,W,True
+22175,2023,2024-04-23,Arsenal,Chelsea,home,Arsenal,Chelsea,51,2,0,5,0,5,0,W,True
+22176,2023,2024-04-25,Brighton,Manchester City,away,Manchester City,Brighton,25,2,0,0,4,4,0,W,False
+22177,2023,2024-03-16,Burnley,Brentford,home,Burnley,Brentford,61,2,0,2,1,2,1,W,True
+22178,2023,2024-04-24,Crystal Palace,Newcastle United,home,Crystal Palace,Newcastle United,87,2,0,2,0,2,0,W,True
+22179,2023,2024-04-24,Everton,Liverpool,home,Everton,Liverpool,57,2,0,2,0,2,0,W,True
+22180,2023,2024-03-16,Fulham,Tottenham,home,Fulham,Tottenham,48,2,0,3,0,3,0,W,True
+22182,2023,2024-04-24,Manchester United,Sheffield United,home,Manchester United,Sheffield United,84,4,2,4,2,4,2,W,True
+22186,2023,2024-03-30,Aston Villa,Wolverhampton Wanderers,home,Aston Villa,Wolverhampton Wanderers,64,2,0,2,0,2,0,W,True
+22191,2023,2024-03-30,Newcastle United,West Ham,away,West Ham,Newcastle United,54,3,1,4,3,3,4,L,False
+22193,2023,2024-03-30,Sheffield United,Fulham,home,Sheffield United,Fulham,69,3,1,3,3,3,3,D,True
+22196,2023,2024-04-03,Arsenal,Luton,home,Arsenal,Luton,43,2,0,2,0,2,0,W,True
+22198,2023,2024-04-02,Nottingham Forest,Fulham,home,Nottingham Forest,Fulham,18,2,0,3,1,3,1,W,True
+22201,2023,2024-04-04,Chelsea,Manchester United,home,Chelsea,Manchester United,18,2,0,4,3,4,3,W,True
+22203,2023,2024-04-04,Liverpool,Sheffield United,home,Liverpool,Sheffield United,89,3,1,3,1,3,1,W,True
+22204,2023,2024-04-03,Manchester City,Aston Villa,home,Manchester City,Aston Villa,61,3,1,4,1,4,1,W,True
+22205,2023,2024-04-06,Aston Villa,Brentford,home,Aston Villa,Brentford,45,2,0,3,3,3,3,D,True
+22206,2023,2024-04-06,Brighton,Arsenal,away,Arsenal,Brighton,61,2,0,0,3,3,0,W,False
+22207,2023,2024-04-06,Crystal Palace,Manchester City,away,Manchester City,Crystal Palace,65,3,1,2,4,4,2,W,False
+22213,2023,2024-04-07,Tottenham,Nottingham Forest,home,Tottenham,Nottingham Forest,57,3,1,3,1,3,1,W,True
+22216,2023,2024-04-14,Arsenal,Aston Villa,away,Aston Villa,Arsenal,86,2,0,0,2,2,0,W,False
+22217,2023,2024-04-13,Brentford,Sheffield United,home,Brentford,Sheffield United,92,2,0,2,0,2,0,W,True
+22219,2023,2024-04-15,Chelsea,Everton,home,Chelsea,Everton,17,2,0,6,0,6,0,W,True
+22221,2023,2024-04-13,Manchester City,Luton,home,Manchester City,Luton,63,2,0,5,1,5,1,W,True
+22222,2023,2024-04-13,Newcastle United,Tottenham,home,Newcastle United,Tottenham,31,2,0,4,0,4,0,W,True
+22224,2023,2024-04-14,West Ham,Fulham,away,Fulham,West Ham,71,2,0,0,2,2,0,W,False
+22225,2023,2024-04-21,Aston Villa,Bournemouth,home,Aston Villa,Bournemouth,77,3,1,3,1,3,1,W,True
+22226,2023,2024-05-15,Brighton,Chelsea,away,Chelsea,Brighton,63,2,0,1,2,2,1,W,False
+22227,2023,2024-04-21,Crystal Palace,West Ham,home,Crystal Palace,West Ham,15,2,0,5,2,5,2,W,True
+22228,2023,2024-04-21,Everton,Nottingham Forest,home,Everton,Nottingham Forest,75,2,0,2,0,2,0,W,True
+22229,2023,2024-04-21,Fulham,Liverpool,away,Liverpool,Fulham,71,3,1,1,3,3,1,W,False
+22230,2023,2024-04-20,Luton,Brentford,away,Brentford,Luton,45,2,0,1,5,5,1,W,False
+22231,2023,2024-05-15,Manchester United,Newcastle United,home,Manchester United,Newcastle United,83,3,1,3,2,3,2,W,True
+22232,2023,2024-04-20,Sheffield United,Burnley,away,Burnley,Sheffield United,39,2,0,1,4,4,1,W,False
+22233,2023,2024-05-14,Tottenham,Manchester City,away,Manchester City,Tottenham,90,2,0,0,2,2,0,W,False
+22234,2023,2024-04-20,Wolverhampton Wanderers,Arsenal,away,Arsenal,Wolverhampton Wanderers,94,2,0,0,2,2,0,W,False
+22235,2023,2024-04-28,Bournemouth,Brighton,home,Bournemouth,Brighton,51,2,0,3,0,3,0,W,True
+22236,2023,2024-04-27,Aston Villa,Chelsea,home,Aston Villa,Chelsea,41,2,0,2,2,2,2,D,True
+22240,2023,2024-04-27,Newcastle United,Sheffield United,home,Newcastle United,Sheffield United,60,3,1,5,1,5,1,W,True
+22241,2023,2024-04-28,Tottenham,Arsenal,away,Arsenal,Tottenham,26,2,0,2,3,3,2,W,False
+22242,2023,2024-04-28,Nottingham Forest,Manchester City,away,Manchester City,Nottingham Forest,70,2,0,0,2,2,0,W,False
+22244,2023,2024-04-27,Wolverhampton Wanderers,Luton,home,Wolverhampton Wanderers,Luton,49,2,0,2,1,2,1,W,True
+22245,2023,2024-05-04,Arsenal,Bournemouth,home,Arsenal,Bournemouth,69,2,0,3,0,3,0,W,True
+22248,2023,2024-05-04,Burnley,Newcastle United,away,Newcastle United,Burnley,34,2,0,1,4,4,1,W,False
+22249,2023,2024-05-05,Chelsea,West Ham,home,Chelsea,West Ham,29,2,0,5,0,5,0,W,True
+22250,2023,2024-05-06,Crystal Palace,Manchester United,home,Crystal Palace,Manchester United,39,2,0,4,0,4,0,W,True
+22251,2023,2024-05-05,Liverpool,Tottenham,home,Liverpool,Tottenham,44,2,0,4,2,4,2,W,True
+22253,2023,2024-05-04,Manchester City,Wolverhampton Wanderers,home,Manchester City,Wolverhampton Wanderers,34,2,0,5,1,5,1,W,True
+22254,2023,2024-05-04,Sheffield United,Nottingham Forest,away,Nottingham Forest,Sheffield United,64,3,1,1,3,3,1,W,False
+22256,2023,2024-05-13,Aston Villa,Liverpool,away,Liverpool,Aston Villa,47,3,1,3,3,3,3,D,False
+22258,2023,2024-05-11,Fulham,Manchester City,away,Manchester City,Fulham,58,2,0,0,4,4,0,W,False
+22263,2023,2024-05-11,West Ham,Luton,home,West Ham,Luton,75,3,1,3,1,3,1,W,True
+22264,2023,2024-05-11,Wolverhampton Wanderers,Crystal Palace,away,Crystal Palace,Wolverhampton Wanderers,27,2,0,1,3,3,1,W,False
+22266,2023,2024-05-19,Brentford,Newcastle United,away,Newcastle United,Brentford,35,2,0,2,4,4,2,W,False
+22267,2023,2024-05-19,Brighton,Manchester United,away,Manchester United,Brighton,87,2,0,0,2,2,0,W,False
+22268,2023,2024-05-19,Burnley,Nottingham Forest,away,Nottingham Forest,Burnley,13,2,0,1,2,2,1,W,False
+22269,2023,2024-05-19,Chelsea,Bournemouth,home,Chelsea,Bournemouth,47,2,0,2,1,2,1,W,True
+22270,2023,2024-05-19,Crystal Palace,Aston Villa,home,Crystal Palace,Aston Villa,38,2,0,5,0,5,0,W,True
+22271,2023,2024-05-19,Liverpool,Wolverhampton Wanderers,home,Liverpool,Wolverhampton Wanderers,39,2,0,2,0,2,0,W,True
+22272,2023,2024-05-19,Luton,Fulham,away,Fulham,Luton,48,3,1,2,4,4,2,W,False
+22273,2023,2024-05-19,Manchester City,West Ham,home,Manchester City,West Ham,17,2,0,3,1,3,1,W,True
+22274,2023,2024-05-19,Sheffield United,Tottenham,away,Tottenham,Sheffield United,58,2,0,0,3,3,0,W,False
+22275,2023,2023-08-11,Burnley,Manchester City,away,Manchester City,Burnley,35,2,0,0,3,3,0,W,False
+22276,2023,2023-08-12,Arsenal,Nottingham Forest,home,Arsenal,Nottingham Forest,31,2,0,2,1,2,1,W,True
+22278,2023,2023-08-12,Brighton,Luton,home,Brighton,Luton,70,2,0,4,1,4,1,W,True
+22281,2023,2023-08-12,Newcastle United,Aston Villa,home,Newcastle United,Aston Villa,57,3,1,5,1,5,1,W,True
+22286,2023,2023-08-19,Wolverhampton Wanderers,Brighton,away,Brighton,Wolverhampton Wanderers,45,2,0,1,4,4,1,W,False
+22287,2023,2023-08-19,Fulham,Brentford,away,Brentford,Fulham,65,2,0,0,3,3,0,W,False
+22288,2023,2023-08-19,Liverpool,Bournemouth,home,Liverpool,Bournemouth,61,3,1,3,1,3,1,W,True
+22290,2023,2023-08-19,Tottenham,Manchester United,home,Tottenham,Manchester United,82,2,0,2,0,2,0,W,True
+22292,2023,2023-08-20,Aston Villa,Everton,home,Aston Villa,Everton,23,2,0,4,0,4,0,W,True
+22293,2023,2023-08-20,West Ham,Chelsea,home,West Ham,Chelsea,94,3,1,3,1,3,1,W,True
+22295,2023,2023-08-25,Chelsea,Luton,home,Chelsea,Luton,67,2,0,3,0,3,0,W,True
+22296,2023,2023-08-26,Bournemouth,Tottenham,away,Tottenham,Bournemouth,62,2,0,0,2,2,0,W,False
+22300,2023,2023-08-26,Manchester United,Nottingham Forest,away,Nottingham Forest,Manchester United,3,2,0,3,2,2,3,L,False
+22301,2023,2023-08-26,Brighton,West Ham,away,West Ham,Brighton,57,2,0,1,3,3,1,W,False
+22302,2023,2023-08-27,Burnley,Aston Villa,away,Aston Villa,Burnley,19,2,0,1,3,3,1,W,False
+25861,2023,2024-03-13,Bournemouth,Luton,away,Luton,Bournemouth,30,2,0,4,3,3,4,L,False

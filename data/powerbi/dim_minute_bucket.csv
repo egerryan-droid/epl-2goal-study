@@ -1,0 +1,7 @@
+bucket_key,bucket_label,bucket_order,half,min_minute,max_minute,bucket_description
+0-15,0–15,1,First Half,1,15,Early first half (1-15 min)
+16-30,16–30,2,First Half,16,30,Mid first half (16-30 min)
+31-45+,31–45+,3,First Half,31,49,Late first half (31-49 min)
+46-60,46–60,4,Second Half,46,60,Early second half (46-60 min)
+61-75,61–75,5,Second Half,61,75,Mid second half (61-75 min)
+76-90+,76–90+,6,Second Half,76,120,Late second half (76-120 min)

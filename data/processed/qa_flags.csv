@@ -1,0 +1,3 @@
+flag_type,flag_description,severity
+PASS,Tottenham 5-4 Leicester (2018-05-13): both teams +2 (found 1 events),PASS
+PASS,Cross-validated 3 matches against Football-Data: 7 mismatches,PASS

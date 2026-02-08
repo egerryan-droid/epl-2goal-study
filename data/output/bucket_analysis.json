@@ -1,0 +1,69 @@
+{
+  "chi_square": {
+    "statistic": 39.59,
+    "p_value": 2e-05,
+    "dof": 10,
+    "min_expected_count": 2.4,
+    "assumptions_met": false
+  },
+  "locked_minute_90": "0-15",
+  "locked_minute_90_win_rate": 0.9204,
+  "locked_minute_95": "76-90+",
+  "locked_minute_95_win_rate": 0.9974,
+  "pairwise_tests": [
+    {
+      "bucket_a": "0-15",
+      "bucket_b": "16-30",
+      "win_rate_a": 0.92,
+      "win_rate_b": 0.907,
+      "z_stat": 0.426,
+      "p_value": 0.6698,
+      "significant": "No"
+    },
+    {
+      "bucket_a": "16-30",
+      "bucket_b": "31-45+",
+      "win_rate_a": 0.907,
+      "win_rate_b": 0.905,
+      "z_stat": 0.097,
+      "p_value": 0.9229,
+      "significant": "No"
+    },
+    {
+      "bucket_a": "31-45+",
+      "bucket_b": "46-60",
+      "win_rate_a": 0.905,
+      "win_rate_b": 0.915,
+      "z_stat": -0.481,
+      "p_value": 0.6307,
+      "significant": "No"
+    },
+    {
+      "bucket_a": "46-60",
+      "bucket_b": "61-75",
+      "win_rate_a": 0.915,
+      "win_rate_b": 0.943,
+      "z_stat": -1.393,
+      "p_value": 0.1637,
+      "significant": "No"
+    },
+    {
+      "bucket_a": "61-75",
+      "bucket_b": "76-90+",
+      "win_rate_a": 0.943,
+      "win_rate_b": 0.997,
+      "z_stat": -4.444,
+      "p_value": 0.0,
+      "significant": "Yes"
+    }
+  ],
+  "monotonic_trend": false,
+  "win_rates_by_bucket": {
+    "0-15": 0.9204,
+    "16-30": 0.9067,
+    "31-45+": 0.9046,
+    "46-60": 0.9149,
+    "61-75": 0.9432,
+    "76-90+": 0.9974
+  }
+}

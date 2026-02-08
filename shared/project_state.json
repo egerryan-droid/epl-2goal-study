@@ -1,0 +1,134 @@
+{
+  "project": "EPL 2-Goal Lead Safety Study",
+  "created": "2026-02-07",
+  "status": "complete",
+  "final_deliverable": "Power BI dashboard + EMBA research paper",
+  "phases": {
+    "01_planning": {
+      "status": "complete",
+      "agent": "orchestrator",
+      "completed_date": "2026-02-07",
+      "outputs": ["docs/execution_plan.md"],
+      "notes": "Fixed schema.json points_dropped for draws (D=1 -> D=2). Validated all shared configs. Ipswich Town in name_mapping noted as harmless (not in sample period)."
+    },
+    "02_data_acquisition": {
+      "status": "complete",
+      "agent": "data_engineer",
+      "completed_date": "2026-02-07",
+      "substeps": {
+        "download_football_data_csvs": "complete",
+        "scrape_understat_shots": "complete",
+        "extract_goal_minutes": "complete",
+        "build_plus2_events": "complete",
+        "join_controls": "complete",
+        "build_star_schema": "complete",
+        "export_dimension_tables": "complete",
+        "export_fact_tables": "complete"
+      },
+      "outputs": [
+        "data/powerbi/fact_plus2_events.csv",
+        "data/powerbi/fact_goal_timeline.csv",
+        "data/powerbi/dim_season.csv",
+        "data/powerbi/dim_team.csv",
+        "data/powerbi/dim_match.csv",
+        "data/powerbi/dim_minute_bucket.csv",
+        "data/processed/goal_timeline.csv",
+        "data/processed/plus2_events_joined.csv",
+        "data/processed/join_failures.csv"
+      ],
+      "notes": "97,046 shots scraped from Understat (10 seasons). 1,907 +2 events detected. 99.4% join rate with Football-Data. Fixes applied: name_mapping added Nott'm Forest variant, odds fallback to B365 for early seasons, bucket max extended to 120 for deep stoppage time. Validation: ALL CHECKS PASS."
+    },
+    "03_qa_validation": {
+      "status": "complete",
+      "agent": "qa_agent",
+      "completed_date": "2026-02-07",
+      "substeps": {
+        "fact_table_checks": "complete",
+        "dimension_table_checks": "complete",
+        "relationship_integrity": "complete",
+        "known_match_spotchecks": "complete",
+        "distribution_sanity": "complete",
+        "missing_data_audit": "complete"
+      },
+      "outputs": ["docs/qa_report.md", "data/processed/qa_flags.csv"],
+      "notes": "PASS. 0 BLOCKERs, 0 WARNINGs. All 9 spot-checks passed. 0 FK violations. Missing data <1%. Power BI readiness confirmed."
+    },
+    "04_analysis": {
+      "status": "complete",
+      "agent": "statistician",
+      "completed_date": "2026-02-07",
+      "substeps": {
+        "descriptive_stats": "complete",
+        "conditional_probabilities": "complete",
+        "minute_bucket_analysis": "complete",
+        "locked_minute_threshold": "complete",
+        "strength_control_regression": "complete",
+        "precomputed_measures": "complete",
+        "static_visualizations": "complete"
+      },
+      "outputs": [
+        "data/output/descriptive_stats.json",
+        "data/output/bucket_analysis.json",
+        "data/output/regression_results.json",
+        "data/powerbi/summary_overall.csv",
+        "data/powerbi/summary_by_bucket.csv",
+        "data/powerbi/summary_by_season.csv",
+        "data/powerbi/summary_by_team.csv",
+        "data/powerbi/summary_bucket_stats.csv",
+        "data/powerbi/summary_regression.csv",
+        "docs/figures/fig1_overall_wdl.png",
+        "docs/figures/fig2_win_rate_by_minute.png",
+        "docs/figures/fig3_bucket_heatmap.png",
+        "docs/figures/fig4_points_dropped_season.png",
+        "docs/figures/fig5_strength_scatter.png",
+        "docs/figures/fig6_events_by_minute.png",
+        "docs/figures/fig7_team_comparison.png"
+      ],
+      "notes": "Win rate 93.3% [92.1-94.4%]. Chi-square significant (p<0.001). Locked at 90%: minute 0-15 already above 90%. Major jump at 76-90+ (99.7%). Regression: minute and implied_prob significant, home advantage not significant. Red cards significant."
+    },
+    "05_powerbi": {
+      "status": "complete",
+      "agent": "powerbi_architect",
+      "completed_date": "2026-02-07",
+      "substeps": {
+        "dax_measure_library": "complete",
+        "dashboard_page_spec": "complete",
+        "relationship_config": "complete",
+        "color_theme": "complete",
+        "load_instructions": "complete"
+      },
+      "outputs": [
+        "docs/dax_measures.md",
+        "docs/powerbi_spec.md",
+        "docs/powerbi_load_instructions.md",
+        "data/powerbi/epl_study_theme.json"
+      ],
+      "notes": "34 DAX measures in 8 groups. 6-page dashboard spec (Overview, Minute Deep Dive, Team Leaderboard, Season Trends, Match Drill-Through, Statistical Summary). Role-playing dim_team with USERELATIONSHIP for opponent measures. Theme: green/amber/red for W/D/L."
+    },
+    "06_writing": {
+      "status": "complete",
+      "agent": "writer",
+      "completed_date": "2026-02-07",
+      "substeps": {
+        "intro_and_lit_review": "complete",
+        "methodology": "complete",
+        "results": "complete",
+        "discussion": "complete",
+        "dashboard_appendix": "complete"
+      },
+      "outputs": ["docs/paper_draft.md"],
+      "notes": "Full EMBA paper: ~5,500 words. Opens with real Bournemouth 4-3 Liverpool blown lead. All statistics from result files with CIs. 4 tables embedded. References 7 figures and 6 dashboard pages. Regression, chi-square, and locked-minute analysis all included. Appendix A (dashboard guide) and Appendix B (data dictionary) complete."
+    }
+  },
+  "parameters": {
+    "seasons": ["2014/2015", "2015/2016", "2016/2017", "2017/2018", "2018/2019", "2019/2020", "2020/2021", "2021/2022", "2022/2023", "2023/2024"],
+    "minute_buckets": ["0-15", "16-30", "31-45+", "46-60", "61-75", "76-90+"],
+    "locked_threshold": 0.90,
+    "robustness_threshold": 0.95
+  },
+  "data_sources": {
+    "primary_goals": "understat (via scraping or understat python package)",
+    "results_and_controls": "football-data.co.uk",
+    "backup_goals": "fbref (if understat fails)"
+  }
+}

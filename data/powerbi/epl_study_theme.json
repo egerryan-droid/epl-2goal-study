@@ -1,0 +1,26 @@
+{
+  "name": "EPL 2-Goal Study",
+  "dataColors": ["#2ecc71", "#f39c12", "#e74c3c", "#3498db", "#9b59b6", "#1abc9c", "#e67e22", "#34495e"],
+  "background": "#FAFAFA",
+  "foreground": "#2C3E50",
+  "tableAccent": "#3498db",
+  "good": "#2ecc71",
+  "neutral": "#f39c12",
+  "bad": "#e74c3c",
+  "maximum": "#2ecc71",
+  "center": "#f39c12",
+  "minimum": "#e74c3c",
+  "visualStyles": {
+    "*": {
+      "*": {
+        "fontFamily": [{"value": "Segoe UI"}],
+        "wordWrap": [{"value": true}]
+      }
+    },
+    "card": {
+      "*": {
+        "fontFamily": [{"value": "Segoe UI"}]
+      }
+    }
+  }
+}

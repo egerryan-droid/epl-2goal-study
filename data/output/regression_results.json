@@ -1,0 +1,65 @@
+{
+  "model": "Logistic Regression",
+  "dv": "is_win",
+  "n": 1895,
+  "pseudo_r2": 0.1231,
+  "aic": 829.1,
+  "bic": 862.4,
+  "log_likelihood": -408.6,
+  "coefficients": {
+    "const": {
+      "coefficient": -0.3645,
+      "odds_ratio": 0.6946,
+      "std_error": 0.3074,
+      "p_value": 0.2357,
+      "ci_low": -0.967,
+      "ci_high": 0.238,
+      "significant": "No"
+    },
+    "minute_reached_plus2": {
+      "coefficient": 0.022,
+      "odds_ratio": 1.0222,
+      "std_error": 0.0043,
+      "p_value": 0.0,
+      "ci_low": 0.0135,
+      "ci_high": 0.0304,
+      "significant": "Yes"
+    },
+    "leader_implied_prob": {
+      "coefficient": 4.2,
+      "odds_ratio": 66.6864,
+      "std_error": 0.5317,
+      "p_value": 0.0,
+      "ci_low": 3.1579,
+      "ci_high": 5.2421,
+      "significant": "Yes"
+    },
+    "leader_is_home": {
+      "coefficient": 0.0389,
+      "odds_ratio": 1.0397,
+      "std_error": 0.1981,
+      "p_value": 0.8443,
+      "ci_low": -0.3493,
+      "ci_high": 0.4271,
+      "significant": "No"
+    },
+    "leader_red_cards": {
+      "coefficient": -0.8599,
+      "odds_ratio": 0.4232,
+      "std_error": 0.3819,
+      "p_value": 0.0244,
+      "ci_low": -1.6084,
+      "ci_high": -0.1113,
+      "significant": "Yes"
+    },
+    "opponent_red_cards": {
+      "coefficient": 1.241,
+      "odds_ratio": 3.459,
+      "std_error": 0.5156,
+      "p_value": 0.0161,
+      "ci_low": 0.2304,
+      "ci_high": 2.2516,
+      "significant": "Yes"
+    }
+  }
+}

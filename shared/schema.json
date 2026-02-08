@@ -1,0 +1,141 @@
+{
+  "model_type": "star_schema",
+  "description": "Power BI-optimized data model. One fact table for +2 events, one for goal timeline, four dimension tables. All exported as CSVs to data/powerbi/.",
+
+  "fact_tables": {
+    "fact_plus2_events": {
+      "file": "data/powerbi/fact_plus2_events.csv",
+      "grain": "One row per team achieving a +2 lead in a match. If both teams reach +2, two rows.",
+      "fields": [
+        {"name": "event_id", "type": "string", "key": "PK", "description": "Unique: {match_key}_{leader_team_key}"},
+        {"name": "match_key", "type": "integer", "key": "FK→dim_match", "description": "Understat match ID"},
+        {"name": "season_key", "type": "string", "key": "FK→dim_season", "description": "e.g. '2023-2024'"},
+        {"name": "leader_team_key", "type": "string", "key": "FK→dim_team", "description": "Canonical team name of leader"},
+        {"name": "opponent_team_key", "type": "string", "key": "FK→dim_team", "description": "Canonical team name of opponent"},
+        {"name": "bucket_key", "type": "string", "key": "FK→dim_minute_bucket", "description": "e.g. '46-60'"},
+        {"name": "minute_reached_plus2", "type": "integer", "description": "Minute when +2 was first reached"},
+        {"name": "stoppage_flag", "type": "boolean", "description": "True if +2 reached in stoppage time"},
+        {"name": "leader_is_home", "type": "boolean", "description": "True if leader is the home team"},
+        {"name": "score_at_event_leader", "type": "integer", "description": "Leader's goals when +2 reached"},
+        {"name": "score_at_event_opponent", "type": "integer", "description": "Opponent's goals when +2 reached"},
+        {"name": "score_at_event_display", "type": "string", "description": "e.g. '2-0' from leader perspective"},
+        {"name": "final_leader_goals", "type": "integer", "description": "Leader's final goals"},
+        {"name": "final_opponent_goals", "type": "integer", "description": "Opponent's final goals"},
+        {"name": "result_for_leader", "type": "string", "description": "W, D, or L"},
+        {"name": "is_win", "type": "integer", "description": "1 if W, 0 otherwise (for DAX aggregation)"},
+        {"name": "is_draw", "type": "integer", "description": "1 if D, 0 otherwise"},
+        {"name": "is_loss", "type": "integer", "description": "1 if L, 0 otherwise"},
+        {"name": "points_dropped", "type": "integer", "description": "W=0, D=2, L=3"},
+        {"name": "points_earned", "type": "integer", "description": "W=3, D=1, L=0"},
+        {"name": "leader_red_cards", "type": "integer", "description": "Red cards for leader (match-level). Nullable."},
+        {"name": "opponent_red_cards", "type": "integer", "description": "Red cards for opponent (match-level). Nullable."},
+        {"name": "leader_prematch_win_odds", "type": "float", "description": "Pre-match avg odds for leader to win. Nullable."},
+        {"name": "opponent_prematch_win_odds", "type": "float", "description": "Pre-match avg odds for opponent to win. Nullable."},
+        {"name": "draw_odds", "type": "float", "description": "Pre-match avg draw odds. Nullable."},
+        {"name": "leader_implied_prob", "type": "float", "description": "1/leader_prematch_win_odds. Nullable."},
+        {"name": "strength_tier", "type": "string", "description": "Strong Favorite / Moderate / Underdog based on implied_prob terciles. Nullable."}
+      ]
+    },
+
+    "fact_goal_timeline": {
+      "file": "data/powerbi/fact_goal_timeline.csv",
+      "grain": "One row per goal scored in any match that produced a +2 event. Enables drill-through in Power BI.",
+      "fields": [
+        {"name": "goal_id", "type": "string", "key": "PK", "description": "Unique: {match_key}_{minute}_{scoring_side}"},
+        {"name": "match_key", "type": "integer", "key": "FK→dim_match", "description": "Understat match ID"},
+        {"name": "season_key", "type": "string", "key": "FK→dim_season", "description": "Season key"},
+        {"name": "scoring_team_key", "type": "string", "key": "FK→dim_team", "description": "Team credited with the goal"},
+        {"name": "minute", "type": "integer", "description": "Goal minute"},
+        {"name": "scoring_side", "type": "string", "description": "home or away"},
+        {"name": "is_own_goal", "type": "boolean", "description": "True if own goal (credited to benefiting team)"},
+        {"name": "player", "type": "string", "description": "Goal scorer name. Nullable."},
+        {"name": "running_home", "type": "integer", "description": "Home team score after this goal"},
+        {"name": "running_away", "type": "integer", "description": "Away team score after this goal"},
+        {"name": "running_diff", "type": "integer", "description": "home - away after this goal"},
+        {"name": "is_plus2_moment", "type": "boolean", "description": "True if this goal created a +2 lead for either team"}
+      ]
+    }
+  },
+
+  "dimension_tables": {
+    "dim_season": {
+      "file": "data/powerbi/dim_season.csv",
+      "fields": [
+        {"name": "season_key", "type": "string", "key": "PK", "description": "e.g. '2023-2024' (hyphenated for sort)"},
+        {"name": "season_label", "type": "string", "description": "e.g. '2023/2024' (display format)"},
+        {"name": "season_short", "type": "string", "description": "e.g. '23/24'"},
+        {"name": "start_year", "type": "integer", "description": "e.g. 2023"},
+        {"name": "end_year", "type": "integer", "description": "e.g. 2024"},
+        {"name": "sort_order", "type": "integer", "description": "1-10 for chronological sorting"}
+      ]
+    },
+
+    "dim_team": {
+      "file": "data/powerbi/dim_team.csv",
+      "fields": [
+        {"name": "team_key", "type": "string", "key": "PK", "description": "Canonical team name (join key)"},
+        {"name": "team_display_name", "type": "string", "description": "Display name for reports"},
+        {"name": "team_short", "type": "string", "description": "3-4 letter abbreviation (ARS, MCI, etc.)"},
+        {"name": "city", "type": "string", "description": "City for geographic visuals. Nullable."},
+        {"name": "seasons_in_sample", "type": "integer", "description": "Number of seasons in EPL during sample period"}
+      ]
+    },
+
+    "dim_match": {
+      "file": "data/powerbi/dim_match.csv",
+      "fields": [
+        {"name": "match_key", "type": "integer", "key": "PK", "description": "Understat match ID"},
+        {"name": "match_date", "type": "date", "description": "YYYY-MM-DD"},
+        {"name": "match_year", "type": "integer", "description": "Calendar year (for time intelligence)"},
+        {"name": "match_month", "type": "integer", "description": "Month number"},
+        {"name": "match_day_of_week", "type": "string", "description": "Monday, Tuesday, etc."},
+        {"name": "season_key", "type": "string", "key": "FK→dim_season", "description": "Season this match belongs to"},
+        {"name": "home_team_key", "type": "string", "key": "FK→dim_team", "description": "Home team"},
+        {"name": "away_team_key", "type": "string", "key": "FK→dim_team", "description": "Away team"},
+        {"name": "final_home_goals", "type": "integer", "description": "Full-time home goals"},
+        {"name": "final_away_goals", "type": "integer", "description": "Full-time away goals"},
+        {"name": "full_time_result", "type": "string", "description": "H, D, or A"},
+        {"name": "total_goals", "type": "integer", "description": "Combined goals"},
+        {"name": "had_plus2_event", "type": "boolean", "description": "True if any team reached +2 in this match"},
+        {"name": "match_label", "type": "string", "description": "e.g. 'Arsenal 3-1 Chelsea (2023-10-15)'"}
+      ]
+    },
+
+    "dim_minute_bucket": {
+      "file": "data/powerbi/dim_minute_bucket.csv",
+      "fields": [
+        {"name": "bucket_key", "type": "string", "key": "PK", "description": "e.g. '46-60'"},
+        {"name": "bucket_label", "type": "string", "description": "Display label: '46–60'"},
+        {"name": "bucket_order", "type": "integer", "description": "1-6 for sorting"},
+        {"name": "half", "type": "string", "description": "First Half or Second Half"},
+        {"name": "min_minute", "type": "integer", "description": "Start of range"},
+        {"name": "max_minute", "type": "integer", "description": "End of range"},
+        {"name": "bucket_description", "type": "string", "description": "e.g. 'Early second half (46-60 min)'"}
+      ]
+    }
+  },
+
+  "relationships": [
+    {"from": "fact_plus2_events.match_key", "to": "dim_match.match_key", "cardinality": "many-to-one"},
+    {"from": "fact_plus2_events.season_key", "to": "dim_season.season_key", "cardinality": "many-to-one"},
+    {"from": "fact_plus2_events.leader_team_key", "to": "dim_team.team_key", "cardinality": "many-to-one", "role": "Leader"},
+    {"from": "fact_plus2_events.opponent_team_key", "to": "dim_team.team_key", "cardinality": "many-to-one", "role": "Opponent"},
+    {"from": "fact_plus2_events.bucket_key", "to": "dim_minute_bucket.bucket_key", "cardinality": "many-to-one"},
+    {"from": "fact_goal_timeline.match_key", "to": "dim_match.match_key", "cardinality": "many-to-one"},
+    {"from": "fact_goal_timeline.season_key", "to": "dim_season.season_key", "cardinality": "many-to-one"},
+    {"from": "fact_goal_timeline.scoring_team_key", "to": "dim_team.team_key", "cardinality": "many-to-one"}
+  ],
+
+  "role_playing_dimensions_note": "dim_team is used twice in fact_plus2_events (leader and opponent). In Power BI, create TWO relationships but only one can be active. Use USERELATIONSHIP() in DAX for the inactive one. Recommend: leader_team_key as active, opponent_team_key as inactive.",
+
+  "stoppage_time_rules": "Understat codes stoppage time goals as the regulation minute (45 or 90) with additional minutes. If minute > 45 and minute < 46, treat as 45+. If minute > 90, treat as 90+. Map to buckets 31-45+ and 76-90+ respectively.",
+
+  "minute_bucket_definitions": {
+    "0-15":   {"order": 1, "min": 1,  "max": 15, "half": "First Half"},
+    "16-30":  {"order": 2, "min": 16, "max": 30, "half": "First Half"},
+    "31-45+": {"order": 3, "min": 31, "max": 49, "half": "First Half"},
+    "46-60":  {"order": 4, "min": 46, "max": 60, "half": "Second Half"},
+    "61-75":  {"order": 5, "min": 61, "max": 75, "half": "Second Half"},
+    "76-90+": {"order": 6, "min": 76, "max": 120, "half": "Second Half"}
+  }
+}

@@ -1,0 +1,13 @@
+match_id,date,home_team,away_team,join_key
+190,2015-11-03,Tottenham,Aston Villa,2015-11-03_Tottenham_Aston Villa
+240,2015-12-15,Leicester,Chelsea,2015-12-15_Leicester City_Chelsea
+250,2015-12-22,Arsenal,Manchester City,2015-12-22_Arsenal_Manchester City
+317,2016-02-03,Manchester United,Stoke,2016-02-03_Manchester United_Stoke City
+357,2016-03-03,Liverpool,Manchester City,2016-03-03_Liverpool_Manchester City
+2686,2016-11-01,Stoke,Swansea,2016-11-01_Stoke City_Swansea City
+2706,2016-11-22,West Bromwich Albion,Burnley,2016-11-22_West Bromwich Albion_Burnley
+3131,2016-12-15,West Bromwich Albion,Swansea,2016-12-15_West Bromwich Albion_Swansea City
+3132,2016-12-15,Manchester City,Watford,2016-12-15_Manchester City_Watford
+3134,2016-12-15,Tottenham,Hull,2016-12-15_Tottenham_Hull City
+3338,2017-01-04,Stoke,Watford,2017-01-04_Stoke City_Watford
+3339,2017-01-05,Tottenham,Chelsea,2017-01-05_Tottenham_Chelsea
