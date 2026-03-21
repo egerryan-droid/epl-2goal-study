@@ -19,7 +19,7 @@ export default function S03_TheData() {
     <section
       ref={ref}
       id="the-data"
-      className="min-h-[75vh] flex flex-col items-center justify-center px-6 py-20 bg-surface-dark"
+      className="h-screen snap-start snap-always flex flex-col items-center justify-center px-6 py-20 bg-surface-dark overflow-hidden"
     >
       <motion.div
         initial={{ opacity: 0, y: 20 }}

@@ -22,7 +22,7 @@ export default function S08_SeasonTrends() {
     <section
       ref={ref}
       id="season-trends"
-      className="min-h-screen flex flex-col items-center justify-center px-6 py-20"
+      className="h-screen snap-start snap-always flex flex-col items-center justify-center px-6 py-20 overflow-hidden"
       style={{ background: 'linear-gradient(180deg, #16213e 0%, #1a1a2e 100%)' }}
     >
       <motion.div

@@ -13,7 +13,7 @@ export default function S01_Hero() {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex flex-col items-center justify-center text-center px-6 overflow-hidden"
+      className="relative h-screen snap-start snap-always flex flex-col items-center justify-center text-center px-6 overflow-hidden"
       style={{
         background: 'radial-gradient(ellipse at 50% 120%, #0f3460 0%, #1a1a2e 50%, #0a0a1a 100%)',
       }}

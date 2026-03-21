@@ -18,7 +18,7 @@ export default function S11_Verdict() {
     <section
       ref={ref}
       id="verdict"
-      className="min-h-screen flex flex-col items-center justify-center px-6 py-20 text-center"
+      className="h-screen snap-start snap-always flex flex-col items-center justify-center px-6 py-20 text-center overflow-hidden"
       style={{
         background: 'radial-gradient(ellipse at 50% 50%, #0f3460 0%, #1a1a2e 50%, #0a0a1a 100%)',
       }}
