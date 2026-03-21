@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useRef, useEffect, useMemo } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import type { Team, SummaryTeam } from '@/lib/data';
 
 interface TeamSelectorProps {
@@ -16,7 +17,7 @@ export default function TeamSelector({
   summaryTeams,
   selected,
   onSelect,
-  placeholder = 'Select a team…',
+  placeholder = 'Select a team\u2026',
 }: TeamSelectorProps) {
   const [open, setOpen] = useState(false);
   const [search, setSearch] = useState('');
@@ -74,7 +75,7 @@ export default function TeamSelector({
       {/* Trigger button */}
       <button
         onClick={() => setOpen((o) => !o)}
-        className="flex w-full items-center justify-between gap-2 rounded-lg border border-white/10 bg-surface-mid px-3 py-2.5 text-sm transition-colors hover:bg-surface-light"
+        className="flex w-full items-center justify-between gap-2 rounded-lg border border-white/10 bg-surface-mid px-3 py-2.5 text-sm card-hover"
       >
         {selectedTeam ? (
           <span className="flex items-center gap-2">
@@ -92,7 +93,7 @@ export default function TeamSelector({
         )}
 
         <svg
-          className={`h-4 w-4 shrink-0 text-text-muted transition-transform ${open ? 'rotate-180' : ''}`}
+          className={`h-4 w-4 shrink-0 text-text-muted transition-transform duration-200 ${open ? 'rotate-180' : ''}`}
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
@@ -102,65 +103,73 @@ export default function TeamSelector({
       </button>
 
       {/* Dropdown */}
-      {open && (
-        <div className="absolute left-0 z-50 mt-1 w-full overflow-hidden rounded-lg border border-white/10 bg-surface-mid shadow-xl">
-          {/* Search input */}
-          <div className="border-b border-white/10 p-2">
-            <input
-              ref={searchRef}
-              type="text"
-              value={search}
-              onChange={(e) => setSearch(e.target.value)}
-              placeholder="Search teams…"
-              className="w-full rounded-md bg-white/5 px-3 py-1.5 text-sm text-text-primary placeholder-text-muted outline-none ring-1 ring-white/10 focus:ring-accent"
-            />
-          </div>
+      <AnimatePresence>
+        {open && (
+          <motion.div
+            initial={{ opacity: 0, y: -4 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -4 }}
+            transition={{ duration: 0.15, ease: 'easeOut' }}
+            className="absolute left-0 z-50 mt-1 w-full overflow-hidden rounded-lg border border-white/10 glass-strong shadow-xl"
+          >
+            {/* Search input */}
+            <div className="border-b border-white/10 p-2">
+              <input
+                ref={searchRef}
+                type="text"
+                value={search}
+                onChange={(e) => setSearch(e.target.value)}
+                placeholder="Search teams\u2026"
+                className="w-full rounded-md bg-white/5 px-3 py-1.5 text-sm text-text-primary placeholder-text-muted outline-none ring-1 ring-white/10 focus:ring-accent"
+              />
+            </div>
 
-          {/* Options list */}
-          <div className="max-h-64 overflow-y-auto p-1">
-            {/* Clear selection option */}
-            {selected && (
-              <button
-                onClick={() => handleSelect(null)}
-                className="flex w-full items-center rounded px-3 py-2 text-sm text-text-muted hover:bg-white/5"
-              >
-                Clear selection
-              </button>
-            )}
+            {/* Options list */}
+            <div className="max-h-64 overflow-y-auto p-1">
+              {/* Clear selection option */}
+              {selected && (
+                <button
+                  onClick={() => handleSelect(null)}
+                  className="flex w-full items-center rounded px-3 py-2 text-sm text-text-muted hover:bg-white/5"
+                >
+                  Clear selection
+                </button>
+              )}
 
-            {filteredTeams.length === 0 ? (
-              <div className="px-3 py-4 text-center text-sm text-text-muted">
-                No teams found
-              </div>
-            ) : (
-              filteredTeams.map((team) => {
-                const summary = summaryMap.get(team.team_key);
-                const isActive = team.team_key === selected;
-                return (
-                  <button
-                    key={team.team_key}
-                    onClick={() => handleSelect(team.team_key)}
-                    className={`flex w-full items-center justify-between rounded px-3 py-2 text-sm transition-colors ${
-                      isActive
-                        ? 'bg-accent/20 text-accent'
-                        : 'text-text-secondary hover:bg-white/5'
-                    }`}
-                  >
-                    <span className={isActive ? 'font-medium' : ''}>
-                      {team.team_display_name}
-                    </span>
-                    {summary && (
-                      <span className="text-xs text-text-muted">
-                        {summary.n_as_leader} events
+              {filteredTeams.length === 0 ? (
+                <div className="px-3 py-4 text-center text-sm text-text-muted">
+                  No teams found
+                </div>
+              ) : (
+                filteredTeams.map((team) => {
+                  const summary = summaryMap.get(team.team_key);
+                  const isActive = team.team_key === selected;
+                  return (
+                    <button
+                      key={team.team_key}
+                      onClick={() => handleSelect(team.team_key)}
+                      className={`flex w-full items-center justify-between rounded px-3 py-2 text-sm transition-all duration-150 border-l-2 ${
+                        isActive
+                          ? 'border-l-accent bg-accent/20 text-accent'
+                          : 'border-l-transparent text-text-secondary hover:border-l-accent/50 hover:bg-white/5'
+                      }`}
+                    >
+                      <span className={isActive ? 'font-medium' : ''}>
+                        {team.team_display_name}
                       </span>
-                    )}
-                  </button>
-                );
-              })
-            )}
-          </div>
-        </div>
-      )}
+                      {summary && (
+                        <span className="text-xs text-text-muted">
+                          {summary.n_as_leader} events
+                        </span>
+                      )}
+                    </button>
+                  );
+                })
+              )}
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 }

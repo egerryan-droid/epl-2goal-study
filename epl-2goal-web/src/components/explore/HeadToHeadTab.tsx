@@ -142,7 +142,7 @@ function ComparisonCard({
       variants={fadeUp}
       initial="hidden"
       animate="visible"
-      className="rounded-lg bg-surface-light p-4 text-center"
+      className="rounded-lg glass card-hover p-4 text-center"
     >
       <p className="text-xs uppercase tracking-wider text-text-muted">
         {label}
@@ -153,19 +153,19 @@ function ComparisonCard({
             tied
               ? 'text-text-primary'
               : aBetter
-                ? 'text-win'
+                ? 'text-win drop-shadow-[0_0_6px_rgba(46,204,113,0.3)]'
                 : 'text-text-muted'
           }`}
         >
           {format(valueA)}
         </span>
-        <span className="text-sm text-text-muted">vs</span>
+        <span className="font-display text-sm text-text-muted">vs</span>
         <span
           className={`text-2xl font-bold ${
             tied
               ? 'text-text-primary'
               : bBetter
-                ? 'text-win'
+                ? 'text-win drop-shadow-[0_0_6px_rgba(46,204,113,0.3)]'
                 : 'text-text-muted'
           }`}
         >
@@ -238,7 +238,7 @@ export default function HeadToHeadTab({
             placeholder="Select Team A\u2026"
           />
         </div>
-        <span className="shrink-0 text-lg font-bold text-text-muted">vs</span>
+        <span className="shrink-0 font-display text-3xl text-accent">vs</span>
         <div className="w-full sm:flex-1">
           <TeamSelector
             teams={teams}
@@ -276,7 +276,7 @@ export default function HeadToHeadTab({
             &mdash; select a second team to compare
           </p>
           <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
-            <div className="rounded-lg bg-surface-light p-4 text-center">
+            <div className="rounded-lg glass card-hover p-4 text-center">
               <p className="text-xs uppercase tracking-wider text-text-muted">
                 Win Rate
               </p>
@@ -284,7 +284,7 @@ export default function HeadToHeadTab({
                 {pct(selectedStats.win_rate)}
               </p>
             </div>
-            <div className="rounded-lg bg-surface-light p-4 text-center">
+            <div className="rounded-lg glass card-hover p-4 text-center">
               <p className="text-xs uppercase tracking-wider text-text-muted">
                 Events
               </p>
@@ -292,7 +292,7 @@ export default function HeadToHeadTab({
                 {selectedStats.n}
               </p>
             </div>
-            <div className="rounded-lg bg-surface-light p-4 text-center">
+            <div className="rounded-lg glass card-hover p-4 text-center">
               <p className="text-xs uppercase tracking-wider text-text-muted">
                 Draws
               </p>
@@ -300,7 +300,7 @@ export default function HeadToHeadTab({
                 {selectedStats.draws}
               </p>
             </div>
-            <div className="rounded-lg bg-surface-light p-4 text-center">
+            <div className="rounded-lg glass card-hover p-4 text-center">
               <p className="text-xs uppercase tracking-wider text-text-muted">
                 Pts Dropped
               </p>
@@ -371,21 +371,21 @@ export default function HeadToHeadTab({
             <h3 className="mb-3 text-sm font-semibold uppercase tracking-wider text-text-muted">
               Bucket-by-Bucket Comparison
             </h3>
-            <div className="overflow-x-auto rounded-lg border border-surface-light">
+            <div className="overflow-x-auto rounded-lg border border-white/10 glass">
               <table className="w-full text-left text-sm">
                 <thead>
-                  <tr className="border-b border-surface-light bg-surface-mid text-xs uppercase tracking-wider text-text-muted">
-                    <th className="px-3 py-3">Bucket</th>
-                    <th className="px-3 py-3 text-right">
+                  <tr className="border-b border-white/10 bg-white/5 text-xs uppercase tracking-wider text-text-muted">
+                    <th className="px-3 py-3 font-display">Bucket</th>
+                    <th className="px-3 py-3 text-right font-display">
                       {teamShort(teams, teamA)} Win%
                     </th>
-                    <th className="px-3 py-3 text-right">
+                    <th className="px-3 py-3 text-right font-display">
                       {teamShort(teams, teamA)} N
                     </th>
-                    <th className="px-3 py-3 text-right">
+                    <th className="px-3 py-3 text-right font-display">
                       {teamShort(teams, teamB)} Win%
                     </th>
-                    <th className="px-3 py-3 text-right">
+                    <th className="px-3 py-3 text-right font-display">
                       {teamShort(teams, teamB)} N
                     </th>
                   </tr>
@@ -403,7 +403,7 @@ export default function HeadToHeadTab({
                     return (
                       <tr
                         key={key}
-                        className="border-b border-surface-light transition hover:bg-surface-mid/50"
+                        className="border-b border-white/5 transition hover:bg-white/5"
                       >
                         <td className="whitespace-nowrap px-3 py-2 font-medium text-text-primary">
                           {label}
@@ -413,7 +413,7 @@ export default function HeadToHeadTab({
                             aN === 0
                               ? 'text-text-muted'
                               : aBetter
-                                ? 'font-semibold text-win'
+                                ? 'font-semibold text-win border-l-2 border-l-win/50'
                                 : 'text-text-secondary'
                           }`}
                         >
@@ -427,7 +427,7 @@ export default function HeadToHeadTab({
                             bN === 0
                               ? 'text-text-muted'
                               : bBetter
-                                ? 'font-semibold text-win'
+                                ? 'font-semibold text-win border-l-2 border-l-win/50'
                                 : 'text-text-secondary'
                           }`}
                         >
@@ -455,7 +455,7 @@ export default function HeadToHeadTab({
               <h3 className="mb-3 text-sm font-semibold uppercase tracking-wider text-text-muted">
                 Points Dropped Breakdown
               </h3>
-              <div className="space-y-4 rounded-lg bg-surface-light p-4">
+              <div className="space-y-4 rounded-lg glass p-4">
                 {/* Team A bar */}
                 <div>
                   <div className="mb-1.5 flex items-center justify-between text-sm">

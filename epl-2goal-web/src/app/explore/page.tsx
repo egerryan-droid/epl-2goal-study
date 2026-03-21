@@ -51,14 +51,15 @@ export default function ExplorePage() {
       <header className="mx-auto max-w-6xl px-4 pt-8 sm:px-6">
         <Link
           href="/"
-          className="inline-flex items-center gap-1 text-sm text-accent hover:underline"
+          className="group inline-flex items-center gap-1 text-sm text-accent hover:underline"
         >
-          <span aria-hidden>&larr;</span> Back to Story
+          <span aria-hidden className="inline-block transition-transform duration-200 group-hover:-translate-x-1">&larr;</span> Back to Story
         </Link>
-        <h1 className="mt-4 text-3xl font-bold tracking-tight text-text-primary sm:text-4xl">
+        <h1 className="mt-4 font-display text-4xl font-bold tracking-tight text-text-primary sm:text-5xl">
           EPL 2-Goal Lead Explorer
         </h1>
-        <p className="mt-1 text-text-secondary">
+        <div className="mt-3 h-[2px] w-16 rounded-full bg-gradient-to-r from-accent to-transparent" />
+        <p className="mt-2 text-text-secondary">
           1,907 two-goal leads across 10 EPL seasons
         </p>
       </header>

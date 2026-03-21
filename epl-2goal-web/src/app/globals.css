@@ -10,14 +10,22 @@
   --color-surface-dark: #1a1a2e;
   --color-surface-mid: #16213e;
   --color-surface-light: #0f3460;
-  --color-text-primary: #ecf0f1;
-  --color-text-secondary: #bdc3c7;
-  --color-text-muted: #7f8c8d;
+  --color-text-primary: #f5f6fa;
+  --color-text-secondary: #d5dbe0;
+  --color-text-muted: #99a3ad;
 }
 
 @layer base {
   html {
     @apply antialiased;
+    scroll-behavior: smooth;
+    font-size: 18px; /* Larger base for projector readability */
+  }
+
+  @media (max-width: 768px) {
+    html {
+      font-size: 16px;
+    }
   }
 
   body {
@@ -25,8 +33,63 @@
     color: var(--color-text-primary);
   }
 
+  /* Noise texture overlay */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    pointer-events: none;
+    opacity: 0.03;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  }
+
   ::selection {
-    background-color: var(--color-accent);
-    color: #fff;
+    background: rgba(52, 152, 219, 0.3);
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #1a1a2e;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #0f3460;
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #3498db;
+  }
+}
+
+@layer components {
+  /* Glassmorphism utilities */
+  .glass {
+    background: rgba(22, 33, 62, 0.6);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+  .glass-strong {
+    background: rgba(15, 52, 96, 0.7);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+  }
+
+  /* Premium card hover effect */
+  .card-hover {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .card-hover:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  }
+
+  /* Stat number styling */
+  .stat-number {
+    font-family: var(--font-display);
+    font-variant-numeric: tabular-nums;
+    letter-spacing: -0.02em;
   }
 }

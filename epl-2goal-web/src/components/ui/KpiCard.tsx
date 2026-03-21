@@ -25,7 +25,7 @@ export default function KpiCard({
   return (
     <div
       ref={ref}
-      className="relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-md"
+      className="relative overflow-hidden rounded-2xl glass card-hover p-6"
     >
       {/* accent glow */}
       <div

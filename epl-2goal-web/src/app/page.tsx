@@ -14,7 +14,7 @@ const S11_Verdict = dynamic(() => import('@/components/sections/S11_Verdict'), {
 
 export default function Home() {
   return (
-    <main className="bg-surface-dark">
+    <main className="h-screen snap-y snap-mandatory overflow-y-auto bg-surface-dark">
       <S01_Hero />
       <S02_TheMouth />
       <S03_TheData />

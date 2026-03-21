@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useMemo, Fragment } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import type { Plus2Event, GoalEvent, GoalsByMatch, Season, Team } from '@/lib/data';
 
 const PAGE_SIZE = 25;
@@ -86,7 +87,7 @@ export default function MatchBrowserTab({
 
   return (
     <section className="mx-auto mt-14 max-w-6xl px-4 sm:px-6">
-      <h2 className="text-xl font-semibold text-text-primary">Match Browser</h2>
+      <h2 className="font-display text-xl font-semibold text-text-primary">Match Browser</h2>
 
       {/* Filter Row */}
       <div className="mt-4 flex flex-wrap items-center gap-3">
@@ -97,7 +98,7 @@ export default function MatchBrowserTab({
             setSeasonFilter(e.target.value);
             resetPage();
           }}
-          className="rounded-lg border border-surface-light bg-surface-mid px-3 py-2 text-sm text-text-primary focus:border-accent focus:outline-none"
+          className="rounded-lg border border-white/10 glass px-3 py-2 text-sm text-text-primary focus:border-accent focus:outline-none"
         >
           <option value="all">All Seasons</option>
           {sortedSeasons.map((s) => (
@@ -108,7 +109,7 @@ export default function MatchBrowserTab({
         </select>
 
         {/* Result filter */}
-        <div className="flex overflow-hidden rounded-lg border border-surface-light">
+        <div className="flex overflow-hidden rounded-lg border border-white/10 glass">
           {(['all', 'W', 'D', 'L'] as const).map((r) => {
             const label = r === 'all' ? 'All' : r === 'W' ? 'Wins' : r === 'D' ? 'Draws' : 'Losses';
             return (
@@ -120,8 +121,8 @@ export default function MatchBrowserTab({
                 }}
                 className={`px-3 py-2 text-sm font-medium transition ${
                   resultFilter === r
-                    ? 'bg-accent text-white'
-                    : 'bg-surface-mid text-text-secondary hover:bg-surface-light'
+                    ? 'bg-gradient-to-r from-accent to-[#5dade2] text-white'
+                    : 'text-text-secondary hover:bg-white/5'
                 }`}
               >
                 {label}
@@ -131,7 +132,7 @@ export default function MatchBrowserTab({
         </div>
 
         {/* Home/Away toggle */}
-        <div className="flex overflow-hidden rounded-lg border border-surface-light">
+        <div className="flex overflow-hidden rounded-lg border border-white/10 glass">
           {(['all', 'home', 'away'] as const).map((v) => {
             const label = v === 'all' ? 'All' : v === 'home' ? 'Home' : 'Away';
             return (
@@ -143,8 +144,8 @@ export default function MatchBrowserTab({
                 }}
                 className={`px-3 py-2 text-sm font-medium transition ${
                   venueFilter === v
-                    ? 'bg-accent text-white'
-                    : 'bg-surface-mid text-text-secondary hover:bg-surface-light'
+                    ? 'bg-gradient-to-r from-accent to-[#5dade2] text-white'
+                    : 'text-text-secondary hover:bg-white/5'
                 }`}
               >
                 {label}
@@ -162,22 +163,22 @@ export default function MatchBrowserTab({
             setSearchText(e.target.value);
             resetPage();
           }}
-          className="w-48 rounded-lg border border-surface-light bg-surface-mid px-3 py-2 text-sm text-text-primary placeholder-text-muted focus:border-accent focus:outline-none"
+          className="w-48 rounded-lg border border-white/10 glass px-3 py-2 text-sm text-text-primary placeholder-text-muted focus:border-accent focus:outline-none"
         />
       </div>
 
       {/* Match Table */}
-      <div className="mt-4 overflow-x-auto rounded-lg border border-surface-light">
+      <div className="mt-4 overflow-x-auto rounded-lg border border-white/10 glass">
         <table className="w-full text-left text-sm">
           <thead>
-            <tr className="border-b border-surface-light bg-surface-mid text-xs uppercase tracking-wider text-text-muted">
-              <th className="px-3 py-3">Season</th>
-              <th className="px-3 py-3">Leader</th>
-              <th className="px-3 py-3">Opponent</th>
-              <th className="px-3 py-3">Bucket</th>
-              <th className="px-3 py-3">Min</th>
-              <th className="px-3 py-3">Score</th>
-              <th className="px-3 py-3">Result</th>
+            <tr className="border-b border-white/10 bg-white/5">
+              <th className="px-3 py-3 font-display text-xs uppercase tracking-wider text-text-muted">Season</th>
+              <th className="px-3 py-3 font-display text-xs uppercase tracking-wider text-text-muted">Leader</th>
+              <th className="px-3 py-3 font-display text-xs uppercase tracking-wider text-text-muted">Opponent</th>
+              <th className="px-3 py-3 font-display text-xs uppercase tracking-wider text-text-muted">Bucket</th>
+              <th className="px-3 py-3 font-display text-xs uppercase tracking-wider text-text-muted">Min</th>
+              <th className="px-3 py-3 font-display text-xs uppercase tracking-wider text-text-muted">Score</th>
+              <th className="px-3 py-3 font-display text-xs uppercase tracking-wider text-text-muted">Result</th>
             </tr>
           </thead>
           <tbody>
@@ -190,7 +191,7 @@ export default function MatchBrowserTab({
                     onClick={() =>
                       setExpandedRow(isExpanded ? null : ev.match_key)
                     }
-                    className="cursor-pointer border-b border-surface-light transition hover:bg-surface-mid"
+                    className="cursor-pointer border-b border-white/5 transition hover:bg-white/5"
                   >
                     <td className="whitespace-nowrap px-3 py-2 text-text-secondary">
                       {ev.season_key}
@@ -214,40 +215,52 @@ export default function MatchBrowserTab({
                       <ResultBadge result={ev.result_for_leader} />
                     </td>
                   </tr>
-                  {isExpanded && goals && (
-                    <tr className="border-b border-surface-light bg-surface-mid/50">
-                      <td colSpan={7} className="px-4 py-3">
-                        <p className="mb-2 text-xs font-semibold uppercase tracking-wider text-text-muted">
-                          Goal Timeline
-                        </p>
-                        <div className="space-y-1">
-                          {goals.map((g, i) => (
-                            <div
-                              key={i}
-                              className={`flex items-center gap-3 rounded px-2 py-1 text-sm ${
-                                g.is_plus2_moment
-                                  ? 'bg-accent/10 text-accent'
-                                  : 'text-text-secondary'
-                              }`}
-                            >
-                              <span className="w-10 text-right font-mono text-xs">
-                                {g.minute}&apos;
-                              </span>
-                              <span className="flex-1">
-                                {g.player ?? 'Unknown'}{' '}
-                                <span className="text-text-muted">
-                                  ({g.scoring_side})
-                                </span>
-                              </span>
-                              <span className="font-mono text-xs">
-                                {g.running_home}-{g.running_away}
-                              </span>
+                  <AnimatePresence>
+                    {isExpanded && goals && (
+                      <tr className="border-b border-white/5">
+                        <td colSpan={7} className="p-0">
+                          <motion.div
+                            initial={{ height: 0, opacity: 0 }}
+                            animate={{ height: 'auto', opacity: 1 }}
+                            exit={{ height: 0, opacity: 0 }}
+                            transition={{ duration: 0.2, ease: 'easeInOut' }}
+                            className="overflow-hidden bg-white/[0.02]"
+                          >
+                            <div className="px-4 py-3">
+                              <p className="mb-2 text-xs font-semibold uppercase tracking-wider text-text-muted">
+                                Goal Timeline
+                              </p>
+                              <div className="space-y-1">
+                                {goals.map((g, i) => (
+                                  <div
+                                    key={i}
+                                    className={`flex items-center gap-3 rounded px-2 py-1 text-sm ${
+                                      g.is_plus2_moment
+                                        ? 'bg-accent/10 text-accent'
+                                        : 'text-text-secondary'
+                                    }`}
+                                  >
+                                    <span className="w-10 text-right font-mono text-xs">
+                                      {g.minute}&apos;
+                                    </span>
+                                    <span className="flex-1">
+                                      {g.player ?? 'Unknown'}{' '}
+                                      <span className="text-text-muted">
+                                        ({g.scoring_side})
+                                      </span>
+                                    </span>
+                                    <span className="font-mono text-xs">
+                                      {g.running_home}-{g.running_away}
+                                    </span>
+                                  </div>
+                                ))}
+                              </div>
                             </div>
-                          ))}
-                        </div>
-                      </td>
-                    </tr>
-                  )}
+                          </motion.div>
+                        </td>
+                      </tr>
+                    )}
+                  </AnimatePresence>
                 </Fragment>
               );
             })}
@@ -277,14 +290,14 @@ export default function MatchBrowserTab({
             <button
               disabled={page === 0}
               onClick={() => setPage((p) => p - 1)}
-              className="rounded border border-surface-light px-3 py-1 transition hover:bg-surface-mid disabled:opacity-40"
+              className="rounded border border-white/10 px-3 py-1 card-hover disabled:opacity-40 disabled:hover:translate-y-0 disabled:hover:shadow-none"
             >
               Previous
             </button>
             <button
               disabled={page >= totalPages - 1}
               onClick={() => setPage((p) => p + 1)}
-              className="rounded border border-surface-light px-3 py-1 transition hover:bg-surface-mid disabled:opacity-40"
+              className="rounded border border-white/10 px-3 py-1 card-hover disabled:opacity-40 disabled:hover:translate-y-0 disabled:hover:shadow-none"
             >
               Next
             </button>

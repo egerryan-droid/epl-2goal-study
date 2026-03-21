@@ -40,7 +40,9 @@ export default function Header({ sections }: HeaderProps) {
   }
 
   return (
-    <header className="fixed top-0 left-0 z-50 flex w-full items-center justify-center gap-3 bg-[#1a1a2e]/70 px-4 py-3 backdrop-blur-md">
+    <header className="glass fixed top-0 left-0 z-50 flex w-full items-center justify-center gap-3 px-4 py-3">
+      {/* Bottom gradient border */}
+      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-accent/20 to-transparent" />
       {sections.map(({ id, label }) => {
         const isActive = activeId === id;
         const isHovered = hoveredId === id;
@@ -70,7 +72,7 @@ export default function Header({ sections }: HeaderProps) {
           </div>
         );
       })}
-      <Link href="/explore" className="ml-4 text-sm font-medium text-text-secondary hover:text-accent transition">
+      <Link href="/explore" className="ml-4 font-display text-sm font-medium text-text-secondary hover:text-accent transition">
         Explore
       </Link>
     </header>

@@ -117,8 +117,13 @@ export default function MyTeamTab({
 
   if (!teamKey || !team || !summary) {
     return (
-      <div className="flex min-h-[300px] items-center justify-center">
-        <p className="text-text-muted text-lg">
+      <div className="flex min-h-[300px] flex-col items-center justify-center gap-4">
+        <svg className="h-16 w-16 text-text-muted/40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+          <circle cx="12" cy="12" r="10" />
+          <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
+          <path d="M2 12h20" />
+        </svg>
+        <p className="text-text-muted font-display text-xl">
           Select a team above to explore their 2-goal lead record
         </p>
       </div>
@@ -131,10 +136,11 @@ export default function MyTeamTab({
     <div className="space-y-10">
       {/* Header */}
       <motion.div {...fade}>
-        <h2 className="text-text-primary text-3xl font-bold">
+        <h2 className="text-text-primary font-display text-4xl font-bold">
           {team.team_display_name}
         </h2>
-        <p className="text-text-secondary mt-1 text-sm">
+        <div className="mt-2 h-[2px] w-12 rounded-full bg-accent" />
+        <p className="text-text-secondary mt-2 text-sm">
           2-Goal Lead Record
         </p>
       </motion.div>
@@ -181,7 +187,7 @@ export default function MyTeamTab({
       {/* Danger Profile */}
       {teamBuckets.length > 0 && (
         <motion.div {...fade} transition={{ duration: 0.5, delay: 0.3 }}>
-          <h3 className="text-text-primary mb-4 text-xl font-semibold">
+          <h3 className="text-text-primary mb-4 font-display text-xl font-semibold">
             When Are They Vulnerable?
           </h3>
           <RadialBucketChart data={teamBuckets} />
@@ -191,7 +197,7 @@ export default function MyTeamTab({
       {/* Collapse Stories */}
       {teamDraws.length > 0 && (
         <motion.div {...fade} transition={{ duration: 0.5, delay: 0.4 }}>
-          <h3 className="text-text-primary mb-4 text-xl font-semibold">
+          <h3 className="text-text-primary mb-4 font-display text-xl font-semibold">
             The Collapses ({teamDraws.length})
           </h3>
           <CollapseTimeline draws={teamDraws} />
