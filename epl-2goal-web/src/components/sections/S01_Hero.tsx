@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import CountUp from 'react-countup';
 
 export default function S01_Hero() {
   // Hero is always visible on load — trigger animation after mount
@@ -31,34 +30,20 @@ export default function S01_Hero() {
           English Premier League &middot; 10 Seasons &middot; 1,907 Events
         </p>
 
-        <h1 className="font-display text-6xl sm:text-7xl lg:text-8xl font-bold text-text-primary mb-6 leading-tight">
+        <h1 className="font-display text-6xl sm:text-7xl lg:text-8xl font-bold text-text-primary mb-8 leading-tight">
           The Most <span className="text-draw">Dangerous</span> Lead?
         </h1>
 
-        <motion.div
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={inView ? { opacity: 1, scale: 1 } : {}}
-          transition={{ duration: 0.6, delay: 0.5 }}
-          className="relative mt-8"
+        <motion.p
+          initial={{ opacity: 0 }}
+          animate={inView ? { opacity: 1 } : {}}
+          transition={{ delay: 0.5, duration: 0.8 }}
+          className="font-sans text-xl sm:text-2xl text-text-secondary max-w-2xl mx-auto leading-relaxed"
         >
-          {/* Animated gradient pulse behind stat */}
-          <div
-            className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 h-64 w-64 sm:h-80 sm:w-80 rounded-full animate-pulse"
-            style={{
-              background: 'radial-gradient(circle, rgba(46,204,113,0.15) 0%, transparent 70%)',
-            }}
-          />
-          <div className="relative font-display stat-number text-8xl sm:text-9xl font-bold text-win">
-            {inView && <CountUp end={93.3} decimals={1} duration={2} suffix="%" />}
-          </div>
-          <p className="text-text-secondary tracking-wider uppercase text-sm mt-2">
-            of two-goal leads held
-          </p>
-        </motion.div>
-
-        <p className="font-sans text-lg sm:text-xl text-text-secondary mt-6 max-w-xl mx-auto">
-          A data-driven look at comebacks in the English Premier League
-        </p>
+          They say a two-goal lead is the most dangerous lead in football.
+          <br />
+          <span className="text-text-muted text-lg">We analyzed 10 years of Premier League data to find out.</span>
+        </motion.p>
       </motion.div>
 
       <motion.div
