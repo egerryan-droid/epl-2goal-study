@@ -1,0 +1,56 @@
+[
+  {
+    "variable": "const",
+    "coefficient": -0.3645,
+    "odds_ratio": 0.6946,
+    "p_value": 0.2357,
+    "ci_low": -0.967,
+    "ci_high": 0.238,
+    "significant": "No"
+  },
+  {
+    "variable": "minute_reached_plus2",
+    "coefficient": 0.022,
+    "odds_ratio": 1.0222,
+    "p_value": 0,
+    "ci_low": 0.0135,
+    "ci_high": 0.0304,
+    "significant": "Yes"
+  },
+  {
+    "variable": "leader_implied_prob",
+    "coefficient": 4.2,
+    "odds_ratio": 66.6864,
+    "p_value": 0,
+    "ci_low": 3.1579,
+    "ci_high": 5.2421,
+    "significant": "Yes"
+  },
+  {
+    "variable": "leader_is_home",
+    "coefficient": 0.0389,
+    "odds_ratio": 1.0397,
+    "p_value": 0.8443,
+    "ci_low": -0.3493,
+    "ci_high": 0.4271,
+    "significant": "No"
+  },
+  {
+    "variable": "leader_red_cards",
+    "coefficient": -0.8599,
+    "odds_ratio": 0.4232,
+    "p_value": 0.0244,
+    "ci_low": -1.6084,
+    "ci_high": -0.1113,
+    "significant": "Yes"
+  },
+  {
+    "variable": "opponent_red_cards",
+    "coefficient": 1.241,
+    "odds_ratio": 3.459,
+    "p_value": 0.0161,
+    "ci_low": 0.2304,
+    "ci_high": 2.2516,
+    "significant": "Yes"
+  }
+]

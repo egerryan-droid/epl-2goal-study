@@ -1,0 +1,34 @@
+import type { Config } from 'tailwindcss';
+
+const config: Config = {
+  content: [
+    'C:/ryane/Projects/epl-2goal-study/epl-2goal-web/src/**/*.{js,ts,jsx,tsx,mdx}',
+  ],
+  theme: {
+    extend: {
+      colors: {
+        win: '#2ecc71',
+        draw: '#f39c12',
+        loss: '#e74c3c',
+        accent: '#3498db',
+        surface: {
+          dark: '#1a1a2e',
+          mid: '#16213e',
+          light: '#0f3460',
+        },
+        text: {
+          primary: '#ECF0F1',
+          secondary: '#BDC3C7',
+          muted: '#7F8C8D',
+        },
+      },
+      fontFamily: {
+        sans: ['Inter', 'system-ui', 'sans-serif'],
+        display: ['Inter', 'system-ui', 'sans-serif'],
+      },
+    },
+  },
+  plugins: [],
+};
+
+export default config;

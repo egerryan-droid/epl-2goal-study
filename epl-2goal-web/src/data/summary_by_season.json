@@ -1,0 +1,102 @@
+[
+  {
+    "season_key": "2014-2015",
+    "sort_order": 1,
+    "n": 171,
+    "wins": 160,
+    "draws": 8,
+    "losses": 3,
+    "win_rate": 0.9357,
+    "points_dropped": 25
+  },
+  {
+    "season_key": "2015-2016",
+    "sort_order": 2,
+    "n": 176,
+    "wins": 156,
+    "draws": 15,
+    "losses": 5,
+    "win_rate": 0.8864,
+    "points_dropped": 45
+  },
+  {
+    "season_key": "2016-2017",
+    "sort_order": 3,
+    "n": 202,
+    "wins": 195,
+    "draws": 4,
+    "losses": 3,
+    "win_rate": 0.9653,
+    "points_dropped": 17
+  },
+  {
+    "season_key": "2017-2018",
+    "sort_order": 4,
+    "n": 179,
+    "wins": 166,
+    "draws": 8,
+    "losses": 5,
+    "win_rate": 0.9274,
+    "points_dropped": 31
+  },
+  {
+    "season_key": "2018-2019",
+    "sort_order": 5,
+    "n": 217,
+    "wins": 206,
+    "draws": 7,
+    "losses": 4,
+    "win_rate": 0.9493,
+    "points_dropped": 26
+  },
+  {
+    "season_key": "2019-2020",
+    "sort_order": 6,
+    "n": 186,
+    "wins": 176,
+    "draws": 7,
+    "losses": 3,
+    "win_rate": 0.9462,
+    "points_dropped": 23
+  },
+  {
+    "season_key": "2020-2021",
+    "sort_order": 7,
+    "n": 178,
+    "wins": 169,
+    "draws": 6,
+    "losses": 3,
+    "win_rate": 0.9494,
+    "points_dropped": 21
+  },
+  {
+    "season_key": "2021-2022",
+    "sort_order": 8,
+    "n": 191,
+    "wins": 179,
+    "draws": 8,
+    "losses": 4,
+    "win_rate": 0.9372,
+    "points_dropped": 28
+  },
+  {
+    "season_key": "2022-2023",
+    "sort_order": 9,
+    "n": 192,
+    "wins": 173,
+    "draws": 13,
+    "losses": 6,
+    "win_rate": 0.901,
+    "points_dropped": 44
+  },
+  {
+    "season_key": "2023-2024",
+    "sort_order": 10,
+    "n": 215,
+    "wins": 200,
+    "draws": 11,
+    "losses": 4,
+    "win_rate": 0.9302,
+    "points_dropped": 34
+  }
+]

@@ -1,0 +1,240 @@
+[
+  {
+    "team_key": "AFC Bournemouth",
+    "team_display_name": "AFC Bournemouth",
+    "team_short": "BOU",
+    "city": "Bournemouth",
+    "seasons_in_sample": 7
+  },
+  {
+    "team_key": "Arsenal",
+    "team_display_name": "Arsenal",
+    "team_short": "ARS",
+    "city": "London",
+    "seasons_in_sample": 10
+  },
+  {
+    "team_key": "Aston Villa",
+    "team_display_name": "Aston Villa",
+    "team_short": "AVL",
+    "city": "Birmingham",
+    "seasons_in_sample": 7
+  },
+  {
+    "team_key": "Brentford",
+    "team_display_name": "Brentford",
+    "team_short": "BRE",
+    "city": "London",
+    "seasons_in_sample": 3
+  },
+  {
+    "team_key": "Brighton",
+    "team_display_name": "Brighton",
+    "team_short": "BHA",
+    "city": "Brighton",
+    "seasons_in_sample": 7
+  },
+  {
+    "team_key": "Burnley",
+    "team_display_name": "Burnley",
+    "team_short": "BUR",
+    "city": "Burnley",
+    "seasons_in_sample": 8
+  },
+  {
+    "team_key": "Cardiff City",
+    "team_display_name": "Cardiff City",
+    "team_short": "CAR",
+    "city": "Cardiff",
+    "seasons_in_sample": 1
+  },
+  {
+    "team_key": "Chelsea",
+    "team_display_name": "Chelsea",
+    "team_short": "CHE",
+    "city": "London",
+    "seasons_in_sample": 10
+  },
+  {
+    "team_key": "Crystal Palace",
+    "team_display_name": "Crystal Palace",
+    "team_short": "CRY",
+    "city": "London",
+    "seasons_in_sample": 10
+  },
+  {
+    "team_key": "Everton",
+    "team_display_name": "Everton",
+    "team_short": "EVE",
+    "city": "Liverpool",
+    "seasons_in_sample": 10
+  },
+  {
+    "team_key": "Fulham",
+    "team_display_name": "Fulham",
+    "team_short": "FUL",
+    "city": "London",
+    "seasons_in_sample": 4
+  },
+  {
+    "team_key": "Huddersfield",
+    "team_display_name": "Huddersfield",
+    "team_short": "HUD",
+    "city": "Huddersfield",
+    "seasons_in_sample": 2
+  },
+  {
+    "team_key": "Hull City",
+    "team_display_name": "Hull City",
+    "team_short": "HUL",
+    "city": "Hull",
+    "seasons_in_sample": 2
+  },
+  {
+    "team_key": "Leeds United",
+    "team_display_name": "Leeds United",
+    "team_short": "LEE",
+    "city": "Leeds",
+    "seasons_in_sample": 3
+  },
+  {
+    "team_key": "Leicester City",
+    "team_display_name": "Leicester City",
+    "team_short": "LEI",
+    "city": "Leicester",
+    "seasons_in_sample": 9
+  },
+  {
+    "team_key": "Liverpool",
+    "team_display_name": "Liverpool",
+    "team_short": "LIV",
+    "city": "Liverpool",
+    "seasons_in_sample": 10
+  },
+  {
+    "team_key": "Luton Town",
+    "team_display_name": "Luton Town",
+    "team_short": "LUT",
+    "city": "Luton",
+    "seasons_in_sample": 1
+  },
+  {
+    "team_key": "Manchester City",
+    "team_display_name": "Manchester City",
+    "team_short": "MCI",
+    "city": "Manchester",
+    "seasons_in_sample": 10
+  },
+  {
+    "team_key": "Manchester United",
+    "team_display_name": "Manchester United",
+    "team_short": "MUN",
+    "city": "Manchester",
+    "seasons_in_sample": 10
+  },
+  {
+    "team_key": "Middlesbrough",
+    "team_display_name": "Middlesbrough",
+    "team_short": "MID",
+    "city": "Middlesbrough",
+    "seasons_in_sample": 1
+  },
+  {
+    "team_key": "Newcastle United",
+    "team_display_name": "Newcastle United",
+    "team_short": "NEW",
+    "city": "Newcastle",
+    "seasons_in_sample": 9
+  },
+  {
+    "team_key": "Norwich City",
+    "team_display_name": "Norwich City",
+    "team_short": "NOR",
+    "city": "Norwich",
+    "seasons_in_sample": 3
+  },
+  {
+    "team_key": "Nottingham Forest",
+    "team_display_name": "Nottingham Forest",
+    "team_short": "NFO",
+    "city": "Nottingham",
+    "seasons_in_sample": 2
+  },
+  {
+    "team_key": "Queens Park Rangers",
+    "team_display_name": "Queens Park Rangers",
+    "team_short": "QPR",
+    "city": "London",
+    "seasons_in_sample": 1
+  },
+  {
+    "team_key": "Sheffield United",
+    "team_display_name": "Sheffield United",
+    "team_short": "SHU",
+    "city": "Sheffield",
+    "seasons_in_sample": 3
+  },
+  {
+    "team_key": "Southampton",
+    "team_display_name": "Southampton",
+    "team_short": "SOU",
+    "city": "Southampton",
+    "seasons_in_sample": 9
+  },
+  {
+    "team_key": "Stoke City",
+    "team_display_name": "Stoke City",
+    "team_short": "STK",
+    "city": "Stoke-on-Trent",
+    "seasons_in_sample": 4
+  },
+  {
+    "team_key": "Sunderland",
+    "team_display_name": "Sunderland",
+    "team_short": "SUN",
+    "city": "Sunderland",
+    "seasons_in_sample": 3
+  },
+  {
+    "team_key": "Swansea City",
+    "team_display_name": "Swansea City",
+    "team_short": "SWA",
+    "city": "Swansea",
+    "seasons_in_sample": 4
+  },
+  {
+    "team_key": "Tottenham",
+    "team_display_name": "Tottenham",
+    "team_short": "TOT",
+    "city": "London",
+    "seasons_in_sample": 10
+  },
+  {
+    "team_key": "Watford",
+    "team_display_name": "Watford",
+    "team_short": "WAT",
+    "city": "Watford",
+    "seasons_in_sample": 6
+  },
+  {
+    "team_key": "West Bromwich Albion",
+    "team_display_name": "West Bromwich Albion",
+    "team_short": "WBA",
+    "city": "West Bromwich",
+    "seasons_in_sample": 5
+  },
+  {
+    "team_key": "West Ham United",
+    "team_display_name": "West Ham United",
+    "team_short": "WHU",
+    "city": "London",
+    "seasons_in_sample": 10
+  },
+  {
+    "team_key": "Wolverhampton Wanderers",
+    "team_display_name": "Wolverhampton Wanderers",
+    "team_short": "WOL",
+    "city": "Wolverhampton",
+    "seasons_in_sample": 6
+  }
+]

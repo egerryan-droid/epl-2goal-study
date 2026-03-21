@@ -1,0 +1,20 @@
+[
+  {
+    "test": "Chi-square (bucket x outcome)",
+    "statistic": 39.59294831153925,
+    "p_value": 0.000019981731242058845,
+    "result_text": "Significant association (chi2=39.6, p<0.001)"
+  },
+  {
+    "test": "Locked minute (90% threshold)",
+    "statistic": null,
+    "p_value": null,
+    "result_text": "0-15 bucket: P(W) = 0.920"
+  },
+  {
+    "test": "Locked minute (95% threshold)",
+    "statistic": null,
+    "p_value": null,
+    "result_text": "76-90+ bucket: P(W) = 0.997"
+  }
+]

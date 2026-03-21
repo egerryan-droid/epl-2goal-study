@@ -1,0 +1,143 @@
+'use client';
+
+import { useMemo } from 'react';
+import {
+  ComposedChart,
+  Area,
+  Line,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  ReferenceLine,
+  ResponsiveContainer,
+  type TooltipProps,
+} from 'recharts';
+import { motion } from 'framer-motion';
+import { COLORS } from '@/lib/theme';
+import type { SummaryBucket } from '@/lib/data';
+
+interface WinRateLineProps {
+  data: SummaryBucket[];
+}
+
+interface ChartRow {
+  bucket: string;
+  win_rate: number;
+  win_ci_low: number;
+  win_ci_high: number;
+  n: number;
+  ci_range: [number, number];
+}
+
+function CustomTooltipContent({ active, payload }: TooltipProps<number, string>) {
+  if (!active || !payload?.[0]) return null;
+  const d = payload[0].payload as ChartRow;
+  return (
+    <div className="bg-gray-900 border border-gray-700 rounded-lg px-3 py-2 text-xs shadow-xl">
+      <p className="text-white font-semibold mb-1">{d.bucket}</p>
+      <p className="text-gray-400">
+        Win rate: <span className="text-white">{(d.win_rate * 100).toFixed(1)}%</span>
+      </p>
+      <p className="text-gray-400">
+        95% CI: <span className="text-white">
+          {(d.win_ci_low * 100).toFixed(1)}% &ndash; {(d.win_ci_high * 100).toFixed(1)}%
+        </span>
+      </p>
+      <p className="text-gray-400">
+        n: <span className="text-white">{d.n}</span>
+      </p>
+    </div>
+  );
+}
+
+export default function WinRateLine({ data }: WinRateLineProps) {
+  const chartData: ChartRow[] = useMemo(
+    () =>
+      [...data]
+        .sort((a, b) => a.bucket_order - b.bucket_order)
+        .map((b) => ({
+          bucket: b.bucket_key,
+          win_rate: b.win_rate,
+          win_ci_low: b.win_ci_low,
+          win_ci_high: b.win_ci_high,
+          n: b.n,
+          ci_range: [b.win_ci_low, b.win_ci_high] as [number, number],
+        })),
+    [data],
+  );
+
+  return (
+    <motion.div
+      className="w-full"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5 }}
+    >
+      <ResponsiveContainer width="100%" height={350}>
+        <ComposedChart data={chartData} margin={{ top: 20, right: 30, bottom: 10, left: 20 }}>
+          <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.06)" />
+          <XAxis
+            dataKey="bucket"
+            tick={{ fill: '#BDC3C7', fontSize: 11 }}
+            axisLine={{ stroke: 'rgba(255,255,255,0.15)' }}
+          />
+          <YAxis
+            domain={[0.8, 1.0]}
+            tickFormatter={(v: number) => `${(v * 100).toFixed(0)}%`}
+            tick={{ fill: '#BDC3C7', fontSize: 11 }}
+            axisLine={{ stroke: 'rgba(255,255,255,0.15)' }}
+          />
+          <Tooltip content={<CustomTooltipContent />} />
+
+          {/* CI band */}
+          <Area
+            dataKey="ci_range"
+            fill={COLORS.win}
+            fillOpacity={0.12}
+            stroke="none"
+            type="monotone"
+            isAnimationActive={true}
+            animationDuration={800}
+          />
+
+          {/* Threshold lines */}
+          <ReferenceLine
+            y={0.90}
+            stroke={COLORS.draw}
+            strokeDasharray="6 4"
+            strokeWidth={1}
+            label={{
+              value: '90%',
+              position: 'right',
+              style: { fill: COLORS.draw, fontSize: 10 },
+            }}
+          />
+          <ReferenceLine
+            y={0.95}
+            stroke={COLORS.win}
+            strokeDasharray="6 4"
+            strokeWidth={1}
+            label={{
+              value: '95%',
+              position: 'right',
+              style: { fill: COLORS.win, fontSize: 10 },
+            }}
+          />
+
+          {/* Main line */}
+          <Line
+            type="monotone"
+            dataKey="win_rate"
+            stroke={COLORS.win}
+            strokeWidth={2.5}
+            dot={{ r: 5, fill: COLORS.win, stroke: '#1a1a2e', strokeWidth: 2 }}
+            activeDot={{ r: 7, fill: COLORS.win, stroke: 'white', strokeWidth: 2 }}
+            isAnimationActive={true}
+            animationDuration={1000}
+          />
+        </ComposedChart>
+      </ResponsiveContainer>
+    </motion.div>
+  );
+}

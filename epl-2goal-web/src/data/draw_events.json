@@ -1,0 +1,3656 @@
+[
+  {
+    "event_id": "95_Tottenham",
+    "match_key": 95,
+    "season": "2015-2016",
+    "leader_team": "Tottenham",
+    "opponent_team": "Stoke City",
+    "leader_is_home": true,
+    "bucket": "31-45+",
+    "minute_reached_plus2": 46,
+    "final_score": "2-2",
+    "strength_tier": "Moderate",
+    "goals": [
+      {
+        "minute": 18,
+        "scorer": "Eric Dier",
+        "team": "leader",
+        "running_score": "1-0"
+      },
+      {
+        "minute": 46,
+        "scorer": "Nacer Chadli",
+        "team": "leader",
+        "running_score": "2-0"
+      },
+      {
+        "minute": 77,
+        "scorer": "Marko Arnautovic",
+        "team": "opponent",
+        "running_score": "2-1"
+      },
+      {
+        "minute": 82,
+        "scorer": "Mame Biram Diouf",
+        "team": "opponent",
+        "running_score": "2-2"
+      }
+    ]
+  },
+  {
+    "event_id": "135_Stoke City",
+    "match_key": 135,
+    "season": "2015-2016",
+    "leader_team": "Stoke City",
+    "opponent_team": "Leicester City",
+    "leader_is_home": true,
+    "bucket": "16-30",
+    "minute_reached_plus2": 19,
+    "final_score": "2-2",
+    "strength_tier": "Underdog",
+    "goals": [
+      {
+        "minute": 12,
+        "scorer": "Bojan",
+        "team": "leader",
+        "running_score": "1-0"
+      },
+      {
+        "minute": 19,
+        "scorer": "Jonathan Walters",
+        "team": "leader",
+        "running_score": "2-0"
+      },
+      {
+        "minute": 50,
+        "scorer": "Riyad Mahrez",
+        "team": "opponent",
+        "running_score": "2-1"
+      },
+      {
+        "minute": 68,
+        "scorer": "Jamie Vardy",
+        "team": "opponent",
+        "running_score": "2-2"
+      }
+    ]
+  },
+  {
+    "event_id": "148_Newcastle United",
+    "match_key": 148,
+    "season": "2015-2016",
+    "leader_team": "Newcastle United",
+    "opponent_team": "Chelsea",
+    "leader_is_home": true,
+    "bucket": "46-60",
+    "minute_reached_plus2": 59,
+    "final_score": "2-2",
+    "strength_tier": "Underdog",
+    "goals": [
+      {
+        "minute": 41,
+        "scorer": "Ayoze Pérez",
+        "team": "leader",
+        "running_score": "1-0"
+      },
+      {
+        "minute": 59,
+        "scorer": "Georginio Wijnaldum",
+        "team": "leader",
+        "running_score": "2-0"
+      },
+      {
+        "minute": 78,
+        "scorer": "Ramires",
+        "team": "opponent",
+        "running_score": "2-1"
+      },
+      {
+        "minute": 85,
+        "scorer": "Willian",
+        "team": "opponent",
+        "running_score": "2-2"
+      }
+    ]
+  },
+  {
+    "event_id": "156_Sunderland",
+    "match_key": 156,
+    "season": "2015-2016",
+    "leader_team": "Sunderland",
+    "opponent_team": "West Ham United",
+    "leader_is_home": true,
+    "bucket": "16-30",
+    "minute_reached_plus2": 21,
+    "final_score": "2-2",
+    "strength_tier": "Underdog",
+    "goals": [
+      {
+        "minute": 9,
+        "scorer": "Steven Fletcher",
+        "team": "leader",
+        "running_score": "1-0"
+      },
+      {
+        "minute": 21,
+        "scorer": "Jeremain Lens",
+        "team": "leader",
+        "running_score": "2-0"
+      },
+      {
+        "minute": 45,
+        "scorer": "Carl Jenkinson",
+        "team": "opponent",
+        "running_score": "2-1"
+      },
+      {
+        "minute": 59,
+        "scorer": "Dimitri Payet",
+        "team": "opponent",
+        "running_score": "2-2"
+      }
+    ]
+  },
+  {
+    "event_id": "162_Southampton",
+    "match_key": 162,
+    "season": "2015-2016",
+    "leader_team": "Southampton",
+    "opponent_team": "Leicester City",
+    "leader_is_home": true,
+    "bucket": "31-45+",
+    "minute_reached_plus2": 36,
+    "final_score": "2-2",
+    "strength_tier": "Moderate",
+    "goals": [
+      {
+        "minute": 20,
+        "scorer": "José Fonte",
+        "team": "leader",
+        "running_score": "1-0"
+      },
+      {
+        "minute": 36,
+        "scorer": "Virgil van Dijk",
+        "team": "leader",
+        "running_score": "2-0"
+      },
+      {
+        "minute": 65,
+        "scorer": "Jamie Vardy",
+        "team": "opponent",
+        "running_score": "2-1"
+      },
+      {
+        "minute": 90,
+        "scorer": "Jamie Vardy",
+        "team": "opponent",
+        "running_score": "2-2"
+      }
+    ]
+  },
+  {
+    "event_id": "202_AFC Bournemouth",
+    "match_key": 202,
+    "season": "2015-2016",
+    "leader_team": "AFC Bournemouth",
+    "opponent_team": "Swansea City",
+    "leader_is_home": false,
+    "bucket": "16-30",
+    "minute_reached_plus2": 25,
+    "final_score": "2-2",
+    "strength_tier": "Underdog",
+    "goals": [
+      {
+        "minute": 9,
+        "scorer": "Joshua King",
+        "team": "leader",
+        "running_score": "0-1"
+      },
+      {
+        "minute": 25,
+        "scorer": "Dan Gosling",
+        "team": "leader",
+        "running_score": "0-2"
+      },
+      {
+        "minute": 27,
+        "scorer": "André Ayew",
+        "team": "opponent",
+        "running_score": "1-2"
+      },
+      {
+        "minute": 38,
+        "scorer": "Jonjo Shelvey",
+        "team": "opponent",
+        "running_score": "2-2"
+      }
+    ]
+  },
+  {
+    "event_id": "213_Everton",
+    "match_key": 213,
+    "season": "2015-2016",
+    "leader_team": "Everton",
+    "opponent_team": "AFC Bournemouth",
+    "leader_is_home": false,
+    "bucket": "31-45+",
+    "minute_reached_plus2": 35,
+    "final_score": "3-3",
+    "strength_tier": "Underdog",
+    "goals": [
+      {
+        "minute": 24,
+        "scorer": "Ramiro Funes Mori",
+        "team": "leader",
+        "running_score": "0-1"
+      },
+      {
+        "minute": 35,
+        "scorer": "Romelu Lukaku",
+        "team": "leader",
+        "running_score": "0-2"
+      },
+      {
+        "minute": 79,
+        "scorer": "Adam Smith",
+        "team": "opponent",
+        "running_score": "1-2"
+      },
+      {
+        "minute": 86,
+        "scorer": "Junior Stanislas",
+        "team": "opponent",
+        "running_score": "2-2"
+      },
+      {
+        "minute": 94,
+        "scorer": "Ross Barkley",
+        "team": "leader",
+        "running_score": "2-3"
+      },
+      {
+        "minute": 97,
+        "scorer": "Junior Stanislas",
+        "team": "opponent",
+        "running_score": "3-3"
+      }
+    ]
+  },
+  {
+    "event_id": "281_Manchester United",
+    "match_key": 281,
+    "season": "2015-2016",
+    "leader_team": "Manchester United",
+    "opponent_team": "Newcastle United",
+    "leader_is_home": false,
+    "bucket": "31-45+",
+    "minute_reached_plus2": 37,
+    "final_score": "3-3",
+    "strength_tier": "Moderate",
+    "goals": [
+      {
+        "minute": 8,
+        "scorer": "Wayne Rooney",
+        "team": "leader",
+        "running_score": "0-1"
+      },
+      {
+        "minute": 37,
+        "scorer": "Jesse Lingard",
+        "team": "leader",
+        "running_score": "0-2"
+      },
+      {
+        "minute": 41,
+        "scorer": "Georginio Wijnaldum",
+        "team": "opponent",
+        "running_score": "1-2"
+      },
+      {
+        "minute": 66,
+        "scorer": "Aleksandar Mitrovic",
+        "team": "opponent",
+        "running_score": "2-2"
+      },
+      {
+        "minute": 78,
+        "scorer": "Wayne Rooney",
+        "team": "leader",
+        "running_score": "2-3"
+      },
+      {
+        "minute": 89,
+        "scorer": "Paul Dummett",
+        "team": "opponent",
+        "running_score": "3-3"
+      }
+    ]
+  },
+  {
+    "event_id": "295_Everton",
+    "match_key": 295,
+    "season": "2015-2016",
+    "leader_team": "Everton",
+    "opponent_team": "Chelsea",
+    "leader_is_home": false,
+    "bucket": "46-60",
+    "minute_reached_plus2": 55,
+    "final_score": "3-3",
+    "strength_tier": "Underdog",
+    "goals": [
+      {
+        "minute": 49,
+        "scorer": "John Terry",
+        "team": "leader",
+        "running_score": "0-1"
+      },
+      {
+        "minute": 55,
+        "scorer": "Kevin Mirallas",
+        "team": "leader",
+        "running_score": "0-2"
+      },
+      {
+        "minute": 63,
+        "scorer": "Diego Costa",
+        "team": "opponent",
+        "running_score": "1-2"
+      },
+      {
+        "minute": 65,
+        "scorer": "Cesc Fàbregas",
+        "team": "opponent",
+        "running_score": "2-2"
+      },
+      {
+        "minute": 90,
+        "scorer": "Ramiro Funes Mori",
+        "team": "leader",
+        "running_score": "2-3"
+      },
+      {
+        "minute": 97,
+        "scorer": "John Terry",
+        "team": "opponent",
+        "running_score": "3-3"
+      }
+    ]
+  },
+  {
+    "event_id": "327_Liverpool",
+    "match_key": 327,
+    "season": "2015-2016",
+    "leader_team": "Liverpool",
+    "opponent_team": "Sunderland",
+    "leader_is_home": true,
+    "bucket": "61-75",
+    "minute_reached_plus2": 69,
+    "final_score": "2-2",
+    "strength_tier": "Strong Favorite",
+    "goals": [
+      {
+        "minute": 58,
+        "scorer": "Roberto Firmino",
+        "team": "leader",
+        "running_score": "1-0"
+      },
+      {
+        "minute": 69,
+        "scorer": "Adam Lallana",
+        "team": "leader",
+        "running_score": "2-0"
+      },
+      {
+        "minute": 81,
+        "scorer": "Adam Johnson",
+        "team": "opponent",
+        "running_score": "2-1"
+      },
+      {
+        "minute": 88,
+        "scorer": "Jermain Defoe",
+        "team": "opponent",
+        "running_score": "2-2"
+      }
+    ]
+  },
+  {
+    "event_id": "333_Norwich City",
+    "match_key": 333,
+    "season": "2015-2016",
+    "leader_team": "Norwich City",
+    "opponent_team": "West Ham United",
+    "leader_is_home": true,
+    "bucket": "61-75",
+    "minute_reached_plus2": 64,
+    "final_score": "2-2",
+    "strength_tier": "Moderate",
+    "goals": [
+      {
+        "minute": 53,
+        "scorer": "Robbie Brady",
+        "team": "leader",
+        "running_score": "1-0"
+      },
+      {
+        "minute": 64,
+        "scorer": "Wes Hoolahan",
+        "team": "leader",
+        "running_score": "2-0"
+      },
+      {
+        "minute": 73,
+        "scorer": "Dimitri Payet",
+        "team": "opponent",
+        "running_score": "2-1"
+      },
+      {
+        "minute": 76,
+        "scorer": "Mark Noble",
+        "team": "opponent",
+        "running_score": "2-2"
+      }
+    ]
+  },
+  {
+    "event_id": "388_Stoke City",
+    "match_key": 388,
+    "season": "2015-2016",
+    "leader_team": "Stoke City",
+    "opponent_team": "Swansea City",
+    "leader_is_home": true,
+    "bucket": "46-60",
+    "minute_reached_plus2": 52,
+    "final_score": "2-2",
+    "strength_tier": "Moderate",
+    "goals": [
+      {
+        "minute": 12,
+        "scorer": "Ibrahim Afellay",
+        "team": "leader",
+        "running_score": "1-0"
+      },
+      {
+        "minute": 52,
+        "scorer": "Bojan",
+        "team": "leader",
+        "running_score": "2-0"
+      },
+      {
+        "minute": 67,
+        "scorer": "Gylfi Sigurdsson",
+        "team": "opponent",
+        "running_score": "2-1"
+      },
+      {
+        "minute": 78,
+        "scorer": "Alberto Paloschi",
+        "team": "opponent",
+        "running_score": "2-2"
+      }
+    ]
+  },
+  {
+    "event_id": "394_Arsenal",
+    "match_key": 394,
+    "season": "2015-2016",
+    "leader_team": "Arsenal",
+    "opponent_team": "West Ham United",
+    "leader_is_home": false,
+    "bucket": "31-45+",
+    "minute_reached_plus2": 34,
+    "final_score": "3-3",
+    "strength_tier": "Moderate",
+    "goals": [
+      {
+        "minute": 17,
+        "scorer": "Mesut Özil",
+        "team": "leader",
+        "running_score": "0-1"
+      },
+      {
+        "minute": 34,
+        "scorer": "Alexis Sánchez",
+        "team": "leader",
+        "running_score": "0-2"
+      },
+      {
+        "minute": 43,
+        "scorer": "Andy Carroll",
+        "team": "opponent",
+        "running_score": "1-2"
+      },
+      {
+        "minute": 46,
+        "scorer": "Andy Carroll",
+        "team": "opponent",
+        "running_score": "2-2"
+      },
+      {
+        "minute": 51,
+        "scorer": "Andy Carroll",
+        "team": "opponent",
+        "running_score": "3-2"
+      },
+      {
+        "minute": 69,
+        "scorer": "Laurent Koscielny",
+        "team": "leader",
+        "running_score": "3-3"
+      }
+    ]
+  },
+  {
+    "event_id": "423_Liverpool",
+    "match_key": 423,
+    "season": "2015-2016",
+    "leader_team": "Liverpool",
+    "opponent_team": "Newcastle United",
+    "leader_is_home": true,
+    "bucket": "16-30",
+    "minute_reached_plus2": 29,
+    "final_score": "2-2",
+    "strength_tier": "Strong Favorite",
+    "goals": [
+      {
+        "minute": 1,
+        "scorer": "Daniel Sturridge",
+        "team": "leader",
+        "running_score": "1-0"
+      },
+      {
+        "minute": 29,
+        "scorer": "Adam Lallana",
+        "team": "leader",
+        "running_score": "2-0"
+      },
+      {
+        "minute": 47,
+        "scorer": "Papiss Demba Cissé",
+        "team": "opponent",
+        "running_score": "2-1"
+      },
+      {
+        "minute": 65,
+        "scorer": "Jack Colback",
+        "team": "opponent",
+        "running_score": "2-2"
+      }
+    ]
+  },
+  {
+    "event_id": "436_Tottenham",
+    "match_key": 436,
+    "season": "2015-2016",
+    "leader_team": "Tottenham",
+    "opponent_team": "Chelsea",
+    "leader_is_home": false,
+    "bucket": "31-45+",
+    "minute_reached_plus2": 43,
+    "final_score": "2-2",
+    "strength_tier": "Underdog",
+    "goals": [
+      {
+        "minute": 34,
+        "scorer": "Harry Kane",
+        "team": "leader",
+        "running_score": "0-1"
+      },
+      {
+        "minute": 43,
+        "scorer": "Son Heung-Min",
+        "team": "leader",
+        "running_score": "0-2"
+      },
+      {
+        "minute": 57,
+        "scorer": "Gary Cahill",
+        "team": "opponent",
+        "running_score": "1-2"
+      },
+      {
+        "minute": 82,
+        "scorer": "Eden Hazard",
+        "team": "opponent",
+        "running_score": "2-2"
+      }
+    ]
+  },
+  {
+    "event_id": "3138_Stoke City",
+    "match_key": 3138,
+    "season": "2016-2017",
+    "leader_team": "Stoke City",
+    "opponent_team": "Leicester City",
+    "leader_is_home": true,
+    "bucket": "31-45+",
+    "minute_reached_plus2": 47,
+    "final_score": "2-2",
+    "strength_tier": "Underdog",
+    "goals": [
+      {
+        "minute": 38,
+        "scorer": "Bojan",
+        "team": "leader",
+        "running_score": "1-0"
+      },
+      {
+        "minute": 47,
+        "scorer": "Joe Allen",
+        "team": "leader",
+        "running_score": "2-0"
+      },
+      {
+        "minute": 73,
+        "scorer": "Leonardo Ulloa",
+        "team": "opponent",
+        "running_score": "2-1"
+      },
+      {
+        "minute": 87,
+        "scorer": "Daniel Amartey",
+        "team": "opponent",
+        "running_score": "2-2"
+      }
+    ]
+  },
+  {
+    "event_id": "3336_AFC Bournemouth",
+    "match_key": 3336,
+    "season": "2016-2017",
+    "leader_team": "AFC Bournemouth",
+    "opponent_team": "Arsenal",
+    "leader_is_home": true,
+    "bucket": "16-30",
+    "minute_reached_plus2": 20,
+    "final_score": "3-3",
+    "strength_tier": "Underdog",
+    "goals": [
+      {
+        "minute": 15,
+        "scorer": "Charlie Daniels",
+        "team": "leader",
+        "running_score": "1-0"
+      },
+      {
+        "minute": 20,
+        "scorer": "Callum Wilson",
+        "team": "leader",
+        "running_score": "2-0"
+      },
+      {
+        "minute": 57,
+        "scorer": "Ryan Fraser",
+        "team": "leader",
+        "running_score": "3-0"
+      },
+      {
+        "minute": 69,
+        "scorer": "Alexis Sánchez",
+        "team": "opponent",
+        "running_score": "3-1"
+      },
+      {
+        "minute": 74,
+        "scorer": "Lucas Pérez",
+        "team": "opponent",
+        "running_score": "3-2"
+      },
+      {
+        "minute": 91,
+        "scorer": "Olivier Giroud",
+        "team": "opponent",
+        "running_score": "3-3"
+      }
+    ]
+  },
+  {
+    "event_id": "3356_Manchester City",
+    "match_key": 3356,
+    "season": "2016-2017",
+    "leader_team": "Manchester City",
+    "opponent_team": "Tottenham",
+    "leader_is_home": true,
+    "bucket": "46-60",
+    "minute_reached_plus2": 53,
+    "final_score": "2-2",
+    "strength_tier": "Moderate",
+    "goals": [
+      {
+        "minute": 48,
+        "scorer": "Leroy Sané",
+        "team": "leader",
+        "running_score": "1-0"
+      },
+      {
+        "minute": 53,
+        "scorer": "Kevin De Bruyne",
+        "team": "leader",
+        "running_score": "2-0"
+      },
+      {
+        "minute": 57,
+        "scorer": "Dele Alli",
+        "team": "opponent",
+        "running_score": "2-1"
+      },
+      {
+        "minute": 76,
+        "scorer": "Son Heung-Min",
+        "team": "opponent",
+        "running_score": "2-2"
+      }
+    ]
+  },
+  {
+    "event_id": "3468_Leicester City",
+    "match_key": 3468,
+    "season": "2016-2017",
+    "leader_team": "Leicester City",
+    "opponent_team": "Crystal Palace",
+    "leader_is_home": false,
+    "bucket": "46-60",
+    "minute_reached_plus2": 51,
+    "final_score": "2-2",
+    "strength_tier": "Underdog",
+    "goals": [
+      {
+        "minute": 5,
+        "scorer": "Robert Huth",
+        "team": "leader",
+        "running_score": "0-1"
+      },
+      {
+        "minute": 51,
+        "scorer": "Jamie Vardy",
+        "team": "leader",
+        "running_score": "0-2"
+      },
+      {
+        "minute": 53,
+        "scorer": "Yohan Cabaye",
+        "team": "opponent",
+        "running_score": "1-2"
+      },
+      {
+        "minute": 69,
+        "scorer": "Christian Benteke",
+        "team": "opponent",
+        "running_score": "2-2"
+      }
+    ]
+  },
+  {
+    "event_id": "4522_Burnley",
+    "match_key": 4522,
+    "season": "2014-2015",
+    "leader_team": "Burnley",
+    "opponent_team": "West Bromwich Albion",
+    "leader_is_home": true,
+    "bucket": "31-45+",
+    "minute_reached_plus2": 31,
+    "final_score": "2-2",
+    "strength_tier": "Underdog",
+    "goals": [
+      {
+        "minute": 10,
+        "scorer": "Ashley Barnes",
+        "team": "leader",
+        "running_score": "1-0"
+      },
+      {
+        "minute": 31,
+        "scorer": "Danny Ings",
+        "team": "leader",
+        "running_score": "2-0"
+      },
+      {
+        "minute": 45,
+        "scorer": "Chris Brunt",
+        "team": "opponent",
+        "running_score": "2-1"
+      },
+      {
+        "minute": 66,
+        "scorer": "Brown Ideye",
+        "team": "opponent",
+        "running_score": "2-2"
+      }
+    ]
+  },
+  {
+    "event_id": "4542_West Ham United",
+    "match_key": 4542,
+    "season": "2014-2015",
+    "leader_team": "West Ham United",
+    "opponent_team": "Tottenham",
+    "leader_is_home": false,
+    "bucket": "61-75",
+    "minute_reached_plus2": 61,
+    "final_score": "2-2",
+    "strength_tier": "Underdog",
+    "goals": [
+      {
+        "minute": 21,
+        "scorer": "Cheikhou Kouyaté",
+        "team": "leader",
+        "running_score": "0-1"
+      },
+      {
+        "minute": 61,
+        "scorer": "Diafra Sakho",
+        "team": "leader",
+        "running_score": "0-2"
+      },
+      {
+        "minute": 80,
+        "scorer": "Danny Rose",
+        "team": "opponent",
+        "running_score": "1-2"
+      },
+      {
+        "minute": 95,
+        "scorer": "Harry Kane",
+        "team": "opponent",
+        "running_score": "2-2"
+      }
+    ]
+  },
+  {
+    "event_id": "4559_Liverpool",
+    "match_key": 4559,
+    "season": "2014-2015",
+    "leader_team": "Liverpool",
+    "opponent_team": "Leicester City",
+    "leader_is_home": true,
+    "bucket": "31-45+",
+    "minute_reached_plus2": 39,
+    "final_score": "2-2",
+    "strength_tier": "Strong Favorite",
+    "goals": [
+      {
+        "minute": 16,
+        "scorer": "Steven Gerrard",
+        "team": "leader",
+        "running_score": "1-0"
+      },
+      {
+        "minute": 39,
+        "scorer": "Steven Gerrard",
+        "team": "leader",
+        "running_score": "2-0"
+      },
+      {
+        "minute": 57,
+        "scorer": "David Nugent",
+        "team": "opponent",
+        "running_score": "2-1"
+      },
+      {
+        "minute": 59,
+        "scorer": "Jeffrey Schlupp",
+        "team": "opponent",
+        "running_score": "2-2"
+      }
+    ]
+  },
+  {
+    "event_id": "4643_Manchester City",
+    "match_key": 4643,
+    "season": "2014-2015",
+    "leader_team": "Manchester City",
+    "opponent_team": "Burnley",
+    "leader_is_home": true,
+    "bucket": "31-45+",
+    "minute_reached_plus2": 33,
+    "final_score": "2-2",
+    "strength_tier": "Strong Favorite",
+    "goals": [
+      {
+        "minute": 22,
+        "scorer": "David Silva",
+        "team": "leader",
+        "running_score": "1-0"
+      },
+      {
+        "minute": 33,
+        "scorer": "Fernandinho",
+        "team": "leader",
+        "running_score": "2-0"
+      },
+      {
+        "minute": 46,
+        "scorer": "George Boyd",
+        "team": "opponent",
+        "running_score": "2-1"
+      },
+      {
+        "minute": 80,
+        "scorer": "Ashley Barnes",
+        "team": "opponent",
+        "running_score": "2-2"
+      }
+    ]
+  },
+  {
+    "event_id": "4650_Stoke City",
+    "match_key": 4650,
+    "season": "2014-2015",
+    "leader_team": "Stoke City",
+    "opponent_team": "West Ham United",
+    "leader_is_home": true,
+    "bucket": "46-60",
+    "minute_reached_plus2": 55,
+    "final_score": "2-2",
+    "strength_tier": "Moderate",
+    "goals": [
+      {
+        "minute": 32,
+        "scorer": "Victor Moses",
+        "team": "leader",
+        "running_score": "1-0"
+      },
+      {
+        "minute": 55,
+        "scorer": "Mame Biram Diouf",
+        "team": "leader",
+        "running_score": "2-0"
+      },
+      {
+        "minute": 59,
+        "scorer": "Enner Valencia",
+        "team": "opponent",
+        "running_score": "2-1"
+      },
+      {
+        "minute": 72,
+        "scorer": "Stewart Downing",
+        "team": "opponent",
+        "running_score": "2-2"
+      }
+    ]
+  },
+  {
+    "event_id": "4712_Crystal Palace",
+    "match_key": 4712,
+    "season": "2014-2015",
+    "leader_team": "Crystal Palace",
+    "opponent_team": "West Bromwich Albion",
+    "leader_is_home": false,
+    "bucket": "31-45+",
+    "minute_reached_plus2": 45,
+    "final_score": "2-2",
+    "strength_tier": "Underdog",
+    "goals": [
+      {
+        "minute": 15,
+        "scorer": "Brede Hangeland",
+        "team": "leader",
+        "running_score": "0-1"
+      },
+      {
+        "minute": 45,
+        "scorer": "Mile Jedinak",
+        "team": "leader",
+        "running_score": "0-2"
+      },
+      {
+        "minute": 50,
+        "scorer": "Victor Anichebe",
+        "team": "opponent",
+        "running_score": "1-2"
+      },
+      {
+        "minute": 92,
+        "scorer": "Saido Berahino",
+        "team": "opponent",
+        "running_score": "2-2"
+      }
+    ]
+  },
+  {
+    "event_id": "4733_Hull City",
+    "match_key": 4733,
+    "season": "2014-2015",
+    "leader_team": "Hull City",
+    "opponent_team": "Newcastle United",
+    "leader_is_home": false,
+    "bucket": "61-75",
+    "minute_reached_plus2": 67,
+    "final_score": "2-2",
+    "strength_tier": "Underdog",
+    "goals": [
+      {
+        "minute": 48,
+        "scorer": "Nikica Jelavic",
+        "team": "leader",
+        "running_score": "0-1"
+      },
+      {
+        "minute": 67,
+        "scorer": "Mohamed Diamé",
+        "team": "leader",
+        "running_score": "0-2"
+      },
+      {
+        "minute": 72,
+        "scorer": "Papiss Demba Cissé",
+        "team": "opponent",
+        "running_score": "1-2"
+      },
+      {
+        "minute": 86,
+        "scorer": "Papiss Demba Cissé",
+        "team": "opponent",
+        "running_score": "2-2"
+      }
+    ]
+  },
+  {
+    "event_id": "4764_Everton",
+    "match_key": 4764,
+    "season": "2014-2015",
+    "leader_team": "Everton",
+    "opponent_team": "Arsenal",
+    "leader_is_home": true,
+    "bucket": "31-45+",
+    "minute_reached_plus2": 44,
+    "final_score": "2-2",
+    "strength_tier": "Underdog",
+    "goals": [
+      {
+        "minute": 18,
+        "scorer": "Seamus Coleman",
+        "team": "leader",
+        "running_score": "1-0"
+      },
+      {
+        "minute": 44,
+        "scorer": "Steven Naismith",
+        "team": "leader",
+        "running_score": "2-0"
+      },
+      {
+        "minute": 82,
+        "scorer": "Aaron Ramsey",
+        "team": "opponent",
+        "running_score": "2-1"
+      },
+      {
+        "minute": 89,
+        "scorer": "Olivier Giroud",
+        "team": "opponent",
+        "running_score": "2-2"
+      }
+    ]
+  },
+  {
+    "event_id": "7182_West Bromwich Albion",
+    "match_key": 7182,
+    "season": "2017-2018",
+    "leader_team": "West Bromwich Albion",
+    "opponent_team": "Watford",
+    "leader_is_home": true,
+    "bucket": "16-30",
+    "minute_reached_plus2": 20,
+    "final_score": "2-2",
+    "strength_tier": "Moderate",
+    "goals": [
+      {
+        "minute": 17,
+        "scorer": "Salomón Rondón",
+        "team": "leader",
+        "running_score": "1-0"
+      },
+      {
+        "minute": 20,
+        "scorer": "Jonny Evans",
+        "team": "leader",
+        "running_score": "2-0"
+      },
+      {
+        "minute": 36,
+        "scorer": "Abdoulaye Doucouré",
+        "team": "opponent",
+        "running_score": "2-1"
+      },
+      {
+        "minute": 94,
+        "scorer": "Richarlison",
+        "team": "opponent",
+        "running_score": "2-2"
+      }
+    ]
+  },
+  {
+    "event_id": "7213_West Ham United",
+    "match_key": 7213,
+    "season": "2017-2018",
+    "leader_team": "West Ham United",
+    "opponent_team": "Crystal Palace",
+    "leader_is_home": false,
+    "bucket": "31-45+",
+    "minute_reached_plus2": 42,
+    "final_score": "2-2",
+    "strength_tier": "Underdog",
+    "goals": [
+      {
+        "minute": 30,
+        "scorer": "Chicharito",
+        "team": "leader",
+        "running_score": "0-1"
+      },
+      {
+        "minute": 42,
+        "scorer": "André Ayew",
+        "team": "leader",
+        "running_score": "0-2"
+      },
+      {
+        "minute": 49,
+        "scorer": "Luka Milivojevic",
+        "team": "opponent",
+        "running_score": "1-2"
+      },
+      {
+        "minute": 96,
+        "scorer": "Wilfried Zaha",
+        "team": "opponent",
+        "running_score": "2-2"
+      }
+    ]
+  },
+  {
+    "event_id": "7252_West Bromwich Albion",
+    "match_key": 7252,
+    "season": "2017-2018",
+    "leader_team": "West Bromwich Albion",
+    "opponent_team": "Newcastle United",
+    "leader_is_home": true,
+    "bucket": "46-60",
+    "minute_reached_plus2": 55,
+    "final_score": "2-2",
+    "strength_tier": "Moderate",
+    "goals": [
+      {
+        "minute": 45,
+        "scorer": "Hal Robson-Kanu",
+        "team": "leader",
+        "running_score": "1-0"
+      },
+      {
+        "minute": 55,
+        "scorer": "Sam Field",
+        "team": "leader",
+        "running_score": "2-0"
+      },
+      {
+        "minute": 58,
+        "scorer": "Ciaran Clark",
+        "team": "opponent",
+        "running_score": "2-1"
+      },
+      {
+        "minute": 82,
+        "scorer": "Jonny Evans",
+        "team": "opponent",
+        "running_score": "2-2"
+      }
+    ]
+  },
+  {
+    "event_id": "7301_Liverpool",
+    "match_key": 7301,
+    "season": "2017-2018",
+    "leader_team": "Liverpool",
+    "opponent_team": "Arsenal",
+    "leader_is_home": false,
+    "bucket": "46-60",
+    "minute_reached_plus2": 51,
+    "final_score": "3-3",
+    "strength_tier": "Underdog",
+    "goals": [
+      {
+        "minute": 25,
+        "scorer": "Philippe Coutinho",
+        "team": "leader",
+        "running_score": "0-1"
+      },
+      {
+        "minute": 51,
+        "scorer": "Mohamed Salah",
+        "team": "leader",
+        "running_score": "0-2"
+      },
+      {
+        "minute": 52,
+        "scorer": "Alexis Sánchez",
+        "team": "opponent",
+        "running_score": "1-2"
+      },
+      {
+        "minute": 55,
+        "scorer": "Granit Xhaka",
+        "team": "opponent",
+        "running_score": "2-2"
+      },
+      {
+        "minute": 57,
+        "scorer": "Mesut Özil",
+        "team": "opponent",
+        "running_score": "3-2"
+      },
+      {
+        "minute": 70,
+        "scorer": "Roberto Firmino",
+        "team": "leader",
+        "running_score": "3-3"
+      }
+    ]
+  },
+  {
+    "event_id": "7314_Burnley",
+    "match_key": 7314,
+    "season": "2017-2018",
+    "leader_team": "Burnley",
+    "opponent_team": "Manchester United",
+    "leader_is_home": false,
+    "bucket": "31-45+",
+    "minute_reached_plus2": 35,
+    "final_score": "2-2",
+    "strength_tier": "Underdog",
+    "goals": [
+      {
+        "minute": 2,
+        "scorer": "Ashley Barnes",
+        "team": "leader",
+        "running_score": "0-1"
+      },
+      {
+        "minute": 35,
+        "scorer": "Steven Defour",
+        "team": "leader",
+        "running_score": "0-2"
+      },
+      {
+        "minute": 52,
+        "scorer": "Jesse Lingard",
+        "team": "opponent",
+        "running_score": "1-2"
+      },
+      {
+        "minute": 90,
+        "scorer": "Jesse Lingard",
+        "team": "opponent",
+        "running_score": "2-2"
+      }
+    ]
+  },
+  {
+    "event_id": "7347_Southampton",
+    "match_key": 7347,
+    "season": "2017-2018",
+    "leader_team": "Southampton",
+    "opponent_team": "Watford",
+    "leader_is_home": false,
+    "bucket": "31-45+",
+    "minute_reached_plus2": 43,
+    "final_score": "2-2",
+    "strength_tier": "Underdog",
+    "goals": [
+      {
+        "minute": 19,
+        "scorer": "James Ward-Prowse",
+        "team": "leader",
+        "running_score": "0-1"
+      },
+      {
+        "minute": 43,
+        "scorer": "James Ward-Prowse",
+        "team": "leader",
+        "running_score": "0-2"
+      },
+      {
+        "minute": 57,
+        "scorer": "Andre Gray",
+        "team": "opponent",
+        "running_score": "1-2"
+      },
+      {
+        "minute": 89,
+        "scorer": "Abdoulaye Doucouré",
+        "team": "opponent",
+        "running_score": "2-2"
+      }
+    ]
+  },
+  {
+    "event_id": "7390_Newcastle United",
+    "match_key": 7390,
+    "season": "2017-2018",
+    "leader_team": "Newcastle United",
+    "opponent_team": "AFC Bournemouth",
+    "leader_is_home": false,
+    "bucket": "31-45+",
+    "minute_reached_plus2": 45,
+    "final_score": "2-2",
+    "strength_tier": "Underdog",
+    "goals": [
+      {
+        "minute": 16,
+        "scorer": "Dwight Gayle",
+        "team": "leader",
+        "running_score": "0-1"
+      },
+      {
+        "minute": 45,
+        "scorer": "Dwight Gayle",
+        "team": "leader",
+        "running_score": "0-2"
+      },
+      {
+        "minute": 79,
+        "scorer": "Adam Smith",
+        "team": "opponent",
+        "running_score": "1-2"
+      },
+      {
+        "minute": 88,
+        "scorer": "Dan Gosling",
+        "team": "opponent",
+        "running_score": "2-2"
+      }
+    ]
+  },
+  {
+    "event_id": "7468_Liverpool",
+    "match_key": 7468,
+    "season": "2017-2018",
+    "leader_team": "Liverpool",
+    "opponent_team": "West Bromwich Albion",
+    "leader_is_home": false,
+    "bucket": "61-75",
+    "minute_reached_plus2": 71,
+    "final_score": "2-2",
+    "strength_tier": "Strong Favorite",
+    "goals": [
+      {
+        "minute": 3,
+        "scorer": "Danny Ings",
+        "team": "leader",
+        "running_score": "0-1"
+      },
+      {
+        "minute": 71,
+        "scorer": "Mohamed Salah",
+        "team": "leader",
+        "running_score": "0-2"
+      },
+      {
+        "minute": 78,
+        "scorer": "Jake Livermore",
+        "team": "opponent",
+        "running_score": "1-2"
+      },
+      {
+        "minute": 87,
+        "scorer": "Salomón Rondón",
+        "team": "opponent",
+        "running_score": "2-2"
+      }
+    ]
+  },
+  {
+    "event_id": "9221_Everton",
+    "match_key": 9221,
+    "season": "2018-2019",
+    "leader_team": "Everton",
+    "opponent_team": "AFC Bournemouth",
+    "leader_is_home": false,
+    "bucket": "61-75",
+    "minute_reached_plus2": 65,
+    "final_score": "2-2",
+    "strength_tier": "Underdog",
+    "goals": [
+      {
+        "minute": 55,
+        "scorer": "Theo Walcott",
+        "team": "leader",
+        "running_score": "0-1"
+      },
+      {
+        "minute": 65,
+        "scorer": "Michael Keane",
+        "team": "leader",
+        "running_score": "0-2"
+      },
+      {
+        "minute": 74,
+        "scorer": "Joshua King",
+        "team": "opponent",
+        "running_score": "1-2"
+      },
+      {
+        "minute": 78,
+        "scorer": "Nathan Aké",
+        "team": "opponent",
+        "running_score": "2-2"
+      }
+    ]
+  },
+  {
+    "event_id": "9233_Fulham",
+    "match_key": 9233,
+    "season": "2018-2019",
+    "leader_team": "Fulham",
+    "opponent_team": "Brighton",
+    "leader_is_home": false,
+    "bucket": "61-75",
+    "minute_reached_plus2": 61,
+    "final_score": "2-2",
+    "strength_tier": "Underdog",
+    "goals": [
+      {
+        "minute": 42,
+        "scorer": "André Schürrle",
+        "team": "leader",
+        "running_score": "0-1"
+      },
+      {
+        "minute": 61,
+        "scorer": "Aleksandar Mitrovic",
+        "team": "leader",
+        "running_score": "0-2"
+      },
+      {
+        "minute": 66,
+        "scorer": "Glenn Murray",
+        "team": "opponent",
+        "running_score": "1-2"
+      },
+      {
+        "minute": 83,
+        "scorer": "Glenn Murray",
+        "team": "opponent",
+        "running_score": "2-2"
+      }
+    ]
+  },
+  {
+    "event_id": "9246_Southampton",
+    "match_key": 9246,
+    "season": "2018-2019",
+    "leader_team": "Southampton",
+    "opponent_team": "Brighton",
+    "leader_is_home": true,
+    "bucket": "61-75",
+    "minute_reached_plus2": 64,
+    "final_score": "2-2",
+    "strength_tier": "Moderate",
+    "goals": [
+      {
+        "minute": 34,
+        "scorer": "Pierre-Emile Højbjerg",
+        "team": "leader",
+        "running_score": "1-0"
+      },
+      {
+        "minute": 64,
+        "scorer": "Danny Ings",
+        "team": "leader",
+        "running_score": "2-0"
+      },
+      {
+        "minute": 66,
+        "scorer": "Shane Duffy",
+        "team": "opponent",
+        "running_score": "2-1"
+      },
+      {
+        "minute": 90,
+        "scorer": "Glenn Murray",
+        "team": "opponent",
+        "running_score": "2-2"
+      }
+    ]
+  },
+  {
+    "event_id": "9327_Southampton",
+    "match_key": 9327,
+    "season": "2018-2019",
+    "leader_team": "Southampton",
+    "opponent_team": "Manchester United",
+    "leader_is_home": true,
+    "bucket": "16-30",
+    "minute_reached_plus2": 19,
+    "final_score": "2-2",
+    "strength_tier": "Underdog",
+    "goals": [
+      {
+        "minute": 12,
+        "scorer": "Stuart Armstrong",
+        "team": "leader",
+        "running_score": "1-0"
+      },
+      {
+        "minute": 19,
+        "scorer": "Cédric Soares",
+        "team": "leader",
+        "running_score": "2-0"
+      },
+      {
+        "minute": 32,
+        "scorer": "Romelu Lukaku",
+        "team": "opponent",
+        "running_score": "2-1"
+      },
+      {
+        "minute": 38,
+        "scorer": "Ander Herrera",
+        "team": "opponent",
+        "running_score": "2-2"
+      }
+    ]
+  },
+  {
+    "event_id": "9398_Brighton",
+    "match_key": 9398,
+    "season": "2018-2019",
+    "leader_team": "Brighton",
+    "opponent_team": "West Ham United",
+    "leader_is_home": false,
+    "bucket": "46-60",
+    "minute_reached_plus2": 57,
+    "final_score": "2-2",
+    "strength_tier": "Underdog",
+    "goals": [
+      {
+        "minute": 55,
+        "scorer": "Dale Stephens",
+        "team": "leader",
+        "running_score": "0-1"
+      },
+      {
+        "minute": 57,
+        "scorer": "Shane Duffy",
+        "team": "leader",
+        "running_score": "0-2"
+      },
+      {
+        "minute": 65,
+        "scorer": "Marko Arnautovic",
+        "team": "opponent",
+        "running_score": "1-2"
+      },
+      {
+        "minute": 67,
+        "scorer": "Marko Arnautovic",
+        "team": "opponent",
+        "running_score": "2-2"
+      }
+    ]
+  },
+  {
+    "event_id": "9405_Watford",
+    "match_key": 9405,
+    "season": "2018-2019",
+    "leader_team": "Watford",
+    "opponent_team": "AFC Bournemouth",
+    "leader_is_home": false,
+    "bucket": "16-30",
+    "minute_reached_plus2": 26,
+    "final_score": "3-3",
+    "strength_tier": "Underdog",
+    "goals": [
+      {
+        "minute": 13,
+        "scorer": "Troy Deeney",
+        "team": "leader",
+        "running_score": "0-1"
+      },
+      {
+        "minute": 26,
+        "scorer": "Troy Deeney",
+        "team": "leader",
+        "running_score": "0-2"
+      },
+      {
+        "minute": 33,
+        "scorer": "Nathan Aké",
+        "team": "opponent",
+        "running_score": "1-2"
+      },
+      {
+        "minute": 36,
+        "scorer": "Callum Wilson",
+        "team": "opponent",
+        "running_score": "2-2"
+      },
+      {
+        "minute": 37,
+        "scorer": "Ken Sema",
+        "team": "leader",
+        "running_score": "2-3"
+      },
+      {
+        "minute": 39,
+        "scorer": "Ryan Fraser",
+        "team": "opponent",
+        "running_score": "3-3"
+      }
+    ]
+  },
+  {
+    "event_id": "9432_Burnley",
+    "match_key": 9432,
+    "season": "2018-2019",
+    "leader_team": "Burnley",
+    "opponent_team": "Manchester United",
+    "leader_is_home": false,
+    "bucket": "76-90+",
+    "minute_reached_plus2": 80,
+    "final_score": "2-2",
+    "strength_tier": "Underdog",
+    "goals": [
+      {
+        "minute": 50,
+        "scorer": "Ashley Barnes",
+        "team": "leader",
+        "running_score": "0-1"
+      },
+      {
+        "minute": 80,
+        "scorer": "Chris Wood",
+        "team": "leader",
+        "running_score": "0-2"
+      },
+      {
+        "minute": 86,
+        "scorer": "Paul Pogba",
+        "team": "opponent",
+        "running_score": "1-2"
+      },
+      {
+        "minute": 91,
+        "scorer": "Victor Lindelöf",
+        "team": "opponent",
+        "running_score": "2-2"
+      }
+    ]
+  },
+  {
+    "event_id": "11675_Chelsea",
+    "match_key": 11675,
+    "season": "2019-2020",
+    "leader_team": "Chelsea",
+    "opponent_team": "Sheffield United",
+    "leader_is_home": true,
+    "bucket": "31-45+",
+    "minute_reached_plus2": 42,
+    "final_score": "2-2",
+    "strength_tier": "Strong Favorite",
+    "goals": [
+      {
+        "minute": 18,
+        "scorer": "Tammy Abraham",
+        "team": "leader",
+        "running_score": "1-0"
+      },
+      {
+        "minute": 42,
+        "scorer": "Tammy Abraham",
+        "team": "leader",
+        "running_score": "2-0"
+      },
+      {
+        "minute": 45,
+        "scorer": "Callum Robinson",
+        "team": "opponent",
+        "running_score": "2-1"
+      },
+      {
+        "minute": 88,
+        "scorer": "Kurt Zouma",
+        "team": "opponent",
+        "running_score": "2-2"
+      }
+    ]
+  },
+  {
+    "event_id": "11682_Tottenham",
+    "match_key": 11682,
+    "season": "2019-2020",
+    "leader_team": "Tottenham",
+    "opponent_team": "Arsenal",
+    "leader_is_home": false,
+    "bucket": "31-45+",
+    "minute_reached_plus2": 39,
+    "final_score": "2-2",
+    "strength_tier": "Underdog",
+    "goals": [
+      {
+        "minute": 9,
+        "scorer": "Christian Eriksen",
+        "team": "leader",
+        "running_score": "0-1"
+      },
+      {
+        "minute": 39,
+        "scorer": "Harry Kane",
+        "team": "leader",
+        "running_score": "0-2"
+      },
+      {
+        "minute": 46,
+        "scorer": "Alexandre Lacazette",
+        "team": "opponent",
+        "running_score": "1-2"
+      },
+      {
+        "minute": 70,
+        "scorer": "Pierre-Emerick Aubameyang",
+        "team": "opponent",
+        "running_score": "2-2"
+      }
+    ]
+  },
+  {
+    "event_id": "11691_Arsenal",
+    "match_key": 11691,
+    "season": "2019-2020",
+    "leader_team": "Arsenal",
+    "opponent_team": "Watford",
+    "leader_is_home": false,
+    "bucket": "31-45+",
+    "minute_reached_plus2": 31,
+    "final_score": "2-2",
+    "strength_tier": "Moderate",
+    "goals": [
+      {
+        "minute": 20,
+        "scorer": "Pierre-Emerick Aubameyang",
+        "team": "leader",
+        "running_score": "0-1"
+      },
+      {
+        "minute": 31,
+        "scorer": "Pierre-Emerick Aubameyang",
+        "team": "leader",
+        "running_score": "0-2"
+      },
+      {
+        "minute": 52,
+        "scorer": "Tom Cleverley",
+        "team": "opponent",
+        "running_score": "1-2"
+      },
+      {
+        "minute": 80,
+        "scorer": "Roberto Pereyra",
+        "team": "opponent",
+        "running_score": "2-2"
+      }
+    ]
+  },
+  {
+    "event_id": "11733_Arsenal",
+    "match_key": 11733,
+    "season": "2019-2020",
+    "leader_team": "Arsenal",
+    "opponent_team": "Crystal Palace",
+    "leader_is_home": true,
+    "bucket": "0-15",
+    "minute_reached_plus2": 8,
+    "final_score": "2-2",
+    "strength_tier": "Strong Favorite",
+    "goals": [
+      {
+        "minute": 6,
+        "scorer": "Sokratis",
+        "team": "leader",
+        "running_score": "1-0"
+      },
+      {
+        "minute": 8,
+        "scorer": "David Luiz",
+        "team": "leader",
+        "running_score": "2-0"
+      },
+      {
+        "minute": 31,
+        "scorer": "Luka Milivojevic",
+        "team": "opponent",
+        "running_score": "2-1"
+      },
+      {
+        "minute": 51,
+        "scorer": "Jordan Ayew",
+        "team": "opponent",
+        "running_score": "2-2"
+      }
+    ]
+  },
+  {
+    "event_id": "11770_Sheffield United",
+    "match_key": 11770,
+    "season": "2019-2020",
+    "leader_team": "Sheffield United",
+    "opponent_team": "Manchester United",
+    "leader_is_home": true,
+    "bucket": "46-60",
+    "minute_reached_plus2": 51,
+    "final_score": "3-3",
+    "strength_tier": "Underdog",
+    "goals": [
+      {
+        "minute": 18,
+        "scorer": "John Fleck",
+        "team": "leader",
+        "running_score": "1-0"
+      },
+      {
+        "minute": 51,
+        "scorer": "Lys Mousset",
+        "team": "leader",
+        "running_score": "2-0"
+      },
+      {
+        "minute": 71,
+        "scorer": "Brandon Williams",
+        "team": "opponent",
+        "running_score": "2-1"
+      },
+      {
+        "minute": 76,
+        "scorer": "Mason Greenwood",
+        "team": "opponent",
+        "running_score": "2-2"
+      },
+      {
+        "minute": 78,
+        "scorer": "Marcus Rashford",
+        "team": "opponent",
+        "running_score": "2-3"
+      },
+      {
+        "minute": 89,
+        "scorer": "Oliver McBurnie",
+        "team": "leader",
+        "running_score": "3-3"
+      }
+    ]
+  },
+  {
+    "event_id": "11877_Everton",
+    "match_key": 11877,
+    "season": "2019-2020",
+    "leader_team": "Everton",
+    "opponent_team": "Newcastle United",
+    "leader_is_home": true,
+    "bucket": "46-60",
+    "minute_reached_plus2": 53,
+    "final_score": "2-2",
+    "strength_tier": "Strong Favorite",
+    "goals": [
+      {
+        "minute": 29,
+        "scorer": "Moise Kean",
+        "team": "leader",
+        "running_score": "1-0"
+      },
+      {
+        "minute": 53,
+        "scorer": "Dominic Calvert-Lewin",
+        "team": "leader",
+        "running_score": "2-0"
+      },
+      {
+        "minute": 93,
+        "scorer": "Florian Lejeune",
+        "team": "opponent",
+        "running_score": "2-1"
+      },
+      {
+        "minute": 94,
+        "scorer": "Florian Lejeune",
+        "team": "opponent",
+        "running_score": "2-2"
+      }
+    ]
+  },
+  {
+    "event_id": "11892_West Ham United",
+    "match_key": 11892,
+    "season": "2019-2020",
+    "leader_team": "West Ham United",
+    "opponent_team": "Brighton",
+    "leader_is_home": true,
+    "bucket": "31-45+",
+    "minute_reached_plus2": 44,
+    "final_score": "3-3",
+    "strength_tier": "Underdog",
+    "goals": [
+      {
+        "minute": 29,
+        "scorer": "Issa Diop",
+        "team": "leader",
+        "running_score": "1-0"
+      },
+      {
+        "minute": 44,
+        "scorer": "Robert Snodgrass",
+        "team": "leader",
+        "running_score": "2-0"
+      },
+      {
+        "minute": 46,
+        "scorer": "Angelo Ogbonna",
+        "team": "opponent",
+        "running_score": "2-1"
+      },
+      {
+        "minute": 56,
+        "scorer": "Robert Snodgrass",
+        "team": "leader",
+        "running_score": "3-1"
+      },
+      {
+        "minute": 74,
+        "scorer": "Pascal Groß",
+        "team": "opponent",
+        "running_score": "3-2"
+      },
+      {
+        "minute": 78,
+        "scorer": "Glenn Murray",
+        "team": "opponent",
+        "running_score": "3-3"
+      }
+    ]
+  },
+  {
+    "event_id": "14108_West Bromwich Albion",
+    "match_key": 14108,
+    "season": "2020-2021",
+    "leader_team": "West Bromwich Albion",
+    "opponent_team": "Chelsea",
+    "leader_is_home": true,
+    "bucket": "16-30",
+    "minute_reached_plus2": 24,
+    "final_score": "3-3",
+    "strength_tier": "Underdog",
+    "goals": [
+      {
+        "minute": 3,
+        "scorer": "Callum Robinson",
+        "team": "leader",
+        "running_score": "1-0"
+      },
+      {
+        "minute": 24,
+        "scorer": "Callum Robinson",
+        "team": "leader",
+        "running_score": "2-0"
+      },
+      {
+        "minute": 26,
+        "scorer": "Kyle Bartley",
+        "team": "leader",
+        "running_score": "3-0"
+      },
+      {
+        "minute": 54,
+        "scorer": "Mason Mount",
+        "team": "opponent",
+        "running_score": "3-1"
+      },
+      {
+        "minute": 69,
+        "scorer": "Callum Hudson-Odoi",
+        "team": "opponent",
+        "running_score": "3-2"
+      },
+      {
+        "minute": 92,
+        "scorer": "Tammy Abraham",
+        "team": "opponent",
+        "running_score": "3-3"
+      }
+    ]
+  },
+  {
+    "event_id": "14475_Chelsea",
+    "match_key": 14475,
+    "season": "2020-2021",
+    "leader_team": "Chelsea",
+    "opponent_team": "Southampton",
+    "leader_is_home": true,
+    "bucket": "16-30",
+    "minute_reached_plus2": 28,
+    "final_score": "3-3",
+    "strength_tier": "Strong Favorite",
+    "goals": [
+      {
+        "minute": 14,
+        "scorer": "Timo Werner",
+        "team": "leader",
+        "running_score": "1-0"
+      },
+      {
+        "minute": 28,
+        "scorer": "Timo Werner",
+        "team": "leader",
+        "running_score": "2-0"
+      },
+      {
+        "minute": 42,
+        "scorer": "Danny Ings",
+        "team": "opponent",
+        "running_score": "2-1"
+      },
+      {
+        "minute": 56,
+        "scorer": "Che Adams",
+        "team": "opponent",
+        "running_score": "2-2"
+      },
+      {
+        "minute": 58,
+        "scorer": "Kai Havertz",
+        "team": "leader",
+        "running_score": "3-2"
+      },
+      {
+        "minute": 91,
+        "scorer": "Jannik Vestergaard",
+        "team": "opponent",
+        "running_score": "3-3"
+      }
+    ]
+  },
+  {
+    "event_id": "14483_Tottenham",
+    "match_key": 14483,
+    "season": "2020-2021",
+    "leader_team": "Tottenham",
+    "opponent_team": "West Ham United",
+    "leader_is_home": true,
+    "bucket": "0-15",
+    "minute_reached_plus2": 7,
+    "final_score": "3-3",
+    "strength_tier": "Moderate",
+    "goals": [
+      {
+        "minute": 0,
+        "scorer": "Son Heung-Min",
+        "team": "leader",
+        "running_score": "1-0"
+      },
+      {
+        "minute": 7,
+        "scorer": "Harry Kane",
+        "team": "leader",
+        "running_score": "2-0"
+      },
+      {
+        "minute": 15,
+        "scorer": "Harry Kane",
+        "team": "leader",
+        "running_score": "3-0"
+      },
+      {
+        "minute": 81,
+        "scorer": "Fabián Balbuena",
+        "team": "opponent",
+        "running_score": "3-1"
+      },
+      {
+        "minute": 84,
+        "scorer": "Davinson Sánchez",
+        "team": "opponent",
+        "running_score": "3-2"
+      },
+      {
+        "minute": 93,
+        "scorer": "Manuel Lanzini",
+        "team": "opponent",
+        "running_score": "3-3"
+      }
+    ]
+  },
+  {
+    "event_id": "14601_Wolverhampton Wanderers",
+    "match_key": 14601,
+    "season": "2020-2021",
+    "leader_team": "Wolverhampton Wanderers",
+    "opponent_team": "Brighton",
+    "leader_is_home": false,
+    "bucket": "31-45+",
+    "minute_reached_plus2": 43,
+    "final_score": "3-3",
+    "strength_tier": "Underdog",
+    "goals": [
+      {
+        "minute": 12,
+        "scorer": "Aaron Connolly",
+        "team": "opponent",
+        "running_score": "1-0"
+      },
+      {
+        "minute": 18,
+        "scorer": "Romain Saiss",
+        "team": "leader",
+        "running_score": "1-1"
+      },
+      {
+        "minute": 33,
+        "scorer": "Dan Burn",
+        "team": "leader",
+        "running_score": "1-2"
+      },
+      {
+        "minute": 43,
+        "scorer": "Rúben Neves",
+        "team": "leader",
+        "running_score": "1-3"
+      },
+      {
+        "minute": 45,
+        "scorer": "Neal Maupay",
+        "team": "opponent",
+        "running_score": "2-3"
+      },
+      {
+        "minute": 69,
+        "scorer": "Lewis Dunk",
+        "team": "opponent",
+        "running_score": "3-3"
+      }
+    ]
+  },
+  {
+    "event_id": "14660_Manchester United",
+    "match_key": 14660,
+    "season": "2020-2021",
+    "leader_team": "Manchester United",
+    "opponent_team": "Everton",
+    "leader_is_home": true,
+    "bucket": "31-45+",
+    "minute_reached_plus2": 44,
+    "final_score": "3-3",
+    "strength_tier": "Strong Favorite",
+    "goals": [
+      {
+        "minute": 23,
+        "scorer": "Edinson Cavani",
+        "team": "leader",
+        "running_score": "1-0"
+      },
+      {
+        "minute": 44,
+        "scorer": "Bruno Fernandes",
+        "team": "leader",
+        "running_score": "2-0"
+      },
+      {
+        "minute": 48,
+        "scorer": "Abdoulaye Doucouré",
+        "team": "opponent",
+        "running_score": "2-1"
+      },
+      {
+        "minute": 51,
+        "scorer": "James Rodríguez",
+        "team": "opponent",
+        "running_score": "2-2"
+      },
+      {
+        "minute": 69,
+        "scorer": "Scott McTominay",
+        "team": "leader",
+        "running_score": "3-2"
+      },
+      {
+        "minute": 94,
+        "scorer": "Dominic Calvert-Lewin",
+        "team": "opponent",
+        "running_score": "3-3"
+      }
+    ]
+  },
+  {
+    "event_id": "14724_West Ham United",
+    "match_key": 14724,
+    "season": "2020-2021",
+    "leader_team": "West Ham United",
+    "opponent_team": "Arsenal",
+    "leader_is_home": true,
+    "bucket": "16-30",
+    "minute_reached_plus2": 16,
+    "final_score": "3-3",
+    "strength_tier": "Underdog",
+    "goals": [
+      {
+        "minute": 14,
+        "scorer": "Jesse Lingard",
+        "team": "leader",
+        "running_score": "1-0"
+      },
+      {
+        "minute": 16,
+        "scorer": "Jarrod Bowen",
+        "team": "leader",
+        "running_score": "2-0"
+      },
+      {
+        "minute": 31,
+        "scorer": "Tomas Soucek",
+        "team": "leader",
+        "running_score": "3-0"
+      },
+      {
+        "minute": 37,
+        "scorer": "Tomas Soucek",
+        "team": "opponent",
+        "running_score": "3-1"
+      },
+      {
+        "minute": 60,
+        "scorer": "Craig Dawson",
+        "team": "opponent",
+        "running_score": "3-2"
+      },
+      {
+        "minute": 81,
+        "scorer": "Alexandre Lacazette",
+        "team": "opponent",
+        "running_score": "3-3"
+      }
+    ]
+  },
+  {
+    "event_id": "16439_Leicester City",
+    "match_key": 16439,
+    "season": "2021-2022",
+    "leader_team": "Leicester City",
+    "opponent_team": "Crystal Palace",
+    "leader_is_home": false,
+    "bucket": "31-45+",
+    "minute_reached_plus2": 36,
+    "final_score": "2-2",
+    "strength_tier": "Moderate",
+    "goals": [
+      {
+        "minute": 30,
+        "scorer": "Kelechi Iheanacho",
+        "team": "leader",
+        "running_score": "0-1"
+      },
+      {
+        "minute": 36,
+        "scorer": "Jamie Vardy",
+        "team": "leader",
+        "running_score": "0-2"
+      },
+      {
+        "minute": 60,
+        "scorer": "Michael Olise",
+        "team": "opponent",
+        "running_score": "1-2"
+      },
+      {
+        "minute": 71,
+        "scorer": "Jeffrey Schlupp",
+        "team": "opponent",
+        "running_score": "2-2"
+      }
+    ]
+  },
+  {
+    "event_id": "16469_Liverpool",
+    "match_key": 16469,
+    "season": "2021-2022",
+    "leader_team": "Liverpool",
+    "opponent_team": "Brighton",
+    "leader_is_home": true,
+    "bucket": "16-30",
+    "minute_reached_plus2": 23,
+    "final_score": "2-2",
+    "strength_tier": "Strong Favorite",
+    "goals": [
+      {
+        "minute": 3,
+        "scorer": "Jordan Henderson",
+        "team": "leader",
+        "running_score": "1-0"
+      },
+      {
+        "minute": 23,
+        "scorer": "Sadio Mané",
+        "team": "leader",
+        "running_score": "2-0"
+      },
+      {
+        "minute": 40,
+        "scorer": "Enock Mwepu",
+        "team": "opponent",
+        "running_score": "2-1"
+      },
+      {
+        "minute": 64,
+        "scorer": "Leandro Trossard",
+        "team": "opponent",
+        "running_score": "2-2"
+      }
+    ]
+  },
+  {
+    "event_id": "16578_Liverpool",
+    "match_key": 16578,
+    "season": "2021-2022",
+    "leader_team": "Liverpool",
+    "opponent_team": "Chelsea",
+    "leader_is_home": false,
+    "bucket": "16-30",
+    "minute_reached_plus2": 25,
+    "final_score": "2-2",
+    "strength_tier": "Moderate",
+    "goals": [
+      {
+        "minute": 8,
+        "scorer": "Sadio Mané",
+        "team": "leader",
+        "running_score": "0-1"
+      },
+      {
+        "minute": 25,
+        "scorer": "Mohamed Salah",
+        "team": "leader",
+        "running_score": "0-2"
+      },
+      {
+        "minute": 41,
+        "scorer": "Mateo Kovacic",
+        "team": "opponent",
+        "running_score": "1-2"
+      },
+      {
+        "minute": 45,
+        "scorer": "Christian Pulisic",
+        "team": "opponent",
+        "running_score": "2-2"
+      }
+    ]
+  },
+  {
+    "event_id": "16586_Manchester United",
+    "match_key": 16586,
+    "season": "2021-2022",
+    "leader_team": "Manchester United",
+    "opponent_team": "Aston Villa",
+    "leader_is_home": false,
+    "bucket": "61-75",
+    "minute_reached_plus2": 66,
+    "final_score": "2-2",
+    "strength_tier": "Underdog",
+    "goals": [
+      {
+        "minute": 5,
+        "scorer": "Bruno Fernandes",
+        "team": "leader",
+        "running_score": "0-1"
+      },
+      {
+        "minute": 66,
+        "scorer": "Bruno Fernandes",
+        "team": "leader",
+        "running_score": "0-2"
+      },
+      {
+        "minute": 76,
+        "scorer": "Jacob Ramsey",
+        "team": "opponent",
+        "running_score": "1-2"
+      },
+      {
+        "minute": 81,
+        "scorer": "Philippe Coutinho",
+        "team": "opponent",
+        "running_score": "2-2"
+      }
+    ]
+  },
+  {
+    "event_id": "16606_Aston Villa",
+    "match_key": 16606,
+    "season": "2021-2022",
+    "leader_team": "Aston Villa",
+    "opponent_team": "Leeds United",
+    "leader_is_home": true,
+    "bucket": "31-45+",
+    "minute_reached_plus2": 42,
+    "final_score": "3-3",
+    "strength_tier": "Moderate",
+    "goals": [
+      {
+        "minute": 8,
+        "scorer": "Daniel James",
+        "team": "opponent",
+        "running_score": "0-1"
+      },
+      {
+        "minute": 29,
+        "scorer": "Philippe Coutinho",
+        "team": "leader",
+        "running_score": "1-1"
+      },
+      {
+        "minute": 37,
+        "scorer": "Jacob Ramsey",
+        "team": "leader",
+        "running_score": "2-1"
+      },
+      {
+        "minute": 42,
+        "scorer": "Jacob Ramsey",
+        "team": "leader",
+        "running_score": "3-1"
+      },
+      {
+        "minute": 46,
+        "scorer": "Daniel James",
+        "team": "opponent",
+        "running_score": "3-2"
+      },
+      {
+        "minute": 62,
+        "scorer": "Diego Llorente",
+        "team": "opponent",
+        "running_score": "3-3"
+      }
+    ]
+  },
+  {
+    "event_id": "16713_Brighton",
+    "match_key": 16713,
+    "season": "2021-2022",
+    "leader_team": "Brighton",
+    "opponent_team": "Southampton",
+    "leader_is_home": true,
+    "bucket": "31-45+",
+    "minute_reached_plus2": 43,
+    "final_score": "2-2",
+    "strength_tier": "Moderate",
+    "goals": [
+      {
+        "minute": 1,
+        "scorer": "Danny Welbeck",
+        "team": "leader",
+        "running_score": "1-0"
+      },
+      {
+        "minute": 43,
+        "scorer": "Mohammed Salisu",
+        "team": "leader",
+        "running_score": "2-0"
+      },
+      {
+        "minute": 48,
+        "scorer": "James Ward-Prowse",
+        "team": "opponent",
+        "running_score": "2-1"
+      },
+      {
+        "minute": 53,
+        "scorer": "James Ward-Prowse",
+        "team": "opponent",
+        "running_score": "2-2"
+      }
+    ]
+  },
+  {
+    "event_id": "16731_Chelsea",
+    "match_key": 16731,
+    "season": "2021-2022",
+    "leader_team": "Chelsea",
+    "opponent_team": "Wolverhampton Wanderers",
+    "leader_is_home": true,
+    "bucket": "46-60",
+    "minute_reached_plus2": 57,
+    "final_score": "2-2",
+    "strength_tier": "Strong Favorite",
+    "goals": [
+      {
+        "minute": 55,
+        "scorer": "Romelu Lukaku",
+        "team": "leader",
+        "running_score": "1-0"
+      },
+      {
+        "minute": 57,
+        "scorer": "Romelu Lukaku",
+        "team": "leader",
+        "running_score": "2-0"
+      },
+      {
+        "minute": 78,
+        "scorer": "Trincão",
+        "team": "opponent",
+        "running_score": "2-1"
+      },
+      {
+        "minute": 96,
+        "scorer": "Conor Coady",
+        "team": "opponent",
+        "running_score": "2-2"
+      }
+    ]
+  },
+  {
+    "event_id": "16737_West Ham United",
+    "match_key": 16737,
+    "season": "2021-2022",
+    "leader_team": "West Ham United",
+    "opponent_team": "Manchester City",
+    "leader_is_home": true,
+    "bucket": "31-45+",
+    "minute_reached_plus2": 44,
+    "final_score": "2-2",
+    "strength_tier": "Underdog",
+    "goals": [
+      {
+        "minute": 23,
+        "scorer": "Jarrod Bowen",
+        "team": "leader",
+        "running_score": "1-0"
+      },
+      {
+        "minute": 44,
+        "scorer": "Jarrod Bowen",
+        "team": "leader",
+        "running_score": "2-0"
+      },
+      {
+        "minute": 48,
+        "scorer": "Jack Grealish",
+        "team": "opponent",
+        "running_score": "2-1"
+      },
+      {
+        "minute": 68,
+        "scorer": "Vladimir Coufal",
+        "team": "opponent",
+        "running_score": "2-2"
+      }
+    ]
+  },
+  {
+    "event_id": "18210_Leicester City",
+    "match_key": 18210,
+    "season": "2022-2023",
+    "leader_team": "Leicester City",
+    "opponent_team": "Brentford",
+    "leader_is_home": true,
+    "bucket": "31-45+",
+    "minute_reached_plus2": 45,
+    "final_score": "2-2",
+    "strength_tier": "Moderate",
+    "goals": [
+      {
+        "minute": 32,
+        "scorer": "Timothy Castagne",
+        "team": "leader",
+        "running_score": "1-0"
+      },
+      {
+        "minute": 45,
+        "scorer": "Kiernan Dewsbury-Hall",
+        "team": "leader",
+        "running_score": "2-0"
+      },
+      {
+        "minute": 61,
+        "scorer": "Ivan Toney",
+        "team": "opponent",
+        "running_score": "2-1"
+      },
+      {
+        "minute": 85,
+        "scorer": "Josh Dasilva",
+        "team": "opponent",
+        "running_score": "2-2"
+      }
+    ]
+  },
+  {
+    "event_id": "18215_Leeds United",
+    "match_key": 18215,
+    "season": "2022-2023",
+    "leader_team": "Leeds United",
+    "opponent_team": "Southampton",
+    "leader_is_home": false,
+    "bucket": "46-60",
+    "minute_reached_plus2": 59,
+    "final_score": "2-2",
+    "strength_tier": "Underdog",
+    "goals": [
+      {
+        "minute": 45,
+        "scorer": "Rodrigo",
+        "team": "leader",
+        "running_score": "0-1"
+      },
+      {
+        "minute": 59,
+        "scorer": "Rodrigo",
+        "team": "leader",
+        "running_score": "0-2"
+      },
+      {
+        "minute": 71,
+        "scorer": "Joe Ayodele-Aribo",
+        "team": "opponent",
+        "running_score": "1-2"
+      },
+      {
+        "minute": 80,
+        "scorer": "Kyle Walker-Peters",
+        "team": "opponent",
+        "running_score": "2-2"
+      }
+    ]
+  },
+  {
+    "event_id": "18230_Newcastle United",
+    "match_key": 18230,
+    "season": "2022-2023",
+    "leader_team": "Newcastle United",
+    "opponent_team": "Manchester City",
+    "leader_is_home": true,
+    "bucket": "46-60",
+    "minute_reached_plus2": 53,
+    "final_score": "3-3",
+    "strength_tier": "Underdog",
+    "goals": [
+      {
+        "minute": 4,
+        "scorer": "Ilkay Gündogan",
+        "team": "opponent",
+        "running_score": "0-1"
+      },
+      {
+        "minute": 27,
+        "scorer": "Miguel Almirón",
+        "team": "leader",
+        "running_score": "1-1"
+      },
+      {
+        "minute": 38,
+        "scorer": "Callum Wilson",
+        "team": "leader",
+        "running_score": "2-1"
+      },
+      {
+        "minute": 53,
+        "scorer": "Kieran Trippier",
+        "team": "leader",
+        "running_score": "3-1"
+      },
+      {
+        "minute": 59,
+        "scorer": "Erling Haaland",
+        "team": "opponent",
+        "running_score": "3-2"
+      },
+      {
+        "minute": 63,
+        "scorer": "Bernardo Silva",
+        "team": "opponent",
+        "running_score": "3-3"
+      }
+    ]
+  },
+  {
+    "event_id": "18279_Leeds United",
+    "match_key": 18279,
+    "season": "2022-2023",
+    "leader_team": "Leeds United",
+    "opponent_team": "Manchester United",
+    "leader_is_home": false,
+    "bucket": "31-45+",
+    "minute_reached_plus2": 47,
+    "final_score": "2-2",
+    "strength_tier": "Underdog",
+    "goals": [
+      {
+        "minute": 0,
+        "scorer": "Wilfried Gnonto",
+        "team": "leader",
+        "running_score": "0-1"
+      },
+      {
+        "minute": 47,
+        "scorer": "Raphael Varane",
+        "team": "leader",
+        "running_score": "0-2"
+      },
+      {
+        "minute": 61,
+        "scorer": "Marcus Rashford",
+        "team": "opponent",
+        "running_score": "1-2"
+      },
+      {
+        "minute": 69,
+        "scorer": "Jadon Sancho",
+        "team": "opponent",
+        "running_score": "2-2"
+      }
+    ]
+  },
+  {
+    "event_id": "18288_Brighton",
+    "match_key": 18288,
+    "season": "2022-2023",
+    "leader_team": "Brighton",
+    "opponent_team": "Liverpool",
+    "leader_is_home": false,
+    "bucket": "16-30",
+    "minute_reached_plus2": 16,
+    "final_score": "3-3",
+    "strength_tier": "Underdog",
+    "goals": [
+      {
+        "minute": 3,
+        "scorer": "Leandro Trossard",
+        "team": "leader",
+        "running_score": "0-1"
+      },
+      {
+        "minute": 16,
+        "scorer": "Leandro Trossard",
+        "team": "leader",
+        "running_score": "0-2"
+      },
+      {
+        "minute": 32,
+        "scorer": "Roberto Firmino",
+        "team": "opponent",
+        "running_score": "1-2"
+      },
+      {
+        "minute": 53,
+        "scorer": "Roberto Firmino",
+        "team": "opponent",
+        "running_score": "2-2"
+      },
+      {
+        "minute": 62,
+        "scorer": "Adam Webster",
+        "team": "opponent",
+        "running_score": "3-2"
+      },
+      {
+        "minute": 82,
+        "scorer": "Leandro Trossard",
+        "team": "leader",
+        "running_score": "3-3"
+      }
+    ]
+  },
+  {
+    "event_id": "18364_Brentford",
+    "match_key": 18364,
+    "season": "2022-2023",
+    "leader_team": "Brentford",
+    "opponent_team": "Tottenham",
+    "leader_is_home": true,
+    "bucket": "46-60",
+    "minute_reached_plus2": 53,
+    "final_score": "2-2",
+    "strength_tier": "Underdog",
+    "goals": [
+      {
+        "minute": 14,
+        "scorer": "Vitaly Janelt",
+        "team": "leader",
+        "running_score": "1-0"
+      },
+      {
+        "minute": 53,
+        "scorer": "Ivan Toney",
+        "team": "leader",
+        "running_score": "2-0"
+      },
+      {
+        "minute": 64,
+        "scorer": "Harry Kane",
+        "team": "opponent",
+        "running_score": "2-1"
+      },
+      {
+        "minute": 70,
+        "scorer": "Pierre-Emile Højbjerg",
+        "team": "opponent",
+        "running_score": "2-2"
+      }
+    ]
+  },
+  {
+    "event_id": "18480_Tottenham",
+    "match_key": 18480,
+    "season": "2022-2023",
+    "leader_team": "Tottenham",
+    "opponent_team": "Southampton",
+    "leader_is_home": false,
+    "bucket": "61-75",
+    "minute_reached_plus2": 73,
+    "final_score": "3-3",
+    "strength_tier": "Moderate",
+    "goals": [
+      {
+        "minute": 45,
+        "scorer": "Pedro Porro",
+        "team": "leader",
+        "running_score": "0-1"
+      },
+      {
+        "minute": 45,
+        "scorer": "Che Adams",
+        "team": "opponent",
+        "running_score": "1-1"
+      },
+      {
+        "minute": 64,
+        "scorer": "Harry Kane",
+        "team": "leader",
+        "running_score": "1-2"
+      },
+      {
+        "minute": 73,
+        "scorer": "Ivan Perisic",
+        "team": "leader",
+        "running_score": "1-3"
+      },
+      {
+        "minute": 76,
+        "scorer": "Theo Walcott",
+        "team": "opponent",
+        "running_score": "2-3"
+      },
+      {
+        "minute": 92,
+        "scorer": "James Ward-Prowse",
+        "team": "opponent",
+        "running_score": "3-3"
+      }
+    ]
+  },
+  {
+    "event_id": "18497_Arsenal",
+    "match_key": 18497,
+    "season": "2022-2023",
+    "leader_team": "Arsenal",
+    "opponent_team": "Liverpool",
+    "leader_is_home": false,
+    "bucket": "16-30",
+    "minute_reached_plus2": 27,
+    "final_score": "2-2",
+    "strength_tier": "Underdog",
+    "goals": [
+      {
+        "minute": 7,
+        "scorer": "Gabriel Martinelli",
+        "team": "leader",
+        "running_score": "0-1"
+      },
+      {
+        "minute": 27,
+        "scorer": "Gabriel Jesus",
+        "team": "leader",
+        "running_score": "0-2"
+      },
+      {
+        "minute": 41,
+        "scorer": "Mohamed Salah",
+        "team": "opponent",
+        "running_score": "1-2"
+      },
+      {
+        "minute": 86,
+        "scorer": "Roberto Firmino",
+        "team": "opponent",
+        "running_score": "2-2"
+      }
+    ]
+  },
+  {
+    "event_id": "18510_Arsenal",
+    "match_key": 18510,
+    "season": "2022-2023",
+    "leader_team": "Arsenal",
+    "opponent_team": "West Ham United",
+    "leader_is_home": false,
+    "bucket": "0-15",
+    "minute_reached_plus2": 9,
+    "final_score": "2-2",
+    "strength_tier": "Strong Favorite",
+    "goals": [
+      {
+        "minute": 6,
+        "scorer": "Gabriel Jesus",
+        "team": "leader",
+        "running_score": "0-1"
+      },
+      {
+        "minute": 9,
+        "scorer": "Martin Odegaard",
+        "team": "leader",
+        "running_score": "0-2"
+      },
+      {
+        "minute": 32,
+        "scorer": "Said Benrahma",
+        "team": "opponent",
+        "running_score": "1-2"
+      },
+      {
+        "minute": 53,
+        "scorer": "Jarrod Bowen",
+        "team": "opponent",
+        "running_score": "2-2"
+      }
+    ]
+  },
+  {
+    "event_id": "18512_Southampton",
+    "match_key": 18512,
+    "season": "2022-2023",
+    "leader_team": "Southampton",
+    "opponent_team": "Arsenal",
+    "leader_is_home": false,
+    "bucket": "0-15",
+    "minute_reached_plus2": 13,
+    "final_score": "3-3",
+    "strength_tier": "Underdog",
+    "goals": [
+      {
+        "minute": 0,
+        "scorer": "Carlos Alcaraz",
+        "team": "leader",
+        "running_score": "0-1"
+      },
+      {
+        "minute": 13,
+        "scorer": "Theo Walcott",
+        "team": "leader",
+        "running_score": "0-2"
+      },
+      {
+        "minute": 19,
+        "scorer": "Gabriel Martinelli",
+        "team": "opponent",
+        "running_score": "1-2"
+      },
+      {
+        "minute": 65,
+        "scorer": "Duje Caleta-Car",
+        "team": "leader",
+        "running_score": "1-3"
+      },
+      {
+        "minute": 87,
+        "scorer": "Martin Odegaard",
+        "team": "opponent",
+        "running_score": "2-3"
+      },
+      {
+        "minute": 89,
+        "scorer": "Bukayo Saka",
+        "team": "opponent",
+        "running_score": "3-3"
+      }
+    ]
+  },
+  {
+    "event_id": "18525_Manchester United",
+    "match_key": 18525,
+    "season": "2022-2023",
+    "leader_team": "Manchester United",
+    "opponent_team": "Tottenham",
+    "leader_is_home": false,
+    "bucket": "31-45+",
+    "minute_reached_plus2": 43,
+    "final_score": "2-2",
+    "strength_tier": "Underdog",
+    "goals": [
+      {
+        "minute": 6,
+        "scorer": "Jadon Sancho",
+        "team": "leader",
+        "running_score": "0-1"
+      },
+      {
+        "minute": 43,
+        "scorer": "Marcus Rashford",
+        "team": "leader",
+        "running_score": "0-2"
+      },
+      {
+        "minute": 55,
+        "scorer": "Pedro Porro",
+        "team": "opponent",
+        "running_score": "1-2"
+      },
+      {
+        "minute": 78,
+        "scorer": "Son Heung-Min",
+        "team": "opponent",
+        "running_score": "2-2"
+      }
+    ]
+  },
+  {
+    "event_id": "18581_Liverpool",
+    "match_key": 18581,
+    "season": "2022-2023",
+    "leader_team": "Liverpool",
+    "opponent_team": "Southampton",
+    "leader_is_home": false,
+    "bucket": "0-15",
+    "minute_reached_plus2": 13,
+    "final_score": "4-4",
+    "strength_tier": "Strong Favorite",
+    "goals": [
+      {
+        "minute": 9,
+        "scorer": "Diogo Jota",
+        "team": "leader",
+        "running_score": "0-1"
+      },
+      {
+        "minute": 13,
+        "scorer": "Roberto Firmino",
+        "team": "leader",
+        "running_score": "0-2"
+      },
+      {
+        "minute": 18,
+        "scorer": "James Ward-Prowse",
+        "team": "opponent",
+        "running_score": "1-2"
+      },
+      {
+        "minute": 27,
+        "scorer": "Kamaldeen Sulemana",
+        "team": "opponent",
+        "running_score": "2-2"
+      },
+      {
+        "minute": 46,
+        "scorer": "Kamaldeen Sulemana",
+        "team": "opponent",
+        "running_score": "3-2"
+      },
+      {
+        "minute": 63,
+        "scorer": "Adam Armstrong",
+        "team": "opponent",
+        "running_score": "4-2"
+      },
+      {
+        "minute": 71,
+        "scorer": "Cody Gakpo",
+        "team": "leader",
+        "running_score": "4-3"
+      },
+      {
+        "minute": 72,
+        "scorer": "Diogo Jota",
+        "team": "leader",
+        "running_score": "4-4"
+      }
+    ]
+  },
+  {
+    "event_id": "18581_Southampton",
+    "match_key": 18581,
+    "season": "2022-2023",
+    "leader_team": "Southampton",
+    "opponent_team": "Liverpool",
+    "leader_is_home": true,
+    "bucket": "61-75",
+    "minute_reached_plus2": 63,
+    "final_score": "4-4",
+    "strength_tier": "Underdog",
+    "goals": [
+      {
+        "minute": 9,
+        "scorer": "Diogo Jota",
+        "team": "opponent",
+        "running_score": "0-1"
+      },
+      {
+        "minute": 13,
+        "scorer": "Roberto Firmino",
+        "team": "opponent",
+        "running_score": "0-2"
+      },
+      {
+        "minute": 18,
+        "scorer": "James Ward-Prowse",
+        "team": "leader",
+        "running_score": "1-2"
+      },
+      {
+        "minute": 27,
+        "scorer": "Kamaldeen Sulemana",
+        "team": "leader",
+        "running_score": "2-2"
+      },
+      {
+        "minute": 46,
+        "scorer": "Kamaldeen Sulemana",
+        "team": "leader",
+        "running_score": "3-2"
+      },
+      {
+        "minute": 63,
+        "scorer": "Adam Armstrong",
+        "team": "leader",
+        "running_score": "4-2"
+      },
+      {
+        "minute": 71,
+        "scorer": "Cody Gakpo",
+        "team": "opponent",
+        "running_score": "4-3"
+      },
+      {
+        "minute": 72,
+        "scorer": "Diogo Jota",
+        "team": "opponent",
+        "running_score": "4-4"
+      }
+    ]
+  },
+  {
+    "event_id": "21978_Chelsea",
+    "match_key": 21978,
+    "season": "2023-2024",
+    "leader_team": "Chelsea",
+    "opponent_team": "Arsenal",
+    "leader_is_home": true,
+    "bucket": "31-45+",
+    "minute_reached_plus2": 47,
+    "final_score": "2-2",
+    "strength_tier": "Underdog",
+    "goals": [
+      {
+        "minute": 14,
+        "scorer": "Cole Palmer",
+        "team": "leader",
+        "running_score": "1-0"
+      },
+      {
+        "minute": 47,
+        "scorer": "Mykhailo Mudryk",
+        "team": "leader",
+        "running_score": "2-0"
+      },
+      {
+        "minute": 76,
+        "scorer": "Declan Rice",
+        "team": "opponent",
+        "running_score": "2-1"
+      },
+      {
+        "minute": 83,
+        "scorer": "Leandro Trossard",
+        "team": "opponent",
+        "running_score": "2-2"
+      }
+    ]
+  },
+  {
+    "event_id": "21982_Nottingham Forest",
+    "match_key": 21982,
+    "season": "2023-2024",
+    "leader_team": "Nottingham Forest",
+    "opponent_team": "Luton Town",
+    "leader_is_home": true,
+    "bucket": "61-75",
+    "minute_reached_plus2": 75,
+    "final_score": "2-2",
+    "strength_tier": "Moderate",
+    "goals": [
+      {
+        "minute": 47,
+        "scorer": "Chris Wood",
+        "team": "leader",
+        "running_score": "1-0"
+      },
+      {
+        "minute": 75,
+        "scorer": "Chris Wood",
+        "team": "leader",
+        "running_score": "2-0"
+      },
+      {
+        "minute": 82,
+        "scorer": "Chiedozie Ogbene",
+        "team": "opponent",
+        "running_score": "2-1"
+      },
+      {
+        "minute": 91,
+        "scorer": "Elijah Adebayo",
+        "team": "opponent",
+        "running_score": "2-2"
+      }
+    ]
+  },
+  {
+    "event_id": "22061_Manchester City",
+    "match_key": 22061,
+    "season": "2023-2024",
+    "leader_team": "Manchester City",
+    "opponent_team": "Crystal Palace",
+    "leader_is_home": true,
+    "bucket": "46-60",
+    "minute_reached_plus2": 53,
+    "final_score": "2-2",
+    "strength_tier": "Strong Favorite",
+    "goals": [
+      {
+        "minute": 23,
+        "scorer": "Jack Grealish",
+        "team": "leader",
+        "running_score": "1-0"
+      },
+      {
+        "minute": 53,
+        "scorer": "Rico Lewis",
+        "team": "leader",
+        "running_score": "2-0"
+      },
+      {
+        "minute": 75,
+        "scorer": "Jean-Philippe Mateta",
+        "team": "opponent",
+        "running_score": "2-1"
+      },
+      {
+        "minute": 94,
+        "scorer": "Michael Olise",
+        "team": "opponent",
+        "running_score": "2-2"
+      }
+    ]
+  },
+  {
+    "event_id": "22119_Fulham",
+    "match_key": 22119,
+    "season": "2023-2024",
+    "leader_team": "Fulham",
+    "opponent_team": "Burnley",
+    "leader_is_home": false,
+    "bucket": "16-30",
+    "minute_reached_plus2": 20,
+    "final_score": "2-2",
+    "strength_tier": "Underdog",
+    "goals": [
+      {
+        "minute": 16,
+        "scorer": "João Palhinha",
+        "team": "leader",
+        "running_score": "0-1"
+      },
+      {
+        "minute": 20,
+        "scorer": "Rodrigo Muniz",
+        "team": "leader",
+        "running_score": "0-2"
+      },
+      {
+        "minute": 70,
+        "scorer": "David Datro Fofana",
+        "team": "opponent",
+        "running_score": "1-2"
+      },
+      {
+        "minute": 90,
+        "scorer": "David Datro Fofana",
+        "team": "opponent",
+        "running_score": "2-2"
+      }
+    ]
+  },
+  {
+    "event_id": "22123_Luton Town",
+    "match_key": 22123,
+    "season": "2023-2024",
+    "leader_team": "Luton Town",
+    "opponent_team": "Newcastle United",
+    "leader_is_home": false,
+    "bucket": "61-75",
+    "minute_reached_plus2": 61,
+    "final_score": "4-4",
+    "strength_tier": "Underdog",
+    "goals": [
+      {
+        "minute": 6,
+        "scorer": "Sean Longstaff",
+        "team": "opponent",
+        "running_score": "1-0"
+      },
+      {
+        "minute": 20,
+        "scorer": "Gabriel Osho",
+        "team": "leader",
+        "running_score": "1-1"
+      },
+      {
+        "minute": 22,
+        "scorer": "Sean Longstaff",
+        "team": "opponent",
+        "running_score": "2-1"
+      },
+      {
+        "minute": 39,
+        "scorer": "Ross Barkley",
+        "team": "leader",
+        "running_score": "2-2"
+      },
+      {
+        "minute": 58,
+        "scorer": "Carlton Morris",
+        "team": "leader",
+        "running_score": "2-3"
+      },
+      {
+        "minute": 61,
+        "scorer": "Elijah Adebayo",
+        "team": "leader",
+        "running_score": "2-4"
+      },
+      {
+        "minute": 66,
+        "scorer": "Kieran Trippier",
+        "team": "opponent",
+        "running_score": "3-4"
+      },
+      {
+        "minute": 72,
+        "scorer": "Harvey Barnes",
+        "team": "opponent",
+        "running_score": "4-4"
+      }
+    ]
+  },
+  {
+    "event_id": "22165_Sheffield United",
+    "match_key": 22165,
+    "season": "2023-2024",
+    "leader_team": "Sheffield United",
+    "opponent_team": "AFC Bournemouth",
+    "leader_is_home": false,
+    "bucket": "61-75",
+    "minute_reached_plus2": 63,
+    "final_score": "2-2",
+    "strength_tier": "Underdog",
+    "goals": [
+      {
+        "minute": 27,
+        "scorer": "Gustavo Hamer",
+        "team": "leader",
+        "running_score": "0-1"
+      },
+      {
+        "minute": 63,
+        "scorer": "Jack Robinson",
+        "team": "leader",
+        "running_score": "0-2"
+      },
+      {
+        "minute": 73,
+        "scorer": "Dango Ouattara",
+        "team": "opponent",
+        "running_score": "1-2"
+      },
+      {
+        "minute": 90,
+        "scorer": "Enes Ünal",
+        "team": "opponent",
+        "running_score": "2-2"
+      }
+    ]
+  },
+  {
+    "event_id": "22173_Burnley",
+    "match_key": 22173,
+    "season": "2023-2024",
+    "leader_team": "Burnley",
+    "opponent_team": "West Ham United",
+    "leader_is_home": false,
+    "bucket": "31-45+",
+    "minute_reached_plus2": 45,
+    "final_score": "2-2",
+    "strength_tier": "Underdog",
+    "goals": [
+      {
+        "minute": 10,
+        "scorer": "David Datro Fofana",
+        "team": "leader",
+        "running_score": "0-1"
+      },
+      {
+        "minute": 45,
+        "scorer": "Konstantinos Mavropanos",
+        "team": "leader",
+        "running_score": "0-2"
+      },
+      {
+        "minute": 45,
+        "scorer": "Lucas Paquetá",
+        "team": "opponent",
+        "running_score": "1-2"
+      },
+      {
+        "minute": 90,
+        "scorer": "Danny Ings",
+        "team": "opponent",
+        "running_score": "2-2"
+      }
+    ]
+  },
+  {
+    "event_id": "22193_Sheffield United",
+    "match_key": 22193,
+    "season": "2023-2024",
+    "leader_team": "Sheffield United",
+    "opponent_team": "Fulham",
+    "leader_is_home": true,
+    "bucket": "61-75",
+    "minute_reached_plus2": 69,
+    "final_score": "3-3",
+    "strength_tier": "Underdog",
+    "goals": [
+      {
+        "minute": 57,
+        "scorer": "Ben Brereton Díaz",
+        "team": "leader",
+        "running_score": "1-0"
+      },
+      {
+        "minute": 61,
+        "scorer": "João Palhinha",
+        "team": "opponent",
+        "running_score": "1-1"
+      },
+      {
+        "minute": 67,
+        "scorer": "Oliver McBurnie",
+        "team": "leader",
+        "running_score": "2-1"
+      },
+      {
+        "minute": 69,
+        "scorer": "Ben Brereton Díaz",
+        "team": "leader",
+        "running_score": "3-1"
+      },
+      {
+        "minute": 85,
+        "scorer": "Bobby Reid",
+        "team": "opponent",
+        "running_score": "3-2"
+      },
+      {
+        "minute": 92,
+        "scorer": "Rodrigo Muniz",
+        "team": "opponent",
+        "running_score": "3-3"
+      }
+    ]
+  },
+  {
+    "event_id": "22205_Aston Villa",
+    "match_key": 22205,
+    "season": "2023-2024",
+    "leader_team": "Aston Villa",
+    "opponent_team": "Brentford",
+    "leader_is_home": true,
+    "bucket": "31-45+",
+    "minute_reached_plus2": 45,
+    "final_score": "3-3",
+    "strength_tier": "Moderate",
+    "goals": [
+      {
+        "minute": 38,
+        "scorer": "Ollie Watkins",
+        "team": "leader",
+        "running_score": "1-0"
+      },
+      {
+        "minute": 45,
+        "scorer": "Morgan Rogers",
+        "team": "leader",
+        "running_score": "2-0"
+      },
+      {
+        "minute": 58,
+        "scorer": "Zanka",
+        "team": "opponent",
+        "running_score": "2-1"
+      },
+      {
+        "minute": 60,
+        "scorer": "Bryan Mbeumo",
+        "team": "opponent",
+        "running_score": "2-2"
+      },
+      {
+        "minute": 67,
+        "scorer": "Yoane Wissa",
+        "team": "opponent",
+        "running_score": "2-3"
+      },
+      {
+        "minute": 79,
+        "scorer": "Ollie Watkins",
+        "team": "leader",
+        "running_score": "3-3"
+      }
+    ]
+  },
+  {
+    "event_id": "22236_Aston Villa",
+    "match_key": 22236,
+    "season": "2023-2024",
+    "leader_team": "Aston Villa",
+    "opponent_team": "Chelsea",
+    "leader_is_home": true,
+    "bucket": "31-45+",
+    "minute_reached_plus2": 41,
+    "final_score": "2-2",
+    "strength_tier": "Moderate",
+    "goals": [
+      {
+        "minute": 3,
+        "scorer": "Marc Cucurella",
+        "team": "leader",
+        "running_score": "1-0"
+      },
+      {
+        "minute": 41,
+        "scorer": "Morgan Rogers",
+        "team": "leader",
+        "running_score": "2-0"
+      },
+      {
+        "minute": 61,
+        "scorer": "Noni Madueke",
+        "team": "opponent",
+        "running_score": "2-1"
+      },
+      {
+        "minute": 80,
+        "scorer": "Conor Gallagher",
+        "team": "opponent",
+        "running_score": "2-2"
+      }
+    ]
+  },
+  {
+    "event_id": "22256_Liverpool",
+    "match_key": 22256,
+    "season": "2023-2024",
+    "leader_team": "Liverpool",
+    "opponent_team": "Aston Villa",
+    "leader_is_home": false,
+    "bucket": "31-45+",
+    "minute_reached_plus2": 47,
+    "final_score": "3-3",
+    "strength_tier": "Moderate",
+    "goals": [
+      {
+        "minute": 1,
+        "scorer": "Emiliano Martinez",
+        "team": "leader",
+        "running_score": "0-1"
+      },
+      {
+        "minute": 11,
+        "scorer": "Youri Tielemans",
+        "team": "opponent",
+        "running_score": "1-1"
+      },
+      {
+        "minute": 22,
+        "scorer": "Cody Gakpo",
+        "team": "leader",
+        "running_score": "1-2"
+      },
+      {
+        "minute": 47,
+        "scorer": "Jarell Quansah",
+        "team": "leader",
+        "running_score": "1-3"
+      },
+      {
+        "minute": 84,
+        "scorer": "Jhon Durán",
+        "team": "opponent",
+        "running_score": "2-3"
+      },
+      {
+        "minute": 87,
+        "scorer": "Jhon Durán",
+        "team": "opponent",
+        "running_score": "3-3"
+      }
+    ]
+  }
+]

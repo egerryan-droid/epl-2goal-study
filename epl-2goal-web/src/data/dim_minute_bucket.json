@@ -1,0 +1,56 @@
+[
+  {
+    "bucket_key": "0-15",
+    "bucket_label": "0–15",
+    "bucket_order": 1,
+    "half": "First Half",
+    "min_minute": 1,
+    "max_minute": 15,
+    "bucket_description": "Early first half (1-15 min)"
+  },
+  {
+    "bucket_key": "16-30",
+    "bucket_label": "16–30",
+    "bucket_order": 2,
+    "half": "First Half",
+    "min_minute": 16,
+    "max_minute": 30,
+    "bucket_description": "Mid first half (16-30 min)"
+  },
+  {
+    "bucket_key": "31-45+",
+    "bucket_label": "31–45+",
+    "bucket_order": 3,
+    "half": "First Half",
+    "min_minute": 31,
+    "max_minute": 49,
+    "bucket_description": "Late first half (31-49 min)"
+  },
+  {
+    "bucket_key": "46-60",
+    "bucket_label": "46–60",
+    "bucket_order": 4,
+    "half": "Second Half",
+    "min_minute": 46,
+    "max_minute": 60,
+    "bucket_description": "Early second half (46-60 min)"
+  },
+  {
+    "bucket_key": "61-75",
+    "bucket_label": "61–75",
+    "bucket_order": 5,
+    "half": "Second Half",
+    "min_minute": 61,
+    "max_minute": 75,
+    "bucket_description": "Mid second half (61-75 min)"
+  },
+  {
+    "bucket_key": "76-90+",
+    "bucket_label": "76–90+",
+    "bucket_order": 6,
+    "half": "Second Half",
+    "min_minute": 76,
+    "max_minute": 120,
+    "bucket_description": "Late second half (76-120 min)"
+  }
+]

@@ -1,0 +1,44 @@
+[
+  {
+    "metric": "Total +2 Events",
+    "value": 1907,
+    "ci_low": null,
+    "ci_high": null,
+    "n": 1907
+  },
+  {
+    "metric": "Win Rate",
+    "value": 0.9334,
+    "ci_low": 0.9213,
+    "ci_high": 0.9437,
+    "n": 1907
+  },
+  {
+    "metric": "Draw Rate",
+    "value": 0.0456,
+    "ci_low": 0.0371,
+    "ci_high": 0.0559,
+    "n": 1907
+  },
+  {
+    "metric": "Loss Rate",
+    "value": 0.021,
+    "ci_low": 0.0154,
+    "ci_high": 0.0284,
+    "n": 1907
+  },
+  {
+    "metric": "Total Points Dropped",
+    "value": 294,
+    "ci_low": null,
+    "ci_high": null,
+    "n": 1907
+  },
+  {
+    "metric": "Mean Points Dropped",
+    "value": 0.154,
+    "ci_low": null,
+    "ci_high": null,
+    "n": 1907
+  }
+]

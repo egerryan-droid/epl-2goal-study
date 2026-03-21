@@ -1,0 +1,82 @@
+[
+  {
+    "season_key": "2014-2015",
+    "season_label": "2014/2015",
+    "season_short": "14/15",
+    "start_year": 2014,
+    "end_year": 2015,
+    "sort_order": 1
+  },
+  {
+    "season_key": "2015-2016",
+    "season_label": "2015/2016",
+    "season_short": "15/16",
+    "start_year": 2015,
+    "end_year": 2016,
+    "sort_order": 2
+  },
+  {
+    "season_key": "2016-2017",
+    "season_label": "2016/2017",
+    "season_short": "16/17",
+    "start_year": 2016,
+    "end_year": 2017,
+    "sort_order": 3
+  },
+  {
+    "season_key": "2017-2018",
+    "season_label": "2017/2018",
+    "season_short": "17/18",
+    "start_year": 2017,
+    "end_year": 2018,
+    "sort_order": 4
+  },
+  {
+    "season_key": "2018-2019",
+    "season_label": "2018/2019",
+    "season_short": "18/19",
+    "start_year": 2018,
+    "end_year": 2019,
+    "sort_order": 5
+  },
+  {
+    "season_key": "2019-2020",
+    "season_label": "2019/2020",
+    "season_short": "19/20",
+    "start_year": 2019,
+    "end_year": 2020,
+    "sort_order": 6
+  },
+  {
+    "season_key": "2020-2021",
+    "season_label": "2020/2021",
+    "season_short": "20/21",
+    "start_year": 2020,
+    "end_year": 2021,
+    "sort_order": 7
+  },
+  {
+    "season_key": "2021-2022",
+    "season_label": "2021/2022",
+    "season_short": "21/22",
+    "start_year": 2021,
+    "end_year": 2022,
+    "sort_order": 8
+  },
+  {
+    "season_key": "2022-2023",
+    "season_label": "2022/2023",
+    "season_short": "22/23",
+    "start_year": 2022,
+    "end_year": 2023,
+    "sort_order": 9
+  },
+  {
+    "season_key": "2023-2024",
+    "season_label": "2023/2024",
+    "season_short": "23/24",
+    "start_year": 2023,
+    "end_year": 2024,
+    "sort_order": 10
+  }
+]

@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-win: #2ecc71;
+  --color-draw: #f39c12;
+  --color-loss: #e74c3c;
+  --color-accent: #3498db;
+  --color-surface-dark: #1a1a2e;
+  --color-surface-mid: #16213e;
+  --color-surface-light: #0f3460;
+  --color-text-primary: #ecf0f1;
+  --color-text-secondary: #bdc3c7;
+  --color-text-muted: #7f8c8d;
+}
+
+@layer base {
+  html {
+    @apply antialiased;
+  }
+
+  body {
+    background-color: var(--color-surface-dark);
+    color: var(--color-text-primary);
+  }
+
+  ::selection {
+    background-color: var(--color-accent);
+    color: #fff;
+  }
+}
