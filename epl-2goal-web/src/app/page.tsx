@@ -11,6 +11,7 @@ const S04b_DrawDeepDive = dynamic(() => import('@/components/sections/S04b_DrawD
 const S05_WhenDoesItMatter = dynamic(() => import('@/components/sections/S05_WhenDoesItMatter'), { ssr: false });
 const S05b_CollapseTimeline = dynamic(() => import('@/components/sections/S05b_CollapseTimeline'), { ssr: false });
 const S06_TheLockPoint = dynamic(() => import('@/components/sections/S06_TheLockPoint'), { ssr: false });
+const S06b_SankeySlide = dynamic(() => import('@/components/sections/S06b_SankeySlide'), { ssr: false });
 const S07_TeamPerformance = dynamic(() => import('@/components/sections/S07_TeamPerformance'), { ssr: false });
 const S07b_PointsDropped = dynamic(() => import('@/components/sections/S07b_PointsDropped'), { ssr: false });
 const S08_SeasonTrends = dynamic(() => import('@/components/sections/S08_SeasonTrends'), { ssr: false });
@@ -39,6 +40,7 @@ export default function Home() {
       <S05_WhenDoesItMatter />
       <S05b_CollapseTimeline />
       <S06_TheLockPoint />
+      <S06b_SankeySlide />
       <S07_TeamPerformance />
       <S07b_PointsDropped />
       <S08_SeasonTrends />

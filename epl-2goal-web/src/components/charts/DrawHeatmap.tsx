@@ -7,6 +7,7 @@ import type { DrawEvent } from '@/lib/data';
 
 interface DrawHeatmapProps {
   data: DrawEvent[];
+  maxTeams?: number;
 }
 
 const BUCKETS = ['0-15', '16-30', '31-45+', '46-60', '61-75', '76-90+'] as const;
@@ -30,7 +31,7 @@ function cellColor(count: number): string {
   return `rgb(${r},${g},${b})`;
 }
 
-export default function DrawHeatmap({ data }: DrawHeatmapProps) {
+export default function DrawHeatmap({ data, maxTeams = 20 }: DrawHeatmapProps) {
   const [hovered, setHovered] = useState<string | null>(null);
 
   const { rows, colTotals } = useMemo(() => {
@@ -51,7 +52,7 @@ export default function DrawHeatmap({ data }: DrawHeatmapProps) {
         return { team, counts, total };
       })
       .sort((a, b) => b.total - a.total)
-      .slice(0, 20);
+      .slice(0, maxTeams);
 
     // Column totals
     const cTotals = BUCKETS.map((_, ci) =>

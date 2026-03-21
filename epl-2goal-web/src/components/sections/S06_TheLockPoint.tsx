@@ -47,17 +47,7 @@ export default function S06_TheLockPoint() {
         </p>
       </motion.div>
 
-      <motion.div
-        initial={{ opacity: 0, y: 30 }}
-        animate={inView ? { opacity: 1, y: 0 } : {}}
-        transition={{ delay: 1.2, duration: 0.8 }}
-        className="w-full max-w-5xl"
-      >
-        <h3 className="text-text-muted text-sm uppercase tracking-wider mb-4 text-center">
-          Flow from Time Bucket to Outcome
-        </h3>
-        <SankeyFlow data={data} />
-      </motion.div>
+      {/* Sankey moved to S06b_SankeySlide */}
     </section>
   );
 }
