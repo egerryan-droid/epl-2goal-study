@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import type { Plus2Event, SummaryTeam, Team } from '@/lib/data';
 import { COLORS } from '@/lib/theme';
 import TeamSelector from '@/components/explore/TeamSelector';
+import TeamCrest from '@/components/ui/TeamCrest';
 
 /* ------------------------------------------------------------------ */
 /*  Types                                                              */
@@ -238,7 +239,11 @@ export default function HeadToHeadTab({
             placeholder="Select Team A\u2026"
           />
         </div>
-        <span className="shrink-0 font-display text-3xl text-accent">vs</span>
+        <div className="flex shrink-0 items-center gap-2">
+          {teamA && <TeamCrest team={teamA} size={48} />}
+          <span className="font-display text-3xl text-accent">vs</span>
+          {teamB && <TeamCrest team={teamB} size={48} />}
+        </div>
         <div className="w-full sm:flex-1">
           <TeamSelector
             teams={teams}
@@ -459,7 +464,8 @@ export default function HeadToHeadTab({
                 {/* Team A bar */}
                 <div>
                   <div className="mb-1.5 flex items-center justify-between text-sm">
-                    <span className="font-medium text-text-primary">
+                    <span className="flex items-center gap-2 font-medium text-text-primary">
+                      <TeamCrest team={teamA} size={20} />
                       {teamShort(teams, teamA)}
                     </span>
                     <span className="text-text-muted">
@@ -491,7 +497,8 @@ export default function HeadToHeadTab({
                 {/* Team B bar */}
                 <div>
                   <div className="mb-1.5 flex items-center justify-between text-sm">
-                    <span className="font-medium text-text-primary">
+                    <span className="flex items-center gap-2 font-medium text-text-primary">
+                      <TeamCrest team={teamB} size={20} />
                       {teamShort(teams, teamB)}
                     </span>
                     <span className="text-text-muted">

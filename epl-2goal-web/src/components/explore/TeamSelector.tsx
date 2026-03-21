@@ -3,6 +3,7 @@
 import { useState, useRef, useEffect, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import type { Team, SummaryTeam } from '@/lib/data';
+import TeamCrest from '@/components/ui/TeamCrest';
 
 interface TeamSelectorProps {
   teams: Team[];
@@ -79,6 +80,7 @@ export default function TeamSelector({
       >
         {selectedTeam ? (
           <span className="flex items-center gap-2">
+            <TeamCrest team={selectedTeam.team_key} size={28} />
             <span className="text-text-primary font-medium">
               {selectedTeam.team_display_name}
             </span>
@@ -154,7 +156,8 @@ export default function TeamSelector({
                           : 'border-l-transparent text-text-secondary hover:border-l-accent/50 hover:bg-white/5'
                       }`}
                     >
-                      <span className={isActive ? 'font-medium' : ''}>
+                      <span className={`flex items-center gap-2 ${isActive ? 'font-medium' : ''}`}>
+                        <TeamCrest team={team.team_key} size={24} />
                         {team.team_display_name}
                       </span>
                       {summary && (

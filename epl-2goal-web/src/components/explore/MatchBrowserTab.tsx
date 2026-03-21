@@ -3,6 +3,7 @@
 import { useState, useMemo, Fragment } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import type { Plus2Event, GoalEvent, GoalsByMatch, Season, Team } from '@/lib/data';
+import TeamCrest from '@/components/ui/TeamCrest';
 
 const PAGE_SIZE = 25;
 
@@ -197,10 +198,16 @@ export default function MatchBrowserTab({
                       {ev.season_key}
                     </td>
                     <td className="whitespace-nowrap px-3 py-2 font-medium text-text-primary">
-                      {teamDisplayName(ev.leader_team_key)}
+                      <span className="flex items-center gap-1.5">
+                        <TeamCrest team={ev.leader_team_key} size={20} />
+                        {teamDisplayName(ev.leader_team_key)}
+                      </span>
                     </td>
                     <td className="whitespace-nowrap px-3 py-2 text-text-secondary">
-                      {teamDisplayName(ev.opponent_team_key)}
+                      <span className="flex items-center gap-1.5">
+                        <TeamCrest team={ev.opponent_team_key} size={20} />
+                        {teamDisplayName(ev.opponent_team_key)}
+                      </span>
                     </td>
                     <td className="whitespace-nowrap px-3 py-2 text-text-secondary">
                       {ev.bucket_key}

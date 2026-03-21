@@ -8,6 +8,8 @@ import { QUOTES } from '@/data/quotes';
 import summaryTeam from '@/data/summary_by_team.json';
 import type { SummaryTeam } from '@/lib/data';
 
+import TeamCrest from '@/components/ui/TeamCrest';
+
 const BubbleScatter = dynamic(() => import('@/components/charts/BubbleScatter'), { ssr: false });
 const TeamBarChart = dynamic(() => import('@/components/charts/TeamBarChart'), { ssr: false });
 
@@ -29,16 +31,19 @@ export default function S07_TeamPerformance() {
         {/* Callout cards */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-5xl w-full mb-8">
           {[
-            { team: 'Man City', stat: '97.1%', detail: '208 events, 15 pts dropped', color: 'text-win' },
-            { team: 'Arsenal', stat: '0 losses', detail: '159 events, 96.9% win rate', color: 'text-accent' },
-            { team: 'Southampton', stat: '87.0%', detail: '69 events, 21 pts dropped', color: 'text-loss' },
-            { team: 'Liverpool', stat: '9 draws', detail: '168 events, most draws of any team', color: 'text-draw' },
+            { team: 'Man City', crestKey: 'Manchester City', stat: '97.1%', detail: '208 events, 15 pts dropped', color: 'text-win' },
+            { team: 'Arsenal', crestKey: 'Arsenal', stat: '0 losses', detail: '159 events, 96.9% win rate', color: 'text-accent' },
+            { team: 'Southampton', crestKey: 'Southampton', stat: '87.0%', detail: '69 events, 21 pts dropped', color: 'text-loss' },
+            { team: 'Liverpool', crestKey: 'Liverpool', stat: '9 draws', detail: '168 events, most draws of any team', color: 'text-draw' },
           ].map((card) => (
             <div
               key={card.team}
               className="bg-surface-mid rounded-xl p-4 text-center"
             >
-              <div className="text-text-muted text-sm">{card.team}</div>
+              <div className="flex items-center justify-center gap-2 text-text-muted text-sm">
+                <TeamCrest team={card.crestKey} size={36} />
+                {card.team}
+              </div>
               <div className={`text-2xl font-bold ${card.color}`}>{card.stat}</div>
               <div className="text-text-muted text-xs">{card.detail}</div>
             </div>

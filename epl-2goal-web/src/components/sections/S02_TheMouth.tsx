@@ -6,6 +6,7 @@ import dynamic from 'next/dynamic';
 import goalsByMatch from '@/data/goals_by_match.json';
 import dimTeam from '@/data/dim_team.json';
 import type { GoalEvent, GoalsByMatch } from '@/lib/data';
+import TeamCrest from '@/components/ui/TeamCrest';
 
 const GoalTimeline = dynamic(() => import('@/components/charts/GoalTimeline'), { ssr: false });
 
@@ -48,11 +49,24 @@ export default function S02_TheMouth() {
         className="w-full max-w-5xl"
       >
         {goals.length > 0 && (
-          <GoalTimeline
-            goals={goals}
-            homeTeam="Bournemouth"
-            awayTeam="Liverpool"
-          />
+          <>
+            <div className="mb-4 flex items-center justify-center gap-4">
+              <span className="flex items-center gap-2 text-text-primary font-display text-lg font-semibold">
+                <TeamCrest team="AFC Bournemouth" size={32} />
+                Bournemouth
+              </span>
+              <span className="text-text-muted font-display text-sm">vs</span>
+              <span className="flex items-center gap-2 text-text-primary font-display text-lg font-semibold">
+                Liverpool
+                <TeamCrest team="Liverpool" size={32} />
+              </span>
+            </div>
+            <GoalTimeline
+              goals={goals}
+              homeTeam="Bournemouth"
+              awayTeam="Liverpool"
+            />
+          </>
         )}
       </motion.div>
 

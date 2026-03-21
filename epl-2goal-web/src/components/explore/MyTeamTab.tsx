@@ -12,6 +12,7 @@ import type {
   SummaryBucket,
 } from '@/lib/data';
 import KpiCard from '@/components/ui/KpiCard';
+import TeamCrest from '@/components/ui/TeamCrest';
 
 const RadialBucketChart = dynamic(
   () => import('@/components/charts/RadialBucketChart'),
@@ -136,9 +137,12 @@ export default function MyTeamTab({
     <div className="space-y-10">
       {/* Header */}
       <motion.div {...fade}>
-        <h2 className="text-text-primary font-display text-4xl font-bold">
-          {team.team_display_name}
-        </h2>
+        <div className="flex items-center gap-4">
+          <TeamCrest team={team.team_key} size={72} />
+          <h2 className="text-text-primary font-display text-4xl font-bold">
+            {team.team_display_name}
+          </h2>
+        </div>
         <div className="mt-2 h-[2px] w-12 rounded-full bg-accent" />
         <p className="text-text-secondary mt-2 text-sm">
           2-Goal Lead Record
