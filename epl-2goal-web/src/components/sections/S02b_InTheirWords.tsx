@@ -6,7 +6,7 @@ import QuoteCard from '@/components/ui/QuoteCard';
 import { QUOTES } from '@/data/quotes';
 
 const featured = QUOTES.filter(q =>
-  ['collapse', 'big-picture', 'lock-point', 'key-findings'].includes(q.section ?? '')
+  ['collapse-intro', 'big-picture', 'lock-point', 'key-findings'].includes(q.section ?? '')
 ).slice(0, 4);
 
 const stagger = {

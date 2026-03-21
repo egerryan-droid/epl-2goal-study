@@ -67,6 +67,7 @@ export default function SeasonAreaChart({ data }: SeasonAreaChartProps) {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
     >
+      <div role="img" aria-label="Area chart of trends across seasons">
       <ResponsiveContainer width="100%" height={350}>
         <AreaChart data={chartData} margin={{ top: 10, right: 30, bottom: 10, left: 10 }}>
           <CartesianGrid strokeDasharray="3 3" stroke={tc.textMuted} strokeOpacity={0.12} />
@@ -120,6 +121,7 @@ export default function SeasonAreaChart({ data }: SeasonAreaChartProps) {
           />
         </AreaChart>
       </ResponsiveContainer>
+      </div>
     </motion.div>
   );
 }

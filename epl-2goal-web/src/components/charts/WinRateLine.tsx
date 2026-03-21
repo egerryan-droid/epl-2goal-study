@@ -77,6 +77,7 @@ export default function WinRateLine({ data }: WinRateLineProps) {
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
     >
+      <div role="img" aria-label="Line chart of win rate over time">
       <ResponsiveContainer width="100%" height={350}>
         <ComposedChart data={chartData} margin={{ top: 20, right: 30, bottom: 10, left: 20 }}>
           <CartesianGrid strokeDasharray="3 3" stroke={tc.textMuted} strokeOpacity={0.12} />
@@ -141,6 +142,7 @@ export default function WinRateLine({ data }: WinRateLineProps) {
           />
         </ComposedChart>
       </ResponsiveContainer>
+      </div>
     </motion.div>
   );
 }

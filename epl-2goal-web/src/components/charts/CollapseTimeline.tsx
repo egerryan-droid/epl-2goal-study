@@ -204,6 +204,8 @@ function TimelineSvg({ draw, tc }: { draw: DrawEvent; tc: ReturnType<typeof useT
       viewBox={`0 0 ${SVG_W} ${SVG_H}`}
       className="w-full"
       preserveAspectRatio="xMidYMid meet"
+      role="img"
+      aria-label="Timeline of collapse events by minute"
     >
       {/* Collapse zone rectangle */}
       {collapseZone && (

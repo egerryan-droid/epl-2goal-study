@@ -137,6 +137,7 @@ export default function BubbleScatter({ data, minEvents = 0 }: BubbleScatterProp
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
     >
+      <div role="img" aria-label="Bubble scatter plot of team performance">
       <ResponsiveContainer width="100%" height={400}>
         <ScatterChart margin={{ top: 20, right: 30, bottom: 20, left: 20 }}>
           <CartesianGrid strokeDasharray="3 3" stroke={tc.textMuted} strokeOpacity={0.12} />
@@ -186,6 +187,7 @@ export default function BubbleScatter({ data, minEvents = 0 }: BubbleScatterProp
           />
         </ScatterChart>
       </ResponsiveContainer>
+      </div>
     </motion.div>
   );
 }

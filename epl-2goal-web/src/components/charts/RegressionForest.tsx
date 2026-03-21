@@ -54,7 +54,7 @@ export default function RegressionForest({ data }: RegressionForestProps) {
 
   return (
     <div className="w-full overflow-x-auto">
-      <svg viewBox={`0 0 ${width} ${height}`} className="w-full min-w-[550px]">
+      <svg viewBox={`0 0 ${width} ${height}`} className="w-full min-w-[550px]" role="img" aria-label="Forest plot of regression coefficients">
         {/* Background */}
         <rect x={plotLeft} y={MARGIN.top - 10} width={plotWidth} height={sorted.length * ROW_HEIGHT + 20} fill={tc.textMuted} fillOpacity={0.05} rx={6} />
 

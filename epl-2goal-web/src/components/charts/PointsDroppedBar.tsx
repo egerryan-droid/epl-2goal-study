@@ -87,6 +87,7 @@ export default function PointsDroppedBar({
   const chartHeight = Math.max(300, chartData.length * barHeight + 60);
 
   return (
+    <div role="img" aria-label="Bar chart of points dropped from winning positions">
     <ResponsiveContainer width="100%" height={chartHeight}>
       <BarChart
         data={chartData}
@@ -149,5 +150,6 @@ export default function PointsDroppedBar({
         />
       </BarChart>
     </ResponsiveContainer>
+    </div>
   );
 }

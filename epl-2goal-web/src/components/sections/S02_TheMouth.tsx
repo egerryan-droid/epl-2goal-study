@@ -4,7 +4,6 @@ import { motion } from 'framer-motion';
 import { useInView } from '@/hooks/useInView';
 import dynamic from 'next/dynamic';
 import goalsByMatch from '@/data/goals_by_match.json';
-import dimTeam from '@/data/dim_team.json';
 import type { GoalEvent, GoalsByMatch } from '@/lib/data';
 import TeamCrest from '@/components/ui/TeamCrest';
 

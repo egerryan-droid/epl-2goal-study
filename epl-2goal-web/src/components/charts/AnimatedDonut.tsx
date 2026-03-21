@@ -39,7 +39,7 @@ export default function AnimatedDonut({ wins, draws, losses }: AnimatedDonutProp
 
   return (
     <div className="flex flex-col items-center gap-4">
-      <svg viewBox={`0 0 ${SIZE} ${SIZE}`} className="w-full max-w-[300px]">
+      <svg viewBox={`0 0 ${SIZE} ${SIZE}`} className="w-full max-w-[300px]" role="img" aria-label="Donut chart showing match outcome distribution">
         <g transform={`translate(${CENTER},${CENTER})`}>
           {segments.map((seg, i) => {
             const path = arcGenerator(seg) || '';

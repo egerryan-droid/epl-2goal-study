@@ -37,7 +37,7 @@ export default function S05b_CollapseTimeline() {
         </div>
 
         {(() => {
-          const q = QUOTES.find(q => q.section === 'collapse');
+          const q = QUOTES.find(q => q.section === 'collapse-timeline');
           return q ? (
             <div className="max-w-2xl mx-auto mt-8">
               <QuoteCard quote={q} />

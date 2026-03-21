@@ -88,7 +88,7 @@ export default function SankeyFlow({ data }: SankeyFlowProps) {
 
   return (
     <div className="w-full overflow-x-auto">
-      <svg viewBox={`0 0 ${WIDTH} ${HEIGHT}`} className="w-full min-w-[500px]">
+      <svg viewBox={`0 0 ${WIDTH} ${HEIGHT}`} className="w-full min-w-[500px]" role="img" aria-label="Sankey diagram of match outcome flows">
         {/* Links */}
         {links.map((link, i) => {
           const d = linkPath(link) || '';

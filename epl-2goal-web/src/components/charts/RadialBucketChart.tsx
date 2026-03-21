@@ -36,7 +36,7 @@ export default function RadialBucketChart({ data }: RadialBucketChartProps) {
 
   return (
     <div className="flex justify-center">
-      <svg viewBox={`0 0 ${SIZE} ${SIZE}`} className="w-full max-w-[400px]">
+      <svg viewBox={`0 0 ${SIZE} ${SIZE}`} className="w-full max-w-[400px]" role="img" aria-label="Radial chart of time bucket distribution">
         <g transform={`translate(${CENTER},${CENTER})`}>
           {/* Concentric threshold circles */}
           {THRESHOLDS.map((t) => {

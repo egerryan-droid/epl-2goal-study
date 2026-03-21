@@ -13,7 +13,7 @@ export const QUOTES: Quote[] = [
     author: "Liam Rosenior",
     role: "Manager",
     context: "On throwing away a 2-goal lead",
-    section: "collapse",
+    section: "collapse-intro",
   },
   {
     text: "We took a bit of the gas off and that was our problem.",
@@ -65,7 +65,14 @@ export const QUOTES: Quote[] = [
     author: "Cole Palmer",
     role: "Chelsea Forward",
     context: "After winning from 2-0 down",
-    section: "collapse",
+    section: "collapse-intro",
+  },
+  {
+    text: "At 2-0, you think the game is over. But in the Premier League, it never is.",
+    author: "Gary Neville",
+    role: "Sky Sports Pundit",
+    context: "On the danger of two-goal leads",
+    section: "collapse-timeline",
   },
   {
     text: "Mistakes are part of football but as a team you have to deal with it and bounce back.",

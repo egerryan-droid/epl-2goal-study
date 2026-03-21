@@ -62,7 +62,7 @@ export default function GoalTimeline({ goals, homeTeam, awayTeam }: GoalTimeline
 
   return (
     <div className="w-full overflow-x-auto">
-      <svg viewBox={`0 0 ${WIDTH} ${HEIGHT}`} className="w-full min-w-[600px]">
+      <svg viewBox={`0 0 ${WIDTH} ${HEIGHT}`} className="w-full min-w-[600px]" role="img" aria-label="Timeline of goals scored by minute">
         {/* Team labels */}
         <text
           x={TIMELINE_LEFT}

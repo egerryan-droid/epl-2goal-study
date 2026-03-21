@@ -110,6 +110,7 @@ export default function TeamBarChart({
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
     >
+      <div role="img" aria-label="Bar chart comparing team statistics">
       <ResponsiveContainer width="100%" height={chartHeight}>
         <BarChart
           data={chartData}
@@ -148,6 +149,7 @@ export default function TeamBarChart({
           </Bar>
         </BarChart>
       </ResponsiveContainer>
+      </div>
     </motion.div>
   );
 }
