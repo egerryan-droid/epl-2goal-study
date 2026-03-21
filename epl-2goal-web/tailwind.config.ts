@@ -2,7 +2,7 @@ import type { Config } from 'tailwindcss';
 
 const config: Config = {
   content: [
-    'C:/ryane/Projects/epl-2goal-study/epl-2goal-web/src/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
     extend: {
