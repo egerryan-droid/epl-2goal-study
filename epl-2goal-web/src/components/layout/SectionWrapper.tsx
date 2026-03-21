@@ -23,7 +23,7 @@ export default function SectionWrapper({
       id={id}
       ref={ref}
       className={`relative flex h-screen snap-start snap-always items-center overflow-hidden ${
-        dark ? 'bg-[#1a1a2e]' : 'bg-[#16213e]'
+        dark ? 'bg-surface-dark' : 'bg-surface-mid'
       } ${className}`}
     >
       {/* Section divider — gradient line */}

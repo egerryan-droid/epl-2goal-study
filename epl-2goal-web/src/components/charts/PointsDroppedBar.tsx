@@ -14,6 +14,7 @@ import {
   type TooltipProps,
 } from 'recharts';
 import { COLORS } from '@/lib/theme';
+import { useThemeColors } from '@/hooks/useThemeColors';
 import type { SummaryTeam } from '@/lib/data';
 
 interface PointsDroppedBarProps {
@@ -39,18 +40,18 @@ function CustomTooltipContent({ active, payload }: TooltipProps<number, string>)
   if (!active || !payload?.length) return null;
   const d = payload[0].payload as ChartRow;
   return (
-    <div className="bg-gray-900 border border-gray-700 rounded-lg px-3 py-2 text-xs shadow-xl">
-      <p className="text-white font-semibold mb-1">{d.team_key}</p>
-      <p className="text-gray-400">
-        Draws: <span className="text-white">{d.draws}</span>{' '}
+    <div className="bg-surface-dark border border-surface-light rounded-lg px-3 py-2 text-xs shadow-xl">
+      <p className="text-text-primary font-semibold mb-1">{d.team_key}</p>
+      <p className="text-text-muted">
+        Draws: <span className="text-text-primary">{d.draws}</span>{' '}
         <span style={{ color: COLORS.draw }}>({d.points_from_draws} pts)</span>
       </p>
-      <p className="text-gray-400">
-        Losses: <span className="text-white">{d.losses}</span>{' '}
+      <p className="text-text-muted">
+        Losses: <span className="text-text-primary">{d.losses}</span>{' '}
         <span style={{ color: COLORS.loss }}>({d.points_from_losses} pts)</span>
       </p>
-      <p className="text-gray-400">
-        Total dropped: <span className="text-white">{d.total_points_dropped}</span>
+      <p className="text-text-muted">
+        Total dropped: <span className="text-text-primary">{d.total_points_dropped}</span>
       </p>
     </div>
   );
@@ -60,6 +61,8 @@ export default function PointsDroppedBar({
   data,
   limit = 15,
 }: PointsDroppedBarProps) {
+  const tc = useThemeColors();
+
   const chartData = useMemo(() => {
     const filtered = data.filter((t) => t.n_as_leader >= 10);
     const sorted = [...filtered].sort((a, b) => b.points_dropped - a.points_dropped);
@@ -92,36 +95,37 @@ export default function PointsDroppedBar({
       >
         <CartesianGrid
           strokeDasharray="3 3"
-          stroke="rgba(255,255,255,0.06)"
+          stroke={tc.textMuted}
+          strokeOpacity={0.12}
           horizontal={false}
         />
         <XAxis
           type="number"
-          tick={{ fill: COLORS.text.secondary, fontSize: 11 }}
-          axisLine={{ stroke: 'rgba(255,255,255,0.15)' }}
+          tick={{ fill: tc.textSecondary, fontSize: 11 }}
+          axisLine={{ stroke: tc.textMuted }}
         />
         <YAxis
           type="category"
           dataKey="display_name"
           width={90}
-          tick={{ fill: COLORS.text.primary, fontSize: 11 }}
-          axisLine={{ stroke: 'rgba(255,255,255,0.15)' }}
+          tick={{ fill: tc.textPrimary, fontSize: 11 }}
+          axisLine={{ stroke: tc.textMuted }}
         />
         <Tooltip
           content={<CustomTooltipContent />}
-          cursor={{ fill: 'rgba(255,255,255,0.04)' }}
+          cursor={{ fill: tc.textMuted, fillOpacity: 0.08 }}
         />
         <Legend
-          wrapperStyle={{ fontSize: 11, color: COLORS.text.secondary }}
+          wrapperStyle={{ fontSize: 11, color: tc.textSecondary }}
         />
         <ReferenceLine
           x={avgDropped}
-          stroke={COLORS.text.muted}
+          stroke={tc.textMuted}
           strokeDasharray="4 4"
           label={{
             value: `Avg ${avgDropped.toFixed(1)}`,
             position: 'top',
-            fill: COLORS.text.muted,
+            fill: tc.textMuted,
             fontSize: 10,
           }}
         />

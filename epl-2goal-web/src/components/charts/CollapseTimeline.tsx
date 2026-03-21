@@ -3,6 +3,7 @@
 import { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { COLORS } from '@/lib/theme';
+import { useThemeColors } from '@/hooks/useThemeColors';
 import type { DrawEvent, GoalDetail } from '@/lib/data';
 
 interface CollapseTimelineProps {
@@ -43,10 +44,12 @@ function MatchHeader({
   draw,
   index,
   total,
+  tc,
 }: {
   draw: DrawEvent;
   index: number;
   total: number;
+  tc: ReturnType<typeof useThemeColors>;
 }) {
   const home = draw.leader_is_home ? draw.leader_team : draw.opponent_team;
   const away = draw.leader_is_home ? draw.opponent_team : draw.leader_team;
@@ -54,23 +57,23 @@ function MatchHeader({
     <div className="text-center mb-2">
       <p
         className="text-lg font-bold"
-        style={{ color: COLORS.text.primary }}
+        style={{ color: tc.textPrimary }}
       >
         {home}{' '}
         <span style={{ color: COLORS.draw }}>{draw.final_score}</span>{' '}
         {away}
       </p>
-      <p className="text-sm" style={{ color: COLORS.text.secondary }}>
+      <p className="text-sm" style={{ color: tc.textSecondary }}>
         {draw.season} &middot; +2 at {draw.minute_reached_plus2}&prime;
       </p>
-      <p className="text-xs mt-0.5" style={{ color: COLORS.text.muted }}>
+      <p className="text-xs mt-0.5" style={{ color: tc.textMuted }}>
         {index + 1} of {total} collapses
       </p>
     </div>
   );
 }
 
-function Legend() {
+function Legend({ tc }: { tc: ReturnType<typeof useThemeColors> }) {
   return (
     <div className="flex justify-center gap-6 mt-2 text-xs">
       <span className="flex items-center gap-1.5">
@@ -78,21 +81,21 @@ function Legend() {
           className="inline-block w-3 h-3 rounded-full"
           style={{ backgroundColor: COLORS.win }}
         />
-        <span style={{ color: COLORS.text.secondary }}>Leader</span>
+        <span style={{ color: tc.textSecondary }}>Leader</span>
       </span>
       <span className="flex items-center gap-1.5">
         <span
           className="inline-block w-3 h-3 rounded-full"
           style={{ backgroundColor: COLORS.loss }}
         />
-        <span style={{ color: COLORS.text.secondary }}>Opponent</span>
+        <span style={{ color: tc.textSecondary }}>Opponent</span>
       </span>
       <span className="flex items-center gap-1.5">
         <span
           className="inline-block w-3 h-3 rounded-sm"
           style={{ backgroundColor: COLORS.loss, opacity: 0.2 }}
         />
-        <span style={{ color: COLORS.text.secondary }}>Collapse zone</span>
+        <span style={{ color: tc.textSecondary }}>Collapse zone</span>
       </span>
     </div>
   );
@@ -105,9 +108,11 @@ function Legend() {
 function GoalCircle({
   goal,
   idx,
+  tc,
 }: {
   goal: GoalDetail;
   idx: number;
+  tc: ReturnType<typeof useThemeColors>;
 }) {
   const isLeader = goal.team === 'leader';
   const cx = xScale(goal.minute);
@@ -154,7 +159,7 @@ function GoalCircle({
         x={cx}
         y={isLeader ? cy - GOAL_RADIUS - 6 : cy + GOAL_RADIUS + 12}
         textAnchor="middle"
-        fill={COLORS.text.secondary}
+        fill={tc.textSecondary}
         fontSize={9}
       >
         {surname(goal.scorer)}
@@ -165,7 +170,7 @@ function GoalCircle({
         x={cx}
         y={isLeader ? cy - GOAL_RADIUS - 17 : cy + GOAL_RADIUS + 23}
         textAnchor="middle"
-        fill={COLORS.text.muted}
+        fill={tc.textMuted}
         fontSize={8}
       >
         {goal.running_score}
@@ -178,7 +183,7 @@ function GoalCircle({
 /*  Main timeline SVG for a single draw                               */
 /* ------------------------------------------------------------------ */
 
-function TimelineSvg({ draw }: { draw: DrawEvent }) {
+function TimelineSvg({ draw, tc }: { draw: DrawEvent; tc: ReturnType<typeof useThemeColors> }) {
   /* Collapse zone: from the first opponent goal after +2 moment to
      the final equaliser (last opponent goal). We derive it from goals. */
   const collapseZone = useMemo(() => {
@@ -223,7 +228,7 @@ function TimelineSvg({ draw }: { draw: DrawEvent }) {
         y1={TIMELINE_Y}
         x2={SVG_W - MARGIN.right}
         y2={TIMELINE_Y}
-        stroke={COLORS.text.muted}
+        stroke={tc.textMuted}
         strokeWidth={1.5}
         opacity={0.4}
       />
@@ -238,14 +243,14 @@ function TimelineSvg({ draw }: { draw: DrawEvent }) {
               y1={TIMELINE_Y - 4}
               x2={tx}
               y2={TIMELINE_Y + 4}
-              stroke={COLORS.text.muted}
+              stroke={tc.textMuted}
               strokeWidth={1}
             />
             <text
               x={tx}
               y={TIMELINE_Y + 18}
               textAnchor="middle"
-              fill={COLORS.text.muted}
+              fill={tc.textMuted}
               fontSize={10}
             >
               {t}
@@ -282,6 +287,7 @@ function TimelineSvg({ draw }: { draw: DrawEvent }) {
             key={`${draw.event_id}-${g.minute}-${g.scorer}`}
             goal={g}
             idx={i}
+            tc={tc}
           />
         ))}
       </AnimatePresence>
@@ -295,11 +301,12 @@ function TimelineSvg({ draw }: { draw: DrawEvent }) {
 
 export default function CollapseTimeline({ draws }: CollapseTimelineProps) {
   const [idx, setIdx] = useState(0);
+  const tc = useThemeColors();
   const total = draws.length;
 
   if (total === 0) {
     return (
-      <p className="text-center py-8" style={{ color: COLORS.text.muted }}>
+      <p className="text-center py-8" style={{ color: tc.textMuted }}>
         No collapse data available.
       </p>
     );
@@ -319,22 +326,22 @@ export default function CollapseTimeline({ draws }: CollapseTimelineProps) {
           aria-label="Previous collapse"
           className="px-3 py-1 rounded text-sm font-medium transition-colors"
           style={{
-            backgroundColor: COLORS.surface.light,
-            color: COLORS.text.primary,
+            backgroundColor: tc.surfaceLight,
+            color: tc.textPrimary,
           }}
         >
           &larr; Prev
         </button>
 
-        <MatchHeader draw={draw} index={idx} total={total} />
+        <MatchHeader draw={draw} index={idx} total={total} tc={tc} />
 
         <button
           onClick={next}
           aria-label="Next collapse"
           className="px-3 py-1 rounded text-sm font-medium transition-colors"
           style={{
-            backgroundColor: COLORS.surface.light,
-            color: COLORS.text.primary,
+            backgroundColor: tc.surfaceLight,
+            color: tc.textPrimary,
           }}
         >
           Next &rarr;
@@ -350,11 +357,11 @@ export default function CollapseTimeline({ draws }: CollapseTimelineProps) {
           exit={{ opacity: 0, x: -40 }}
           transition={{ duration: 0.3 }}
         >
-          <TimelineSvg draw={draw} />
+          <TimelineSvg draw={draw} tc={tc} />
         </motion.div>
       </AnimatePresence>
 
-      <Legend />
+      <Legend tc={tc} />
     </div>
   );
 }

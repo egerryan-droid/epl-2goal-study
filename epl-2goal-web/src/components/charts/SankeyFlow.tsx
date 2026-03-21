@@ -9,6 +9,7 @@ import {
 } from 'd3-sankey';
 import { motion } from 'framer-motion';
 import { COLORS } from '@/lib/theme';
+import { useThemeColors } from '@/hooks/useThemeColors';
 import type { SummaryBucket } from '@/lib/data';
 
 interface SankeyFlowProps {
@@ -37,6 +38,8 @@ const OUTCOME_COLORS: Record<string, string> = {
 };
 
 export default function SankeyFlow({ data }: SankeyFlowProps) {
+  const tc = useThemeColors();
+
   const { nodes, links } = useMemo(() => {
     const sorted = [...data].sort((a, b) => a.bucket_order - b.bucket_order);
 
@@ -136,7 +139,9 @@ export default function SankeyFlow({ data }: SankeyFlowProps) {
                 y={(y0 + y1) / 2}
                 textAnchor={isOutcome ? 'start' : 'end'}
                 dominantBaseline="central"
-                className="text-xs fill-gray-300 font-medium"
+                fontSize={12}
+                fill={tc.textSecondary}
+                fontWeight={500}
               >
                 {node.name}
               </text>

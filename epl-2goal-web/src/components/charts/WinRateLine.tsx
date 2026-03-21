@@ -15,6 +15,7 @@ import {
 } from 'recharts';
 import { motion } from 'framer-motion';
 import { COLORS } from '@/lib/theme';
+import { useThemeColors } from '@/hooks/useThemeColors';
 import type { SummaryBucket } from '@/lib/data';
 
 interface WinRateLineProps {
@@ -34,24 +35,26 @@ function CustomTooltipContent({ active, payload }: TooltipProps<number, string>)
   if (!active || !payload?.[0]) return null;
   const d = payload[0].payload as ChartRow;
   return (
-    <div className="bg-gray-900 border border-gray-700 rounded-lg px-3 py-2 text-xs shadow-xl">
-      <p className="text-white font-semibold mb-1">{d.bucket}</p>
-      <p className="text-gray-400">
-        Win rate: <span className="text-white">{(d.win_rate * 100).toFixed(1)}%</span>
+    <div className="bg-surface-dark border border-surface-light rounded-lg px-3 py-2 text-xs shadow-xl">
+      <p className="text-text-primary font-semibold mb-1">{d.bucket}</p>
+      <p className="text-text-muted">
+        Win rate: <span className="text-text-primary">{(d.win_rate * 100).toFixed(1)}%</span>
       </p>
-      <p className="text-gray-400">
-        95% CI: <span className="text-white">
+      <p className="text-text-muted">
+        95% CI: <span className="text-text-primary">
           {(d.win_ci_low * 100).toFixed(1)}% &ndash; {(d.win_ci_high * 100).toFixed(1)}%
         </span>
       </p>
-      <p className="text-gray-400">
-        n: <span className="text-white">{d.n}</span>
+      <p className="text-text-muted">
+        n: <span className="text-text-primary">{d.n}</span>
       </p>
     </div>
   );
 }
 
 export default function WinRateLine({ data }: WinRateLineProps) {
+  const tc = useThemeColors();
+
   const chartData: ChartRow[] = useMemo(
     () =>
       [...data]
@@ -76,17 +79,17 @@ export default function WinRateLine({ data }: WinRateLineProps) {
     >
       <ResponsiveContainer width="100%" height={350}>
         <ComposedChart data={chartData} margin={{ top: 20, right: 30, bottom: 10, left: 20 }}>
-          <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.06)" />
+          <CartesianGrid strokeDasharray="3 3" stroke={tc.textMuted} strokeOpacity={0.12} />
           <XAxis
             dataKey="bucket"
-            tick={{ fill: '#BDC3C7', fontSize: 11 }}
-            axisLine={{ stroke: 'rgba(255,255,255,0.15)' }}
+            tick={{ fill: tc.textSecondary, fontSize: 11 }}
+            axisLine={{ stroke: tc.textMuted }}
           />
           <YAxis
             domain={[0.8, 1.0]}
             tickFormatter={(v: number) => `${(v * 100).toFixed(0)}%`}
-            tick={{ fill: '#BDC3C7', fontSize: 11 }}
-            axisLine={{ stroke: 'rgba(255,255,255,0.15)' }}
+            tick={{ fill: tc.textSecondary, fontSize: 11 }}
+            axisLine={{ stroke: tc.textMuted }}
           />
           <Tooltip content={<CustomTooltipContent />} />
 
@@ -131,8 +134,8 @@ export default function WinRateLine({ data }: WinRateLineProps) {
             dataKey="win_rate"
             stroke={COLORS.win}
             strokeWidth={2.5}
-            dot={{ r: 5, fill: COLORS.win, stroke: '#1a1a2e', strokeWidth: 2 }}
-            activeDot={{ r: 7, fill: COLORS.win, stroke: 'white', strokeWidth: 2 }}
+            dot={{ r: 5, fill: COLORS.win, stroke: tc.surfaceDark, strokeWidth: 2 }}
+            activeDot={{ r: 7, fill: COLORS.win, stroke: tc.textPrimary, strokeWidth: 2 }}
             isAnimationActive={true}
             animationDuration={1000}
           />

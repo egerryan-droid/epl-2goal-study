@@ -3,6 +3,7 @@
 import { useMemo } from 'react';
 import { motion } from 'framer-motion';
 import { COLORS } from '@/lib/theme';
+import { useThemeColors } from '@/hooks/useThemeColors';
 import type { SummaryBucket } from '@/lib/data';
 
 interface RadialBucketChartProps {
@@ -23,6 +24,8 @@ function scaleRadius(rate: number): number {
 }
 
 export default function RadialBucketChart({ data }: RadialBucketChartProps) {
+  const tc = useThemeColors();
+
   const sorted = useMemo(
     () => [...data].sort((a, b) => a.bucket_order - b.bucket_order),
     [data],
@@ -46,14 +49,16 @@ export default function RadialBucketChart({ data }: RadialBucketChartProps) {
                   cy={0}
                   r={r}
                   fill="none"
-                  stroke={is90 ? COLORS.accent : 'rgba(255,255,255,0.12)'}
+                  stroke={is90 ? COLORS.accent : tc.textMuted}
+                  strokeOpacity={is90 ? 1 : 0.2}
                   strokeWidth={is90 ? 1.5 : 0.5}
                   strokeDasharray={is90 ? '6 4' : 'none'}
                 />
                 <text
                   x={4}
                   y={-r - 2}
-                  className="text-[9px] fill-gray-500"
+                  fontSize={9}
+                  fill={tc.textMuted}
                   textAnchor="start"
                 >
                   {(t * 100).toFixed(0)}%
@@ -83,7 +88,8 @@ export default function RadialBucketChart({ data }: RadialBucketChartProps) {
                   y1={0}
                   x2={endX}
                   y2={endY}
-                  stroke="rgba(255,255,255,0.08)"
+                  stroke={tc.textMuted}
+                  strokeOpacity={0.15}
                   strokeWidth={1}
                 />
                 {/* Filled spoke segment */}
@@ -116,7 +122,9 @@ export default function RadialBucketChart({ data }: RadialBucketChartProps) {
                   y={labelY}
                   textAnchor="middle"
                   dominantBaseline="central"
-                  className="text-[10px] fill-gray-300 font-medium"
+                  fontSize={10}
+                  fill={tc.textSecondary}
+                  fontWeight={500}
                 >
                   {bucket.bucket_key}
                 </text>

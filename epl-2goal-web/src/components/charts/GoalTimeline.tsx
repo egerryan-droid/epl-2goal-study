@@ -1,8 +1,8 @@
 'use client';
 
-import { useMemo } from 'react';
+import { useMemo, useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { COLORS } from '@/lib/theme';
+import { COLORS, getThemeColor } from '@/lib/theme';
 import type { GoalEvent } from '@/lib/data';
 
 interface GoalTimelineProps {
@@ -30,6 +30,34 @@ export default function GoalTimeline({ goals, homeTeam, awayTeam }: GoalTimeline
     [goals],
   );
 
+  // Theme-aware colors for SVG elements (re-reads on theme change)
+  const [themeColors, setThemeColors] = useState({
+    textMuted: COLORS.text.muted,
+    line: 'rgba(255,255,255,0.2)',
+    lineTick: 'rgba(255,255,255,0.3)',
+    lineSubtle: 'rgba(255,255,255,0.1)',
+    dot: 'white',
+    dotStroke: 'white',
+  });
+
+  useEffect(() => {
+    function update() {
+      const isLight = document.documentElement.getAttribute('data-theme') === 'light';
+      setThemeColors({
+        textMuted: getThemeColor('--color-text-muted') || COLORS.text.muted,
+        line: isLight ? 'rgba(0,0,0,0.15)' : 'rgba(255,255,255,0.2)',
+        lineTick: isLight ? 'rgba(0,0,0,0.25)' : 'rgba(255,255,255,0.3)',
+        lineSubtle: isLight ? 'rgba(0,0,0,0.08)' : 'rgba(255,255,255,0.1)',
+        dot: isLight ? '#1a1a2e' : 'white',
+        dotStroke: isLight ? '#1a1a2e' : 'white',
+      });
+    }
+    update();
+    const observer = new MutationObserver(update);
+    observer.observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+    return () => observer.disconnect();
+  }, []);
+
   const ticks = [0, 15, 30, 45, 60, 75, 90];
 
   return (
@@ -39,14 +67,14 @@ export default function GoalTimeline({ goals, homeTeam, awayTeam }: GoalTimeline
         <text
           x={TIMELINE_LEFT}
           y={TRACK_Y - 70}
-          className="text-xs fill-gray-400 font-semibold uppercase tracking-wide"
+          className="text-xs fill-text-muted font-semibold uppercase tracking-wide"
         >
           {homeTeam}
         </text>
         <text
           x={TIMELINE_LEFT}
           y={TRACK_Y + 82}
-          className="text-xs fill-gray-400 font-semibold uppercase tracking-wide"
+          className="text-xs fill-text-muted font-semibold uppercase tracking-wide"
         >
           {awayTeam}
         </text>
@@ -57,7 +85,7 @@ export default function GoalTimeline({ goals, homeTeam, awayTeam }: GoalTimeline
           y1={TRACK_Y}
           x2={TIMELINE_RIGHT}
           y2={TRACK_Y}
-          stroke="rgba(255,255,255,0.2)"
+          stroke={themeColors.line}
           strokeWidth={2}
         />
 
@@ -71,14 +99,14 @@ export default function GoalTimeline({ goals, homeTeam, awayTeam }: GoalTimeline
                 y1={TRACK_Y - 6}
                 x2={x}
                 y2={TRACK_Y + 6}
-                stroke="rgba(255,255,255,0.3)"
+                stroke={themeColors.lineTick}
                 strokeWidth={1}
               />
               <text
                 x={x}
                 y={TRACK_Y + 20}
                 textAnchor="middle"
-                className="text-[10px] fill-gray-500"
+                className="text-[10px] fill-text-muted"
               >
                 {m}&apos;
               </text>
@@ -92,7 +120,7 @@ export default function GoalTimeline({ goals, homeTeam, awayTeam }: GoalTimeline
           y1={TRACK_Y - 30}
           x2={minuteToX(45)}
           y2={TRACK_Y + 30}
-          stroke="rgba(255,255,255,0.1)"
+          stroke={themeColors.lineSubtle}
           strokeWidth={1}
           strokeDasharray="4 3"
         />
@@ -117,7 +145,7 @@ export default function GoalTimeline({ goals, homeTeam, awayTeam }: GoalTimeline
                 y1={TRACK_Y}
                 x2={x}
                 y2={TRACK_Y + yOffset}
-                stroke={goal.is_plus2_moment ? COLORS.accent : 'rgba(255,255,255,0.3)'}
+                stroke={goal.is_plus2_moment ? COLORS.accent : themeColors.lineTick}
                 strokeWidth={1}
               />
 
@@ -136,7 +164,7 @@ export default function GoalTimeline({ goals, homeTeam, awayTeam }: GoalTimeline
                     cy={TRACK_Y + yOffset}
                     r={5}
                     fill={COLORS.accent}
-                    stroke="white"
+                    stroke={themeColors.dotStroke}
                     strokeWidth={1.5}
                   />
                 </>
@@ -145,7 +173,7 @@ export default function GoalTimeline({ goals, homeTeam, awayTeam }: GoalTimeline
                   cx={x}
                   cy={TRACK_Y + yOffset}
                   r={4}
-                  fill="white"
+                  fill={themeColors.dot}
                   opacity={0.85}
                 />
               )}
@@ -156,7 +184,7 @@ export default function GoalTimeline({ goals, homeTeam, awayTeam }: GoalTimeline
                 y={TRACK_Y + labelY}
                 textAnchor="middle"
                 className={`text-[9px] font-medium ${
-                  goal.is_plus2_moment ? 'fill-blue-400' : 'fill-gray-400'
+                  goal.is_plus2_moment ? 'fill-accent' : 'fill-text-secondary'
                 }`}
               >
                 {goal.player ?? 'Goal'} {goal.minute}&apos;
@@ -167,7 +195,7 @@ export default function GoalTimeline({ goals, homeTeam, awayTeam }: GoalTimeline
                 x={x}
                 y={TRACK_Y + labelY + (isHome ? -12 : 12)}
                 textAnchor="middle"
-                className="text-[8px] fill-gray-500"
+                className="text-[8px] fill-text-muted"
               >
                 {goal.running_home}-{goal.running_away}
               </text>

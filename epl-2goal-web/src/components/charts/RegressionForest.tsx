@@ -3,6 +3,7 @@
 import { useMemo } from 'react';
 import { motion } from 'framer-motion';
 import { COLORS } from '@/lib/theme';
+import { useThemeColors } from '@/hooks/useThemeColors';
 import type { SummaryRegression } from '@/lib/data';
 
 interface RegressionForestProps {
@@ -14,6 +15,8 @@ const ROW_HEIGHT = 36;
 const DOT_RADIUS = 6;
 
 export default function RegressionForest({ data }: RegressionForestProps) {
+  const tc = useThemeColors();
+
   const sorted = useMemo(
     () => [...data].sort((a, b) => b.odds_ratio - a.odds_ratio),
     [data],
@@ -53,7 +56,7 @@ export default function RegressionForest({ data }: RegressionForestProps) {
     <div className="w-full overflow-x-auto">
       <svg viewBox={`0 0 ${width} ${height}`} className="w-full min-w-[550px]">
         {/* Background */}
-        <rect x={plotLeft} y={MARGIN.top - 10} width={plotWidth} height={sorted.length * ROW_HEIGHT + 20} fill="rgba(255,255,255,0.05)" rx={6} />
+        <rect x={plotLeft} y={MARGIN.top - 10} width={plotWidth} height={sorted.length * ROW_HEIGHT + 20} fill={tc.textMuted} fillOpacity={0.05} rx={6} />
 
         {/* Reference line at OR = 1.0 */}
         <line
@@ -61,7 +64,8 @@ export default function RegressionForest({ data }: RegressionForestProps) {
           y1={MARGIN.top - 10}
           x2={refLineX}
           y2={height - MARGIN.bottom + 10}
-          stroke="rgba(255,255,255,0.5)"
+          stroke={tc.textMuted}
+          strokeOpacity={0.5}
           strokeWidth={1.5}
           strokeDasharray="4 3"
         />
@@ -69,7 +73,7 @@ export default function RegressionForest({ data }: RegressionForestProps) {
           x={refLineX}
           y={MARGIN.top - 16}
           textAnchor="middle"
-          fill={COLORS.text.secondary}
+          fill={tc.textSecondary}
           fontSize={10}
           fontWeight="bold"
         >
@@ -86,14 +90,15 @@ export default function RegressionForest({ data }: RegressionForestProps) {
                 y1={height - MARGIN.bottom + 10}
                 x2={x}
                 y2={height - MARGIN.bottom + 16}
-                stroke="rgba(255,255,255,0.4)"
+                stroke={tc.textMuted}
+                strokeOpacity={0.4}
                 strokeWidth={1}
               />
               <text
                 x={x}
                 y={height - MARGIN.bottom + 26}
                 textAnchor="middle"
-                fill={COLORS.text.muted}
+                fill={tc.textMuted}
                 fontSize={10}
               >
                 {t}
@@ -111,9 +116,9 @@ export default function RegressionForest({ data }: RegressionForestProps) {
           const dotX = xScale(d.odds_ratio);
 
           // Color: significant vars get bright colors, non-significant get muted
-          const lineColor = isSig ? COLORS.accent : COLORS.text.secondary;
+          const lineColor = isSig ? COLORS.accent : tc.textSecondary;
           const dotFill = isSig ? COLORS.accent : 'transparent';
-          const dotStroke = isSig ? COLORS.accent : COLORS.text.secondary;
+          const dotStroke = isSig ? COLORS.accent : tc.textSecondary;
 
           return (
             <motion.g
@@ -129,7 +134,8 @@ export default function RegressionForest({ data }: RegressionForestProps) {
                   y={y - ROW_HEIGHT / 2}
                   width={plotWidth}
                   height={ROW_HEIGHT}
-                  fill="rgba(255,255,255,0.03)"
+                  fill={tc.textMuted}
+                  fillOpacity={0.03}
                 />
               )}
 
@@ -139,7 +145,7 @@ export default function RegressionForest({ data }: RegressionForestProps) {
                 y={y}
                 textAnchor="end"
                 dominantBaseline="central"
-                fill={isSig ? COLORS.text.primary : COLORS.text.secondary}
+                fill={isSig ? tc.textPrimary : tc.textSecondary}
                 fontSize={12}
                 fontWeight={isSig ? 600 : 400}
               >
@@ -175,7 +181,7 @@ export default function RegressionForest({ data }: RegressionForestProps) {
                 x={plotRight + 10}
                 y={y - 6}
                 textAnchor="start"
-                fill={isSig ? COLORS.text.primary : COLORS.text.secondary}
+                fill={isSig ? tc.textPrimary : tc.textSecondary}
                 fontSize={12}
                 fontWeight={isSig ? 600 : 400}
               >
@@ -185,7 +191,7 @@ export default function RegressionForest({ data }: RegressionForestProps) {
                 x={plotRight + 10}
                 y={y + 8}
                 textAnchor="start"
-                fill={COLORS.text.muted}
+                fill={tc.textMuted}
                 fontSize={9}
               >
                 p={d.p_value < 0.001 ? '<0.001' : d.p_value.toFixed(3)}

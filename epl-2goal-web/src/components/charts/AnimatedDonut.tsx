@@ -4,6 +4,7 @@ import { useMemo } from 'react';
 import * as d3 from 'd3';
 import { motion } from 'framer-motion';
 import { COLORS } from '@/lib/theme';
+import { useThemeColors } from '@/hooks/useThemeColors';
 
 interface AnimatedDonutProps {
   wins: number;
@@ -23,6 +24,7 @@ const arcGenerator = d3.arc<d3.PieArcDatum<number>>()
   .padAngle(0.02);
 
 export default function AnimatedDonut({ wins, draws, losses }: AnimatedDonutProps) {
+  const tc = useThemeColors();
   const total = wins + draws + losses;
 
   const segments = useMemo(() => {
@@ -55,7 +57,9 @@ export default function AnimatedDonut({ wins, draws, losses }: AnimatedDonutProp
           <text
             textAnchor="middle"
             dominantBaseline="central"
-            className="fill-white text-3xl font-bold"
+            fill={tc.textPrimary}
+            fontSize={30}
+            fontWeight="bold"
             dy="-6"
           >
             {total}
@@ -63,7 +67,8 @@ export default function AnimatedDonut({ wins, draws, losses }: AnimatedDonutProp
           <text
             textAnchor="middle"
             dominantBaseline="central"
-            className="fill-gray-400 text-xs"
+            fill={tc.textMuted}
+            fontSize={12}
             dy="16"
           >
             events
@@ -84,8 +89,8 @@ export default function AnimatedDonut({ wins, draws, losses }: AnimatedDonutProp
               className="inline-block w-3 h-3 rounded-full"
               style={{ backgroundColor: colors[i] }}
             />
-            <span className="text-gray-300">{label}</span>
-            <span className="text-white font-semibold">{counts[i]}</span>
+            <span style={{ color: tc.textSecondary }}>{label}</span>
+            <span style={{ color: tc.textPrimary }} className="font-semibold">{counts[i]}</span>
           </motion.div>
         ))}
       </div>

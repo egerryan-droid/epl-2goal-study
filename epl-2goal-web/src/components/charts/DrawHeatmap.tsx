@@ -3,6 +3,7 @@
 import { useMemo, useState } from 'react';
 import { motion } from 'framer-motion';
 import { COLORS } from '@/lib/theme';
+import { useThemeColors } from '@/hooks/useThemeColors';
 import type { DrawEvent } from '@/lib/data';
 
 interface DrawHeatmapProps {
@@ -21,8 +22,8 @@ const FOOTER_H = 32;
 const H_LABEL_H = 20;
 const GAP = 2;
 
-function cellColor(count: number): string {
-  if (count === 0) return COLORS.surface.dark;
+function cellColor(count: number, surfaceDark: string): string {
+  if (count === 0) return surfaceDark;
   // Interpolate from dim orange to bright orange (0 -> 3+)
   const t = Math.min(count / 3, 1);
   const r = Math.round(26 + (243 - 26) * t);
@@ -33,6 +34,7 @@ function cellColor(count: number): string {
 
 export default function DrawHeatmap({ data, maxTeams = 20 }: DrawHeatmapProps) {
   const [hovered, setHovered] = useState<string | null>(null);
+  const tc = useThemeColors();
 
   const { rows, colTotals } = useMemo(() => {
     // Count draws per team per bucket
@@ -90,7 +92,7 @@ export default function DrawHeatmap({ data, maxTeams = 20 }: DrawHeatmapProps) {
             x={LABEL_W + ci * (CELL_W + GAP) + CELL_W / 2}
             y={HEADER_H - 6}
             textAnchor="middle"
-            fill={COLORS.text.secondary}
+            fill={tc.textSecondary}
             fontSize={11}
             fontFamily="sans-serif"
           >
@@ -103,7 +105,7 @@ export default function DrawHeatmap({ data, maxTeams = 20 }: DrawHeatmapProps) {
           x={LABEL_W + gridW + GAP + TOTAL_COL_W / 2}
           y={HEADER_H - 6}
           textAnchor="middle"
-          fill={COLORS.text.muted}
+          fill={tc.textMuted}
           fontSize={10}
           fontFamily="sans-serif"
         >
@@ -115,7 +117,7 @@ export default function DrawHeatmap({ data, maxTeams = 20 }: DrawHeatmapProps) {
           x={LABEL_W + 1.5 * (CELL_W + GAP) - GAP / 2}
           y={HEADER_H + H_LABEL_H - 4}
           textAnchor="middle"
-          fill={COLORS.text.muted}
+          fill={tc.textMuted}
           fontSize={10}
           fontFamily="sans-serif"
           fontWeight="bold"
@@ -126,7 +128,7 @@ export default function DrawHeatmap({ data, maxTeams = 20 }: DrawHeatmapProps) {
           x={LABEL_W + 4.5 * (CELL_W + GAP) - GAP / 2}
           y={HEADER_H + H_LABEL_H - 4}
           textAnchor="middle"
-          fill={COLORS.text.muted}
+          fill={tc.textMuted}
           fontSize={10}
           fontFamily="sans-serif"
           fontWeight="bold"
@@ -140,7 +142,7 @@ export default function DrawHeatmap({ data, maxTeams = 20 }: DrawHeatmapProps) {
           y1={HEADER_H + H_LABEL_H}
           x2={dividerX}
           y2={HEADER_H + H_LABEL_H + gridH}
-          stroke={COLORS.text.muted}
+          stroke={tc.textMuted}
           strokeWidth={1.5}
           strokeDasharray="4 3"
         />
@@ -155,7 +157,7 @@ export default function DrawHeatmap({ data, maxTeams = 20 }: DrawHeatmapProps) {
                 x={LABEL_W - 8}
                 y={y + CELL_H / 2 + 4}
                 textAnchor="end"
-                fill={COLORS.text.primary}
+                fill={tc.textPrimary}
                 fontSize={11}
                 fontFamily="sans-serif"
               >
@@ -180,8 +182,8 @@ export default function DrawHeatmap({ data, maxTeams = 20 }: DrawHeatmapProps) {
                       width={CELL_W}
                       height={CELL_H}
                       rx={3}
-                      fill={cellColor(count)}
-                      stroke={isHovered ? '#ffffff' : 'transparent'}
+                      fill={cellColor(count, tc.surfaceDark)}
+                      stroke={isHovered ? tc.textPrimary : 'transparent'}
                       strokeWidth={isHovered ? 1.5 : 0}
                       initial={{ opacity: 0, scale: 0.7 }}
                       animate={{ opacity: 1, scale: 1 }}
@@ -195,7 +197,7 @@ export default function DrawHeatmap({ data, maxTeams = 20 }: DrawHeatmapProps) {
                         x={x + CELL_W / 2}
                         y={y + CELL_H / 2 + 4}
                         textAnchor="middle"
-                        fill={count >= 2 ? '#000000' : COLORS.text.primary}
+                        fill={count >= 2 ? '#000000' : tc.textPrimary}
                         fontSize={12}
                         fontWeight="bold"
                         fontFamily="sans-serif"

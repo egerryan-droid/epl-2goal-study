@@ -14,6 +14,7 @@ import {
 } from 'recharts';
 import { motion } from 'framer-motion';
 import { COLORS } from '@/lib/theme';
+import { useThemeColors } from '@/hooks/useThemeColors';
 import type { SummaryTeam } from '@/lib/data';
 
 type MetricKey = 'win_rate' | 'points_dropped' | 'n_as_leader';
@@ -58,19 +59,19 @@ function CustomTooltipContent({ active, payload }: TooltipProps<number, string>)
   if (!active || !payload?.[0]) return null;
   const d = payload[0].payload as SummaryTeam & { display_value: string };
   return (
-    <div className="bg-gray-900 border border-gray-700 rounded-lg px-3 py-2 text-xs shadow-xl">
-      <p className="text-white font-semibold mb-1">{d.team_key}</p>
-      <p className="text-gray-400">
-        Events: <span className="text-white">{d.n_as_leader}</span>
+    <div className="bg-surface-dark border border-surface-light rounded-lg px-3 py-2 text-xs shadow-xl">
+      <p className="text-text-primary font-semibold mb-1">{d.team_key}</p>
+      <p className="text-text-muted">
+        Events: <span className="text-text-primary">{d.n_as_leader}</span>
       </p>
-      <p className="text-gray-400">
-        Win rate: <span className="text-white">{(d.win_rate * 100).toFixed(1)}%</span>
+      <p className="text-text-muted">
+        Win rate: <span className="text-text-primary">{(d.win_rate * 100).toFixed(1)}%</span>
       </p>
-      <p className="text-gray-400">
-        W/D/L: <span className="text-white">{d.wins}/{d.draws}/{d.losses}</span>
+      <p className="text-text-muted">
+        W/D/L: <span className="text-text-primary">{d.wins}/{d.draws}/{d.losses}</span>
       </p>
-      <p className="text-gray-400">
-        Pts dropped: <span className="text-white">{d.points_dropped}</span>
+      <p className="text-text-muted">
+        Pts dropped: <span className="text-text-primary">{d.points_dropped}</span>
       </p>
     </div>
   );
@@ -81,6 +82,7 @@ export default function TeamBarChart({
   metric = 'win_rate',
   limit = 15,
 }: TeamBarChartProps) {
+  const tc = useThemeColors();
   const config = METRIC_CONFIG[metric];
 
   const chartData = useMemo(() => {
@@ -114,21 +116,21 @@ export default function TeamBarChart({
           layout="vertical"
           margin={{ top: 10, right: 80, bottom: 10, left: 90 }}
         >
-          <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.06)" horizontal={false} />
+          <CartesianGrid strokeDasharray="3 3" stroke={tc.textMuted} strokeOpacity={0.12} horizontal={false} />
           <XAxis
             type="number"
-            tick={{ fill: '#BDC3C7', fontSize: 11 }}
-            axisLine={{ stroke: 'rgba(255,255,255,0.15)' }}
+            tick={{ fill: tc.textSecondary, fontSize: 11 }}
+            axisLine={{ stroke: tc.textMuted }}
             tickFormatter={metric === 'win_rate' ? (v: number) => `${(v * 100).toFixed(0)}%` : undefined}
           />
           <YAxis
             type="category"
             dataKey="team_key"
             width={80}
-            tick={{ fill: '#ECF0F1', fontSize: 11 }}
-            axisLine={{ stroke: 'rgba(255,255,255,0.15)' }}
+            tick={{ fill: tc.textPrimary, fontSize: 11 }}
+            axisLine={{ stroke: tc.textMuted }}
           />
-          <Tooltip content={<CustomTooltipContent />} cursor={{ fill: 'rgba(255,255,255,0.04)' }} />
+          <Tooltip content={<CustomTooltipContent />} cursor={{ fill: tc.textMuted, fillOpacity: 0.08 }} />
           <Bar
             dataKey={metric}
             radius={[0, 4, 4, 0]}
@@ -137,7 +139,7 @@ export default function TeamBarChart({
             label={{
               position: 'right',
               formatter: (value: number) => config.format(value),
-              style: { fill: '#BDC3C7', fontSize: 10 },
+              style: { fill: tc.textSecondary, fontSize: 10 },
             }}
           >
             {chartData.map((entry, i) => (

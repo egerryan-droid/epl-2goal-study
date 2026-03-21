@@ -13,6 +13,7 @@ import {
 } from 'recharts';
 import { motion } from 'framer-motion';
 import { COLORS } from '@/lib/theme';
+import { useThemeColors } from '@/hooks/useThemeColors';
 import type { SummarySeason } from '@/lib/data';
 
 interface SeasonAreaChartProps {
@@ -30,8 +31,8 @@ interface ChartRow {
 function CustomTooltipContent({ active, payload, label }: TooltipProps<number, string>) {
   if (!active || !payload?.length) return null;
   return (
-    <div className="bg-gray-900 border border-gray-700 rounded-lg px-3 py-2 text-xs shadow-xl">
-      <p className="text-white font-semibold mb-1">{label}</p>
+    <div className="bg-surface-dark border border-surface-light rounded-lg px-3 py-2 text-xs shadow-xl">
+      <p className="text-text-primary font-semibold mb-1">{label}</p>
       {payload.reverse().map((entry) => (
         <p key={entry.name} style={{ color: entry.color }} className="flex justify-between gap-4">
           <span>{entry.name}:</span>
@@ -43,6 +44,8 @@ function CustomTooltipContent({ active, payload, label }: TooltipProps<number, s
 }
 
 export default function SeasonAreaChart({ data }: SeasonAreaChartProps) {
+  const tc = useThemeColors();
+
   const chartData: ChartRow[] = useMemo(
     () =>
       [...data]
@@ -66,18 +69,18 @@ export default function SeasonAreaChart({ data }: SeasonAreaChartProps) {
     >
       <ResponsiveContainer width="100%" height={350}>
         <AreaChart data={chartData} margin={{ top: 10, right: 30, bottom: 10, left: 10 }}>
-          <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.06)" />
+          <CartesianGrid strokeDasharray="3 3" stroke={tc.textMuted} strokeOpacity={0.12} />
           <XAxis
             dataKey="season"
-            tick={{ fill: '#BDC3C7', fontSize: 10 }}
-            axisLine={{ stroke: 'rgba(255,255,255,0.15)' }}
+            tick={{ fill: tc.textSecondary, fontSize: 10 }}
+            axisLine={{ stroke: tc.textMuted }}
             angle={-30}
             textAnchor="end"
             height={50}
           />
           <YAxis
-            tick={{ fill: '#BDC3C7', fontSize: 11 }}
-            axisLine={{ stroke: 'rgba(255,255,255,0.15)' }}
+            tick={{ fill: tc.textSecondary, fontSize: 11 }}
+            axisLine={{ stroke: tc.textMuted }}
           />
           <Tooltip content={<CustomTooltipContent />} />
           <Area
