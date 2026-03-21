@@ -56,15 +56,27 @@ export default function S02_TheMouth() {
         )}
       </motion.div>
 
-      <motion.p
+      <motion.div
         initial={{ opacity: 0 }}
         animate={inView ? { opacity: 1 } : {}}
         transition={{ delay: 1, duration: 0.8 }}
-        className="text-text-muted text-lg mt-12 max-w-3xl text-center italic"
+        className="flex flex-col items-center"
       >
-        Moments like these sustain one of football&apos;s most enduring myths.
-        But how often does it actually happen?
-      </motion.p>
+        <a
+          href="https://www.youtube.com/watch?v=TizeozUuIKA"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-6 inline-flex items-center gap-2 glass rounded-full px-5 py-2.5 text-sm font-medium text-accent hover:text-white transition"
+        >
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+          Watch the Full Collapse
+        </a>
+
+        <p className="text-text-muted text-lg mt-6 max-w-3xl text-center italic">
+          Moments like these sustain one of football&apos;s most enduring myths.
+          But how often does it actually happen?
+        </p>
+      </motion.div>
     </section>
   );
 }

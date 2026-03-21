@@ -2,6 +2,8 @@
 
 import dynamic from 'next/dynamic';
 import SectionWrapper from '@/components/layout/SectionWrapper';
+import QuoteCard from '@/components/ui/QuoteCard';
+import { QUOTES } from '@/data/quotes';
 import drawEvents from '@/data/draw_events.json';
 import type { DrawEvent } from '@/lib/data';
 
@@ -33,6 +35,15 @@ export default function S05b_CollapseTimeline() {
         <div className="w-full max-w-4xl bg-surface-mid rounded-xl p-6">
           <CollapseTimeline draws={drawsForCarousel} />
         </div>
+
+        {(() => {
+          const q = QUOTES.find(q => q.section === 'collapse');
+          return q ? (
+            <div className="max-w-2xl mx-auto mt-8">
+              <QuoteCard quote={q} />
+            </div>
+          ) : null;
+        })()}
       </div>
     </SectionWrapper>
   );

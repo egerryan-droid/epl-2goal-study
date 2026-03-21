@@ -3,6 +3,8 @@
 import { motion } from 'framer-motion';
 import { useInView } from '@/hooks/useInView';
 import SectionWrapper from '@/components/layout/SectionWrapper';
+import QuoteCard from '@/components/ui/QuoteCard';
+import { QUOTES } from '@/data/quotes';
 
 const insights = [
   { text: 'Each additional minute increases win odds by 2.2%', icon: '\u23F1', color: 'text-accent' },
@@ -40,6 +42,15 @@ export default function S09b_KeyFindings() {
             </motion.div>
           ))}
         </div>
+
+        {(() => {
+          const q = QUOTES.find(q => q.section === 'key-findings');
+          return q ? (
+            <div className="max-w-2xl mx-auto mt-8">
+              <QuoteCard quote={q} />
+            </div>
+          ) : null;
+        })()}
       </div>
     </SectionWrapper>
   );

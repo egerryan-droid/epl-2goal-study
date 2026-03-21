@@ -5,6 +5,7 @@ import dynamic from 'next/dynamic';
 
 const S01_Hero = dynamic(() => import('@/components/sections/S01_Hero'), { ssr: false });
 const S02_TheMouth = dynamic(() => import('@/components/sections/S02_TheMouth'), { ssr: false });
+const S02b_InTheirWords = dynamic(() => import('@/components/sections/S02b_InTheirWords'), { ssr: false });
 const S03_TheData = dynamic(() => import('@/components/sections/S03_TheData'), { ssr: false });
 const S04_BigPicture = dynamic(() => import('@/components/sections/S04_BigPicture'), { ssr: false });
 const S04b_DrawDeepDive = dynamic(() => import('@/components/sections/S04b_DrawDeepDive'), { ssr: false });
@@ -34,6 +35,7 @@ export default function Home() {
     <main ref={mainRef} className="h-screen snap-y snap-mandatory overflow-y-auto bg-surface-dark">
       <S01_Hero />
       <S02_TheMouth />
+      <S02b_InTheirWords />
       <S03_TheData />
       <S04_BigPicture />
       <S04b_DrawDeepDive />

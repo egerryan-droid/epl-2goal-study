@@ -3,6 +3,8 @@
 import { useState } from 'react';
 import dynamic from 'next/dynamic';
 import SectionWrapper from '@/components/layout/SectionWrapper';
+import QuoteCard from '@/components/ui/QuoteCard';
+import { QUOTES } from '@/data/quotes';
 import summaryTeam from '@/data/summary_by_team.json';
 import type { SummaryTeam } from '@/lib/data';
 
@@ -67,6 +69,15 @@ export default function S07_TeamPerformance() {
             <TeamBarChart data={data} limit={15} />
           </div>
         </div>
+
+        {(() => {
+          const q = QUOTES.find(q => q.section === 'team-performance');
+          return q ? (
+            <div className="max-w-2xl mx-auto mt-8">
+              <QuoteCard quote={q} />
+            </div>
+          ) : null;
+        })()}
       </div>
     </SectionWrapper>
   );
