@@ -2,6 +2,10 @@
 
 import { useEffect, useRef, useState } from 'react';
 
+/**
+ * Detects when an element scrolls into view inside the snap-scroll container.
+ * Works correctly in fullscreen mode by finding the actual scroll root (<main>).
+ */
 export function useInView(options?: IntersectionObserverInit) {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const ref = useRef<any>(null);
@@ -11,12 +15,9 @@ export function useInView(options?: IntersectionObserverInit) {
     const node = ref.current as HTMLElement | null;
     if (!node) return;
 
-    // Check if already in view immediately
-    const rect = node.getBoundingClientRect();
-    if (rect.top < window.innerHeight && rect.bottom > 0) {
-      setInView(true);
-      return;
-    }
+    // Find the scroll container — the <main> with overflow-y-auto
+    const scrollRoot =
+      node.closest('main[class*="overflow-y-auto"]') as HTMLElement | null;
 
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -25,7 +26,12 @@ export function useInView(options?: IntersectionObserverInit) {
           observer.unobserve(node);
         }
       },
-      { threshold: 0.1, ...options },
+      {
+        threshold: 0.15,
+        ...options,
+        // Use the scroll container as root so it works in fullscreen
+        root: scrollRoot ?? undefined,
+      },
     );
 
     observer.observe(node);
