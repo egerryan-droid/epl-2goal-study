@@ -77,7 +77,7 @@ export default function RegressionForest({ data }: RegressionForestProps) {
           fontSize={10}
           fontWeight="bold"
         >
-          OR = 1.0
+          Odds Ratio = 1.0
         </text>
 
         {/* X axis ticks */}

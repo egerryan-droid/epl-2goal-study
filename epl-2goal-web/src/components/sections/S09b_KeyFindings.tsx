@@ -8,10 +8,10 @@ import { QUOTES } from '@/data/quotes';
 
 const insights = [
   { text: 'Each additional minute increases win odds by 2.2%', icon: '\u23F1', color: 'text-accent' },
-  { text: 'Pre-match favorites hold leads far more reliably (OR=66.7)', icon: '\uD83D\uDCAA', color: 'text-win' },
+  { text: 'Pre-match favorites hold leads far more reliably (66.7x more likely)', icon: '\uD83D\uDCAA', color: 'text-win' },
   { text: 'Home advantage is NOT significant (p=0.84)', icon: '\uD83C\uDFDF', color: 'text-text-muted' },
-  { text: 'A red card for the leader halves the odds (OR=0.42)', icon: '\uD83D\uDFE5', color: 'text-loss' },
-  { text: 'An opponent red card triples them (OR=3.46)', icon: '\u2705', color: 'text-win' },
+  { text: 'A red card for the leader halves the odds (0.42x as likely)', icon: '\uD83D\uDFE5', color: 'text-loss' },
+  { text: 'An opponent red card triples them (3.46x more likely)', icon: '\u2705', color: 'text-win' },
 ];
 
 export default function S09b_KeyFindings() {
