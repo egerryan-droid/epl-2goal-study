@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import Link from 'next/link';
 
 interface HeaderProps {
   sections: { id: string; label: string }[];
@@ -69,6 +70,9 @@ export default function Header({ sections }: HeaderProps) {
           </div>
         );
       })}
+      <Link href="/explore" className="ml-4 text-sm font-medium text-text-secondary hover:text-accent transition">
+        Explore
+      </Link>
     </header>
   );
 }

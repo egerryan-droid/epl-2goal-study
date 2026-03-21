@@ -65,9 +65,10 @@ export default function S11_Verdict() {
       >
         <Link
           href="/explore"
-          className="bg-accent hover:bg-accent/80 text-white font-medium px-8 py-3 rounded-lg transition-colors"
+          className="inline-flex items-center gap-2 rounded-xl bg-accent px-8 py-4 text-lg font-bold text-white transition hover:bg-accent/80"
         >
           Explore the Data
+          <span aria-hidden>→</span>
         </Link>
       </motion.div>
 
