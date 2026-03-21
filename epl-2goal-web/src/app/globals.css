@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ===== Dark Mode (default) ===== */
 :root {
   --color-win: #2ecc71;
   --color-draw: #f39c12;
@@ -13,6 +14,20 @@
   --color-text-primary: #f5f6fa;
   --color-text-secondary: #d5dbe0;
   --color-text-muted: #99a3ad;
+}
+
+/* ===== Light / Projector Mode ===== */
+[data-theme="light"] {
+  --color-win: #1a9d4f;
+  --color-draw: #d4820a;
+  --color-loss: #c0392b;
+  --color-accent: #2471a3;
+  --color-surface-dark: #f0f2f5;
+  --color-surface-mid: #e4e7ec;
+  --color-surface-light: #d5dae2;
+  --color-text-primary: #1a1a2e;
+  --color-text-secondary: #3d4654;
+  --color-text-muted: #6b7280;
 }
 
 @layer base {
@@ -75,6 +90,16 @@
     background: rgba(15, 52, 96, 0.7);
     backdrop-filter: blur(20px);
     border: 1px solid rgba(255, 255, 255, 0.12);
+  }
+
+  /* Light mode glass overrides */
+  [data-theme="light"] .glass {
+    background: rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+  }
+  [data-theme="light"] .glass-strong {
+    background: rgba(255, 255, 255, 0.85);
+    border: 1px solid rgba(0, 0, 0, 0.12);
   }
 
   /* Premium card hover effect */

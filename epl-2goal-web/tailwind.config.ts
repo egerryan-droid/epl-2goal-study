@@ -7,19 +7,19 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        win: '#2ecc71',
-        draw: '#f39c12',
-        loss: '#e74c3c',
-        accent: '#3498db',
+        win: 'var(--color-win)',
+        draw: 'var(--color-draw)',
+        loss: 'var(--color-loss)',
+        accent: 'var(--color-accent)',
         surface: {
-          dark: '#1a1a2e',
-          mid: '#16213e',
-          light: '#0f3460',
+          dark: 'var(--color-surface-dark)',
+          mid: 'var(--color-surface-mid)',
+          light: 'var(--color-surface-light)',
         },
         text: {
-          primary: '#ECF0F1',
-          secondary: '#BDC3C7',
-          muted: '#7F8C8D',
+          primary: 'var(--color-text-primary)',
+          secondary: 'var(--color-text-secondary)',
+          muted: 'var(--color-text-muted)',
         },
       },
       fontFamily: {

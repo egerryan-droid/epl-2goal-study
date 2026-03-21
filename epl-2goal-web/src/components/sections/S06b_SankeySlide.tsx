@@ -17,8 +17,7 @@ export default function S06b_SankeySlide() {
     <section
       ref={ref}
       id="sankey-flow"
-      className="h-screen snap-start snap-always flex flex-col items-center justify-center px-6 py-12 overflow-hidden"
-      style={{ background: 'linear-gradient(180deg, #0a0a1a 0%, #1a1a2e 50%, #16213e 100%)' }}
+      className="h-screen snap-start snap-always flex flex-col items-center justify-center px-6 py-12 overflow-hidden bg-surface-mid"
     >
       <motion.h2
         initial={{ opacity: 0, y: 20 }}

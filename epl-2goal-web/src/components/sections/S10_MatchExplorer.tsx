@@ -47,8 +47,7 @@ export default function S10_MatchExplorer() {
     <section
       ref={ref}
       id="match-explorer"
-      className="h-screen snap-start snap-always flex flex-col items-center justify-center px-6 py-20 overflow-hidden"
-      style={{ background: 'linear-gradient(180deg, #1a1a2e 0%, #16213e 100%)' }}
+      className="h-screen snap-start snap-always flex flex-col items-center justify-center px-6 py-20 overflow-hidden bg-surface-dark"
     >
       <motion.div
         initial={{ opacity: 0, y: 20 }}

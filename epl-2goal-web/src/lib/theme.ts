@@ -1,3 +1,4 @@
+// Static fallback colors (used by charts that can't read CSS vars at render time)
 export const COLORS = {
   win: '#2ecc71',
   draw: '#f39c12',
@@ -8,3 +9,14 @@ export const COLORS = {
 };
 
 export const RESULT_COLORS = { W: COLORS.win, D: COLORS.draw, L: COLORS.loss };
+
+/**
+ * Read the current theme's color from CSS variables.
+ * Falls back to the static COLORS if not in a browser.
+ */
+export function getThemeColor(varName: string): string {
+  if (typeof window === 'undefined') return '';
+  return getComputedStyle(document.documentElement)
+    .getPropertyValue(varName)
+    .trim();
+}

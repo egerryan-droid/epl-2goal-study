@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { DM_Serif_Display, DM_Sans } from 'next/font/google';
+import ThemeToggle from '@/components/ui/ThemeToggle';
 import './globals.css';
 
 const serif = DM_Serif_Display({
@@ -28,8 +29,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${serif.variable} ${sans.variable} font-sans`}>
-      <body className="min-h-screen bg-surface-dark text-text-primary font-sans">
+      <body className="min-h-screen bg-surface-dark text-text-primary font-sans transition-colors duration-300">
         {children}
+        <ThemeToggle />
       </body>
     </html>
   );

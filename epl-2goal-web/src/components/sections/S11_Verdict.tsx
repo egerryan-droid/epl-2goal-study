@@ -18,10 +18,7 @@ export default function S11_Verdict() {
     <section
       ref={ref}
       id="verdict"
-      className="h-screen snap-start snap-always flex flex-col items-center justify-center px-6 py-20 text-center overflow-hidden"
-      style={{
-        background: 'radial-gradient(ellipse at 50% 50%, #0f3460 0%, #1a1a2e 50%, #0a0a1a 100%)',
-      }}
+      className="h-screen snap-start snap-always flex flex-col items-center justify-center px-6 py-20 text-center overflow-hidden bg-surface-dark"
     >
       <motion.div
         initial={{ opacity: 0, y: 30 }}

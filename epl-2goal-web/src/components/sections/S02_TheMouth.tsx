@@ -22,8 +22,7 @@ export default function S02_TheMouth() {
     <section
       ref={ref}
       id="the-myth"
-      className="h-screen snap-start snap-always flex flex-col items-center justify-center px-6 py-20 overflow-hidden"
-      style={{ background: 'linear-gradient(180deg, #0a0a1a 0%, #16213e 100%)' }}
+      className="h-screen snap-start snap-always flex flex-col items-center justify-center px-6 py-20 overflow-hidden bg-surface-dark"
     >
       <motion.div
         initial={{ opacity: 0, y: 20 }}
