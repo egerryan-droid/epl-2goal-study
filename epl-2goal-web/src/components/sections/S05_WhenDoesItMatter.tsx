@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { useInView } from '@/hooks/useInView';
 import dynamic from 'next/dynamic';
 import summaryBucket from '@/data/summary_by_bucket.json';
@@ -95,14 +95,16 @@ export default function S05_WhenDoesItMatter() {
         )}
       </motion.div>
 
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={inView ? { opacity: 1 } : {}}
-        transition={{ delay: 0.6, duration: 0.6 }}
-        className="mt-8 max-w-3xl"
-      >
+      <div className="mt-8 max-w-3xl">
+        <AnimatePresence mode="wait">
         {showHalf ? (
-          <div className="grid grid-cols-2 gap-4 max-w-xl mx-auto">
+          <motion.div
+            key="half-view"
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4 }}
+            className="grid grid-cols-2 gap-4 max-w-xl mx-auto"
+          >
             {[
               { label: 'First Half (0\u201345+)', buckets: ['0-15', '16-30', '31-45+'] },
               { label: 'Second Half (46\u201390+)', buckets: ['46-60', '61-75', '76-90+'] },
@@ -120,9 +122,15 @@ export default function S05_WhenDoesItMatter() {
                 </div>
               );
             })}
-          </div>
+          </motion.div>
         ) : (
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+          <motion.div
+            key="bucket-view"
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4 }}
+            className="grid grid-cols-2 md:grid-cols-3 gap-4"
+          >
             {data.map(bucket => (
               <div key={bucket.bucket_key} className="bg-surface-mid rounded-lg p-3 text-center">
                 <div className="text-text-muted text-sm">{bucket.bucket_key} min</div>
@@ -130,9 +138,10 @@ export default function S05_WhenDoesItMatter() {
                 <div className="text-text-muted text-xs">{bucket.n} events</div>
               </div>
             ))}
-          </div>
+          </motion.div>
         )}
-      </motion.div>
+        </AnimatePresence>
+      </div>
 
       {/* Collapse Timeline Carousel */}
       <motion.div
