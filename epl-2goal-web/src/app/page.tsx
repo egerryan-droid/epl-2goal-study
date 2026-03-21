@@ -1,3 +1,6 @@
+'use client';
+
+import { useEffect, useRef } from 'react';
 import dynamic from 'next/dynamic';
 
 const S01_Hero = dynamic(() => import('@/components/sections/S01_Hero'), { ssr: false });
@@ -17,8 +20,17 @@ const S10_MatchExplorer = dynamic(() => import('@/components/sections/S10_MatchE
 const S11_Verdict = dynamic(() => import('@/components/sections/S11_Verdict'), { ssr: false });
 
 export default function Home() {
+  const mainRef = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    // Force scroll to top on page load (prevents snap container restoring mid-page)
+    if (mainRef.current) {
+      mainRef.current.scrollTo({ top: 0, behavior: 'instant' as ScrollBehavior });
+    }
+  }, []);
+
   return (
-    <main className="h-screen snap-y snap-mandatory overflow-y-auto bg-surface-dark">
+    <main ref={mainRef} className="h-screen snap-y snap-mandatory overflow-y-auto bg-surface-dark">
       <S01_Hero />
       <S02_TheMouth />
       <S03_TheData />
