@@ -1,0 +1,604 @@
+{
+  "run_at": "2026-04-22T17:07:35.797605",
+  "summary": {
+    "Integrity": {
+      "PASS": 9,
+      "WARN": 0,
+      "FAIL": 0,
+      "CRITICAL": 0,
+      "INFO": 0
+    },
+    "Cross-dataset": {
+      "WARN": 3,
+      "PASS": 5,
+      "INFO": 2,
+      "FAIL": 1,
+      "CRITICAL": 0
+    },
+    "Anchors": {
+      "WARN": 3,
+      "PASS": 0,
+      "FAIL": 0,
+      "CRITICAL": 0,
+      "INFO": 0
+    },
+    "Slides": {
+      "PASS": 6,
+      "INFO": 2,
+      "WARN": 0,
+      "FAIL": 0,
+      "CRITICAL": 0
+    }
+  },
+  "findings": [
+    {
+      "tier": 1,
+      "tier_name": "Integrity",
+      "check": "running_diff arithmetic",
+      "severity": "PASS",
+      "detail": "All 10,614 rows satisfy running_diff == running_home - running_away.",
+      "subject": "",
+      "suggested_fix": null,
+      "context": {}
+    },
+    {
+      "tier": 1,
+      "tier_name": "Integrity",
+      "check": "Per-goal running-score increments",
+      "severity": "PASS",
+      "detail": "Every goal row increments exactly the scoring side by 1 relative to the prior row.",
+      "subject": "",
+      "suggested_fix": null,
+      "context": {}
+    },
+    {
+      "tier": 1,
+      "tier_name": "Integrity",
+      "check": "Final score = last running total",
+      "severity": "PASS",
+      "detail": "All 3549 matches: final_{home,away}_goals == last running total.",
+      "subject": "",
+      "suggested_fix": null,
+      "context": {}
+    },
+    {
+      "tier": 1,
+      "tier_name": "Integrity",
+      "check": "Goals sorted by minute within match",
+      "severity": "PASS",
+      "detail": "All matches have goal rows in ascending minute order.",
+      "subject": "",
+      "suggested_fix": null,
+      "context": {}
+    },
+    {
+      "tier": 1,
+      "tier_name": "Integrity",
+      "check": "Minute range [0, 120]",
+      "severity": "PASS",
+      "detail": "All 10,614 goal minutes in [0, 120].",
+      "subject": "",
+      "suggested_fix": null,
+      "context": {}
+    },
+    {
+      "tier": 1,
+      "tier_name": "Integrity",
+      "check": "scoring_side \u2208 {home, away}",
+      "severity": "PASS",
+      "detail": "All rows have valid scoring_side.",
+      "subject": "",
+      "suggested_fix": null,
+      "context": {}
+    },
+    {
+      "tier": 1,
+      "tier_name": "Integrity",
+      "check": "scoring_team aligned with scoring_side",
+      "severity": "PASS",
+      "detail": "All rows have scoring_team equal to the home/away team for the scoring side.",
+      "subject": "",
+      "suggested_fix": null,
+      "context": {}
+    },
+    {
+      "tier": 1,
+      "tier_name": "Integrity",
+      "check": "Non-null player names",
+      "severity": "PASS",
+      "detail": "All goal rows have a player name.",
+      "subject": "",
+      "suggested_fix": null,
+      "context": {}
+    },
+    {
+      "tier": 1,
+      "tier_name": "Integrity",
+      "check": "Match metadata consistency",
+      "severity": "PASS",
+      "detail": "Each match_id has exactly one (season, date, home, away) tuple across all its rows.",
+      "subject": "",
+      "suggested_fix": null,
+      "context": {}
+    },
+    {
+      "tier": 2,
+      "tier_name": "Cross-dataset",
+      "check": "Football-Data join coverage",
+      "severity": "WARN",
+      "detail": "25 of 3549 matches could not be joined to Football-Data (likely due to team-name aliases missing from TEAM_ALIASES).",
+      "subject": "",
+      "suggested_fix": null,
+      "context": {
+        "sample": [
+          {
+            "match_id": 190,
+            "date": "2015-11-03",
+            "home_team": "Tottenham",
+            "away_team": "Aston Villa"
+          },
+          {
+            "match_id": 210,
+            "date": "2015-11-24",
+            "home_team": "Crystal Palace",
+            "away_team": "Sunderland"
+          },
+          {
+            "match_id": 230,
+            "date": "2015-12-08",
+            "home_team": "Everton",
+            "away_team": "Crystal Palace"
+          },
+          {
+            "match_id": 240,
+            "date": "2015-12-15",
+            "home_team": "Leicester",
+            "away_team": "Chelsea"
+          },
+          {
+            "match_id": 250,
+            "date": "2015-12-22",
+            "home_team": "Arsenal",
+            "away_team": "Manchester City"
+          },
+          {
+            "match_id": 289,
+            "date": "2016-01-14",
+            "home_team": "Liverpool",
+            "away_team": "Arsenal"
+          },
+          {
+            "match_id": 290,
+            "date": "2016-01-14",
+            "home_team": "Tottenham",
+            "away_team": "Leicester"
+          },
+          {
+            "match_id": 300,
+            "date": "2016-01-19",
+            "home_team": "Swansea",
+            "away_team": "Watford"
+          },
+          {
+            "match_id": 316,
+            "date": "2016-02-03",
+            "home_team": "Crystal Palace",
+            "away_team": "Bournemouth"
+          },
+          {
+            "match_id": 317,
+            "date": "2016-02-03",
+            "home_team": "Manchester United",
+            "away_team": "Stoke"
+          }
+        ]
+      }
+    },
+    {
+      "tier": 2,
+      "tier_name": "Cross-dataset",
+      "check": "Understat vs Football-Data final scores",
+      "severity": "PASS",
+      "detail": "All 3524 joined matches agree on final score.",
+      "subject": "",
+      "suggested_fix": null,
+      "context": {}
+    },
+    {
+      "tier": 2,
+      "tier_name": "Cross-dataset",
+      "check": "goal_timeline \u2194 dim_match",
+      "severity": "PASS",
+      "detail": "All 3549 matches present in dim_match with matching metadata.",
+      "subject": "",
+      "suggested_fix": null,
+      "context": {}
+    },
+    {
+      "tier": 2,
+      "tier_name": "Cross-dataset",
+      "check": "goals_by_match.json \u2194 goal_timeline.csv",
+      "severity": "PASS",
+      "detail": "All 1901 JSON entries agree with CSV.",
+      "subject": "",
+      "suggested_fix": null,
+      "context": {}
+    },
+    {
+      "tier": 2,
+      "tier_name": "Cross-dataset",
+      "check": "ESPN match coverage",
+      "severity": "WARN",
+      "detail": "28 of 3,549 Understat matches could not be joined to ESPN (team-alias gap or ESPN missing data).",
+      "subject": "",
+      "suggested_fix": null,
+      "context": {}
+    },
+    {
+      "tier": 2,
+      "tier_name": "Cross-dataset",
+      "check": "ESPN details[] completeness",
+      "severity": "INFO",
+      "detail": "707 of 3,521 ESPN matches have an incomplete details[] array (ESPN's own final_score total > goals listed). These matches are excluded from scorer/minute comparison since ESPN is missing goal events. Common on pre-2016 matches \u2014 does not indicate Understat errors.",
+      "subject": "",
+      "suggested_fix": null,
+      "context": {
+        "sample": [
+          {
+            "match_id": 84,
+            "date": "2015-08-08",
+            "home": "Leicester",
+            "away": "Sunderland",
+            "espn_final": "4-2",
+            "espn_details_count": 5,
+            "understat_count": 6
+          },
+          {
+            "match_id": 86,
+            "date": "2015-08-08",
+            "home": "Chelsea",
+            "away": "Swansea",
+            "espn_final": "2-2",
+            "espn_details_count": 3,
+            "understat_count": 4
+          },
+          {
+            "match_id": 95,
+            "date": "2015-08-15",
+            "home": "Tottenham",
+            "away": "Stoke",
+            "espn_final": "2-2",
+            "espn_details_count": 3,
+            "understat_count": 4
+          },
+          {
+            "match_id": 106,
+            "date": "2015-08-22",
+            "home": "West Ham",
+            "away": "Bournemouth",
+            "espn_final": "3-4",
+            "espn_details_count": 5,
+            "understat_count": 7
+          },
+          {
+            "match_id": 113,
+            "date": "2015-08-29",
+            "home": "Aston Villa",
+            "away": "Sunderland",
+            "espn_final": "2-2",
+            "espn_details_count": 3,
+            "understat_count": 4
+          },
+          {
+            "match_id": 114,
+            "date": "2015-08-29",
+            "home": "Bournemouth",
+            "away": "Leicester",
+            "espn_final": "1-1",
+            "espn_details_count": 1,
+            "understat_count": 2
+          },
+          {
+            "match_id": 127,
+            "date": "2015-09-12",
+            "home": "Manchester United",
+            "away": "Liverpool",
+            "espn_final": "3-1",
+            "espn_details_count": 3,
+            "understat_count": 4
+          },
+          {
+            "match_id": 135,
+            "date": "2015-09-19",
+            "home": "Stoke",
+            "away": "Leicester",
+            "espn_final": "2-2",
+            "espn_details_count": 3,
+            "understat_count": 4
+          },
+          {
+            "match_id": 142,
+            "date": "2015-09-26",
+            "home": "Southampton",
+            "away": "Swansea",
+            "espn_final": "3-1",
+            "espn_details_count": 3,
+            "understat_count": 4
+          },
+          {
+            "match_id": 149,
+            "date": "2015-09-27",
+            "home": "Watford",
+            "away": "Crystal Palace",
+            "espn_final": "0-1",
+            "espn_details_count": 0,
+            "understat_count": 1
+          }
+        ]
+      }
+    },
+    {
+      "tier": 2,
+      "tier_name": "Cross-dataset",
+      "check": "Understat vs ESPN final scores",
+      "severity": "PASS",
+      "detail": "All 3,521 matched matches agree on final score.",
+      "subject": "",
+      "suggested_fix": null,
+      "context": {}
+    },
+    {
+      "tier": 2,
+      "tier_name": "Cross-dataset",
+      "check": "Understat vs ESPN goal count",
+      "severity": "PASS",
+      "detail": "All 2,814 comparable matches agree on number of goals.",
+      "subject": "",
+      "suggested_fix": null,
+      "context": {}
+    },
+    {
+      "tier": 2,
+      "tier_name": "Cross-dataset",
+      "check": "Understat vs ESPN scorer names",
+      "severity": "FAIL",
+      "detail": "5 goal(s) disagree on scorer (name or side). First 10:\n  - match_id=3369 (2017-02-01 Stoke vs Everton) goal #2: Understat '38' Ryan Shawcross' vs ESPN '39' Kevin Mirallas'\n  - match_id=11737 (2019-10-26 Manchester City vs Aston Villa) goal #2: Understat '64' Kevin De Bruyne' vs ESPN '65' David Silva'\n  - match_id=11761 (2019-11-10 Manchester United vs Brighton) goal #2: Understat '18' Davy Pr\u00f6pper' vs ESPN '19' Scott McTominay'\n  - match_id=18466 (2023-03-11 Leeds vs Brighton) goal #3: Understat '60' Jack Harrison' vs ESPN '61' Solly March'\n  - match_id=22103 (2024-01-20 Arsenal vs Crystal Palace) goal #2: Understat '36' Dean Henderson' vs ESPN '37' Gabriel Magalh\u00e3es'",
+      "subject": "",
+      "suggested_fix": null,
+      "context": {
+        "mismatches_sample": [
+          {
+            "match_id": 3369,
+            "date": "2017-02-01",
+            "home_team": "Stoke",
+            "away_team": "Everton",
+            "final_score": "1-1",
+            "goal_index": 2,
+            "issue_type": "scorer_name",
+            "understat_minute": 38,
+            "understat_scorer": "Ryan Shawcross",
+            "understat_side": "away",
+            "understat_scoring_team": "Everton",
+            "understat_is_own_goal": true,
+            "espn_minute": 39,
+            "espn_scorer": "Kevin Mirallas",
+            "espn_side": "home",
+            "espn_scoring_team": "Stoke City",
+            "espn_is_own_goal": true,
+            "espn_event_id": 450779
+          },
+          {
+            "match_id": 11737,
+            "date": "2019-10-26",
+            "home_team": "Manchester City",
+            "away_team": "Aston Villa",
+            "final_score": "3-0",
+            "goal_index": 2,
+            "issue_type": "scorer_name",
+            "understat_minute": 64,
+            "understat_scorer": "Kevin De Bruyne",
+            "understat_side": "home",
+            "understat_scoring_team": "Manchester City",
+            "understat_is_own_goal": false,
+            "espn_minute": 65,
+            "espn_scorer": "David Silva",
+            "espn_side": "home",
+            "espn_scoring_team": "Manchester City",
+            "espn_is_own_goal": false,
+            "espn_event_id": 541745
+          },
+          {
+            "match_id": 11761,
+            "date": "2019-11-10",
+            "home_team": "Manchester United",
+            "away_team": "Brighton",
+            "final_score": "3-1",
+            "goal_index": 2,
+            "issue_type": "scorer_name",
+            "understat_minute": 18,
+            "understat_scorer": "Davy Pr\u00f6pper",
+            "understat_side": "home",
+            "understat_scoring_team": "Manchester United",
+            "understat_is_own_goal": true,
+            "espn_minute": 19,
+            "espn_scorer": "Scott McTominay",
+            "espn_side": "home",
+            "espn_scoring_team": "Manchester United",
+            "espn_is_own_goal": false,
+            "espn_event_id": 541728
+          },
+          {
+            "match_id": 18466,
+            "date": "2023-03-11",
+            "home_team": "Leeds",
+            "away_team": "Brighton",
+            "final_score": "2-2",
+            "goal_index": 3,
+            "issue_type": "scorer_name",
+            "understat_minute": 60,
+            "understat_scorer": "Jack Harrison",
+            "understat_side": "away",
+            "understat_scoring_team": "Brighton",
+            "understat_is_own_goal": true,
+            "espn_minute": 61,
+            "espn_scorer": "Solly March",
+            "espn_side": "away",
+            "espn_scoring_team": "Brighton & Hove Albion",
+            "espn_is_own_goal": false,
+            "espn_event_id": 638083
+          },
+          {
+            "match_id": 22103,
+            "date": "2024-01-20",
+            "home_team": "Arsenal",
+            "away_team": "Crystal Palace",
+            "final_score": "5-0",
+            "goal_index": 2,
+            "issue_type": "scorer_name",
+            "understat_minute": 36,
+            "understat_scorer": "Dean Henderson",
+            "understat_side": "home",
+            "understat_scoring_team": "Arsenal",
+            "understat_is_own_goal": true,
+            "espn_minute": 37,
+            "espn_scorer": "Gabriel Magalh\u00e3es",
+            "espn_side": "home",
+            "espn_scoring_team": "Arsenal",
+            "espn_is_own_goal": false,
+            "espn_event_id": 671231
+          }
+        ]
+      }
+    },
+    {
+      "tier": 2,
+      "tier_name": "Cross-dataset",
+      "check": "Understat vs ESPN minute drift (1-2)",
+      "severity": "WARN",
+      "detail": "7,874 goals drift 1\u20132 minutes vs ESPN (known Understat convention: shot-minute vs clock-minute). No goals drift \u22653.",
+      "subject": "",
+      "suggested_fix": null,
+      "context": {}
+    },
+    {
+      "tier": 2,
+      "tier_name": "Cross-dataset",
+      "check": "ESPN cross-check summary",
+      "severity": "INFO",
+      "detail": "Total Understat matches: 3,549. Joined to ESPN: 3,521. ESPN incomplete (ESPN-side gaps): 707. Comparable after filtering: 2,814. Perfectly matched (count + scorer + minute): 2,809. Score disagreements: 0. Goal-count disagreements: 0. Scorer/side disagreements: 5. Minute drift \u22653: 0. Minute drift 1\u20132: 7,874.",
+      "subject": "",
+      "suggested_fix": null,
+      "context": {}
+    },
+    {
+      "tier": 3,
+      "tier_name": "Anchors",
+      "check": "Anchor: Southampton 4-4 Liverpool \u2014 2022/23 season finale, 2023-05-28 (user-provided anchor)",
+      "severity": "WARN",
+      "detail": "Minute drift within tolerance:\n    - goal #1 (Diogo Jota): minute drift 1 \u2014 anchor 10' vs CSV 9'\n    - goal #2 (Roberto Firmino): minute drift 1 \u2014 anchor 14' vs CSV 13'\n    - goal #3 (James Ward-Prowse): minute drift 1 \u2014 anchor 19' vs CSV 18'\n    - goal #4 (Kamaldeen Sulemana): minute drift 1 \u2014 anchor 28' vs CSV 27'\n    - goal #5 (Kamaldeen Sulemana): minute drift 2 \u2014 anchor 48' vs CSV 46'\n    - goal #6 (Adam Armstrong): minute drift 1 \u2014 anchor 64' vs CSV 63'\n    - goal #7 (Cody Gakpo): minute drift 1 \u2014 anchor 72' vs CSV 71'\n    - goal #8 (Diogo Jota): minute drift 1 \u2014 anchor 73' vs CSV 72'",
+      "subject": "18581",
+      "suggested_fix": null,
+      "context": {}
+    },
+    {
+      "tier": 3,
+      "tier_name": "Anchors",
+      "check": "Anchor: Bournemouth 4-3 Liverpool \u2014 2016-12-04 comeback (S02 slide narrative target)",
+      "severity": "WARN",
+      "detail": "Minute drift within tolerance:\n    - goal #1 (Sadio Man\u00e9): minute drift 1 \u2014 anchor 20' vs CSV 19'\n    - goal #3 (Callum Wilson): minute drift 1 \u2014 anchor 56' vs CSV 55'\n    - goal #4 (Emre Can): minute drift 1 \u2014 anchor 64' vs CSV 63'\n    - goal #5 (Ryan Fraser): minute drift 1 \u2014 anchor 76' vs CSV 75'\n    - goal #7 (Nathan Ak\u00e9): minute drift 1 \u2014 anchor 93' vs CSV 92'",
+      "subject": "3112",
+      "suggested_fix": null,
+      "context": {}
+    },
+    {
+      "tier": 3,
+      "tier_name": "Anchors",
+      "check": "Anchor: Manchester City 4-1 Arsenal \u2014 2023-04-26 title-swing game",
+      "severity": "WARN",
+      "detail": "Minute drift within tolerance:\n    - goal #1 (Kevin De Bruyne): minute drift 1 \u2014 anchor 7' vs CSV 6'\n    - goal #3 (Kevin De Bruyne): minute drift 1 \u2014 anchor 54' vs CSV 53'\n    - goal #4 (Rob Holding): minute drift 1 \u2014 anchor 86' vs CSV 85'\n    - goal #5 (Erling Haaland): minute drift 1 \u2014 anchor 95' vs CSV 94'",
+      "subject": "18531",
+      "suggested_fix": null,
+      "context": {}
+    },
+    {
+      "tier": 4,
+      "tier_name": "Slides",
+      "check": "S02_TheMouth.tsx :: MYTH_MATCH_KEY=18581",
+      "severity": "PASS",
+      "detail": "Hint matches data: Southampton vs Liverpool on 2023-05-28 (4-4)",
+      "subject": "S02_TheMouth.tsx",
+      "suggested_fix": null,
+      "context": {}
+    },
+    {
+      "tier": 4,
+      "tier_name": "Slides",
+      "check": "S02_TheMouth.tsx :: YouTube video",
+      "severity": "INFO",
+      "detail": "Video id 'TizeozUuIKA' linked. Content cannot be auto-verified \u2014 confirm manually that the video depicts the narrated match.",
+      "subject": "S02_TheMouth.tsx",
+      "suggested_fix": null,
+      "context": {}
+    },
+    {
+      "tier": 4,
+      "tier_name": "Slides",
+      "check": "S05b_CollapseTimeline.tsx :: FEATURED_MATCH_KEYS[11877]",
+      "severity": "PASS",
+      "detail": "match_key 11877 \u2192 Everton vs Newcastle United on 2020-01-21, final 2-2.",
+      "subject": "S05b_CollapseTimeline.tsx",
+      "suggested_fix": null,
+      "context": {}
+    },
+    {
+      "tier": 4,
+      "tier_name": "Slides",
+      "check": "S05b_CollapseTimeline.tsx :: FEATURED_MATCH_KEYS[14483]",
+      "severity": "PASS",
+      "detail": "match_key 14483 \u2192 Tottenham vs West Ham on 2020-10-18, final 3-3.",
+      "subject": "S05b_CollapseTimeline.tsx",
+      "suggested_fix": null,
+      "context": {}
+    },
+    {
+      "tier": 4,
+      "tier_name": "Slides",
+      "check": "S05b_CollapseTimeline.tsx :: FEATURED_MATCH_KEYS[14108]",
+      "severity": "PASS",
+      "detail": "match_key 14108 \u2192 West Bromwich Albion vs Chelsea on 2020-09-26, final 3-3.",
+      "subject": "S05b_CollapseTimeline.tsx",
+      "suggested_fix": null,
+      "context": {}
+    },
+    {
+      "tier": 4,
+      "tier_name": "Slides",
+      "check": "S05b_CollapseTimeline.tsx :: FEATURED_MATCH_KEYS[9432]",
+      "severity": "PASS",
+      "detail": "match_key 9432 \u2192 Manchester United vs Burnley on 2019-01-29, final 2-2.",
+      "subject": "S05b_CollapseTimeline.tsx",
+      "suggested_fix": null,
+      "context": {}
+    },
+    {
+      "tier": 4,
+      "tier_name": "Slides",
+      "check": "S05b_CollapseTimeline.tsx :: FEATURED_MATCH_KEYS[18581]",
+      "severity": "PASS",
+      "detail": "match_key 18581 \u2192 Southampton vs Liverpool on 2023-05-28, final 4-4.",
+      "subject": "S05b_CollapseTimeline.tsx",
+      "suggested_fix": null,
+      "context": {}
+    },
+    {
+      "tier": 4,
+      "tier_name": "Slides",
+      "check": "talk-track S02 narration",
+      "severity": "INFO",
+      "detail": "S02 narration references Southampton 4-4 Liverpool. The slide should therefore point at match_key 18581.",
+      "subject": "",
+      "suggested_fix": null,
+      "context": {}
+    }
+  ]
+}

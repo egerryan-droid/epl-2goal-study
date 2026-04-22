@@ -5,3 +5,7 @@ data/raw/
 __pycache__/
 *.pyc
 .venv/
+
+# Claude Code local state
+.claude/
+epl-2goal-web/.claude/

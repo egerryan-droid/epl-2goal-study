@@ -1,0 +1,63 @@
+# Anchor matches — goal-scorer ground truth for cross-checking Understat data.
+#
+# Each anchor gives canonical scorer and minute data from an authoritative
+# external source (Premier League official, BBC, ESPN). The validator in
+# scripts/13_full_validation.py looks up the match_key in
+# data/processed/goal_timeline.csv and compares goal-by-goal:
+#
+#   - Scorer name mismatch  -> FAIL
+#   - Goal count mismatch   -> FAIL
+#   - Minute drift >= 3     -> FAIL
+#   - Minute drift 1 or 2   -> WARN (Understat minutes are shot minutes and
+#                                    often differ from official clock minutes)
+#   - Exact match           -> PASS
+#
+# To add a new anchor: append a list entry with match_key, the four metadata
+# fields, and a `goals:` list sorted by minute. No code change required.
+
+- match_key: 18581
+  description: "Southampton 4-4 Liverpool — 2022/23 season finale, 2023-05-28 (user-provided anchor)"
+  home_team: Southampton
+  away_team: Liverpool
+  date: 2023-05-28
+  final_home_goals: 4
+  final_away_goals: 4
+  goals:
+    - {minute: 10, scorer: "Diogo Jota",         side: away}
+    - {minute: 14, scorer: "Roberto Firmino",    side: away}
+    - {minute: 19, scorer: "James Ward-Prowse",  side: home}
+    - {minute: 28, scorer: "Kamaldeen Sulemana", side: home}
+    - {minute: 48, scorer: "Kamaldeen Sulemana", side: home}
+    - {minute: 64, scorer: "Adam Armstrong",     side: home}
+    - {minute: 72, scorer: "Cody Gakpo",         side: away}
+    - {minute: 73, scorer: "Diogo Jota",         side: away}
+
+- match_key: 3112
+  description: "Bournemouth 4-3 Liverpool — 2016-12-04 comeback (S02 slide narrative target)"
+  home_team: AFC Bournemouth
+  away_team: Liverpool
+  date: 2016-12-04
+  final_home_goals: 4
+  final_away_goals: 3
+  goals:
+    - {minute: 20, scorer: "Sadio Mané",    side: away}
+    - {minute: 21, scorer: "Divock Origi",  side: away}
+    - {minute: 56, scorer: "Callum Wilson", side: home}
+    - {minute: 64, scorer: "Emre Can",      side: away}
+    - {minute: 76, scorer: "Ryan Fraser",   side: home}
+    - {minute: 78, scorer: "Steve Cook",    side: home}
+    - {minute: 93, scorer: "Nathan Aké",    side: home}
+
+- match_key: 18531
+  description: "Manchester City 4-1 Arsenal — 2023-04-26 title-swing game"
+  home_team: Manchester City
+  away_team: Arsenal
+  date: 2023-04-26
+  final_home_goals: 4
+  final_away_goals: 1
+  goals:
+    - {minute: 7,  scorer: "Kevin De Bruyne", side: home}
+    - {minute: 45, scorer: "John Stones",     side: home}
+    - {minute: 54, scorer: "Kevin De Bruyne", side: home}
+    - {minute: 86, scorer: "Rob Holding",     side: away}
+    - {minute: 95, scorer: "Erling Haaland",  side: home}
