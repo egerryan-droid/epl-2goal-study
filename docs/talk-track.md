@@ -10,7 +10,7 @@ Keep these numbers in your back pocket — they anchor the entire story.
 
 | Stat | Value | Context |
 |------|-------|---------|
-| Win Rate | **93.3%** | 1,778 of 1,907 two-goal leads held |
+| Win Rate | **93.3%** | 1,780 of 1,907 two-goal leads held |
 | Events Studied | **1,907** | Every two-goal lead across 10 EPL seasons |
 | Seasons | **10** | 2014/15 through 2023/24 |
 | Matches Examined | **3,800+** | Full decade of Premier League football |
@@ -78,7 +78,7 @@ Use these when explaining how the study was done or if someone asks about the da
 ### S04: The Big Picture — 93.3% Win Rate (~2 min)
 
 - **This is the money slide.** Pause and let 93.3% land.
-- Of 1,907 two-goal leads, 1,778 were wins. 87 draws. Only 40 losses.
+- Of 1,907 two-goal leads, 1,780 were wins. 87 draws. Only 40 losses.
 - The donut chart makes it visceral — the green completely dominates.
 - 294 total points dropped sounds like a lot until you divide by 1,907 — it's 0.15 points per event.
 - **Key line:** "Ninety-three percent of the time, the leader wins. The myth is busted right here."

@@ -1,0 +1,74 @@
+# Accepted Understat-vs-ESPN scorer disagreements
+# ================================================
+#
+# Each entry represents a known scorer or own-goal attribution conflict
+# between the Understat-derived goal_timeline.csv and the ESPN Soccer API
+# snapshot. Listing a dispute here downgrades it from FAIL to INFO in the
+# validator — so known, researched cases don't block CI while genuinely
+# NEW disputes still do.
+#
+# Matching key: (match_id, goal_index, understat_scorer, espn_scorer).
+# Remove an entry if new evidence resolves the dispute (e.g. a pipeline
+# re-run with corrected data).
+#
+# Schema:
+#   match_id:          Understat match_id (int)
+#   date:              ISO date (for human context)
+#   goal_index:        1-based position of the goal within the match, after
+#                      sorting by (minute, side, player)
+#   understat_scorer:  Exact string as recorded in goal_timeline.csv
+#   espn_scorer:       Exact string as recorded by ESPN
+#   note:              Human-readable explanation of why the dispute is
+#                      accepted and what the true record is (if known).
+
+- match_id: 3369
+  date: 2017-02-01
+  goal_index: 2
+  understat_scorer: Ryan Shawcross
+  espn_scorer: Kevin Mirallas
+  note: >
+    Stoke 1-1 Everton. Own-goal attribution dispute. BBC/PL records show
+    Mirallas scored regularly for Everton (not an own goal); Understat
+    credits Shawcross OG for Everton; ESPN credits Mirallas OG for Stoke.
+    Both sources differ from the authoritative record in different ways.
+
+- match_id: 11737
+  date: 2019-10-26
+  goal_index: 2
+  understat_scorer: Kevin De Bruyne
+  espn_scorer: David Silva
+  note: >
+    Manchester City 3-0 Aston Villa. Direct scorer disagreement on the
+    second goal (minute 64 Understat / 65 ESPN). Both are legitimate
+    Man City players from that era; no obvious external tiebreaker.
+
+- match_id: 11761
+  date: 2019-11-10
+  goal_index: 2
+  understat_scorer: Davy Pröpper
+  espn_scorer: Scott McTominay
+  note: >
+    Manchester United 3-1 Brighton. Understat records Pröpper (Brighton)
+    OG at 18'; ESPN records McTominay (Man United) regular goal at 19'.
+    BBC/PL records confirm this as McTominay's first Premier League goal
+    — ESPN matches the authoritative record; Understat has the wrong
+    attribution.
+
+- match_id: 18466
+  date: 2023-03-11
+  goal_index: 3
+  understat_scorer: Jack Harrison
+  espn_scorer: Solly March
+  note: >
+    Leeds 2-2 Brighton. Understat records Harrison (Leeds) OG; ESPN
+    records March (Brighton) regular goal. Own-goal attribution dispute.
+
+- match_id: 22103
+  date: 2024-01-20
+  goal_index: 2
+  understat_scorer: Dean Henderson
+  espn_scorer: Gabriel Magalhães
+  note: >
+    Arsenal 5-0 Crystal Palace. Understat records Henderson (Palace GK)
+    OG at 36'; ESPN records Gabriel (Arsenal) regular goal at 37'.
+    Own-goal attribution dispute.

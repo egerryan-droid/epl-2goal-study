@@ -12,11 +12,13 @@ interface GoalTimelineProps {
 }
 
 const WIDTH = 800;
-const HEIGHT = 260;
-const MARGIN = { top: 60, right: 40, bottom: 60, left: 40 };
+const HEIGHT = 340;
+const MARGIN = { top: 100, right: 40, bottom: 100, left: 40 };
 const TRACK_Y = HEIGHT / 2;
 const TIMELINE_LEFT = MARGIN.left;
 const TIMELINE_RIGHT = WIDTH - MARGIN.right;
+const LABEL_BASE_OFFSET = 58;  // distance from track to first-tier label (px)
+const TEAM_LABEL_PAD = 14;     // vertical gap between outermost tier and team label
 
 function minuteToX(minute: number): number {
   const maxMinute = 95;
@@ -24,11 +26,53 @@ function minuteToX(minute: number): number {
   return TIMELINE_LEFT + t * (TIMELINE_RIGHT - TIMELINE_LEFT);
 }
 
+// Approximate label footprint, in SVG units. Labels below this distance on the
+// same side collide visually, so we push the later label to the next vertical
+// tier. Sized for the longest realistic player name plus minute suffix.
+const LABEL_WIDTH = 100;
+const TIER_STEP = 28;
+
 export default function GoalTimeline({ goals, homeTeam, awayTeam }: GoalTimelineProps) {
   const sorted = useMemo(
     () => [...goals].sort((a, b) => a.minute - b.minute),
     [goals],
   );
+
+  // Assign each goal a vertical "tier" per side so labels that would overlap
+  // on the same row get pushed outward. Greedy: each goal picks the lowest
+  // tier index whose occupants don't collide with its x position.
+  const { labelTiers, maxHomeTier, maxAwayTier } = useMemo(() => {
+    const tiers: Record<'home' | 'away', number[][]> = { home: [], away: [] };
+    const out: Record<string, number> = {};
+    let maxH = 0;
+    let maxA = 0;
+    for (const goal of sorted) {
+      const side = goal.scoring_side;
+      const x = minuteToX(goal.minute);
+      let tier = 0;
+      // eslint-disable-next-line no-constant-condition
+      while (true) {
+        tiers[side][tier] = tiers[side][tier] ?? [];
+        const collides = tiers[side][tier].some(
+          (otherX) => Math.abs(otherX - x) < LABEL_WIDTH,
+        );
+        if (!collides) {
+          tiers[side][tier].push(x);
+          break;
+        }
+        tier += 1;
+      }
+      out[goal.goal_id] = tier;
+      if (side === 'home') maxH = Math.max(maxH, tier);
+      else maxA = Math.max(maxA, tier);
+    }
+    return { labelTiers: out, maxHomeTier: maxH, maxAwayTier: maxA };
+  }, [sorted]);
+
+  // Position team labels just outside the outermost label tier so they never
+  // collide with goal labels, even when many goals cluster near one side.
+  const homeTeamLabelY = TRACK_Y - (LABEL_BASE_OFFSET + maxHomeTier * TIER_STEP + TEAM_LABEL_PAD + 12);
+  const awayTeamLabelY = TRACK_Y + (LABEL_BASE_OFFSET + maxAwayTier * TIER_STEP + TEAM_LABEL_PAD + 12);
 
   // Theme-aware colors for SVG elements (re-reads on theme change)
   const [themeColors, setThemeColors] = useState({
@@ -63,17 +107,17 @@ export default function GoalTimeline({ goals, homeTeam, awayTeam }: GoalTimeline
   return (
     <div className="w-full overflow-x-auto">
       <svg viewBox={`0 0 ${WIDTH} ${HEIGHT}`} className="w-full min-w-[600px]" role="img" aria-label="Timeline of goals scored by minute">
-        {/* Team labels */}
+        {/* Team labels — positioned just outside the outermost label tier */}
         <text
           x={TIMELINE_LEFT}
-          y={TRACK_Y - 70}
+          y={homeTeamLabelY}
           className="text-xs fill-text-muted font-semibold uppercase tracking-wide"
         >
           {homeTeam}
         </text>
         <text
           x={TIMELINE_LEFT}
-          y={TRACK_Y + 82}
+          y={awayTeamLabelY}
           className="text-xs fill-text-muted font-semibold uppercase tracking-wide"
         >
           {awayTeam}
@@ -130,7 +174,10 @@ export default function GoalTimeline({ goals, homeTeam, awayTeam }: GoalTimeline
           const x = minuteToX(goal.minute);
           const isHome = goal.scoring_side === 'home';
           const yOffset = isHome ? -30 : 30;
-          const labelY = isHome ? -50 : 50;
+          const tier = labelTiers[goal.goal_id] ?? 0;
+          // Push outward (away from the timeline) as tier increases.
+          const labelY = (isHome ? -LABEL_BASE_OFFSET : LABEL_BASE_OFFSET)
+            + (isHome ? -tier * TIER_STEP : tier * TIER_STEP);
 
           return (
             <motion.g

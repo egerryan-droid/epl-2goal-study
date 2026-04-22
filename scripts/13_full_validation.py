@@ -57,6 +57,20 @@ TALK_TRACK = PROJ_DIR / "docs" / "talk-track.md"
 ESPN_GOALS = PROJ_DIR / "data" / "raw" / "espn_goals.csv"
 ESPN_MATCHES = PROJ_DIR / "data" / "raw" / "espn_matches.csv"
 
+FACT_PLUS2 = PBI_DIR / "fact_plus2_events.csv"
+AGG_DESC_JSON = OUT_DIR / "descriptive_stats.json"
+AGG_BUCKET_JSON = OUT_DIR / "bucket_analysis.json"
+SUMMARY_BY_BUCKET = PBI_DIR / "summary_by_bucket.csv"
+SUMMARY_BY_SEASON = PBI_DIR / "summary_by_season.csv"
+SUMMARY_BY_TEAM = PBI_DIR / "summary_by_team.csv"
+NARRATIVE_CLAIMS = REF_DIR / "narrative_claims.yaml"
+REGRESSION_JSON = OUT_DIR / "regression_results.json"
+ACCEPTED_DISPUTES = REF_DIR / "accepted_disputes.yaml"
+
+# Tolerances for aggregate parity
+RATE_TOL = 1e-3     # ±0.001 for rates (4 decimal JSON resolution)
+STAT_TOL = 0.01     # ±0.01 for chi-square etc.
+
 
 # -----------------------------------------------------------------------------
 # Severity and team-alias map
@@ -290,6 +304,77 @@ def tier1_integrity(gt: pd.DataFrame) -> None:
         record(1, tn, "Match metadata consistency", "FAIL",
                f"{len(bad_meta)} match_ids have inconsistent metadata. First 5: {bad_meta[:5]}")
 
+    # 1j. Own-goal semantics: for each is_own_goal row in timeline, the player
+    # should be on the CONCEDING team (i.e. h_a in raw shots is opposite to
+    # the timeline's scoring_side). Only runs if raw understat data is present.
+    tier1_own_goal_semantics(gt)
+
+
+def tier1_own_goal_semantics(gt: pd.DataFrame) -> None:
+    tn = "Integrity"
+    own_goals = gt[gt["is_own_goal"] == True]
+    if len(own_goals) == 0:
+        record(1, tn, "Own-goal semantics", "INFO",
+               "No own goals in goal_timeline.csv — nothing to check.")
+        return
+
+    raw_files = sorted(glob.glob(str(RAW_DIR / "understat_shots_*.csv")))
+    if not raw_files:
+        record(1, tn, "Own-goal semantics", "INFO",
+               "Raw understat_shots_*.csv files not present (data/raw/ is gitignored). "
+               f"{len(own_goals)} own goals not cross-checked. Re-run scripts/02_pull_understat_shots.py to enable.")
+        return
+
+    og_frames = []
+    for path in raw_files:
+        try:
+            s = pd.read_csv(path)
+        except Exception:
+            continue
+        if "result" not in s.columns or "h_a" not in s.columns:
+            continue
+        og = s[s["result"] == "OwnGoal"]
+        if len(og) > 0:
+            og_frames.append(og[["match_id", "player", "minute", "h_a"]])
+    if not og_frames:
+        record(1, tn, "Own-goal semantics", "INFO",
+               "No OwnGoal rows found in raw understat_shots; skipping cross-check.")
+        return
+    shots_og = pd.concat(og_frames, ignore_index=True)
+
+    issues: list[str] = []
+    unmatched = 0
+    checked = 0
+    for _, r in own_goals.iterrows():
+        cand = shots_og[
+            (shots_og["match_id"] == r["match_id"])
+            & (shots_og["player"].astype(str).str.strip() == str(r["player"]).strip())
+        ]
+        if len(cand) == 0:
+            unmatched += 1
+            continue
+        checked += 1
+        shooter_h_a = str(cand.iloc[0]["h_a"]).strip().lower()
+        conceding = "a" if r["scoring_side"] == "home" else "h"
+        if shooter_h_a != conceding:
+            issues.append(
+                f"match_id={int(r['match_id'])} min={int(r['minute'])} "
+                f"player='{r['player']}': shooter h_a='{shooter_h_a}' but "
+                f"conceding side should be '{conceding}' "
+                f"(scoring_side='{r['scoring_side']}', scoring_team='{r['scoring_team']}')"
+            )
+
+    if issues:
+        record(1, tn, "Own-goal semantics", "FAIL",
+               f"{len(issues)} of {checked} own-goals have shooter on wrong side "
+               f"(expected conceding team):\n  - " + "\n  - ".join(issues[:10]),
+               context={"issues": issues[:30]})
+    else:
+        detail = f"All {checked} own-goals cross-checked against raw shots — shooter is on conceding team."
+        if unmatched > 0:
+            detail += f" ({unmatched} own-goals had no matching raw shot — possible name mismatch.)"
+        record(1, tn, "Own-goal semantics", "PASS", detail)
+
 
 # -----------------------------------------------------------------------------
 # Tier 2 — cross-dataset consistency
@@ -485,6 +570,15 @@ def tier2_cross(gt: pd.DataFrame, dim_match: pd.DataFrame, web_goals: dict) -> N
     # 2d. Understat (goal_timeline) vs ESPN goal-level cross-check.
     tier2_espn_cross_check(gt, tl_matches)
 
+    # 2e. Aggregate parity: committed JSON/CSV aggregates must match re-computed ones.
+    tier2_aggregate_parity()
+
+    # 2f. Regression parity: re-fit the logistic model and confirm coefficients match.
+    tier2_regression_parity()
+
+    # 2g. Web dashboard JSONs must still match the CSVs they were generated from.
+    tier2_web_data_parity()
+
 
 def tier2_espn_cross_check(gt: pd.DataFrame, tl_matches: pd.DataFrame) -> None:
     tn = "Cross-dataset"
@@ -516,11 +610,14 @@ def tier2_espn_cross_check(gt: pd.DataFrame, tl_matches: pd.DataFrame) -> None:
     else:
         espn_match_by_key = {}
 
+    accepted = _load_accepted_disputes()
+
     unmatched_matches = 0
     espn_incomplete: list[dict] = []  # ESPN's own details[] < its own final score
     score_mismatches: list[dict] = []
     goal_count_mismatches: list[dict] = []
     scorer_mismatches: list[dict] = []
+    accepted_mismatches: list[dict] = []
     minute_warns: list[dict] = []
     minute_fails: list[dict] = []
     perfect = 0
@@ -601,15 +698,23 @@ def tier2_espn_cross_check(gt: pd.DataFrame, tl_matches: pd.DataFrame) -> None:
             # name formats (Heung-Min Son vs Son Heung-Min, accent differences, etc.).
             # We require at least one token ≥4 chars to overlap.
             if not _scorer_names_match(us_scorer, es_scorer):
-                scorer_mismatches.append(_disputed_row(m, i, "scorer_name", us, es,
-                                                        us_min, us_scorer, es_min, es_scorer))
-                match_had_issue = True
+                disp = _disputed_row(m, i, "scorer_name", us, es,
+                                     us_min, us_scorer, es_min, es_scorer)
+                if _dispute_is_accepted(accepted, disp):
+                    accepted_mismatches.append(disp)
+                else:
+                    scorer_mismatches.append(disp)
+                    match_had_issue = True
                 continue
 
             if us_side and es_side and us_side != es_side:
-                scorer_mismatches.append(_disputed_row(m, i, "scoring_side", us, es,
-                                                        us_min, us_scorer, es_min, es_scorer))
-                match_had_issue = True
+                disp = _disputed_row(m, i, "scoring_side", us, es,
+                                     us_min, us_scorer, es_min, es_scorer)
+                if _dispute_is_accepted(accepted, disp):
+                    accepted_mismatches.append(disp)
+                else:
+                    scorer_mismatches.append(disp)
+                    match_had_issue = True
                 continue
 
             if es_min is not None:
@@ -689,15 +794,27 @@ def tier2_espn_cross_check(gt: pd.DataFrame, tl_matches: pd.DataFrame) -> None:
             for d in scorer_mismatches[:10]
         )
         record(2, tn, "Understat vs ESPN scorer names", "FAIL",
-               f"{len(scorer_mismatches)} goal(s) disagree on scorer (name or side). First 10:\n  - " + sample,
+               f"{len(scorer_mismatches)} NEW goal(s) disagree on scorer (name or side). "
+               f"Review and either resolve or add to data/reference/accepted_disputes.yaml. First 10:\n  - " + sample,
                context={"mismatches_sample": scorer_mismatches[:50]})
     else:
+        suffix = (
+            f" ({len(accepted_mismatches)} accepted dispute(s) acknowledged in "
+            f"data/reference/accepted_disputes.yaml.)"
+            if accepted_mismatches else ""
+        )
         record(2, tn, "Understat vs ESPN scorer names", "PASS",
-               f"All goal-level scorer names agree (where goal counts match).")
+               f"No new scorer disagreements where goal counts match." + suffix)
 
-    # Emit disputed_goals.csv — one row per flagged scorer disagreement, enriched
-    # with both sources' fields so a human can adjudicate.
-    _write_disputed_goals(scorer_mismatches)
+    if accepted_mismatches:
+        record(2, tn, "ESPN scorer names: accepted disputes", "INFO",
+               f"{len(accepted_mismatches)} acknowledged dispute(s) — see "
+               f"data/reference/accepted_disputes.yaml for resolutions.",
+               context={"accepted": accepted_mismatches})
+
+    # Emit disputed_goals.csv — every current dispute (new + accepted), so the
+    # artifact always reflects the full picture even when CI passes.
+    _write_disputed_goals(scorer_mismatches + accepted_mismatches)
 
     if minute_fails:
         sample = "\n  - ".join(
@@ -805,6 +922,600 @@ def _write_disputed_goals(mismatches: list[dict]) -> None:
     df = pd.DataFrame(mismatches, columns=cols)
     df = df.sort_values(["date", "match_id", "goal_index"]).reset_index(drop=True)
     df.to_csv(DISPUTED_GOALS, index=False)
+
+
+WEB_CSV_PAIRS = [
+    ("dim_match",            PBI_DIR / "dim_match.csv"),
+    ("dim_minute_bucket",    PBI_DIR / "dim_minute_bucket.csv"),
+    ("dim_season",           PBI_DIR / "dim_season.csv"),
+    ("dim_team",             PBI_DIR / "dim_team.csv"),
+    ("fact_plus2_events",    PBI_DIR / "fact_plus2_events.csv"),
+    ("summary_bucket_stats", PBI_DIR / "summary_bucket_stats.csv"),
+    ("summary_by_bucket",    PBI_DIR / "summary_by_bucket.csv"),
+    ("summary_by_season",    PBI_DIR / "summary_by_season.csv"),
+    ("summary_by_team",      PBI_DIR / "summary_by_team.csv"),
+    ("summary_overall",      PBI_DIR / "summary_overall.csv"),
+    ("summary_regression",   PBI_DIR / "summary_regression.csv"),
+]
+
+
+def _coerce_csv_value(v):
+    """Mirror the coercion done by epl-2goal-web/scripts/csv-to-json.ts."""
+    if v is None:
+        return None
+    if isinstance(v, float):
+        import math
+        if math.isnan(v):
+            return None
+        if v.is_integer():
+            return int(v)
+        return v
+    if isinstance(v, (int, bool)):
+        return v
+    s = str(v)
+    if s == "" or s.lower() in ("none", "null", "nan"):
+        return None
+    if s == "True":
+        return True
+    if s == "False":
+        return False
+    try:
+        n = float(s)
+        if n.is_integer() and "." not in s and "e" not in s.lower():
+            return int(n)
+        return n
+    except ValueError:
+        return s
+
+
+def _values_equivalent(a, b, tol: float = 1e-4) -> bool:
+    if a is None and b is None:
+        return True
+    if a is None or b is None:
+        return False
+    if isinstance(a, bool) or isinstance(b, bool):
+        return bool(a) == bool(b)
+    if isinstance(a, (int, float)) and isinstance(b, (int, float)):
+        return abs(float(a) - float(b)) <= tol
+    return str(a) == str(b)
+
+
+def tier2_web_data_parity() -> None:
+    """Verify that every web dashboard JSON in epl-2goal-web/src/data/ still
+    matches the CSV it was generated from. The JSONs are committed to git and
+    used by Next.js components, so they can drift from the canonical CSVs
+    between pipeline runs if csv-to-json.ts isn't re-run.
+    """
+    tn = "Cross-dataset"
+    web_data_dir = WEB_DIR / "data"
+    if not web_data_dir.exists():
+        record(2, tn, "Web data parity", "INFO",
+               f"{web_data_dir} not found; skipping web-data parity check.")
+        return
+
+    row_mismatches: list[str] = []
+    col_mismatches: list[str] = []
+    value_mismatches: list[str] = []
+    checked = 0
+
+    for stem, csv_path in WEB_CSV_PAIRS:
+        json_path = web_data_dir / f"{stem}.json"
+        if not csv_path.exists() or not json_path.exists():
+            continue
+        checked += 1
+        csv = pd.read_csv(csv_path)
+        csv_rows = [
+            {col: _coerce_csv_value(row[col]) for col in csv.columns}
+            for _, row in csv.iterrows()
+        ]
+        json_rows = json.loads(json_path.read_text(encoding="utf-8"))
+
+        if len(csv_rows) != len(json_rows):
+            row_mismatches.append(
+                f"{stem}: CSV has {len(csv_rows)} rows, JSON has {len(json_rows)}"
+            )
+            continue
+
+        csv_cols = set(csv.columns)
+        json_cols = set(json_rows[0].keys()) if json_rows else set()
+        if csv_cols != json_cols:
+            col_mismatches.append(
+                f"{stem}: columns differ. "
+                f"CSV only: {sorted(csv_cols - json_cols)}. "
+                f"JSON only: {sorted(json_cols - csv_cols)}."
+            )
+            continue
+
+        for i, (c_row, j_row) in enumerate(zip(csv_rows, json_rows)):
+            for col in csv.columns:
+                c_val = c_row.get(col)
+                j_val = j_row.get(col)
+                if not _values_equivalent(c_val, j_val):
+                    value_mismatches.append(
+                        f"{stem}[row {i}, col '{col}']: CSV={c_val!r} vs JSON={j_val!r}"
+                    )
+                    if len(value_mismatches) >= 30:
+                        break
+            if len(value_mismatches) >= 30:
+                break
+
+    total_issues = len(row_mismatches) + len(col_mismatches) + len(value_mismatches)
+    if total_issues == 0:
+        record(2, tn, "Web data parity", "PASS",
+               f"All {checked} web JSON files match their source CSVs.")
+    else:
+        sample = (row_mismatches + col_mismatches + value_mismatches)[:15]
+        record(2, tn, "Web data parity", "FAIL",
+               f"{total_issues} divergence(s) across {checked} files "
+               f"({len(row_mismatches)} row-count, {len(col_mismatches)} column, "
+               f"{len(value_mismatches)} value):\n  - " + "\n  - ".join(sample),
+               context={
+                   "row_mismatches": row_mismatches,
+                   "col_mismatches": col_mismatches,
+                   "value_mismatches_sample": value_mismatches[:30],
+               })
+
+
+def tier2_regression_parity() -> None:
+    """Re-fit the logistic regression described in scripts/11_regression.py and
+    verify that the committed coefficients/odds ratios/p-values/AIC/BIC in
+    data/output/regression_results.json match within tolerance. Catches any
+    drift from a pipeline re-run that would otherwise silently invalidate the
+    paper's regression table.
+    """
+    tn = "Cross-dataset"
+    if not FACT_PLUS2.exists():
+        record(2, tn, "Regression parity", "INFO",
+               f"{FACT_PLUS2} not found — skipping regression parity.")
+        return
+    if not REGRESSION_JSON.exists():
+        record(2, tn, "Regression parity", "INFO",
+               f"{REGRESSION_JSON} not found — run scripts/11_regression.py to generate.")
+        return
+
+    try:
+        import statsmodels.api as sm
+        import numpy as np
+    except ImportError:
+        record(2, tn, "Regression parity", "INFO",
+               "statsmodels not installed — cannot verify regression parity.")
+        return
+
+    fact = pd.read_csv(FACT_PLUS2)
+    reg_data = fact[[
+        "is_win", "minute_reached_plus2", "leader_implied_prob",
+        "leader_is_home", "leader_red_cards", "opponent_red_cards",
+    ]].copy()
+    reg_data["leader_is_home"] = reg_data["leader_is_home"].astype(int)
+
+    reg_core = reg_data.dropna(subset=[
+        "minute_reached_plus2", "leader_implied_prob", "leader_is_home",
+    ])
+    reg_full = reg_data.dropna()
+
+    # Mirror the feature-set selection from scripts/11_regression.py.
+    if len(reg_full) > len(reg_core) * 0.8:
+        x_cols = [
+            "minute_reached_plus2", "leader_implied_prob", "leader_is_home",
+            "leader_red_cards", "opponent_red_cards",
+        ]
+        data = reg_full
+    else:
+        x_cols = ["minute_reached_plus2", "leader_implied_prob", "leader_is_home"]
+        data = reg_core
+
+    X = sm.add_constant(data[x_cols])
+    y = data["is_win"]
+    try:
+        model = sm.Logit(y, X).fit(disp=0)
+    except Exception as e:
+        record(2, tn, "Regression parity", "FAIL", f"Re-fit failed: {e}")
+        return
+
+    committed = json.loads(REGRESSION_JSON.read_text(encoding="utf-8"))
+
+    COEF_TOL = 1e-3
+    OR_TOL = 1e-2
+    P_TOL = 1e-3
+    STAT_TOL = 0.2
+
+    issues: list[str] = []
+
+    # Top-level stats.
+    n_committed = int(committed.get("n", 0))
+    if int(model.nobs) != n_committed:
+        issues.append(f"n: committed={n_committed} vs recomputed={int(model.nobs)}")
+    pseudo_new = round(float(model.prsquared), 4)
+    pseudo_com = float(committed.get("pseudo_r2", 0))
+    if abs(pseudo_new - pseudo_com) > 1e-3:
+        issues.append(f"pseudo_r2: committed={pseudo_com} vs recomputed={pseudo_new}")
+    aic_new = round(float(model.aic), 1)
+    aic_com = float(committed.get("aic", 0))
+    if abs(aic_new - aic_com) > STAT_TOL:
+        issues.append(f"aic: committed={aic_com} vs recomputed={aic_new}")
+    bic_new = round(float(model.bic), 1)
+    bic_com = float(committed.get("bic", 0))
+    if abs(bic_new - bic_com) > STAT_TOL:
+        issues.append(f"bic: committed={bic_com} vs recomputed={bic_new}")
+    ll_new = round(float(model.llf), 1)
+    ll_com = float(committed.get("log_likelihood", 0))
+    if abs(ll_new - ll_com) > STAT_TOL:
+        issues.append(f"log_likelihood: committed={ll_com} vs recomputed={ll_new}")
+
+    # Coefficients.
+    committed_coefs = committed.get("coefficients", {})
+    for var in ["const"] + x_cols:
+        if var not in committed_coefs:
+            issues.append(f"coefficient '{var}' missing from regression_results.json")
+            continue
+        c = committed_coefs[var]
+        coef_new = round(float(model.params[var]), 4)
+        p_new = round(float(model.pvalues[var]), 4)
+        or_new = round(float(np.exp(model.params[var])), 4)
+        ci = model.conf_int().loc[var]
+        ci_low_new = round(float(ci.iloc[0]), 4)
+        ci_high_new = round(float(ci.iloc[1]), 4)
+
+        if abs(coef_new - float(c.get("coefficient", 0))) > COEF_TOL:
+            issues.append(
+                f"{var}.coefficient: committed={c.get('coefficient')} vs recomputed={coef_new}"
+            )
+        if abs(p_new - float(c.get("p_value", 0))) > P_TOL:
+            issues.append(
+                f"{var}.p_value: committed={c.get('p_value')} vs recomputed={p_new}"
+            )
+        if abs(or_new - float(c.get("odds_ratio", 0))) > OR_TOL:
+            issues.append(
+                f"{var}.odds_ratio: committed={c.get('odds_ratio')} vs recomputed={or_new}"
+            )
+        if abs(ci_low_new - float(c.get("ci_low", 0))) > COEF_TOL:
+            issues.append(
+                f"{var}.ci_low: committed={c.get('ci_low')} vs recomputed={ci_low_new}"
+            )
+        if abs(ci_high_new - float(c.get("ci_high", 0))) > COEF_TOL:
+            issues.append(
+                f"{var}.ci_high: committed={c.get('ci_high')} vs recomputed={ci_high_new}"
+            )
+
+    if issues:
+        record(2, tn, "Regression parity", "FAIL",
+               f"{len(issues)} divergence(s) vs regression_results.json:\n  - "
+               + "\n  - ".join(issues[:15]),
+               context={"issues": issues})
+    else:
+        record(2, tn, "Regression parity", "PASS",
+               f"Logistic regression re-fit matches committed model "
+               f"(n={int(model.nobs)}, pseudo_r²={pseudo_new}, AIC={aic_new}, "
+               f"all {len(['const'] + x_cols)} coefficients within tolerance).")
+
+
+def tier2_aggregate_parity() -> None:
+    """Verify that committed aggregate files still match a fresh re-computation.
+
+    Covers the L3 aggregate layer from docs/qa_plan.md — descriptive_stats.json,
+    bucket_analysis.json, and the summary_*.csv files. If the pipeline is ever
+    re-run with updated data, any aggregate that drifts from a re-computation on
+    fact_plus2_events.csv will fail this check — preventing stale numbers from
+    silently shipping to the paper, talk-track, or slides.
+    """
+    tn = "Cross-dataset"
+
+    if not FACT_PLUS2.exists():
+        record(2, tn, "Aggregate parity", "INFO",
+               f"{FACT_PLUS2} not found — skipping aggregate parity.")
+        return
+    if not AGG_DESC_JSON.exists():
+        record(2, tn, "Aggregate parity", "INFO",
+               f"{AGG_DESC_JSON} not found — run `scripts/09_descriptive_stats.py` to generate.")
+        return
+
+    fact = pd.read_csv(FACT_PLUS2)
+    desc = json.loads(AGG_DESC_JSON.read_text(encoding="utf-8"))
+    bucket_ana = (
+        json.loads(AGG_BUCKET_JSON.read_text(encoding="utf-8"))
+        if AGG_BUCKET_JSON.exists() else {}
+    )
+
+    # ---- Overall aggregates ----
+    overall = desc.get("overall", {})
+    recomputed = {
+        "n":               int(len(fact)),
+        "wins":            int(fact["is_win"].sum()),
+        "draws":           int(fact["is_draw"].sum()),
+        "losses":          int(fact["is_loss"].sum()),
+        "win_rate":        round(float(fact["is_win"].mean()), 4),
+        "draw_rate":       round(float(fact["is_draw"].mean()), 4),
+        "loss_rate":       round(float(fact["is_loss"].mean()), 4),
+        "points_dropped":  int(fact["points_dropped"].sum()),
+        "avg_points_dropped": round(float(fact["points_dropped"].mean()), 4),
+        "home_n":          int(fact["leader_is_home"].sum()),
+        "away_n":          int((~fact["leader_is_home"].astype(bool)).sum()),
+        "home_win_rate":   round(float(fact[fact["leader_is_home"]]["is_win"].mean()), 4),
+        "away_win_rate":   round(float(fact[~fact["leader_is_home"].astype(bool)]["is_win"].mean()), 4),
+    }
+    issues = _compare_scalar_dict(recomputed, overall, tolerance=RATE_TOL, label_prefix="overall")
+    if issues:
+        record(2, tn, "Aggregate parity: overall", "FAIL",
+               f"{len(issues)} divergence(s) between recomputed and descriptive_stats.json.overall:\n  - "
+               + "\n  - ".join(issues),
+               context={"issues": issues})
+    else:
+        record(2, tn, "Aggregate parity: overall", "PASS",
+               f"All {len(recomputed)} overall aggregates match descriptive_stats.json.overall.")
+
+    # ---- By bucket ----
+    by_bucket_issues = _check_group_parity(
+        fact, by_col="bucket_key",
+        committed=desc.get("by_bucket", []),
+        int_cols=["n", "wins", "draws", "losses", "points_dropped"],
+        rate_cols=["win_rate"],
+        key="bucket_key",
+    )
+    if by_bucket_issues:
+        record(2, tn, "Aggregate parity: by bucket", "FAIL",
+               f"{len(by_bucket_issues)} divergence(s) vs descriptive_stats.json.by_bucket:\n  - "
+               + "\n  - ".join(by_bucket_issues[:15]),
+               context={"issues_sample": by_bucket_issues[:30]})
+    else:
+        record(2, tn, "Aggregate parity: by bucket", "PASS",
+               "All bucket aggregates match descriptive_stats.json.by_bucket.")
+
+    # ---- By season ----
+    by_season_issues = _check_group_parity(
+        fact, by_col="season_key",
+        committed=desc.get("by_season", []),
+        int_cols=["n", "wins", "draws", "losses", "points_dropped"],
+        rate_cols=["win_rate"],
+        key="season_key",
+    )
+    if by_season_issues:
+        record(2, tn, "Aggregate parity: by season", "FAIL",
+               f"{len(by_season_issues)} divergence(s) vs descriptive_stats.json.by_season:\n  - "
+               + "\n  - ".join(by_season_issues[:15]))
+    else:
+        record(2, tn, "Aggregate parity: by season", "PASS",
+               "All season aggregates match descriptive_stats.json.by_season.")
+
+    # ---- By team ----
+    team_rows = (
+        fact.groupby("leader_team_key")
+        .agg(
+            n_as_leader=("event_id", "count"),
+            wins=("is_win", "sum"),
+            draws=("is_draw", "sum"),
+            losses=("is_loss", "sum"),
+            points_dropped=("points_dropped", "sum"),
+        )
+        .reset_index()
+        .rename(columns={"leader_team_key": "team_key"})
+    )
+    team_rows["win_rate"] = (team_rows["wins"] / team_rows["n_as_leader"]).round(4)
+    opp_counts = fact.groupby("opponent_team_key").size().to_dict()
+    opp_held = fact[fact["is_win"] != 1].groupby("opponent_team_key").size().to_dict()
+    team_recomputed = {
+        r["team_key"]: {
+            "n_as_leader": int(r["n_as_leader"]),
+            "wins":        int(r["wins"]),
+            "draws":       int(r["draws"]),
+            "losses":      int(r["losses"]),
+            "win_rate":    float(r["win_rate"]),
+            "points_dropped": int(r["points_dropped"]),
+            "n_as_opponent": int(opp_counts.get(r["team_key"], 0)),
+            "times_opponent_held": int(opp_held.get(r["team_key"], 0)),
+        }
+        for _, r in team_rows.iterrows()
+    }
+    team_committed = {item["team_key"]: item for item in desc.get("by_team", [])}
+    team_issues: list[str] = []
+    for tk, rec in team_recomputed.items():
+        c = team_committed.get(tk)
+        if c is None:
+            team_issues.append(f"team '{tk}' missing from descriptive_stats.by_team")
+            continue
+        for col in ["n_as_leader", "wins", "draws", "losses", "points_dropped",
+                    "n_as_opponent", "times_opponent_held"]:
+            if int(c.get(col, -1)) != rec[col]:
+                team_issues.append(f"team '{tk}' {col}: committed={c.get(col)} vs recomputed={rec[col]}")
+        if abs(float(c.get("win_rate", 0)) - rec["win_rate"]) > RATE_TOL:
+            team_issues.append(f"team '{tk}' win_rate: committed={c.get('win_rate')} vs recomputed={rec['win_rate']:.4f}")
+    for tk in team_committed:
+        if tk not in team_recomputed:
+            team_issues.append(f"team '{tk}' in committed but not in recomputed (orphan)")
+    if team_issues:
+        record(2, tn, "Aggregate parity: by team", "FAIL",
+               f"{len(team_issues)} divergence(s) vs descriptive_stats.json.by_team:\n  - "
+               + "\n  - ".join(team_issues[:15]),
+               context={"issues_sample": team_issues[:30]})
+    else:
+        record(2, tn, "Aggregate parity: by team", "PASS",
+               f"All {len(team_recomputed)} team aggregates match descriptive_stats.json.by_team.")
+
+    # ---- Bucket analysis: lock points + chi-square (sanity) ----
+    ba_issues: list[str] = []
+    if bucket_ana:
+        committed_rates = bucket_ana.get("win_rates_by_bucket", {})
+        recomputed_rates = (
+            fact.groupby("bucket_key")["is_win"].mean().round(4).to_dict()
+        )
+        for bk, rate in recomputed_rates.items():
+            if bk not in committed_rates:
+                ba_issues.append(f"bucket '{bk}' missing from bucket_analysis.win_rates_by_bucket")
+                continue
+            if abs(float(committed_rates[bk]) - float(rate)) > RATE_TOL:
+                ba_issues.append(
+                    f"bucket '{bk}' win_rate: committed={committed_rates[bk]} vs recomputed={rate:.4f}"
+                )
+        # Lock point: committed bucket with win_rate >= 0.95 must still exist in recomputed
+        locked_95 = bucket_ana.get("locked_minute_95")
+        locked_95_rate = bucket_ana.get("locked_minute_95_win_rate")
+        if locked_95 is not None:
+            new_rate = recomputed_rates.get(locked_95)
+            if new_rate is None or new_rate < 0.95:
+                ba_issues.append(
+                    f"locked_minute_95='{locked_95}' no longer passes ≥0.95 "
+                    f"(recomputed win_rate={new_rate})"
+                )
+            elif locked_95_rate is not None and abs(float(locked_95_rate) - float(new_rate)) > RATE_TOL:
+                ba_issues.append(
+                    f"locked_minute_95_win_rate: committed={locked_95_rate} vs recomputed={new_rate:.4f}"
+                )
+    if ba_issues:
+        record(2, tn, "Aggregate parity: bucket analysis", "FAIL",
+               f"{len(ba_issues)} divergence(s) vs bucket_analysis.json:\n  - "
+               + "\n  - ".join(ba_issues))
+    elif bucket_ana:
+        record(2, tn, "Aggregate parity: bucket analysis", "PASS",
+               "win_rates_by_bucket and lock points match bucket_analysis.json.")
+    else:
+        record(2, tn, "Aggregate parity: bucket analysis", "INFO",
+               f"{AGG_BUCKET_JSON} not found — skipping bucket analysis parity.")
+
+    # ---- CSV ↔ JSON parity for summary_by_* files ----
+    tier2_summary_csv_parity(desc)
+
+
+def tier2_summary_csv_parity(desc: dict) -> None:
+    """Check that summary_*.csv files in data/powerbi/ agree with the JSON aggregates."""
+    tn = "Cross-dataset"
+    drifts: list[str] = []
+
+    def _compare_csv(csv_path, json_rows, key_col, int_cols, rate_cols, label):
+        if not csv_path.exists():
+            return None
+        csv = pd.read_csv(csv_path)
+        json_by_key = {row[key_col]: row for row in json_rows}
+        for _, row in csv.iterrows():
+            k = row[key_col]
+            j = json_by_key.get(k)
+            if j is None:
+                drifts.append(f"{label}: key '{k}' in CSV but not in JSON")
+                continue
+            for col in int_cols:
+                if col in row and col in j and int(row[col]) != int(j[col]):
+                    drifts.append(f"{label} [{k}] {col}: CSV={row[col]} vs JSON={j[col]}")
+            for col in rate_cols:
+                if col in row and col in j:
+                    if abs(float(row[col]) - float(j[col])) > RATE_TOL:
+                        drifts.append(f"{label} [{k}] {col}: CSV={row[col]} vs JSON={j[col]}")
+        for k in json_by_key:
+            if k not in set(csv[key_col]):
+                drifts.append(f"{label}: key '{k}' in JSON but not in CSV")
+        return True
+
+    _compare_csv(
+        SUMMARY_BY_BUCKET, desc.get("by_bucket", []),
+        key_col="bucket_key",
+        int_cols=["n", "wins", "draws", "losses", "points_dropped", "is_locked_90", "is_locked_95"],
+        rate_cols=["win_rate", "draw_rate", "loss_rate"],
+        label="summary_by_bucket",
+    )
+    _compare_csv(
+        SUMMARY_BY_SEASON, desc.get("by_season", []),
+        key_col="season_key",
+        int_cols=["n", "wins", "draws", "losses", "points_dropped"],
+        rate_cols=["win_rate"],
+        label="summary_by_season",
+    )
+    _compare_csv(
+        SUMMARY_BY_TEAM, desc.get("by_team", []),
+        key_col="team_key",
+        int_cols=["n_as_leader", "wins", "draws", "losses", "points_dropped",
+                  "n_as_opponent", "times_opponent_held"],
+        rate_cols=["win_rate"],
+        label="summary_by_team",
+    )
+
+    if drifts:
+        record(2, tn, "CSV ↔ JSON summary parity", "FAIL",
+               f"{len(drifts)} row(s) differ between summary_*.csv and descriptive_stats.json:\n  - "
+               + "\n  - ".join(drifts[:15]),
+               context={"drifts_sample": drifts[:30]})
+    else:
+        record(2, tn, "CSV ↔ JSON summary parity", "PASS",
+               "summary_by_bucket.csv, summary_by_season.csv, summary_by_team.csv "
+               "all agree with descriptive_stats.json.")
+
+
+def _compare_scalar_dict(recomputed: dict, committed: dict, tolerance: float,
+                          label_prefix: str = "") -> list[str]:
+    issues: list[str] = []
+    for k, rec in recomputed.items():
+        com = committed.get(k)
+        if com is None:
+            continue
+        if isinstance(rec, int):
+            if int(com) != rec:
+                issues.append(f"{label_prefix}.{k}: committed={com} vs recomputed={rec}")
+        else:
+            if abs(float(com) - float(rec)) > tolerance:
+                issues.append(
+                    f"{label_prefix}.{k}: committed={com} vs recomputed={rec:.4f} "
+                    f"(Δ={abs(float(com)-float(rec)):.4f})"
+                )
+    return issues
+
+
+def _check_group_parity(fact: pd.DataFrame, by_col: str, committed: list,
+                        int_cols: list[str], rate_cols: list[str], key: str) -> list[str]:
+    grp = (
+        fact.groupby(by_col)
+        .agg(
+            n=("event_id", "count"),
+            wins=("is_win", "sum"),
+            draws=("is_draw", "sum"),
+            losses=("is_loss", "sum"),
+            points_dropped=("points_dropped", "sum"),
+        )
+        .reset_index()
+    )
+    grp["win_rate"] = (grp["wins"] / grp["n"]).round(4)
+    recomputed_by_key = {r[by_col]: r for _, r in grp.iterrows()}
+    committed_by_key = {item[key]: item for item in committed}
+    issues: list[str] = []
+    for k, rec in recomputed_by_key.items():
+        c = committed_by_key.get(k)
+        if c is None:
+            issues.append(f"{key} '{k}' present in data but missing from committed")
+            continue
+        for col in int_cols:
+            if col in rec and col in c and int(rec[col]) != int(c[col]):
+                issues.append(f"{key} '{k}' {col}: committed={c[col]} vs recomputed={rec[col]}")
+        for col in rate_cols:
+            if col in rec and col in c and abs(float(rec[col]) - float(c[col])) > RATE_TOL:
+                issues.append(f"{key} '{k}' {col}: committed={c[col]} vs recomputed={rec[col]:.4f}")
+    for k in committed_by_key:
+        if k not in recomputed_by_key:
+            issues.append(f"{key} '{k}' in committed but not in recomputed (orphan)")
+    return issues
+
+
+def _load_accepted_disputes() -> list[dict]:
+    """Load the human-curated list of acknowledged Understat-vs-ESPN conflicts.
+    Missing file is fine (no accepted disputes — every conflict will FAIL).
+    """
+    if not ACCEPTED_DISPUTES.exists():
+        return []
+    try:
+        data = yaml.safe_load(ACCEPTED_DISPUTES.read_text(encoding="utf-8")) or []
+    except yaml.YAMLError:
+        return []
+    return list(data)
+
+
+def _dispute_is_accepted(accepted: list[dict], disp: dict) -> bool:
+    """Match a detected dispute against the accepted list. Matches on the
+    tuple (match_id, goal_index, understat_scorer, espn_scorer) — a later
+    pipeline run that surfaces a *different* player would not be silenced.
+    """
+    for entry in accepted:
+        if (
+            int(entry.get("match_id", -1)) == disp["match_id"]
+            and int(entry.get("goal_index", -1)) == disp["goal_index"]
+            and str(entry.get("understat_scorer", "")).strip() == str(disp["understat_scorer"]).strip()
+            and str(entry.get("espn_scorer", "")).strip() == str(disp["espn_scorer"]).strip()
+        ):
+            return True
+    return False
 
 
 def _scorer_names_match(a: str, b: str) -> bool:
@@ -1117,6 +1828,241 @@ def tier4_slides(gt: pd.DataFrame) -> None:
                    subject=slide)
 
 
+def _resolve_json_path(data, path: str):
+    """Navigate a dot-path through nested dicts/lists with optional [key=value] filters.
+
+    Supported syntax:
+        foo.bar.baz                       -> data['foo']['bar']['baz']
+        list_name[key=value].field        -> for item in data['list_name']:
+                                                if str(item[key]) == value: pick item
+                                             then item['field']
+    """
+    parts = path.split(".")
+    cur = data
+    for p in parts:
+        if "[" in p and p.endswith("]"):
+            name, sel = p[:-1].split("[", 1)
+            cur = cur[name]
+            if "=" in sel:
+                k, v = sel.split("=", 1)
+                matches = [item for item in cur if str(item.get(k)) == v]
+                if not matches:
+                    raise KeyError(f"no item with {k}={v} in list '{name}'")
+                cur = matches[0]
+            else:
+                cur = cur[int(sel)]
+        else:
+            if isinstance(cur, list):
+                cur = cur[int(p)]
+            else:
+                cur = cur[p]
+    return cur
+
+
+def _format_value(value, fmt: str) -> str:
+    """Render a numeric value to its narrative display string."""
+    try:
+        return fmt.format(value)
+    except (TypeError, ValueError):
+        return str(value)
+
+
+def tier4_narrative_claims() -> None:
+    """Verify that every numeric claim quoted in paper/talk-track still matches
+    its canonical source and that the rendered display string actually appears
+    in each listed narrative file.
+
+    Driven by data/reference/narrative_claims.yaml — new claims are added there
+    without touching code.
+    """
+    tn = "Slides"
+    if not NARRATIVE_CLAIMS.exists():
+        record(4, tn, "Narrative claims", "INFO",
+               f"{NARRATIVE_CLAIMS} not found — skipping narrative claim check.")
+        return
+
+    try:
+        claims = yaml.safe_load(NARRATIVE_CLAIMS.read_text(encoding="utf-8")) or []
+    except yaml.YAMLError as e:
+        record(4, tn, "Narrative claims", "FAIL", f"Failed to parse YAML: {e}")
+        return
+
+    if not claims:
+        record(4, tn, "Narrative claims", "INFO",
+               f"{NARRATIVE_CLAIMS} is empty.")
+        return
+
+    # Cache source files so we don't re-read per claim.
+    source_cache: dict[Path, object] = {}
+
+    def load_source(path: Path):
+        if path not in source_cache:
+            source_cache[path] = json.loads(path.read_text(encoding="utf-8"))
+        return source_cache[path]
+
+    # Cache narrative file contents too.
+    narrative_cache: dict[Path, str] = {}
+
+    def load_narrative(path: Path) -> str:
+        if path not in narrative_cache:
+            narrative_cache[path] = path.read_text(encoding="utf-8")
+        return narrative_cache[path]
+
+    pass_count = 0
+    fail_items: list[str] = []
+    stale_hits: list[str] = []
+
+    for claim in claims:
+        cid = claim.get("id", "<unnamed>")
+        src_file = PROJ_DIR / claim["source_file"]
+        src_path = claim["source_path"]
+        fmt = claim.get("display_format", "{}")
+        aliases = claim.get("display_aliases", []) or []
+        stale_forms = claim.get("stale_forms", []) or []
+        narratives = claim.get("narratives", []) or []
+
+        if not src_file.exists():
+            fail_items.append(f"[{cid}] source_file not found: {src_file}")
+            continue
+
+        try:
+            data = load_source(src_file)
+            value = _resolve_json_path(data, src_path)
+        except (KeyError, IndexError, TypeError) as e:
+            fail_items.append(f"[{cid}] could not resolve {src_path} in {src_file.name}: {e}")
+            continue
+
+        display = _format_value(value, fmt)
+        searches = [display] + list(aliases)
+
+        for nar in narratives:
+            nar_path = PROJ_DIR / nar
+            if not nar_path.exists():
+                fail_items.append(f"[{cid}] narrative file not found: {nar}")
+                continue
+            content = load_narrative(nar_path)
+
+            display_found = any(s in content for s in searches)
+            if not display_found:
+                fail_items.append(
+                    f"[{cid}] expected '{display}' (from {src_path} = {value}) "
+                    f"not found in {nar}"
+                )
+
+            # Stale-form check is independent — run even when display is missing,
+            # since both a missing canonical and a lingering stale value are
+            # useful signals (and usually occur together).
+            for stale in stale_forms:
+                if stale in content:
+                    stale_hits.append(
+                        f"[{cid}] stale value '{stale}' still present in {nar} "
+                        f"— update to '{display}'"
+                    )
+
+            if display_found:
+                pass_count += 1
+
+    total = sum(len(c.get("narratives", [])) for c in claims)
+    if fail_items or stale_hits:
+        details = fail_items + stale_hits
+        record(4, tn, "Narrative claims", "FAIL",
+               f"{len(fail_items)} missing and {len(stale_hits)} stale of {total} claim×file checks. "
+               f"First 15:\n  - " + "\n  - ".join(details[:15]),
+               context={"missing": fail_items, "stale": stale_hits})
+    else:
+        record(4, tn, "Narrative claims", "PASS",
+               f"All {total} claim×file checks matched ({len(claims)} claims across "
+               f"{len({n for c in claims for n in c.get('narratives', [])})} files).")
+
+
+TEAM_CRESTS_TS = WEB_DIR / "lib" / "crests.ts"
+FIGURES_DIR = PROJ_DIR / "docs" / "figures"
+
+
+def tier4_team_crests() -> None:
+    """Verify every team in dim_team.csv and every team referenced on a slide
+    has a crest entry in epl-2goal-web/src/lib/crests.ts. Catches missing
+    assets before they render as initials-fallback on screen.
+    """
+    tn = "Slides"
+    if not TEAM_CRESTS_TS.exists():
+        record(4, tn, "Team crests", "INFO",
+               f"{TEAM_CRESTS_TS} not found — skipping team crest presence check.")
+        return
+
+    crests_src = TEAM_CRESTS_TS.read_text(encoding="utf-8")
+    known = set(re.findall(r"['\"]([^'\"]+)['\"]\s*:\s*`\$\{CREST_BASE\}/\d+\.png`", crests_src))
+
+    expected: set[str] = set()
+    dim_team_path = PBI_DIR / "dim_team.csv"
+    if dim_team_path.exists():
+        dim_team = pd.read_csv(dim_team_path)
+        expected.update(str(t) for t in dim_team["team_key"].tolist())
+
+    if WEB_SECTIONS.exists():
+        for tsx in WEB_SECTIONS.glob("S*.tsx"):
+            text = tsx.read_text(encoding="utf-8")
+            for m in re.finditer(r'team\s*=\s*["\']([^"\']+)["\']', text):
+                expected.add(m.group(1))
+
+    missing = expected - known
+    unused = known - expected
+
+    if missing:
+        record(4, tn, "Team crests", "FAIL",
+               f"{len(missing)} team(s) referenced but missing from crests.ts: "
+               + ", ".join(sorted(missing)),
+               context={"missing": sorted(missing), "unused_in_map": sorted(unused)})
+    else:
+        detail = f"All {len(expected)} teams referenced have crest entries."
+        if unused:
+            detail += f" ({len(unused)} historical team(s) still in crests.ts but not in current data: {', '.join(sorted(unused))})"
+        record(4, tn, "Team crests", "PASS", detail,
+               context={"unused_in_map": sorted(unused)})
+
+
+def tier4_figures() -> None:
+    """Verify that every figure referenced by the paper exists on disk and
+    is non-empty. Paper references take the form `docs/figures/figN_*.png`.
+    """
+    tn = "Slides"
+    if not FIGURES_DIR.exists():
+        record(4, tn, "Figures", "INFO",
+               f"{FIGURES_DIR} not found — skipping figure presence check.")
+        return
+
+    paper = PROJ_DIR / "docs" / "paper_draft.md"
+    referenced: set[str] = set()
+    if paper.exists():
+        text = paper.read_text(encoding="utf-8")
+        for m in re.finditer(r"docs/figures/([A-Za-z0-9_\-]+\.(?:png|jpg|jpeg|svg|pdf))", text):
+            referenced.add(m.group(1))
+
+    present = {p.name for p in FIGURES_DIR.iterdir() if p.is_file()}
+    missing = referenced - present
+    empty = [p.name for p in FIGURES_DIR.iterdir() if p.is_file() and p.stat().st_size == 0]
+    orphan = present - referenced if referenced else set()
+
+    problems = []
+    if missing:
+        problems.append(f"{len(missing)} figure(s) referenced by paper but not on disk: " + ", ".join(sorted(missing)))
+    if empty:
+        problems.append(f"{len(empty)} figure(s) are empty (0 bytes): " + ", ".join(sorted(empty)))
+
+    if problems:
+        record(4, tn, "Figures", "FAIL", "; ".join(problems),
+               context={"missing": sorted(missing), "empty": empty})
+    elif referenced:
+        detail = f"All {len(referenced)} figures referenced in paper are present and non-empty."
+        if orphan:
+            detail += f" ({len(orphan)} unreferenced file(s) in docs/figures/)"
+        record(4, tn, "Figures", "PASS", detail,
+               context={"orphan": sorted(orphan)})
+    else:
+        record(4, tn, "Figures", "INFO",
+               f"No figures referenced from paper; {len(present)} files present in docs/figures/.")
+
+
 def tier4_talk_track(gt: pd.DataFrame) -> None:
     tn = "Slides"
     if not TALK_TRACK.exists():
@@ -1236,6 +2182,9 @@ def main() -> int:
         print("\n== Tier 4: Slide-vs-data consistency ==")
         tier4_slides(gt)
         tier4_talk_track(gt)
+        tier4_narrative_claims()
+        tier4_team_crests()
+        tier4_figures()
 
     md, js = render_report()
     args.output_dir.mkdir(parents=True, exist_ok=True)
