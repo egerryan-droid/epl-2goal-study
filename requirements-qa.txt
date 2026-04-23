@@ -1,0 +1,11 @@
+# Minimal dependencies for scripts/13_full_validation.py.
+# The full requirements.txt pulls in the data-pipeline-only `understat`
+# package which pins beautifulsoup4==4.11.1 and conflicts with everything
+# else. The QA validator doesn't need any of that — it reads the already-
+# committed goal_timeline.csv, cross-checks against the ESPN snapshot and
+# Football-Data raw CSVs, and (when present) re-fits the logistic model.
+pandas>=2.0
+pyyaml>=6.0
+numpy>=1.24
+scipy>=1.10
+statsmodels>=0.14
