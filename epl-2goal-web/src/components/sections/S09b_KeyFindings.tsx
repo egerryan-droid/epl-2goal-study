@@ -20,33 +20,35 @@ export default function S09b_KeyFindings() {
   return (
     <SectionWrapper id="key-findings" dark>
       <div ref={ref} className="flex flex-col items-center justify-center text-center">
-        <h2 className="font-display text-4xl md:text-5xl font-bold text-text-primary mb-4">
+        <h2 className="font-display text-4xl md:text-5xl font-bold text-text-primary mb-3">
           Key Findings
         </h2>
-        <p className="text-text-secondary text-lg max-w-3xl mb-10">
+        <p className="text-text-secondary text-base md:text-lg max-w-3xl mb-6">
           Five takeaways from the regression model that tell us what actually
           moves the needle on holding a two-goal lead.
         </p>
 
-        <div className="space-y-4 max-w-2xl w-full">
+        <div className="space-y-3 max-w-2xl w-full">
           {insights.map((insight, i) => (
             <motion.div
               key={i}
               initial={{ opacity: 0, x: 20 }}
               animate={inView ? { opacity: 1, x: 0 } : {}}
               transition={{ delay: 0.2 + i * 0.1, duration: 0.4 }}
-              className="bg-surface-mid rounded-lg p-5 flex items-start gap-4 text-left"
+              className="bg-surface-mid rounded-lg p-4 flex items-start gap-3 text-left"
             >
-              <span className="text-3xl">{insight.icon}</span>
-              <p className={`${insight.color} text-lg font-medium`}>{insight.text}</p>
+              <span className="text-2xl leading-none">{insight.icon}</span>
+              <p className={`${insight.color} text-base md:text-lg font-medium`}>{insight.text}</p>
             </motion.div>
           ))}
         </div>
 
         {(() => {
           const q = QUOTES.find(q => q.section === 'key-findings');
+          // Quote is supplementary — hide on short viewports so the 5 insights
+          // (the slide's core content) never get clipped on 720p / 768p laptops.
           return q ? (
-            <div className="max-w-2xl mx-auto mt-8">
+            <div className="hidden [@media(min-height:860px)]:block max-w-2xl mx-auto mt-6">
               <QuoteCard quote={q} />
             </div>
           ) : null;
