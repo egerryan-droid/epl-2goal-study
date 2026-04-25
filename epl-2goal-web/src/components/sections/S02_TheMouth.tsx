@@ -11,12 +11,12 @@ const GoalTimeline = dynamic(() => import('@/components/charts/GoalTimeline'), {
 
 const typedGoals = goalsByMatch as unknown as GoalsByMatch;
 
-// Bournemouth 4-3 Liverpool, Dec 4 2016 — match_key 4618
-const BOURNEMOUTH_MATCH_KEY = '4618';
+// Southampton 4-4 Liverpool, May 28 2023 — match_key 18581
+const MYTH_MATCH_KEY = '18581';
 
 export default function S02_TheMouth() {
   const { ref, inView } = useInView({ threshold: 0.2 });
-  const goals = typedGoals[BOURNEMOUTH_MATCH_KEY] || [];
+  const goals = typedGoals[MYTH_MATCH_KEY] || [];
 
   return (
     <section
@@ -34,10 +34,10 @@ export default function S02_TheMouth() {
           The <span className="text-loss">Myth</span>
         </h2>
         <p className="text-text-secondary text-lg md:text-xl leading-relaxed">
-          December 4, 2016. Liverpool lead Bournemouth <span className="text-win font-semibold">2-0</span> away
+          May 28, 2023. Liverpool lead Southampton <span className="text-win font-semibold">2-0</span> away
           from home. The commentators had all but called the result. Then the unthinkable happened &mdash;
-          Bournemouth scored <span className="text-loss font-semibold">four unanswered goals</span> to
-          complete one of the most dramatic comebacks in Premier League history.
+          Southampton scored <span className="text-loss font-semibold">four unanswered goals</span> to
+          take a 4-2 lead, before Liverpool rescued a dramatic 4-4 draw with two late goals.
         </p>
       </motion.div>
 
@@ -51,8 +51,8 @@ export default function S02_TheMouth() {
           <>
             <div className="mb-4 flex items-center justify-center gap-4">
               <span className="flex items-center gap-2 text-text-primary font-display text-lg font-semibold">
-                <TeamCrest team="AFC Bournemouth" size={32} />
-                Bournemouth
+                <TeamCrest team="Southampton" size={32} />
+                Southampton
               </span>
               <span className="text-text-muted font-display text-sm">vs</span>
               <span className="flex items-center gap-2 text-text-primary font-display text-lg font-semibold">
@@ -62,7 +62,7 @@ export default function S02_TheMouth() {
             </div>
             <GoalTimeline
               goals={goals}
-              homeTeam="Bournemouth"
+              homeTeam="Southampton"
               awayTeam="Liverpool"
             />
           </>

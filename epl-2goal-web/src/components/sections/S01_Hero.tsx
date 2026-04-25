@@ -20,6 +20,9 @@ export default function S01_Hero() {
         backgroundSize: '60px 60px',
       }} />
 
+      {/* Brand chrome (PL logo + slide counter) is rendered globally by
+          <DeckChrome /> in src/app/page.tsx so it persists across every slide. */}
+
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={inView ? { opacity: 1, y: 0 } : {}}

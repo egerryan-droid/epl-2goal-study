@@ -1,9 +1,15 @@
-import type { Config } from 'tailwindcss';
+const path = require('path');
 
-const config: Config = {
-  content: [
-    './src/**/*.{js,ts,jsx,tsx,mdx}',
-  ],
+// Content glob uses an absolute path because relative globs can fail to match
+// on Windows when Tailwind is invoked via Next.js's PostCSS runner — the CWD
+// at scan time doesn't always align with this config's directory.
+const CONTENT = [
+  path.join(__dirname, 'src/**/*.{js,ts,jsx,tsx,mdx}').replace(/\\/g, '/'),
+];
+
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: CONTENT,
   theme: {
     extend: {
       colors: {
@@ -30,5 +36,3 @@ const config: Config = {
   },
   plugins: [],
 };
-
-export default config;

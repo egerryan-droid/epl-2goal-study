@@ -1,16 +1,21 @@
 import type { Metadata } from 'next';
-import { DM_Serif_Display, DM_Sans } from 'next/font/google';
+import { Barlow_Condensed, Barlow } from 'next/font/google';
 import ThemeToggle from '@/components/ui/ThemeToggle';
 import './globals.css';
 
-const serif = DM_Serif_Display({
-  weight: '400',
+// Premier League brand uses the proprietary "PremierLeague" typeface (DesignStudio,
+// 2016 rebrand). The closest freely-distributable substitute per the design
+// system zip's `colors_and_type.css` is Barlow Condensed for display, Barlow
+// for body. Condensed all-caps display type is the PL signature look.
+const display = Barlow_Condensed({
+  weight: ['500', '600', '700', '800'],
   subsets: ['latin'],
   variable: '--font-display',
   display: 'swap',
 });
 
-const sans = DM_Sans({
+const sans = Barlow({
+  weight: ['400', '500', '600', '700'],
   subsets: ['latin'],
   variable: '--font-body',
   display: 'swap',
@@ -28,7 +33,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${serif.variable} ${sans.variable} font-sans`}>
+    <html lang="en" className={`${display.variable} ${sans.variable} font-sans`}>
       <body className="min-h-screen bg-surface-dark text-text-primary font-sans transition-colors duration-300">
         {children}
         <ThemeToggle />

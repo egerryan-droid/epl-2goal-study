@@ -1,0 +1,6 @@
+match_id,date,home_team,away_team,final_score,goal_index,issue_type,understat_minute,understat_scorer,understat_side,understat_scoring_team,understat_is_own_goal,espn_minute,espn_scorer,espn_side,espn_scoring_team,espn_is_own_goal,espn_event_id
+3369,2017-02-01,Stoke,Everton,1-1,2,scorer_name,38,Ryan Shawcross,away,Everton,True,39,Kevin Mirallas,home,Stoke City,True,450779
+11737,2019-10-26,Manchester City,Aston Villa,3-0,2,scorer_name,64,Kevin De Bruyne,home,Manchester City,False,65,David Silva,home,Manchester City,False,541745
+11761,2019-11-10,Manchester United,Brighton,3-1,2,scorer_name,18,Davy Pröpper,home,Manchester United,True,19,Scott McTominay,home,Manchester United,False,541728
+18466,2023-03-11,Leeds,Brighton,2-2,3,scorer_name,60,Jack Harrison,away,Brighton,True,61,Solly March,away,Brighton & Hove Albion,False,638083
+22103,2024-01-20,Arsenal,Crystal Palace,5-0,2,scorer_name,36,Dean Henderson,home,Arsenal,True,37,Gabriel Magalhães,home,Arsenal,False,671231

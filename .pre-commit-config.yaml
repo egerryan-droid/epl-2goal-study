@@ -1,0 +1,39 @@
+# Pre-commit hooks for the EPL 2-Goal Study.
+#
+# Install once per clone:
+#     pip install pre-commit
+#     pre-commit install
+#
+# Run on demand over the whole repo:
+#     pre-commit run --all-files
+#
+# The validator is the only hook — it covers data integrity, cross-source
+# parity, anchor matches, slide consistency, narrative claims, web JSON
+# parity, regression parity, team crests, and figures in a single ~22s
+# invocation. See docs/qa_plan.md for details.
+
+repos:
+  - repo: local
+    hooks:
+      - id: epl-qa-validator
+        name: EPL 2-Goal Study validator
+        description: Run scripts/13_full_validation.py with --fail-on error
+        entry: python scripts/13_full_validation.py --fail-on error
+        language: system
+        pass_filenames: false
+        stages: [pre-commit]
+        # Only fire when files under these paths change; trivial edits
+        # (e.g. README typo) don't need the full 22s check.
+        files: >-
+          (?x)^(
+            scripts/.*\.py|
+            data/processed/.*|
+            data/powerbi/.*|
+            data/output/.*|
+            data/reference/.*|
+            docs/paper_draft\.md|
+            docs/talk-track\.md|
+            epl-2goal-web/src/.*|
+            shared/.*|
+            requirements\.txt
+          )$

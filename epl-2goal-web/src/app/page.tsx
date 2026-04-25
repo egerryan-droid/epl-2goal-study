@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from 'react';
 import dynamic from 'next/dynamic';
+import DeckChrome from '@/components/layout/DeckChrome';
 
 const S01_Hero = dynamic(() => import('@/components/sections/S01_Hero'), { ssr: false });
 const S02_TheMouth = dynamic(() => import('@/components/sections/S02_TheMouth'), { ssr: false });
@@ -33,6 +34,7 @@ export default function Home() {
 
   return (
     <main ref={mainRef} className="h-screen snap-y snap-mandatory overflow-y-auto bg-surface-dark">
+      <DeckChrome />
       <S01_Hero />
       <S02_TheMouth />
       <S02b_InTheirWords />

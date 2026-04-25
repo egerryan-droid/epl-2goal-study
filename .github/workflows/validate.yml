@@ -1,0 +1,52 @@
+name: QA validator
+
+on:
+  pull_request:
+    branches: [master, main]
+  push:
+    branches: [master, main]
+  # Allow manual runs from the Actions tab.
+  workflow_dispatch:
+
+jobs:
+  validate:
+    name: scripts/13_full_validation.py
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+
+      - name: Install QA dependencies
+        # requirements-qa.txt is the minimal set needed by the validator.
+        # The full requirements.txt pulls in the understat package which
+        # pins beautifulsoup4==4.11.1 and conflicts with the rest of the
+        # environment; we don't need it here since CI only reads already-
+        # committed artifacts.
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements-qa.txt
+
+      - name: Run full validator
+        # ESPN raw snapshot is gitignored so the ESPN cross-check will emit
+        # INFO and skip — all other tiers still run.
+        run: python scripts/13_full_validation.py --fail-on error
+
+      - name: Upload validation artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: validation-report
+          path: |
+            data/output/validation_report.md
+            data/output/validation_report.json
+            data/output/disputed_goals.csv
+          if-no-files-found: warn
+          retention-days: 30

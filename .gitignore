@@ -5,3 +5,11 @@ data/raw/
 __pycache__/
 *.pyc
 .venv/
+
+# Claude Code local state
+.claude/
+epl-2goal-web/.claude/
+
+# Validator-generated reports (regenerated on every run; keep disputed_goals.csv tracked)
+data/output/validation_report.md
+data/output/validation_report.json

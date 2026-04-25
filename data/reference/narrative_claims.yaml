@@ -1,0 +1,132 @@
+# Narrative claims registry
+# =========================
+# Each claim is a numeric value quoted in narrative prose (paper_draft.md,
+# talk-track.md, and — if referenced — slide source in epl-2goal-web). The
+# validator reads this file, resolves each claim's canonical value from the
+# given source, formats it per `display_format`, and verifies the resulting
+# string appears in every listed narrative file.
+#
+# To add a new claim: append an entry — no code change needed.
+#
+# Schema per entry:
+#   id              Stable slug used in logs / reports.
+#   source_file     Path (relative to repo root) to the aggregate file that
+#                   owns the truth.
+#   source_path     Dot-path into the JSON. Supports list filter selectors:
+#                     overall.win_rate
+#                     by_bucket[bucket_key=76-90+].n
+#                     by_season[season_key=2015-2016].win_rate
+#   display_format  Python format spec used to render the value. Examples:
+#                     "{:,}"        -> "1,907"
+#                     "{:.1%}"      -> "93.3%"
+#                     "{}"          -> "87"
+#                     "{:.1f}x"     -> "66.7x"
+#   display_aliases (optional) alternate strings that should also be accepted
+#                   if found. Useful when the prose spells out numbers or
+#                   uses different punctuation.
+#   stale_forms     (optional) strings that MUST NOT appear in any listed
+#                   narrative. Use to pin down known-wrong prior values.
+#   narratives      List of files that quote this claim.
+
+- id: overall_events
+  source_file: data/output/descriptive_stats.json
+  source_path: overall.n
+  display_format: "{:,}"
+  display_aliases: ["1907 events", "1907"]
+  narratives:
+    - docs/talk-track.md
+    - docs/paper_draft.md
+
+- id: overall_wins
+  source_file: data/output/descriptive_stats.json
+  source_path: overall.wins
+  display_format: "{:,}"
+  stale_forms: ["1,778"]
+  narratives:
+    - docs/talk-track.md
+    - docs/paper_draft.md
+
+- id: overall_draws
+  source_file: data/output/descriptive_stats.json
+  source_path: overall.draws
+  display_format: "{}"
+  narratives:
+    - docs/talk-track.md
+    - docs/paper_draft.md
+
+- id: overall_losses
+  source_file: data/output/descriptive_stats.json
+  source_path: overall.losses
+  display_format: "{}"
+  narratives:
+    - docs/talk-track.md
+    - docs/paper_draft.md
+
+- id: overall_win_rate
+  source_file: data/output/descriptive_stats.json
+  source_path: overall.win_rate
+  display_format: "{:.1%}"
+  narratives:
+    - docs/talk-track.md
+    - docs/paper_draft.md
+
+- id: overall_points_dropped
+  source_file: data/output/descriptive_stats.json
+  source_path: overall.points_dropped
+  display_format: "{}"
+  narratives:
+    - docs/talk-track.md
+    - docs/paper_draft.md
+
+- id: lockpoint_win_rate
+  source_file: data/output/bucket_analysis.json
+  source_path: locked_minute_95_win_rate
+  display_format: "{:.1%}"
+  narratives:
+    - docs/talk-track.md
+    - docs/paper_draft.md
+
+- id: lockpoint_n
+  source_file: data/output/descriptive_stats.json
+  source_path: by_bucket[bucket_key=76-90+].n
+  display_format: "{}"
+  narratives:
+    - docs/talk-track.md
+    - docs/paper_draft.md
+
+- id: lockpoint_wins
+  source_file: data/output/descriptive_stats.json
+  source_path: by_bucket[bucket_key=76-90+].wins
+  display_format: "{}"
+  narratives:
+    - docs/paper_draft.md
+
+- id: season_2015_16_win_rate
+  source_file: data/output/descriptive_stats.json
+  source_path: by_season[season_key=2015-2016].win_rate
+  display_format: "{:.1%}"
+  narratives:
+    - docs/talk-track.md
+    - docs/paper_draft.md
+
+- id: season_2016_17_win_rate
+  source_file: data/output/descriptive_stats.json
+  source_path: by_season[season_key=2016-2017].win_rate
+  display_format: "{:.1%}"
+  narratives:
+    - docs/talk-track.md
+    - docs/paper_draft.md
+
+- id: bucket_0_15_win_rate
+  source_file: data/output/descriptive_stats.json
+  source_path: by_bucket[bucket_key=0-15].n
+  display_format: "{}"
+  narratives:
+    - docs/paper_draft.md
+
+- id: home_win_rate
+  source_file: data/output/descriptive_stats.json
+  source_path: overall.home_win_rate
+  display_format: "{:.1%}"
+  narratives:
+    - docs/paper_draft.md
