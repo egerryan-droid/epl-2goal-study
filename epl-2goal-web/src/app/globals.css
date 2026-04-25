@@ -2,32 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
-/* ===== Dark Mode (default) ===== */
+/* ===== Dark Mode (default) — Premier League brand palette ===== */
+/* Surfaces use the official PL deep aubergine; accents use the brand
+   electric set (cyan / fluoro green / magenta / yellow card). */
 :root {
-  --color-win: #2ecc71;
-  --color-draw: #f39c12;
-  --color-loss: #e74c3c;
-  --color-accent: #3498db;
-  --color-surface-dark: #1a1a2e;
-  --color-surface-mid: #16213e;
-  --color-surface-light: #0f3460;
-  --color-text-primary: #f5f6fa;
-  --color-text-secondary: #d5dbe0;
-  --color-text-muted: #99a3ad;
+  --color-win:           #00FF85;  /* PL fluoro green */
+  --color-draw:          #FFE100;  /* PL yellow card */
+  --color-loss:          #E90052;  /* PL magenta */
+  --color-accent:        #04F5FF;  /* PL electric cyan */
+  --color-surface-dark:  #1F0021;  /* PL purple deep */
+  --color-surface-mid:   #37003C;  /* PL purple — the brand */
+  --color-surface-light: #5A1860;  /* PL purple tint */
+  --color-text-primary:   #FFFFFF;
+  --color-text-secondary: #E6D8E8;
+  --color-text-muted:     #B49EB6;
 }
 
-/* ===== Light / Projector Mode ===== */
+/* ===== Light / Projector Mode — Premier League light scheme ===== */
 [data-theme="light"] {
-  --color-win: #1a9d4f;
-  --color-draw: #d4820a;
-  --color-loss: #c0392b;
-  --color-accent: #2471a3;
-  --color-surface-dark: #f0f2f5;
-  --color-surface-mid: #e4e7ec;
-  --color-surface-light: #d5dae2;
-  --color-text-primary: #1a1a2e;
-  --color-text-secondary: #3d4654;
-  --color-text-muted: #6b7280;
+  --color-win:           #00B956;  /* PL success */
+  --color-draw:          #FFC400;  /* PL warning */
+  --color-loss:          #E90052;  /* PL danger */
+  --color-accent:        #0060A9;  /* PL blue secondary */
+  --color-surface-dark:  #FAF9FA;  /* PL page background */
+  --color-surface-mid:   #FFFFFF;  /* PL surface */
+  --color-surface-light: #F4EFF4;  /* PL surface-2 */
+  --color-text-primary:   #37003C; /* PL text — purple, NOT black */
+  --color-text-secondary: #5C455F;
+  --color-text-muted:     #8B7A8D;
 }
 
 @layer base {
@@ -65,7 +67,7 @@
   }
 
   ::selection {
-    background: rgba(52, 152, 219, 0.3);
+    background: rgba(4, 245, 255, 0.3);  /* PL cyan */
   }
 
   /* Custom scrollbar */
@@ -73,33 +75,33 @@
     width: 6px;
   }
   ::-webkit-scrollbar-track {
-    background: #1a1a2e;
+    background: #1F0021;             /* PL purple deep */
   }
   ::-webkit-scrollbar-thumb {
-    background: #0f3460;
+    background: #5A1860;             /* PL purple tint */
     border-radius: 3px;
   }
   ::-webkit-scrollbar-thumb:hover {
-    background: #3498db;
+    background: #04F5FF;             /* PL cyan on hover */
   }
 
   [data-theme="light"] ::-webkit-scrollbar-track {
-    background: #f0f2f5;
+    background: #FAF9FA;             /* PL bg */
   }
   [data-theme="light"] ::-webkit-scrollbar-thumb {
-    background: #d5dae2;
+    background: #D0C5D0;             /* PL border-strong */
   }
 }
 
 @layer components {
-  /* Glassmorphism utilities */
+  /* Glassmorphism utilities — tinted with PL aubergine */
   .glass {
-    background: rgba(22, 33, 62, 0.6);
+    background: rgba(55, 0, 60, 0.6);   /* PL purple @ 60% */
     backdrop-filter: blur(12px);
     border: 1px solid rgba(255, 255, 255, 0.08);
   }
   .glass-strong {
-    background: rgba(15, 52, 96, 0.7);
+    background: rgba(90, 24, 96, 0.7);  /* PL purple tint @ 70% */
     backdrop-filter: blur(20px);
     border: 1px solid rgba(255, 255, 255, 0.12);
   }
