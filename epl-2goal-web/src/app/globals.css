@@ -39,6 +39,14 @@
     font-size: 18px; /* Larger base for projector readability */
   }
 
+  /* Premier League display style: condensed, uppercase, slightly tight tracking.
+     Applies to slide headings (h1/h2/h3) wherever they appear; does not affect
+     non-heading copy or eyebrow chips. */
+  h1.font-display, h2.font-display, h3.font-display {
+    text-transform: uppercase;
+    letter-spacing: -0.01em;
+  }
+
   @media (max-width: 768px) {
     html {
       font-size: 16px;

@@ -20,25 +20,8 @@ export default function S01_Hero() {
         backgroundSize: '60px 60px',
       }} />
 
-      {/* Premier League brand stripe — top-left */}
-      <motion.div
-        initial={{ opacity: 0, y: -10 }}
-        animate={inView ? { opacity: 1, y: 0 } : {}}
-        transition={{ duration: 0.6, delay: 0.1 }}
-        className="absolute top-6 left-6 sm:top-10 sm:left-10 flex items-center gap-4 z-20"
-      >
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src="/brand/pl-logo.svg"
-          alt="Premier League"
-          className="h-10 w-auto sm:h-12 text-text-primary"
-          style={{ color: 'currentColor' }}
-        />
-        <span className="hidden sm:block h-8 w-px bg-text-muted/40" aria-hidden="true" />
-        <span className="hidden sm:inline-block text-xs sm:text-sm tracking-widest uppercase text-accent font-semibold">
-          EMBA Research <span className="text-text-muted">·</span> Xavier University
-        </span>
-      </motion.div>
+      {/* Brand chrome (PL logo + slide counter) is rendered globally by
+          <DeckChrome /> in src/app/page.tsx so it persists across every slide. */}
 
       <motion.div
         initial={{ opacity: 0, y: 30 }}
